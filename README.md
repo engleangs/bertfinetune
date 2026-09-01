@@ -111,10 +111,11 @@ The repository now provides an executable **single-pair, aligned
 explicit-aspect** English BERT baseline. For each non-overlapping aligned
 aspect span, the first annotated category/sentiment pair is retained; all
 implicit, unaligned, duplicate, additional-pair, and overlapping exclusions
-are counted in the manifest. The pipeline trains for the fixed epoch budget, evaluates the
-development split after every epoch, restores the checkpoint with the best
-end-to-end development micro-F1, evaluates the test split once, and saves the
-model, predictions, metrics, and run metadata. It is not a full TASD baseline:
+are counted in the manifest. The pipeline trains for the fixed epoch budget,
+evaluates the development split after every epoch, restores the checkpoint
+with the best end-to-end development micro-F1, evaluates the test split once,
+and saves the model, predictions, metrics, and run metadata. It is not a full
+TASD baseline:
 implicit `NULL` aspects and multiple label pairs for one aspect remain outside
 the architecture's representational scope.
 

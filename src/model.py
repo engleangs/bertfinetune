@@ -1,8 +1,4 @@
-"""
-Unchanged architecture from the original scaffold. LoRA support
-is left in the code (harmless, already tested) but EXPERIMENTS in config.py
-no longer includes any LoRA configs
-"""
+"""BERT encoder with BIO, category, and sentiment prediction heads."""
 import torch
 import torch.nn as nn
 from transformers import AutoModel

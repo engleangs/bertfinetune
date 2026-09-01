@@ -112,11 +112,9 @@ def build_crossdomain_split(
         dev += load_domain_file(os.path.join(data_dir, files["dev"]), domain)
 
     test_files = cfg.DOMAIN_FILES[test_domain]
-    # Use the held-out domain's train+dev+test ALL as the test set — during a
-    # cross-domain test the model has never seen this domain at all, so there's
-    # no reason to withhold part of it; using all of it gives a bigger, less
-    # noisy test-set estimate. (If your team prefers a stricter design that only
-    # uses the domain's own test file, swap the line below for just test_files["test"].)
+    # This scaffold currently pools held-out train+dev+test for evaluation.
+    # Keep cross-domain runs disabled until the team freezes this choice and
+    # the policy for categories that do not occur in the source domains.
     test = (
         load_domain_file(os.path.join(data_dir, test_files["train"]), test_domain)
         + load_domain_file(os.path.join(data_dir, test_files["dev"]), test_domain)
