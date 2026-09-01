@@ -222,6 +222,8 @@ def summarize_task_scope(
     additional_label_pair = overlapping = 0
     unseen_categories = set()
     unseen_sentiments = set()
+    unseen_category_triplets = 0
+    unseen_sentiment_triplets = 0
 
     for example in examples:
         selected, counts = _select_baseline_triplets(example)
@@ -235,8 +237,10 @@ def summarize_task_scope(
         for _, category, sentiment in selected:
             if category_set is not None and category not in category_set:
                 unseen_categories.add(category)
+                unseen_category_triplets += 1
             if sentiment_set is not None and sentiment not in sentiment_set:
                 unseen_sentiments.add(sentiment)
+                unseen_sentiment_triplets += 1
 
     return {
         "examples": len(examples),
@@ -248,8 +252,43 @@ def summarize_task_scope(
         "additional_label_pairs_excluded": additional_label_pair,
         "overlapping_triplets_excluded": overlapping,
         "unseen_categories": sorted(unseen_categories),
+        "unseen_category_triplets": unseen_category_triplets,
         "unseen_sentiments": sorted(unseen_sentiments),
+        "unseen_sentiment_triplets": unseen_sentiment_triplets,
     }
+
+
+def summarize_tokenized_targets(dataset: Dataset) -> Dict[str, int]:
+    """Count target ceilings introduced by tokenization and train-only vocabularies.
+
+    Gold triplets remain in evaluation even when truncation/alignment prevents a
+    BIO target or a label is absent from the training vocabulary. Recording
+    these counts makes that unavoidable false-negative ceiling explicit.
+    """
+    summary = {
+        "examples": len(dataset),
+        "gold_triplets": 0,
+        "token_aligned_span_targets": 0,
+        "token_alignment_or_truncation_misses": 0,
+        "unknown_category_targets": 0,
+        "unknown_sentiment_targets": 0,
+    }
+    for index in range(len(dataset)):
+        item = dataset[index]
+        gold_count = len(item["gold_triplets"])
+        span_count = len(item["span_boundaries"])
+        if span_count > gold_count:
+            raise ValueError("Tokenized span count cannot exceed selected gold count")
+        summary["gold_triplets"] += gold_count
+        summary["token_aligned_span_targets"] += span_count
+        summary["token_alignment_or_truncation_misses"] += gold_count - span_count
+        summary["unknown_category_targets"] += int(
+            (item["category_labels"] == -100).sum().item()
+        )
+        summary["unknown_sentiment_targets"] += int(
+            (item["sentiment_labels"] == -100).sum().item()
+        )
+    return summary
 
 
 class ABSADataset(Dataset):

@@ -31,6 +31,7 @@ from src.data import (
     build_label_vocab,
     label_frequencies,
     summarize_task_scope,
+    summarize_tokenized_targets,
 )
 from src.evaluate import identify_rare_labels
 from src.losses import get_evaluation_loss_fns
@@ -306,6 +307,15 @@ def run(
         test_ds = ABSADataset(
             test_examples, tokenizer, category_vocab, sentiment_vocab,
             experiment_cfg.max_len,
+        )
+        data_summary["train"]["tokenized_targets"] = summarize_tokenized_targets(
+            train_ds,
+        )
+        data_summary["dev"]["tokenized_targets"] = summarize_tokenized_targets(
+            dev_ds,
+        )
+        data_summary["test"]["tokenized_targets"] = summarize_tokenized_targets(
+            test_ds,
         )
 
         result = train_one_config(
