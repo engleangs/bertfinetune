@@ -76,6 +76,55 @@ def compute_batch_loss(
     return loss
 
 
+def _summed_classification_loss(logits, labels, loss_fn, device):
+    if logits is None or labels.numel() == 0:
+        return 0.0, 0
+    labels = labels.to(device)
+    valid = labels != -100
+    count = int(valid.sum().item())
+    if count == 0:
+        return 0.0, 0
+    return float(loss_fn(logits[valid], labels[valid]).item()), count
+
+
+def compute_evaluation_loss_components(
+    bio_logits,
+    category_logits,
+    sentiment_logits,
+    batch,
+    loss_fns,
+    device,
+):
+    """Return summed task losses and exact valid-label denominators."""
+    bio_fn, category_fn, sentiment_fn = loss_fns
+    bio_labels = batch["bio_labels"].to(device).reshape(-1)
+    flat_bio_logits = bio_logits.reshape(-1, bio_logits.size(-1))
+    valid_bio = bio_labels != -100
+    bio_count = int(valid_bio.sum().item())
+    bio_sum = (
+        float(bio_fn(flat_bio_logits[valid_bio], bio_labels[valid_bio]).item())
+        if bio_count else 0.0
+    )
+
+    category_sum, category_count = _summed_classification_loss(
+        category_logits,
+        _flatten_labels(batch["category_labels"]),
+        category_fn,
+        device,
+    )
+    sentiment_sum, sentiment_count = _summed_classification_loss(
+        sentiment_logits,
+        _flatten_labels(batch["sentiment_labels"]),
+        sentiment_fn,
+        device,
+    )
+    return {
+        "bio": (bio_sum, bio_count),
+        "category": (category_sum, category_count),
+        "sentiment": (sentiment_sum, sentiment_count),
+    }
+
+
 def _collect_training_label_counts(dataset, batch_size: int):
     """Collect all three task labels in one deterministic dataset pass."""
     loader = DataLoader(
@@ -210,8 +259,8 @@ def evaluate_model(
     )
     model.eval()
     records = []
-    total_loss = 0.0
-    loss_examples = 0
+    task_loss_sums = {"bio": 0.0, "category": 0.0, "sentiment": 0.0}
+    task_label_counts = {"bio": 0, "category": 0, "sentiment": 0}
 
     with torch.inference_mode():
         for batch in tqdm(loader, desc=description, leave=False):
@@ -225,13 +274,13 @@ def evaluate_model(
                 category_logits, sentiment_logits = model.classify_spans(
                     hidden_states, batch["span_boundaries"],
                 )
-                loss = compute_batch_loss(
+                components = compute_evaluation_loss_components(
                     bio_logits, category_logits, sentiment_logits, batch,
-                    loss_fns, cfg, device,
+                    loss_fns, device,
                 )
-                batch_size = int(input_ids.size(0))
-                total_loss += float(loss.item()) * batch_size
-                loss_examples += batch_size
+                for task, (loss_sum, label_count) in components.items():
+                    task_loss_sums[task] += loss_sum
+                    task_label_counts[task] += label_count
 
             records.extend(
                 _decode_batch_predictions(
@@ -240,7 +289,18 @@ def evaluate_model(
                 )
             )
 
-    average_loss = total_loss / loss_examples if loss_examples else None
+    if loss_fns is None or task_label_counts["bio"] == 0:
+        average_loss = None
+    else:
+        average_loss = task_loss_sums["bio"] / task_label_counts["bio"]
+        if task_label_counts["category"]:
+            average_loss += cfg.category_loss_weight * (
+                task_loss_sums["category"] / task_label_counts["category"]
+            )
+        if task_label_counts["sentiment"]:
+            average_loss += cfg.sentiment_loss_weight * (
+                task_loss_sums["sentiment"] / task_label_counts["sentiment"]
+            )
     return _evaluation_report(records, average_loss, rare_category_labels), records
 
 

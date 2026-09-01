@@ -49,9 +49,9 @@ def get_loss_fns(
 
 
 def get_evaluation_loss_fns():
-    """Return unweighted losses used consistently for checkpoint comparison."""
+    """Return unweighted summed losses for corpus-level dev/test reporting."""
     return (
-        nn.CrossEntropyLoss(ignore_index=-100),
-        nn.CrossEntropyLoss(ignore_index=-100),
-        nn.CrossEntropyLoss(ignore_index=-100),
+        nn.CrossEntropyLoss(ignore_index=-100, reduction="sum"),
+        nn.CrossEntropyLoss(ignore_index=-100, reduction="sum"),
+        nn.CrossEntropyLoss(ignore_index=-100, reduction="sum"),
     )

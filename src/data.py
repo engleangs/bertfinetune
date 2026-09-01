@@ -1,5 +1,4 @@
-"""
-S3 (Data): parsing + BIO tagging  plus the two split
+""" (Data): parsing + BIO tagging  plus the two split
 builders the new design needs:
 
   build_indomain_split()    -> official train/dev/test, all 7 domains mixed
