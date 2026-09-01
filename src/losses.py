@@ -1,4 +1,4 @@
-"""S4: unchanged from original scaffold — standard vs class-weighted loss
+"""unchanged from original scaffold — standard vs class-weighted loss
 is still the one variable that must differ between the two configs."""
 from collections import Counter
 from typing import List

@@ -1,5 +1,5 @@
 """
-S1: runs the entire study — 2 modes x 2 configs x len(config.SEEDS) seeds.
+Runs the entire study — 2 modes x 2 configs x len(config.SEEDS) seeds.
 With 5 seeds that's 20 runs total. Cut config.SEEDS to 3 if week 4 is tight;
 everything downstream (analyze_results.py) adapts automatically since it
 just reads whatever's in results.csv.

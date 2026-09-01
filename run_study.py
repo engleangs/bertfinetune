@@ -50,7 +50,7 @@ def run(mode: str, config_name: str, seed: int, device: str = "cuda"):
     result = train_one_config(experiment_cfg, train_ds, dev_ds, category_vocab, sentiment_vocab,
                                seed=seed, device=device)
 
-    # TODO (S5): run real inference over test_examples here — decode BIO
+    # TODO: run real inference over test_examples here — decode BIO
     # predictions, map to spans, run category/sentiment heads on PREDICTED
     # (not gold) spans, then score with evaluate.complete_triplet_scores(),
     # evaluate.precision_recall_by_label(), and evaluate.rare_label_recall()

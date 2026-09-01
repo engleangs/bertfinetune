@@ -76,7 +76,7 @@ def build_crossdomain_split(
     # Use the held-out domain's train+dev+test ALL as the test set — during a
     # cross-domain test the model has never seen this domain at all, so there's
     # no reason to withhold part of it; using all of it gives a bigger, less
-    # noisy test-set estimate. (If your team prefers a stricter design that only
+    # noisy test-set estimate. ( If we prefer a stricter design that only
     # uses the domain's own test file, swap the line below for just test_files["test"].)
     test = (
         load_domain_file(os.path.join(data_dir, test_files["train"]), test_domain)
