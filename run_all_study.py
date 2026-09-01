@@ -4,10 +4,20 @@ With 5 seeds that's 20 runs total. Cut config.SEEDS to 3 if week 4 is tight;
 everything downstream (analyze_results.py) adapts automatically since it
 just reads whatever's in results.csv.
 """
+import argparse
+
 import config as cfg
 from run_study import run
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--device",
+        default="auto",
+        help="Training device (default: auto; selects CUDA, MPS, or CPU)",
+    )
+    args = parser.parse_args()
+
     total = len(cfg.MODES) * len(cfg.EXPERIMENTS) * len(cfg.SEEDS)
     done = 0
     for mode in cfg.MODES:
@@ -15,6 +25,6 @@ if __name__ == "__main__":
             for seed in cfg.SEEDS:
                 done += 1
                 print(f"\n=== [{done}/{total}] mode={mode} config={experiment_cfg.name} seed={seed} ===")
-                run(mode, experiment_cfg.name, seed)
+                run(mode, experiment_cfg.name, seed, device=args.device)
 
     print(f"\nAll {total} runs complete. Run analyze_results.py next.")

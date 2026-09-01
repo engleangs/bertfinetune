@@ -30,7 +30,7 @@ def append_result(row: dict):
         writer.writerow(row)
 
 
-def run(mode: str, config_name: str, seed: int, device: str = "cuda"):
+def run(mode: str, config_name: str, seed: int, device: str = "auto"):
     experiment_cfg = next(c for c in cfg.EXPERIMENTS if c.name == config_name)
 
     if mode == "indomain":
@@ -56,7 +56,10 @@ def run(mode: str, config_name: str, seed: int, device: str = "cuda"):
     # evaluate.precision_recall_by_label(), and evaluate.rare_label_recall()
     # using identify_rare_labels(cat_counts) as the rare-label set. Append
     # those metrics to the row below once wired up.
-    print(f"[{mode}/{config_name}/seed={seed}] trained in {result['training_time_sec']:.1f}s")
+    print(
+        f"[{mode}/{config_name}/seed={seed}] trained on {result['device']} "
+        f"in {result['training_time_sec']:.1f}s"
+    )
 
     append_result({
         "mode": mode, "config": config_name, "seed": seed,
@@ -70,6 +73,10 @@ if __name__ == "__main__":
     parser.add_argument("--mode", required=True, choices=cfg.MODES)
     parser.add_argument("--config", required=True, choices=[c.name for c in cfg.EXPERIMENTS])
     parser.add_argument("--seed", required=True, type=int)
-    parser.add_argument("--device", default="cuda")
+    parser.add_argument(
+        "--device",
+        default="auto",
+        help="Training device (default: auto; selects CUDA, MPS, or CPU)",
+    )
     args = parser.parse_args()
     run(args.mode, args.config, args.seed, args.device)

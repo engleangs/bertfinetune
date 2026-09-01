@@ -62,6 +62,10 @@ python run_all_study.py                                            # all 20 runs
 python analyze_results.py                                          # final report
 ```
 
+Training selects CUDA, Apple MPS, or CPU automatically. To force CPU, add
+`--device cpu` to either training command. An explicitly requested CUDA device
+requires a CUDA-enabled PyTorch installation.
+
 ## Current baseline assessment
 
 This repository is a useful experiment scaffold, but it is not yet an
@@ -75,8 +79,8 @@ or task metrics.
 | Data loading | Blocked | `DOMAIN_FILES` does not match the upstream directory layout, and no local M-ABSA data is present. |
 | Target construction | Partial | Explicit aspects become BIO spans, but `NULL`/implicit aspects are silently discarded, repeated terms use only the first text match, and truncation losses are not reported. |
 | Model | Partial | BERT and three heads are implemented, but one category and sentiment prediction per extracted span cannot represent all M-ABSA cases, including multiple triplets for one aspect and implicit aspects. |
-| Weighted loss | Blocked on GPU | Class-weight tensors are created on CPU and are not moved to the logits' device. |
-| Training | Partial | The validation loader is never used, there is no checkpoint selection or early stopping, and the default `cuda` device fails on CPU/Apple Silicon machines. |
+| Weighted loss | Implemented | Class-weight tensors move with the loss modules to the selected training device. |
+| Training | Partial | Device selection is portable, but the validation loader is never used and there is no checkpoint selection or early stopping. |
 | Inference and evaluation | Blocked | No end-to-end prediction path exists. The metric helpers also expect hashable triplet tuples, while `parse_line` currently returns lists. |
 | Statistical analysis | Partial | Summary code exists, but `results.csv` has no metric columns. Pairing is based on separately sorted rows rather than an exact seed join, and reruns append duplicates. |
 | Reproducibility | Blocked | Dependency lower bounds are too broad. The current environment resolves Torch 2.2.2, Transformers 5.16.1, and NumPy 2.5.2, which are not mutually usable here. |
@@ -124,8 +128,8 @@ leakage guard.
 ### 3. Repair the training baseline
 
 - Pin and record a tested Python/Torch/Transformers/NumPy environment.
-- Select `cuda`, `mps`, or `cpu` automatically and move weighted-loss tensors
-  to the selected device.
+- Keep automated CPU/GPU smoke tests for device selection and weighted-loss
+  tensor placement.
 - Use the development set for checkpoint selection and return the best model,
   not merely the final epoch. Record train/dev losses, epoch, seed, runtime,
   package versions, and the complete configuration.

@@ -13,11 +13,12 @@ from tqdm import tqdm
 from src.model import build_model, count_trainable_params
 from src.losses import get_loss_fns
 from src.data import collate_fn
-from src.utils import set_seed
+from src.utils import resolve_device, set_seed
 
 
-def train_one_config(cfg, train_ds, val_ds, category_vocab, sentiment_vocab, seed: int, device="cuda"):
+def train_one_config(cfg, train_ds, val_ds, category_vocab, sentiment_vocab, seed: int, device="auto"):
     set_seed(seed)
+    device = resolve_device(device)
 
     model = build_model(cfg, len(category_vocab), len(sentiment_vocab)).to(device)
     n_trainable = count_trainable_params(model)
@@ -29,6 +30,9 @@ def train_one_config(cfg, train_ds, val_ds, category_vocab, sentiment_vocab, see
     cat_counts = [c.item() for batch in train_loader for labels in batch["category_labels"] for c in labels]
     sent_counts = [s.item() for batch in train_loader for labels in batch["sentiment_labels"] for s in labels]
     bio_fn, cat_fn, sent_fn = get_loss_fns(cfg, bio_counts, cat_counts, sent_counts)
+    bio_fn = bio_fn.to(device)
+    cat_fn = cat_fn.to(device)
+    sent_fn = sent_fn.to(device)
 
     optimizer = AdamW(model.parameters(), lr=cfg.lr, weight_decay=cfg.weight_decay)
     total_steps = len(train_loader) * cfg.epochs
@@ -61,4 +65,9 @@ def train_one_config(cfg, train_ds, val_ds, category_vocab, sentiment_vocab, see
             epoch_loss += loss.item()
 
     training_time_sec = time.time() - start_time
-    return {"model": model, "trainable_params": n_trainable, "training_time_sec": training_time_sec}
+    return {
+        "model": model,
+        "trainable_params": n_trainable,
+        "training_time_sec": training_time_sec,
+        "device": str(device),
+    }
