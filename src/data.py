@@ -11,8 +11,8 @@ which mode it's running under.
 """
 import ast
 import os
-from dataclasses import dataclass, field
-from typing import List, Optional, Tuple
+from dataclasses import dataclass
+from typing import Dict, List, Optional, Sequence, Tuple
 
 import torch
 from torch.utils.data import Dataset
@@ -28,9 +28,45 @@ class Example:
     domain: str = "unknown"
 
 
+SENTIMENT_ALIASES = {
+    "pos": "positive",
+    "positive": "positive",
+    "neg": "negative",
+    "negative": "negative",
+    "neu": "neutral",
+    "neutral": "neutral",
+    "conflict": "conflict",
+}
+
+
+def normalize_sentiment(sentiment: str) -> str:
+    """Map M-ABSA polarity spelling/case variants to canonical labels."""
+    cleaned = sentiment.strip().casefold()
+    return SENTIMENT_ALIASES.get(cleaned, cleaned)
+
+
 def parse_line(line: str, domain: str = "unknown") -> Example:
-    sentence, raw_triplets = line.strip().split("####")
-    triplets = ast.literal_eval(raw_triplets)
+    parts = line.strip().split("####", 1)
+    if len(parts) != 2:
+        raise ValueError("Expected 'sentence####triplets' input format")
+
+    sentence, raw_triplets = parts
+    parsed = ast.literal_eval(raw_triplets)
+    if not isinstance(parsed, (list, tuple)):
+        raise ValueError("Triplet annotation must be a list")
+
+    triplets = []
+    for index, triplet in enumerate(parsed):
+        if not isinstance(triplet, (list, tuple)) or len(triplet) != 3:
+            raise ValueError(f"Annotation {index} is not a three-field triplet")
+        if not all(isinstance(value, str) for value in triplet):
+            raise ValueError(f"Annotation {index} contains a non-string field")
+
+        aspect, category, sentiment = triplet
+        triplets.append(
+            (aspect.strip(), category.strip(), normalize_sentiment(sentiment))
+        )
+
     return Example(sentence=sentence, triplets=triplets, domain=domain)
 
 
@@ -56,9 +92,12 @@ def build_crossdomain_split(
     train_domains: Optional[List[str]] = None,
     test_domain: Optional[str] = None,
 ) -> Tuple[List[Example], List[Example], List[Example]]:
-    """New design: train+dev pooled from train_domains (default: all except
-    the held-out one), test = test_domain's OWN test file, entirely unseen
-    during training. This is the generalization test the professor asked for."""
+    """Pool source-domain train/dev and hold one entire domain out.
+
+    The current protocol combines the held-out domain's train, dev, and test
+    files for evaluation. Freeze this choice before running cross-domain work;
+    use the official test file only if that is the pre-registered decision.
+    """
     train_domains = train_domains or cfg.TRAIN_DOMAINS
     test_domain = test_domain or cfg.HOLD_OUT_DOMAIN
     assert test_domain not in train_domains, (
@@ -87,8 +126,9 @@ def build_crossdomain_split(
 
 
 def build_label_vocab(examples: List[Example]):
-    categories = sorted({t[1] for ex in examples for t in ex.triplets})
-    sentiments = sorted({t[2] for ex in examples for t in ex.triplets})
+    triplets = [triplet for ex in examples for triplet in aligned_explicit_triplets(ex)]
+    categories = sorted({triplet[1] for triplet in triplets})
+    sentiments = sorted({triplet[2] for triplet in triplets})
     return categories, sentiments
 
 
@@ -97,17 +137,121 @@ def label_frequencies(examples: List[Example]) -> Tuple[dict, dict]:
     'rare label' means downstream (see evaluate.identify_rare_labels)."""
     cat_counts, sent_counts = {}, {}
     for ex in examples:
-        for _, category, sentiment in ex.triplets:
+        for _, category, sentiment in aligned_explicit_triplets(ex):
             cat_counts[category] = cat_counts.get(category, 0) + 1
             sent_counts[sentiment] = sent_counts.get(sentiment, 0) + 1
     return cat_counts, sent_counts
 
 
 def find_span(sentence: str, aspect_term: str) -> Tuple[int, int]:
+    if aspect_term.strip().casefold() == "null":
+        return -1, -1
+
     idx = sentence.find(aspect_term)
+    if idx == -1:
+        idx = sentence.casefold().find(aspect_term.casefold())
     if idx == -1:
         return -1, -1
     return idx, idx + len(aspect_term)
+
+
+def _select_baseline_triplets(example: Example):
+    """Select one label pair per non-overlapping aligned explicit span."""
+    selected = []
+    selected_spans = []
+    seen_triplets = set()
+    counts = {
+        "total": 0,
+        "implicit": 0,
+        "unaligned": 0,
+        "duplicate": 0,
+        "additional_label_pair": 0,
+        "overlapping": 0,
+    }
+
+    for aspect, category, sentiment in example.triplets:
+        counts["total"] += 1
+        if aspect.strip().casefold() == "null":
+            counts["implicit"] += 1
+            continue
+        char_start, char_end = find_span(example.sentence, aspect)
+        if char_start == -1:
+            counts["unaligned"] += 1
+            continue
+        canonical = (
+            example.sentence[char_start:char_end], category, sentiment,
+        )
+        if canonical in seen_triplets:
+            counts["duplicate"] += 1
+            continue
+        seen_triplets.add(canonical)
+
+        span = (char_start, char_end)
+        if span in selected_spans:
+            counts["additional_label_pair"] += 1
+            continue
+        if any(
+            char_start < selected_end and selected_start < char_end
+            for selected_start, selected_end in selected_spans
+        ):
+            counts["overlapping"] += 1
+            continue
+
+        selected_spans.append(span)
+        selected.append(canonical)
+    return selected, counts
+
+
+def aligned_explicit_triplets(example: Example) -> List[Tuple[str, str, str]]:
+    """Return targets representable by the first single-pair baseline.
+
+    The first annotation for a character span is retained. Exact duplicates,
+    additional label pairs for that span, overlapping spans, implicit aspects,
+    and unaligned annotations are excluded and reported in run metadata.
+    """
+    return _select_baseline_triplets(example)[0]
+
+
+def summarize_task_scope(
+    examples: Sequence[Example],
+    category_vocab: Optional[Sequence[str]] = None,
+    sentiment_vocab: Optional[Sequence[str]] = None,
+) -> Dict[str, object]:
+    """Summarize retained and unsupported annotations for run metadata."""
+    category_set = set(category_vocab) if category_vocab is not None else None
+    sentiment_set = set(sentiment_vocab) if sentiment_vocab is not None else None
+    total = implicit = unaligned = included = duplicate = 0
+    additional_label_pair = overlapping = 0
+    unseen_categories = set()
+    unseen_sentiments = set()
+
+    for example in examples:
+        selected, counts = _select_baseline_triplets(example)
+        total += counts["total"]
+        implicit += counts["implicit"]
+        unaligned += counts["unaligned"]
+        duplicate += counts["duplicate"]
+        additional_label_pair += counts["additional_label_pair"]
+        overlapping += counts["overlapping"]
+        included += len(selected)
+        for _, category, sentiment in selected:
+            if category_set is not None and category not in category_set:
+                unseen_categories.add(category)
+            if sentiment_set is not None and sentiment not in sentiment_set:
+                unseen_sentiments.add(sentiment)
+
+    return {
+        "examples": len(examples),
+        "total_triplets": total,
+        "included_explicit_triplets": included,
+        "implicit_triplets_excluded": implicit,
+        "unaligned_triplets_excluded": unaligned,
+        "duplicate_triplets_excluded": duplicate,
+        "additional_label_pairs_excluded": additional_label_pair,
+        "overlapping_triplets_excluded": overlapping,
+        "unseen_categories": sorted(unseen_categories),
+        "unseen_sentiments": sorted(unseen_sentiments),
+    }
 
 
 class ABSADataset(Dataset):
@@ -132,7 +276,8 @@ class ABSADataset(Dataset):
         bio = [0] * len(offsets)
         span_boundaries, cat_labels, sent_labels = [], [], []
 
-        for aspect_term, category, sentiment in ex.triplets:
+        gold_triplets = aligned_explicit_triplets(ex)
+        for aspect_term, category, sentiment in gold_triplets:
             char_start, char_end = find_span(ex.sentence, aspect_term)
             if char_start == -1:
                 continue  # NULL/implicit aspect — not handled by the core BIO head
@@ -153,8 +298,8 @@ class ABSADataset(Dataset):
                 bio[i] = 2
 
             span_boundaries.append((tok_start, tok_end))
-            cat_labels.append(self.cat2id.get(category, -1))
-            sent_labels.append(self.sent2id.get(sentiment, -1))
+            cat_labels.append(self.cat2id.get(category, -100))
+            sent_labels.append(self.sent2id.get(sentiment, -100))
 
         bio = [b if (s != e) else -100 for b, (s, e) in zip(bio, offsets)]
 
@@ -163,6 +308,10 @@ class ABSADataset(Dataset):
         item["span_boundaries"] = span_boundaries
         item["category_labels"] = torch.tensor(cat_labels, dtype=torch.long)
         item["sentiment_labels"] = torch.tensor(sent_labels, dtype=torch.long)
+        item["offset_mapping"] = torch.tensor(offsets, dtype=torch.long)
+        item["example_id"] = idx
+        item["sentence"] = ex.sentence
+        item["gold_triplets"] = gold_triplets
         item["domain"] = ex.domain
         return item
 
@@ -175,5 +324,9 @@ def collate_fn(batch):
         "span_boundaries": [b["span_boundaries"] for b in batch],
         "category_labels": [b["category_labels"] for b in batch],
         "sentiment_labels": [b["sentiment_labels"] for b in batch],
+        "offset_mapping": torch.stack([b["offset_mapping"] for b in batch]),
+        "example_id": [b["example_id"] for b in batch],
+        "sentence": [b["sentence"] for b in batch],
+        "gold_triplets": [b["gold_triplets"] for b in batch],
         "domain": [b["domain"] for b in batch],
     }

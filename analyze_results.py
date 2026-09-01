@@ -1,60 +1,113 @@
-"""
-Turns raw per-seed rows in results.csv into the table ,   mean +/- std, significance test, and an explicit
-pass/fail against the pre-registered MIN_EFFECT_SIZE.
-Run this AFTER run_all_study.py, and after wiring in real micro_f1/macro_f1/
-rare_label_recall columns (see run_study.py's TODO).
-"""
+"""Summarize completed runs and compare losses on exactly matched seeds."""
+
+import argparse
+from pathlib import Path
+
 import pandas as pd
 
 import config as cfg
-from src.stats import summarize, paired_significance_test, bootstrap_ci, passes_min_effect
+from src.stats import (
+    bootstrap_ci,
+    paired_significance_test,
+    passes_min_effect,
+    summarize,
+)
 
 
-def analyze(metric_col: str = "micro_f1"):
-    df = pd.read_csv("results.csv")
+DEFAULT_RESULTS = Path(__file__).resolve().parent / "results.csv"
 
-    if metric_col not in df.columns:
-        print(f"'{metric_col}' not in results.csv yet — this file only has "
-              f"{list(df.columns)}. Wire up real evaluation in run_study.py's "
-              f"TODO first (see its comment block), then re-run.")
+
+def analyze(metric_col: str = "test_micro_f1", results_csv=DEFAULT_RESULTS):
+    results_csv = Path(results_csv)
+    if not results_csv.exists():
+        print(f"No results file found at {results_csv}")
         return
+
+    df = pd.read_csv(results_csv)
+    required = {"mode", "config", "seed", metric_col}
+    missing = required - set(df.columns)
+    if missing:
+        print(
+            f"Cannot analyze {metric_col!r}; missing columns: {sorted(missing)}. "
+            "Run the new train/validation/test pipeline first."
+        )
+        return
+
+    if "status" in df.columns:
+        df = df[df["status"] == "complete"]
+    df[metric_col] = pd.to_numeric(df[metric_col], errors="coerce")
+    df = df[df[metric_col].notna()].copy()
+    if df.empty:
+        print(f"No completed numeric {metric_col} values are available.")
+        return
+
+    key_columns = ["mode", "config", "seed"]
+    duplicate_mask = df.duplicated(key_columns, keep=False)
+    if duplicate_mask.any():
+        duplicates = df.loc[duplicate_mask, key_columns].to_dict("records")
+        raise ValueError(f"Duplicate run keys in results.csv: {duplicates}")
 
     for mode in cfg.MODES:
         mode_df = df[df["mode"] == mode]
         if mode_df.empty:
             continue
+        print(f"\n=== {mode} — {metric_col} ===")
 
-        standard = mode_df[mode_df["config"] == "standard"].sort_values("seed")[metric_col].tolist()
-        weighted = mode_df[mode_df["config"] == "weighted"].sort_values("seed")[metric_col].tolist()
+        for config_name in sorted(mode_df["config"].unique()):
+            values = mode_df.loc[
+                mode_df["config"] == config_name, metric_col,
+            ].astype(float).tolist()
+            print(f"{config_name}: {summarize(values)}")
 
-        if len(standard) != len(weighted) or len(standard) < 2:
-            print(f"[{mode}] need matched seeds for both configs (>=2) — have "
-                  f"{len(standard)} standard, {len(weighted)} weighted. Skipping.")
+        standard = mode_df[mode_df["config"] == "standard"][
+            ["seed", metric_col]
+        ].rename(columns={metric_col: "standard"})
+        weighted = mode_df[mode_df["config"] == "weighted"][
+            ["seed", metric_col]
+        ].rename(columns={metric_col: "weighted"})
+        paired = standard.merge(
+            weighted, on="seed", how="inner", validate="one_to_one",
+        ).sort_values("seed")
+
+        missing_standard = sorted(set(weighted["seed"]) - set(standard["seed"]))
+        missing_weighted = sorted(set(standard["seed"]) - set(weighted["seed"]))
+        if missing_standard or missing_weighted:
+            print(
+                "unmatched seeds: "
+                f"missing standard={missing_standard}, missing weighted={missing_weighted}"
+            )
+        if len(paired) < 2:
+            print("paired comparison requires at least two matched seeds")
             continue
 
-        print(f"\n=== {mode} — {metric_col} ===")
-        print(f"standard: {summarize(standard)}")
-        print(f"weighted: {summarize(weighted)}")
-
-        sig = paired_significance_test(standard, weighted)
-        ci = bootstrap_ci(standard, weighted)
-        effect_ok = passes_min_effect(sig["mean_diff"], cfg.MIN_EFFECT_SIZE)
-
-        print(f"mean diff (weighted - standard): {sig['mean_diff']:.4f}")
-        print(f"paired t-test p-value: {sig['p_value']:.4f} "
-              f"({'significant' if sig['significant_at_0.05'] else 'NOT significant'} at 0.05)")
-        print(f"bootstrap 95% CI on diff: [{ci['ci_low']:.4f}, {ci['ci_high']:.4f}] "
-              f"({'excludes zero' if ci['excludes_zero'] else 'includes zero'})")
-        print(f"pre-registered min effect size ({cfg.MIN_EFFECT_SIZE}): "
-              f"{'PASSES' if effect_ok else 'does NOT pass'}")
-
-        if sig["significant_at_0.05"] and not effect_ok:
-            print("  -> Statistically significant but below your pre-registered bar. "
-                  "Report both numbers honestly — this is a real, defensible finding "
-                  "either way, exactly what the professor asked for.")
+        standard_scores = paired["standard"].astype(float).tolist()
+        weighted_scores = paired["weighted"].astype(float).tolist()
+        significance = paired_significance_test(
+            standard_scores, weighted_scores,
+        )
+        interval = bootstrap_ci(standard_scores, weighted_scores)
+        effect_ok = passes_min_effect(
+            significance["mean_diff"], cfg.MIN_EFFECT_SIZE,
+        )
+        print(f"matched seeds: {paired['seed'].astype(int).tolist()}")
+        print(
+            f"mean diff (weighted - standard): "
+            f"{significance['mean_diff']:.4f}"
+        )
+        print(f"paired t-test p-value: {significance['p_value']:.4f}")
+        print(
+            f"bootstrap 95% CI: "
+            f"[{interval['ci_low']:.4f}, {interval['ci_high']:.4f}]"
+        )
+        print(
+            f"minimum effect {cfg.MIN_EFFECT_SIZE:.4f}: "
+            f"{'PASSES' if effect_ok else 'does NOT pass'}"
+        )
 
 
 if __name__ == "__main__":
-    analyze("micro_f1")
-    # TODO (S5): also call analyze("macro_f1") and a rare-label-recall variant
-    # once those columns exist in results.csv.
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--metric", default="test_micro_f1")
+    parser.add_argument("--results-csv", default=str(DEFAULT_RESULTS))
+    args = parser.parse_args()
+    analyze(args.metric, args.results_csv)

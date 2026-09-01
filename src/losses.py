@@ -8,6 +8,7 @@ import torch.nn as nn
 
 
 def inverse_frequency_weights(labels: List[int], num_classes: int) -> torch.Tensor:
+    labels = [label for label in labels if 0 <= label < num_classes]
     counts = Counter(labels)
     total = sum(counts.values())
     weights = torch.ones(num_classes)
@@ -18,18 +19,39 @@ def inverse_frequency_weights(labels: List[int], num_classes: int) -> torch.Tens
     return weights
 
 
-def get_loss_fns(cfg, bio_label_counts, category_label_counts, sentiment_label_counts):
+def get_loss_fns(
+    cfg,
+    bio_label_counts,
+    category_label_counts,
+    sentiment_label_counts,
+    num_categories=None,
+    num_sentiments=None,
+):
+    if num_categories is None:
+        num_categories = max(category_label_counts, default=-1) + 1
+    if num_sentiments is None:
+        num_sentiments = max(sentiment_label_counts, default=-1) + 1
+
     if cfg.loss_type == "standard":
         bio_fn = nn.CrossEntropyLoss(ignore_index=-100)
-        cat_fn = nn.CrossEntropyLoss()
-        sent_fn = nn.CrossEntropyLoss()
+        cat_fn = nn.CrossEntropyLoss(ignore_index=-100)
+        sent_fn = nn.CrossEntropyLoss(ignore_index=-100)
     elif cfg.loss_type == "weighted":
         bio_w = inverse_frequency_weights(bio_label_counts, num_classes=3)
-        cat_w = inverse_frequency_weights(category_label_counts, num_classes=len(set(category_label_counts)))
-        sent_w = inverse_frequency_weights(sentiment_label_counts, num_classes=len(set(sentiment_label_counts)))
+        cat_w = inverse_frequency_weights(category_label_counts, num_classes=num_categories)
+        sent_w = inverse_frequency_weights(sentiment_label_counts, num_classes=num_sentiments)
         bio_fn = nn.CrossEntropyLoss(weight=bio_w, ignore_index=-100)
-        cat_fn = nn.CrossEntropyLoss(weight=cat_w)
-        sent_fn = nn.CrossEntropyLoss(weight=sent_w)
+        cat_fn = nn.CrossEntropyLoss(weight=cat_w, ignore_index=-100)
+        sent_fn = nn.CrossEntropyLoss(weight=sent_w, ignore_index=-100)
     else:
         raise ValueError(f"Unknown loss_type: {cfg.loss_type}")
     return bio_fn, cat_fn, sent_fn
+
+
+def get_evaluation_loss_fns():
+    """Return unweighted losses used consistently for checkpoint comparison."""
+    return (
+        nn.CrossEntropyLoss(ignore_index=-100),
+        nn.CrossEntropyLoss(ignore_index=-100),
+        nn.CrossEntropyLoss(ignore_index=-100),
+    )

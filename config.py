@@ -33,7 +33,10 @@ HOLD_OUT_DOMAIN = "coursera"          # TODO: team decision, documented + dated
 TRAIN_DOMAINS = [d for d in DOMAINS if d != HOLD_OUT_DOMAIN]
 MIN_EFFECT_SIZE = 0.02                # TODO: team decision — F1 points that count as "improvement"
 
-SENTIMENTS = ["positive", "negative", "neutral"]
+# Raw M-ABSA files mix long and abbreviated polarity names. src.data
+# normalizes those aliases to these canonical labels. ``conflict`` occurs in
+# a small number of restaurant examples and remains a distinct fourth class.
+SENTIMENTS = ["positive", "negative", "neutral", "conflict"]
 BIO_LABELS = ["O", "B-ASP", "I-ASP"]
 
 MODEL_NAME = "bert-base-uncased"
