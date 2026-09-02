@@ -1,7 +1,7 @@
 """
-S5 (Evaluation): unchanged complete-triplet Micro/Macro-F1 from before, PLUS
+(Evaluation): unchanged complete-triplet Micro/Macro-F1 from before, PLUS
 the additions :
-  - precision_recall_by_label(): so you can see recall, not just F1
+  - precision_recall_by_label(): so we can see recall, not just F1
   - identify_rare_labels() + rare_label_recall(): the direct test of whether
     class-weighting helps the labels it's meant to help, or just moves errors
   - error_analysis() extended with a `domains` argument for per-domain breakdown
