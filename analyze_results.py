@@ -89,7 +89,32 @@ def analyze(metric_col: str = "test_micro_f1", results_csv=DEFAULT_RESULTS):
         effect_ok = passes_min_effect(
             significance["mean_diff"], cfg.MIN_EFFECT_SIZE,
         )
+        # Report the seeds that have results for both standard and weighted configs.
         print(f"matched seeds: {paired['seed'].astype(int).tolist()}")
+
+        # Print the paired result for each seed so that the comparison is auditable.
+        # The difference is calculated as weighted - standard.
+        for _, row in paired.iterrows():
+            seed = int(row["seed"])
+            standard_score = float(row["standard"])
+            weighted_score = float(row["weighted"])
+            diff = weighted_score - standard_score
+
+            print(
+                f"seed {seed}: "
+                f"standard {standard_score:.4f}, "
+                f"weighted {weighted_score:.4f}, "
+                f"diff {diff:+.4f}"
+            )
+
+        # Check whether any planned experimental seeds are missing from the
+        # paired comparison and warn the user before interpreting the results.
+        matched_seeds = set(paired["seed"].astype(int).tolist())
+        missing_planned_seeds = sorted(set(cfg.SEEDS) - matched_seeds)
+
+        if missing_planned_seeds:
+            print(f"WARNING: missing planned seeds: {missing_planned_seeds}")
+
         print(
             f"mean diff (weighted - standard): "
             f"{significance['mean_diff']:.4f}"

@@ -265,7 +265,7 @@ def summarize_tokenized_targets(dataset: Dataset) -> Dict[str, int]:
     these counts makes that unavoidable false-negative ceiling explicit.
     """
     summary = {
-        "examples": len(dataset),
+        #"examples": len(dataset),
         "gold_triplets": 0,
         "token_aligned_span_targets": 0,
         "token_alignment_or_truncation_misses": 0,
