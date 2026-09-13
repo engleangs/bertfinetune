@@ -169,10 +169,12 @@ triplet schema validation, tuple conversion, and sentiment alias normalization.
 
 - The standalone `data_audit.py` command reports, by domain and split,
   examples, triplets, empty annotations, `NULL` aspects, duplicate triplets,
-  repeated annotation text, ambiguous repeated sentence occurrences, unseen
-  labels, and targets lost to token truncation/alignment. Occurrence resolution
-  remains a policy decision because M-ABSA supplies surface text rather than
-  character offsets.
+  repeated aspect annotations, ambiguous repeated aspect-term occurrences
+  within sentences, unseen labels, and targets lost to token truncation or
+  alignment. It also reports repeated sentences and identical labelled
+  examples across the train, development, and test splits. Because M-ABSA
+  provides aspect surface text rather than character offsets, resolving
+  ambiguous occurrences remains a separate policy decision.
 - Add assertions for file existence, disjoint configured domains, and zero
   train/test sentence overlap where the protocol requires it. The current
   cross-domain smoke check finds eight repeated generic sentence strings, so
