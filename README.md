@@ -66,6 +66,11 @@ pip install -r requirements.txt
 python download_data.py
 python -m unittest discover -s tests -v
 
+# Persistent dataset audit (run before training)
+python data_audit.py --mode indomain
+# Use source-domain-only vocabularies to expose held-out label ceilings
+python data_audit.py --mode crossdomain --output artifacts/crossdomain_audit.json
+
 # One complete train -> validation -> test run
 python run_study.py --mode indomain --config standard --seed 42 --device cuda
 
@@ -162,11 +167,12 @@ Already implemented: repeatable missing-file download, the correct 21-file
 path mapping, both split builders, the held-out-domain membership guard,
 triplet schema validation, tuple conversion, and sentiment alias normalization.
 
-- Add a standalone data-audit command that reports, by domain and split:
-  examples, triplets,
-  empty annotations, `NULL` aspects, duplicate triplets, repeated aspect text,
-  labels, unseen development/test labels, and examples or triplets lost to
-  token truncation/alignment.
+- The standalone `data_audit.py` command reports, by domain and split,
+  examples, triplets, empty annotations, `NULL` aspects, duplicate triplets,
+  repeated annotation text, ambiguous repeated sentence occurrences, unseen
+  labels, and targets lost to token truncation/alignment. Occurrence resolution
+  remains a policy decision because M-ABSA supplies surface text rather than
+  character offsets.
 - Add assertions for file existence, disjoint configured domains, and zero
   train/test sentence overlap where the protocol requires it. The current
   cross-domain smoke check finds eight repeated generic sentence strings, so
