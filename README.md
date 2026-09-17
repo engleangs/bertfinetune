@@ -71,6 +71,9 @@ python data_audit.py --mode indomain
 # Use source-domain-only vocabularies to expose held-out label ceilings
 python data_audit.py --mode crossdomain --output artifacts/crossdomain_audit.json
 
+# Generate four 16:9 pre-model analysis figures for a presentation
+python visualize_data.py
+
 # One complete train -> validation -> test run
 python run_study.py --mode indomain --config standard --seed 42 --device cuda
 
@@ -109,6 +112,23 @@ tokenizer/               # tokenizer needed to reload the checkpoint
 `results.csv` is an atomic flat index with one row per
 `(mode, config, seed)`. Detailed per-label and per-domain results remain in the
 run's `metrics.json`.
+
+### Presentation-ready text analysis
+
+`python visualize_data.py` reads all 21 configured English source files and
+creates a reproducible evidence pack under `artifacts/text_analysis/`:
+
+- an executive data-readiness dashboard;
+- domain/split coverage, text-length, and label-distribution slides;
+- `text_analysis_summary.json` and `domain_split_summary.csv` with the chart
+  source values; and
+- `PRESENTATION_NOTES.md` with concise, defensible talking points.
+
+The analysis is deliberately pre-model: it uses raw text and annotations only.
+The model-ready percentage reuses the training pipeline's exact aligned,
+explicit, single-label-pair scope, while category and sentiment charts retain
+all raw annotations. This keeps the data-engineering evidence separate from
+model performance and makes the current task limitation visible.
 
 ## Current baseline assessment
 
