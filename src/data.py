@@ -115,9 +115,9 @@ def build_crossdomain_split(
     # Keep cross-domain runs disabled until the team freezes this choice and
     # the policy for categories that do not occur in the source domains.
     test = (
-        load_domain_file(os.path.join(data_dir, test_files["train"]), test_domain)
-        + load_domain_file(os.path.join(data_dir, test_files["dev"]), test_domain)
-        + load_domain_file(os.path.join(data_dir, test_files["test"]), test_domain)
+        #load_domain_file(os.path.join(data_dir, test_files["train"]), test_domain)
+        #+ load_domain_file(os.path.join(data_dir, test_files["dev"]), test_domain)
+         load_domain_file(os.path.join(data_dir, test_files["test"]), test_domain)
     )
     return train, dev, test
 

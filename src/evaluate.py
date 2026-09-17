@@ -142,14 +142,17 @@ def precision_recall_by_label(gold: List[List[Triplet]], pred: List[List[Triplet
     return out
 
 
-def identify_rare_labels(label_counts: Dict[str, int], bottom_fraction: float = 0.34) -> List[str]:
+def identify_rare_labels(label_counts: Dict[str, int], max_count: int =5) -> List[str]:
     """'Rare' = bottom third of labels by training-set frequency, by default.
-    TODO (S5): eyeball the actual distribution once you have real counts —
+    TODO : eyeball the actual distribution once you have real counts —
     if there's a natural cliff (e.g. a few labels with <20 examples vs. the
     rest with hundreds), use that cliff instead of a fixed fraction."""
-    sorted_labels = sorted(label_counts.items(), key=lambda kv: kv[1])
-    cutoff = max(1, int(len(sorted_labels) * bottom_fraction))
-    return [label for label, _ in sorted_labels[:cutoff]]
+    # sorted_labels = sorted(label_counts.items(), key=lambda kv: kv[1])
+    # cutoff = max(1, int(len(sorted_labels) * bottom_fraction))
+    # return [label for label, _ in sorted_labels[:cutoff]]
+    if max_count < 1:
+        raise ValueError("max_count must be at least 1")
+    return sorted(label for label, count in label_counts.items() if 1 <= count <= max_count)
 
 
 def rare_label_recall(gold: List[List[Triplet]], pred: List[List[Triplet]],

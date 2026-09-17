@@ -1,13 +1,12 @@
 """
 Revised design per professor feedback:
-  - LoRA dropped (kept as an optional footnote only, not part of the study)
   - Core two-model comparison (standard vs. class-weighted loss) is now run
     under TWO conditions instead of one:
       1. IN-DOMAIN   — original M-ABSA split, all 7 domains mixed (protected core)
       2. CROSS-DOMAIN — train on 6 domains, test on 1 held-out domain (new research Q)
   - Each (config, mode) pair is run across multiple seeds, not once.
 
-TODO (whole team, do this FIRST, before running anything):
+TODO (do this FIRST, before running anything):
   Pre-register HOLD_OUT_DOMAIN and MIN_EFFECT_SIZE below, dated, in your own
   notes/commit message. Changing these after seeing results defeats the point.
 """
@@ -29,10 +28,10 @@ DOMAIN_FILES = {
 }
 
 # --- Pre-registration (fill in BEFORE running anything, then don't change it) ---
-HOLD_OUT_DOMAIN = "coursera"          # TODO: team decision, documented + dated
+HOLD_OUT_DOMAIN = "restaurant"          # TODO: team decision, documented + dated
 TRAIN_DOMAINS = [d for d in DOMAINS if d != HOLD_OUT_DOMAIN]
 MIN_EFFECT_SIZE = 0.02                # TODO: team decision — F1 points that count as "improvement"
-
+RARE_CATEGORY_MAX_COUNT = 5
 # Raw M-ABSA files mix long and abbreviated polarity names. src.data
 # normalizes those aliases to these canonical labels. ``conflict`` occurs in
 # a small number of restaurant examples and remains a distinct fourth class.

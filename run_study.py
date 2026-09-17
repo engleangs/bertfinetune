@@ -276,7 +276,7 @@ def run(
             raise ValueError("Training split produced an empty label vocabulary")
 
         category_counts, _ = label_frequencies(train_examples)
-        rare_categories = identify_rare_labels(category_counts)
+        rare_categories = identify_rare_labels(category_counts,max_count=cfg.RARE_CATEGORY_MAX_COUNT)
         data_summary = {
             "train": summarize_task_scope(
                 train_examples, category_vocab, sentiment_vocab,
