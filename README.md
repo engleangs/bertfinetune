@@ -175,6 +175,43 @@ After `run_all_study.py` completes, `python visualize_results.py` validates the
 learning-curve views, post-hoc cross-domain protocol metrics, and an explicit
 protocol-compliance review under `artifacts/result_analysis/`.
 
+### Optional model optimization: category-only weighting
+
+The protected study compares ordinary cross-entropy with inverse-frequency
+weighting on all three prediction heads. An optional ablation applies the same
+inverse-frequency weights **only to the category head**; BIO aspect extraction
+and sentiment classification use ordinary cross-entropy. The pretrained model,
+data split, five seeds, batch size, optimizer, epoch count, and checkpoint
+selection are otherwise unchanged. This tests whether weighting the BIO and
+sentiment heads contributes to the observed precision-recall trade-off. It is
+an exploratory follow-up, not one of the original 70 LODO runs.
+
+The primary `run_all_study.py` and `run_lodo_study.py` defaults remain the
+standard and all-head-weighted configurations. Run the ablation explicitly,
+after the corresponding primary comparison is complete:
+
+```powershell
+python run_category_ablation.py --dry-run
+python run_category_ablation.py --device cuda
+python analyze_category_ablation.py
+
+# To test one held-out domain instead of the mixed-domain condition:
+python run_category_ablation.py --mode crossdomain --held-out-domain hotel --dry-run
+python run_category_ablation.py --mode crossdomain --held-out-domain hotel --device cuda
+python analyze_category_ablation.py --mode crossdomain --held-out-domain hotel
+```
+
+The runner saves checkpoints under `artifacts/category_ablation/` and its index
+in `results_category_ablation.csv`, separately from the primary study. Completed
+runs are validated and skipped on a repeat invocation. The analyzer pairs only
+seeds present in all three configurations and marks an incomplete comparison as
+`partial`; it writes precision, recall, and exact-triplet F1 comparisons under
+`artifacts/category_ablation_analysis/`. For a non-restaurant held-out domain,
+it reads the primary runs from `results_lodo.csv`; for restaurant and the
+mixed-domain condition it reads `results.csv`. Category-only weighting cannot
+predict category labels absent from source training, and this ablation does not
+change the task's explicit-aspect scope or existing protocol deviations.
+
 ## Current baseline assessment
 
 The repository now provides an executable **single-pair, aligned

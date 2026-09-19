@@ -64,4 +64,10 @@ EXPERIMENTS = [
     ExperimentConfig(name="weighted", loss_type="weighted"),
 ]
 
+# Follow-up model ablation. Kept outside EXPERIMENTS so the existing study
+# runners continue to select only the two planned configurations by default.
+ABLATION_EXPERIMENTS = [
+    ExperimentConfig(name="category_weighted", loss_type="category_weighted"),
+]
+
 MODES = ["indomain", "crossdomain"]

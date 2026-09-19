@@ -216,7 +216,11 @@ def run(
 ):
     """Train, select on dev, test once, and store a reproducible run."""
     experiment_cfg = next(
-        (item for item in cfg.EXPERIMENTS if item.name == config_name), None,
+        (
+            item for item in (*cfg.EXPERIMENTS, *cfg.ABLATION_EXPERIMENTS)
+            if item.name == config_name
+        ),
+        None,
     )
     if experiment_cfg is None:
         raise ValueError(f"Unknown config: {config_name}")
@@ -535,7 +539,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--mode", required=True, choices=cfg.MODES)
     parser.add_argument(
-        "--config", required=True, choices=[item.name for item in cfg.EXPERIMENTS],
+        "--config", required=True,
+        choices=[item.name for item in (*cfg.EXPERIMENTS, *cfg.ABLATION_EXPERIMENTS)],
     )
     parser.add_argument("--seed", required=True, type=int)
     parser.add_argument(

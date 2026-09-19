@@ -1,10 +1,16 @@
-"""unchanged from original scaffold — standard vs class-weighted loss
-is still the one variable that must differ between the two configs."""
+"""Loss functions for the primary comparison and optional head ablations."""
 from collections import Counter
 from typing import List
 
 import torch
 import torch.nn as nn
+
+
+WEIGHTED_HEADS = {
+    "standard": frozenset(),
+    "weighted": frozenset({"bio", "category", "sentiment"}),
+    "category_weighted": frozenset({"category"}),
+}
 
 
 def inverse_frequency_weights(labels: List[int], num_classes: int) -> torch.Tensor:
@@ -32,20 +38,25 @@ def get_loss_fns(
     if num_sentiments is None:
         num_sentiments = max(sentiment_label_counts, default=-1) + 1
 
-    if cfg.loss_type == "standard":
-        bio_fn = nn.CrossEntropyLoss(ignore_index=-100)
-        cat_fn = nn.CrossEntropyLoss(ignore_index=-100)
-        sent_fn = nn.CrossEntropyLoss(ignore_index=-100)
-    elif cfg.loss_type == "weighted":
-        bio_w = inverse_frequency_weights(bio_label_counts, num_classes=3)
-        cat_w = inverse_frequency_weights(category_label_counts, num_classes=num_categories)
-        sent_w = inverse_frequency_weights(sentiment_label_counts, num_classes=num_sentiments)
-        bio_fn = nn.CrossEntropyLoss(weight=bio_w, ignore_index=-100)
-        cat_fn = nn.CrossEntropyLoss(weight=cat_w, ignore_index=-100)
-        sent_fn = nn.CrossEntropyLoss(weight=sent_w, ignore_index=-100)
-    else:
+    if cfg.loss_type not in WEIGHTED_HEADS:
         raise ValueError(f"Unknown loss_type: {cfg.loss_type}")
-    return bio_fn, cat_fn, sent_fn
+
+    weighted = WEIGHTED_HEADS[cfg.loss_type]
+    labels_and_sizes = (
+        ("bio", bio_label_counts, 3),
+        ("category", category_label_counts, num_categories),
+        ("sentiment", sentiment_label_counts, num_sentiments),
+    )
+    return tuple(
+        nn.CrossEntropyLoss(
+            weight=(
+                inverse_frequency_weights(labels, num_classes=size)
+                if head in weighted else None
+            ),
+            ignore_index=-100,
+        )
+        for head, labels, size in labels_and_sizes
+    )
 
 
 def get_evaluation_loss_fns():
