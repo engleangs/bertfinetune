@@ -74,6 +74,19 @@ python data_audit.py --mode crossdomain --output artifacts/crossdomain_audit.jso
 # Generate four 16:9 pre-model analysis figures for a presentation
 python visualize_data.py
 
+# After the full run matrix, generate protocol-aware result figures
+python visualize_results.py
+
+# Preview the remaining six-domain leave-one-domain-out matrix (no training)
+python run_lodo_study.py --dry-run
+
+# Integration smoke: remaining 6 domains x 2 losses x seed 13 = 12 runs
+python run_lodo_study.py --seeds 13 --device cuda --continue-on-error
+
+# Full remainder: remaining 6 domains x 2 losses x 5 seeds = 60 runs
+# Completed smoke keys are detected and skipped automatically.
+python run_lodo_study.py --device cuda --continue-on-error
+
 # One complete train -> validation -> test run
 python run_study.py --mode indomain --config standard --seed 42 --device cuda
 
@@ -93,6 +106,33 @@ replace that run.
 The default `run_all_study.py` scope is in-domain only. Cross-domain execution
 remains available with `--mode crossdomain` or `--mode all`, but should wait
 until the held-out evaluation and category-ontology policy is frozen.
+
+### Running the remaining LODO domains
+
+`run_lodo_study.py` is the multi-domain runner. Its default domain list is:
+
+```text
+coursera, hotel, laptop, phone, sight, food
+```
+
+Restaurant is omitted because its post-pilot matrix already exists. A custom
+subset can be selected explicitly, for example:
+
+```powershell
+python run_lodo_study.py --domains coursera food --seeds 13 --device cuda
+```
+
+Each logical key is `(crossdomain, held_out_domain, config, seed)`. Artifacts
+are stored at
+`artifacts/lodo_runs/<held_out_domain>/<config>/seed_<seed>/`, and summaries
+are written to `results_lodo.csv`. Do not use `--overwrite` when resuming a
+matrix: completed keys are validated and skipped automatically.
+
+The runner prevents domain artifacts from overwriting one another, but it does
+not by itself resolve the protocol deviations documented in
+`current-progress.md`. Fix and freeze warmup, gradient clipping, ambiguous
+alignment, fixed-universe macro-F1, audits, environment versions, and the Git
+commit before treating these runs as final version-2 evidence.
 
 ### Saved run artifacts
 
@@ -129,6 +169,11 @@ The model-ready percentage reuses the training pipeline's exact aligned,
 explicit, single-label-pair scope, while category and sentiment charts retain
 all raw annotations. This keeps the data-engineering evidence separate from
 model performance and makes the current task limitation visible.
+
+After `run_all_study.py` completes, `python visualize_results.py` validates the
+20-run matrix and creates paired-seed outcome figures, precision/recall and
+learning-curve views, post-hoc cross-domain protocol metrics, and an explicit
+protocol-compliance review under `artifacts/result_analysis/`.
 
 ## Current baseline assessment
 

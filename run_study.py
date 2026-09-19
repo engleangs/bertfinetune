@@ -44,6 +44,7 @@ DEFAULT_RESULTS_CSV = PROJECT_ROOT / "results.csv"
 RESULTS_FIELDS = [
     "schema_version",
     "mode",
+    "held_out_domain",
     "config",
     "seed",
     "status",
@@ -83,15 +84,33 @@ def _project_relative_path(path) -> Path:
     return path if path.is_absolute() else PROJECT_ROOT / path
 
 
-def _split_examples(mode: str):
+def _split_examples(mode: str, held_out_domain=None):
     if mode == "indomain":
+        if held_out_domain is not None:
+            raise ValueError("held_out_domain is valid only for crossdomain mode")
         return build_indomain_split()
     if mode == "crossdomain":
-        return build_crossdomain_split()
+        held_out_domain = held_out_domain or cfg.HOLD_OUT_DOMAIN
+        if held_out_domain not in cfg.DOMAINS:
+            raise ValueError(f"Unknown held-out domain: {held_out_domain}")
+        train_domains = [
+            domain for domain in cfg.DOMAINS if domain != held_out_domain
+        ]
+        return build_crossdomain_split(
+            train_domains=train_domains,
+            test_domain=held_out_domain,
+        )
     raise ValueError(f"Unknown mode: {mode}")
 
 
-def _completed_result_row(results_csv: Path, mode, config_name, seed):
+def _completed_result_row(
+    results_csv: Path,
+    mode,
+    config_name,
+    seed,
+    held_out_domain=None,
+    domain_is_key=False,
+):
     if not results_csv.exists():
         return None
     with results_csv.open("r", encoding="utf-8-sig", newline="") as file:
@@ -100,6 +119,10 @@ def _completed_result_row(results_csv: Path, mode, config_name, seed):
                 row.get("mode") == mode
                 and row.get("config") == config_name
                 and str(row.get("seed")) == str(seed)
+                and (
+                    not domain_is_key
+                    or row.get("held_out_domain") == held_out_domain
+                )
                 and row.get("status") == "complete"
             ):
                 return row
@@ -133,7 +156,9 @@ def _split_overlap_summary(train_examples, dev_examples, test_examples):
 
 
 def _summary_row(
+    schema_version,
     mode,
+    held_out_domain,
     config_name,
     seed,
     result,
@@ -146,8 +171,9 @@ def _summary_row(
     dev_triplet = dev_metrics["complete_triplet"]
     test_triplet = test_metrics["complete_triplet"]
     return {
-        "schema_version": 2,
+        "schema_version": schema_version,
         "mode": mode,
+        "held_out_domain": held_out_domain or "",
         "config": config_name,
         "seed": seed,
         "status": "complete",
@@ -186,6 +212,7 @@ def run(
     output_dir=DEFAULT_OUTPUT_ROOT,
     results_csv=DEFAULT_RESULTS_CSV,
     overwrite: bool = False,
+    held_out_domain=None,
 ):
     """Train, select on dev, test once, and store a reproducible run."""
     experiment_cfg = next(
@@ -194,9 +221,29 @@ def run(
     if experiment_cfg is None:
         raise ValueError(f"Unknown config: {config_name}")
 
+    explicit_held_out_domain = held_out_domain is not None
+    if mode == "indomain" and explicit_held_out_domain:
+        raise ValueError("--held-out-domain is valid only with --mode crossdomain")
+    if mode == "crossdomain":
+        held_out_domain = held_out_domain or cfg.HOLD_OUT_DOMAIN
+        if held_out_domain not in cfg.DOMAINS:
+            raise ValueError(f"Unknown held-out domain: {held_out_domain}")
+
     output_root = _project_relative_path(output_dir)
     results_csv = _project_relative_path(results_csv)
-    run_dir = output_root / mode / config_name / f"seed_{seed}"
+    if mode == "crossdomain" and explicit_held_out_domain:
+        # LODO artifacts need the domain in their path so different folds can
+        # never overwrite one another. Legacy single-domain runs retain their
+        # original path for backward compatibility.
+        run_dir = output_root / held_out_domain / config_name / f"seed_{seed}"
+    else:
+        run_dir = output_root / mode / config_name / f"seed_{seed}"
+    result_key_fields = (
+        ("mode", "held_out_domain", "config", "seed")
+        if explicit_held_out_domain
+        else ("mode", "config", "seed")
+    )
+    schema_version = 3 if explicit_held_out_domain else 2
     manifest_path = run_dir / "manifest.json"
     metrics_path = run_dir / "metrics.json"
     checkpoint_path = run_dir / "best_model.pt"
@@ -232,13 +279,18 @@ def run(
             results_csv,
             summary,
             RESULTS_FIELDS,
-            key_fields=("mode", "config", "seed"),
+            key_fields=result_key_fields,
         )
         print(f"Skipping completed run at {run_dir}; use --overwrite to rerun.")
         return summary
 
     indexed_result = _completed_result_row(
-        results_csv, mode, config_name, seed,
+        results_csv,
+        mode,
+        config_name,
+        seed,
+        held_out_domain=held_out_domain,
+        domain_is_key=explicit_held_out_domain,
     )
     if indexed_result is not None and not overwrite:
         raise RuntimeError(
@@ -258,9 +310,10 @@ def run(
     run_dir.mkdir(parents=True, exist_ok=True)
     started_at = _utc_now()
     manifest = {
-        "schema_version": 2,
+        "schema_version": schema_version,
         "status": "running",
         "mode": mode,
+        "held_out_domain": held_out_domain,
         "config_name": config_name,
         "seed": seed,
         "task_scope": "single-pair-aligned-explicit-aspect",
@@ -270,7 +323,9 @@ def run(
     atomic_write_json(manifest_path, manifest)
 
     try:
-        train_examples, dev_examples, test_examples = _split_examples(mode)
+        train_examples, dev_examples, test_examples = _split_examples(
+            mode, held_out_domain,
+        )
         category_vocab, sentiment_vocab = build_label_vocab(train_examples)
         if not category_vocab or not sentiment_vocab:
             raise ValueError("Training split produced an empty label vocabulary")
@@ -365,7 +420,9 @@ def run(
             "test": len(test_examples),
         }
         summary = _summary_row(
+            schema_version,
             mode,
+            held_out_domain,
             config_name,
             seed,
             result,
@@ -376,7 +433,7 @@ def run(
             completed_at,
         )
         metrics_payload = {
-            "schema_version": 2,
+            "schema_version": schema_version,
             "task_scope": "single-pair-aligned-explicit-aspect",
             "selection": {
                 "metric": result["selection_metric"],
@@ -394,13 +451,14 @@ def run(
         atomic_torch_save(
             checkpoint_path,
             {
-                "schema_version": 2,
+                "schema_version": schema_version,
                 "model_state_dict": {
                     name: value.detach().cpu()
                     for name, value in result["model"].state_dict().items()
                 },
                 "model_name": experiment_cfg.model_name,
                 "mode": mode,
+                "held_out_domain": held_out_domain,
                 "config": asdict(experiment_cfg),
                 "seed": seed,
                 "task_scope": "single-pair-aligned-explicit-aspect",
@@ -445,13 +503,14 @@ def run(
             results_csv,
             summary,
             RESULTS_FIELDS,
-            key_fields=("mode", "config", "seed"),
+            key_fields=result_key_fields,
         )
         # The completed manifest is the final commit marker for the run.
         atomic_write_json(manifest_path, manifest)
 
         print(
-            f"[{mode}/{config_name}/seed={seed}] best_epoch={result['best_epoch']} "
+            f"[{mode}/{held_out_domain or 'all-domains'}/{config_name}/seed={seed}] "
+            f"best_epoch={result['best_epoch']} "
             f"dev_f1={summary['dev_micro_f1']:.4f} "
             f"test_f1={summary['test_micro_f1']:.4f} "
             f"device={result['device']}"
@@ -480,6 +539,14 @@ if __name__ == "__main__":
     )
     parser.add_argument("--seed", required=True, type=int)
     parser.add_argument(
+        "--held-out-domain",
+        choices=cfg.DOMAINS,
+        help=(
+            "domain excluded from train/dev and used as the official test fold; "
+            "valid only for crossdomain mode"
+        ),
+    )
+    parser.add_argument(
         "--device", default="auto",
         help="Training device (default: auto; selects CUDA, MPS, or CPU)",
     )
@@ -504,4 +571,5 @@ if __name__ == "__main__":
         output_dir=args.output_dir,
         results_csv=args.results_csv,
         overwrite=args.overwrite,
+        held_out_domain=args.held_out_domain,
     )

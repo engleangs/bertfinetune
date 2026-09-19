@@ -279,6 +279,82 @@ class PipelineSmokeTests(unittest.TestCase):
                 {("indomain", "standard", "7"), ("indomain", "weighted", "7")},
             )
 
+    def test_explicit_holdout_is_part_of_artifact_path_and_result_key(self):
+        train_examples, dev_examples, test_examples = _synthetic_split()
+        experiment = cfg.ExperimentConfig(
+            name="standard",
+            loss_type="standard",
+            model_name="tiny-local-model",
+            max_len=10,
+            batch_size=2,
+            epochs=1,
+            lr=0.01,
+            weight_decay=0.0,
+        )
+
+        def build_tiny_model(_experiment_cfg, num_categories, num_sentiments):
+            return TinyABSAModel(num_categories, num_sentiments)
+
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            temporary_root = Path(temporary_directory)
+            output_root = temporary_root / "lodo_runs"
+            results_csv = temporary_root / "results_lodo.csv"
+
+            with (
+                patch.object(
+                    run_study,
+                    "_split_examples",
+                    return_value=(train_examples, dev_examples, test_examples),
+                ),
+                patch.object(
+                    run_study.AutoTokenizer,
+                    "from_pretrained",
+                    side_effect=lambda _name: TinyTokenizer(),
+                ),
+                patch.object(run_study.cfg, "EXPERIMENTS", [experiment]),
+                patch.object(train_module, "build_model", side_effect=build_tiny_model),
+                redirect_stdout(io.StringIO()),
+                redirect_stderr(io.StringIO()),
+            ):
+                for held_out_domain in ("laptop", "food"):
+                    run_study.run(
+                        mode="crossdomain",
+                        held_out_domain=held_out_domain,
+                        config_name="standard",
+                        seed=7,
+                        device="cpu",
+                        output_dir=output_root,
+                        results_csv=results_csv,
+                    )
+
+            for held_out_domain in ("laptop", "food"):
+                run_dir = (
+                    output_root / held_out_domain / "standard" / "seed_7"
+                )
+                self.assertTrue((run_dir / "manifest.json").exists())
+                with (run_dir / "manifest.json").open(encoding="utf-8") as file:
+                    manifest = json.load(file)
+                self.assertEqual(manifest["held_out_domain"], held_out_domain)
+
+            with results_csv.open(encoding="utf-8", newline="") as file:
+                rows = list(csv.DictReader(file))
+            keys = {
+                (
+                    row["mode"],
+                    row["held_out_domain"],
+                    row["config"],
+                    row["seed"],
+                )
+                for row in rows
+            }
+            self.assertEqual(
+                keys,
+                {
+                    ("crossdomain", "laptop", "standard", "7"),
+                    ("crossdomain", "food", "standard", "7"),
+                },
+            )
+
 
 if __name__ == "__main__":
     unittest.main()
