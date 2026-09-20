@@ -1,0 +1,4 @@
+# Torch is installed separately from the official CUDA wheel index.
+transformers==5.17.0
+numpy==2.5.3
+tqdm==4.70.1

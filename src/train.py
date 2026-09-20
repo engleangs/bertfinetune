@@ -356,8 +356,16 @@ def train_one_config(
         model.parameters(), lr=cfg.lr, weight_decay=cfg.weight_decay,
     )
     total_steps = len(train_loader) * cfg.epochs
+    warmup_ratio = cfg.warmup_ratio
+    if not 0 <= warmup_ratio < 1:
+        raise ValueError("warmup_ratio must be in [0, 1)")
+    if cfg.max_grad_norm is not None and cfg.max_grad_norm <= 0:
+        raise ValueError("max_grad_norm must be positive")
+    warmup_steps = int(total_steps * warmup_ratio)
     scheduler = get_linear_schedule_with_warmup(
-        optimizer, num_warmup_steps=0, num_training_steps=total_steps,
+        optimizer,
+        num_warmup_steps=warmup_steps,
+        num_training_steps=total_steps,
     )
 
     history = []
@@ -389,6 +397,8 @@ def train_one_config(
 
             optimizer.zero_grad()
             loss.backward()
+            if cfg.max_grad_norm is not None:
+                torch.nn.utils.clip_grad_norm_(model.parameters(), cfg.max_grad_norm)
             optimizer.step()
             scheduler.step()
             epoch_loss += float(loss.item())

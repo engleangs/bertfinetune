@@ -11,8 +11,9 @@ TODO (do this FIRST, before running anything):
   notes/commit message. Changing these after seeing results defeats the point.
 """
 from dataclasses import dataclass, field
+from os import environ
 from pathlib import Path
-from typing import List
+from typing import List, Optional
 
 # Local destination populated by download_data.py.
 DATA_DIR = str(Path(__file__).resolve().parent / "data" / "m-absa")
@@ -38,7 +39,7 @@ RARE_CATEGORY_MAX_COUNT = 5
 SENTIMENTS = ["positive", "negative", "neutral", "conflict"]
 BIO_LABELS = ["O", "B-ASP", "I-ASP"]
 
-MODEL_NAME = "bert-base-uncased"
+MODEL_NAME = environ.get("BERT_MODEL_PATH", "bert-base-uncased")
 MAX_LEN = 128
 SEEDS = [13, 42, 123, 2024, 777]       # 5 seeds, per feedback. Cut to first 3 if week 4 is tight —
                                         # documented scope reduction, same pattern as your risk cards.
@@ -54,6 +55,8 @@ class ExperimentConfig:
     epochs: int = 5
     lr: float = 2e-5
     weight_decay: float = 0.01
+    warmup_ratio: float = 0.0
+    max_grad_norm: Optional[float] = None
     category_loss_weight: float = 1.0
     sentiment_loss_weight: float = 1.0
 

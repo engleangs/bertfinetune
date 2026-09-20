@@ -58,3 +58,6 @@ ai-artifacts/*
 data
 artifacts/
 outputs
+model_cache/
+.install-tmp/
+.pip-cache/

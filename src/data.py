@@ -74,35 +74,39 @@ def load_domain_file(path: str, domain: str) -> List[Example]:
         return [parse_line(line, domain=domain) for line in f if line.strip()]
 
 
-def build_indomain_split(data_dir: str = cfg.DATA_DIR) -> Tuple[List[Example], List[Example], List[Example]]:
-    """Original design: official per-domain files, ALL 7 domains, combined.
-    This is the protected core comparison — unchanged data condition."""
-    train, dev, test = [], [], []
+def build_indomain_train_dev(data_dir: str = cfg.DATA_DIR) -> Tuple[List[Example], List[Example]]:
+    """Read only the official train and development files for all domains."""
+    train, dev = [], []
     for domain in cfg.DOMAINS:
         files = cfg.DOMAIN_FILES[domain]
         train += load_domain_file(os.path.join(data_dir, files["train"]), domain)
         dev += load_domain_file(os.path.join(data_dir, files["dev"]), domain)
+    return train, dev
+
+
+def build_indomain_split(data_dir: str = cfg.DATA_DIR) -> Tuple[List[Example], List[Example], List[Example]]:
+    """Original design: official per-domain files, ALL 7 domains, combined."""
+    train, dev = build_indomain_train_dev(data_dir)
+    test = []
+    for domain in cfg.DOMAINS:
+        files = cfg.DOMAIN_FILES[domain]
         test += load_domain_file(os.path.join(data_dir, files["test"]), domain)
     return train, dev, test
 
 
-def build_crossdomain_split(
+def build_crossdomain_train_dev(
     data_dir: str = cfg.DATA_DIR,
     train_domains: Optional[List[str]] = None,
     test_domain: Optional[str] = None,
-) -> Tuple[List[Example], List[Example], List[Example]]:
-    """Pool source-domain train/dev and hold one entire domain out.
-
-    The current protocol combines the held-out domain's train, dev, and test
-    files for evaluation. Freeze this choice before running cross-domain work;
-    use the official test file only if that is the pre-registered decision.
-    """
+) -> Tuple[List[Example], List[Example]]:
+    """Read source-domain train/dev without opening held-out-domain files."""
     train_domains = train_domains or cfg.TRAIN_DOMAINS
     test_domain = test_domain or cfg.HOLD_OUT_DOMAIN
-    assert test_domain not in train_domains, (
-        f"{test_domain} must NOT be in train_domains — that would leak the held-out "
-        f"domain into training and silently invalidate the whole experiment."
-    )
+    if test_domain in train_domains:
+        raise ValueError(
+            f"{test_domain} must NOT be in train_domains — that would leak the held-out "
+            "domain into training and silently invalidate the whole experiment."
+        )
 
     train, dev = [], []
     for domain in train_domains:
@@ -110,14 +114,24 @@ def build_crossdomain_split(
         train += load_domain_file(os.path.join(data_dir, files["train"]), domain)
         dev += load_domain_file(os.path.join(data_dir, files["dev"]), domain)
 
+    return train, dev
+
+
+def build_crossdomain_split(
+    data_dir: str = cfg.DATA_DIR,
+    train_domains: Optional[List[str]] = None,
+    test_domain: Optional[str] = None,
+) -> Tuple[List[Example], List[Example], List[Example]]:
+    """Pool source train/dev and evaluate on the held-out official test file."""
+    test_domain = test_domain or cfg.HOLD_OUT_DOMAIN
+    train, dev = build_crossdomain_train_dev(
+        data_dir=data_dir,
+        train_domains=train_domains,
+        test_domain=test_domain,
+    )
     test_files = cfg.DOMAIN_FILES[test_domain]
-    # This scaffold currently pools held-out train+dev+test for evaluation.
-    # Keep cross-domain runs disabled until the team freezes this choice and
-    # the policy for categories that do not occur in the source domains.
-    test = (
-        #load_domain_file(os.path.join(data_dir, test_files["train"]), test_domain)
-        #+ load_domain_file(os.path.join(data_dir, test_files["dev"]), test_domain)
-         load_domain_file(os.path.join(data_dir, test_files["test"]), test_domain)
+    test = load_domain_file(
+        os.path.join(data_dir, test_files["test"]), test_domain,
     )
     return train, dev, test
 

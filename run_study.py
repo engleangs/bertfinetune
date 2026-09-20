@@ -213,6 +213,7 @@ def run(
     results_csv=DEFAULT_RESULTS_CSV,
     overwrite: bool = False,
     held_out_domain=None,
+    experiment_override=None,
 ):
     """Train, select on dev, test once, and store a reproducible run."""
     experiment_cfg = next(
@@ -224,6 +225,13 @@ def run(
     )
     if experiment_cfg is None:
         raise ValueError(f"Unknown config: {config_name}")
+    if experiment_override is not None:
+        if (
+            experiment_override.name != config_name
+            or experiment_override.loss_type != experiment_cfg.loss_type
+        ):
+            raise ValueError("Experiment override must preserve the selected loss configuration")
+        experiment_cfg = experiment_override
 
     explicit_held_out_domain = held_out_domain is not None
     if mode == "indomain" and explicit_held_out_domain:
@@ -259,6 +267,13 @@ def run(
             manifest_on_disk = json.load(file)
 
     if manifest_on_disk and manifest_on_disk.get("status") == "complete" and not overwrite:
+        if (
+            experiment_override is not None
+            and manifest_on_disk.get("configuration") != asdict(experiment_cfg)
+        ):
+            raise RuntimeError(
+                f"Completed run has different training settings: {run_dir}"
+            )
         required_artifacts = [
             metrics_path,
             checkpoint_path,
