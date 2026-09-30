@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import gzip
 import json
 from pathlib import Path
 from typing import Callable, Dict, Iterable, List, Sequence, Tuple
@@ -13,7 +14,9 @@ Triplet = Tuple[str, str, str]
 def load_prediction_file(path: Path) -> Tuple[List[List[Triplet]], List[List[Triplet]]]:
     """Load gold and predicted triplets from a saved JSONL artifact."""
     gold, predicted = [], []
-    with Path(path).open(encoding="utf-8") as handle:
+    path = Path(path)
+    opener = gzip.open if path.name.endswith(".jsonl.gz") else open
+    with opener(path, "rt", encoding="utf-8") as handle:
         for line_number, line in enumerate(handle, start=1):
             if not line.strip():
                 continue

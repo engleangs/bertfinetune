@@ -1,11 +1,15 @@
 """Training, validation, checkpoint selection, and predicted-span inference."""
 
 import math
+import random
 import time
+from collections import Counter
+from dataclasses import asdict
 from pathlib import Path
 from typing import Dict, List, Optional, Sequence, Tuple
 
 import torch
+import numpy as np
 from torch.optim import AdamW
 from torch.utils.data import DataLoader
 from tqdm import tqdm
@@ -301,7 +305,13 @@ def evaluate_model(
             average_loss += cfg.sentiment_loss_weight * (
                 task_loss_sums["sentiment"] / task_label_counts["sentiment"]
             )
-    return _evaluation_report(records, average_loss, rare_category_labels), records
+    report = _evaluation_report(records, average_loss, rare_category_labels)
+    report["loss_components"] = {
+        task: task_loss_sums[task] / count if count else None
+        for task, count in task_label_counts.items()
+    }
+    report["loss_label_counts"] = task_label_counts
+    return report, records
 
 
 def train_one_config(
@@ -315,6 +325,9 @@ def train_one_config(
     checkpoint_path: Optional[Path] = None,
     history_path: Optional[Path] = None,
     rare_category_labels: Sequence[str] = (),
+    resume_path: Optional[Path] = None,
+    resume: bool = False,
+    run_identity: Optional[str] = None,
 ):
     """Train for the fixed epoch budget and restore the best dev checkpoint."""
     set_seed(seed)
@@ -374,8 +387,47 @@ def train_one_config(
     best_score = -math.inf
     best_dev_loss = math.inf
     best_dev_metrics: Dict = {}
+    start_epoch = 0
+    previous_time = 0.0
+    signature = {
+        "configuration": asdict(cfg), "seed": seed,
+        "category_vocab": list(category_vocab), "sentiment_vocab": list(sentiment_vocab),
+        "train_size": len(train_ds), "dev_size": len(val_ds),
+        "total_steps": total_steps, "run_identity": run_identity,
+    }
+    label_statistics = {
+        head: {"counts": dict(Counter(labels)),
+               "weights": fn.weight.detach().cpu().tolist() if fn.weight is not None else None}
+        for head, labels, fn in zip(("bio", "category", "sentiment"),
+                                   (bio_counts, category_counts, sentiment_counts), training_loss_fns)
+    }
+    if resume:
+        if resume_path is None or not Path(resume_path).is_file():
+            raise ValueError("Resume requested without an epoch checkpoint")
+        # Only load checkpoints created in this user's own study directory.
+        saved = torch.load(resume_path, map_location="cpu", weights_only=False)
+        if saved.get("signature") != signature:
+            raise ValueError("Resume checkpoint configuration/data identity does not match")
+        model.load_state_dict(saved["model_state_dict"])
+        optimizer.load_state_dict(saved["optimizer_state_dict"])
+        scheduler.load_state_dict(saved["scheduler_state_dict"])
+        history = saved["history"]
+        start_epoch = saved["next_epoch"]
+        best_state = saved["best_state"]
+        best_epoch = saved["best_epoch"]
+        best_score = saved["best_score"]
+        best_dev_loss = saved["best_dev_loss"]
+        best_dev_metrics = saved["best_dev_metrics"]
+        previous_time = saved["elapsed_seconds"]
+        generator.set_state(saved["loader_rng_state"])
+        random.setstate(saved["python_rng_state"])
+        np.random.set_state(saved["numpy_rng_state"])
+        torch.set_rng_state(saved["torch_rng_state"])
+        if saved["cuda_rng_states"] is not None and torch.cuda.is_available():
+            torch.cuda.set_rng_state_all(saved["cuda_rng_states"])
+        print(f"Resuming after completed epoch {start_epoch}; unfinished epoch work is repeated.")
 
-    for epoch in range(cfg.epochs):
+    for epoch in range(start_epoch, cfg.epochs):
         model.train()
         epoch_loss = 0.0
         for batch in tqdm(
@@ -394,6 +446,8 @@ def train_one_config(
                 bio_logits, category_logits, sentiment_logits, batch,
                 training_loss_fns, cfg, device,
             )
+            if not torch.isfinite(loss):
+                raise FloatingPointError(f"Non-finite training loss at epoch {epoch + 1}")
 
             optimizer.zero_grad()
             loss.backward()
@@ -416,6 +470,8 @@ def train_one_config(
             description=f"dev epoch {epoch + 1}",
         )
         dev_score = dev_metrics["complete_triplet"]["micro_f1"]
+        if not math.isfinite(dev_score) or (dev_metrics["loss"] is not None and not math.isfinite(dev_metrics["loss"])):
+            raise FloatingPointError(f"Non-finite development metric at epoch {epoch + 1}")
         dev_loss = (
             dev_metrics["loss"]
             if dev_metrics["loss"] is not None else math.inf
@@ -429,6 +485,8 @@ def train_one_config(
             "dev_micro_f1": dev_score,
             "dev_macro_f1": dev_metrics["complete_triplet"]["macro_f1"],
             "dev_rare_category_recall": dev_metrics["rare_category_recall"],
+            "learning_rate_after_epoch": optimizer.param_groups[0]["lr"],
+            "dev_loss_components": dev_metrics.get("loss_components", {}),
         }
         history.append(history_row)
 
@@ -459,6 +517,22 @@ def train_one_config(
 
         if history_path is not None:
             atomic_write_json(history_path, history)
+        if resume_path is not None:
+            atomic_torch_save(resume_path, {
+                "signature": signature,
+                "model_state_dict": {k: v.detach().cpu().clone() for k, v in model.state_dict().items()},
+                "optimizer_state_dict": optimizer.state_dict(),
+                "scheduler_state_dict": scheduler.state_dict(),
+                "next_epoch": epoch + 1, "history": history,
+                "best_state": best_state, "best_epoch": best_epoch,
+                "best_score": best_score, "best_dev_loss": best_dev_loss,
+                "best_dev_metrics": best_dev_metrics,
+                "elapsed_seconds": previous_time + time.time() - start_time,
+                "loader_rng_state": generator.get_state(),
+                "python_rng_state": random.getstate(), "numpy_rng_state": np.random.get_state(),
+                "torch_rng_state": torch.get_rng_state(),
+                "cuda_rng_states": torch.cuda.get_rng_state_all() if torch.cuda.is_available() else None,
+            })
         dev_loss_text = (
             f"{dev_metrics['loss']:.4f}"
             if dev_metrics["loss"] is not None else "n/a"
@@ -471,14 +545,22 @@ def train_one_config(
     if best_state is None:
         raise RuntimeError("Training completed without producing a checkpoint")
     model.load_state_dict(best_state)
+    if checkpoint_path is not None and resume_path is not None:
+        # Also repair a best-file write interrupted between the two atomic saves.
+        atomic_torch_save(checkpoint_path, {
+            "model_state_dict": best_state, "best_epoch": best_epoch,
+            "selection_metric": "dev_complete_triplet_micro_f1", "selection_score": best_score,
+            "dev_loss": best_dev_metrics["loss"],
+        })
 
     return {
         "model": model,
         "trainable_params": n_trainable,
-        "training_time_sec": time.time() - start_time,
+        "training_time_sec": previous_time + time.time() - start_time,
         "device": str(device),
         "history": history,
         "best_epoch": best_epoch,
         "selection_metric": "dev_complete_triplet_micro_f1",
         "best_dev_metrics": best_dev_metrics,
+        "training_label_statistics": label_statistics,
     }

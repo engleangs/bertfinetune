@@ -1,14 +1,12 @@
 """Atomic persistence helpers for checkpoints, predictions, and result rows."""
 
 import csv
+import gzip
 import json
 import os
 import tempfile
 from pathlib import Path
 from typing import Iterable, Mapping, Sequence
-
-import torch
-
 
 def _temporary_path(destination: Path) -> Path:
     destination.parent.mkdir(parents=True, exist_ok=True)
@@ -47,10 +45,26 @@ def atomic_write_jsonl(destination, rows: Iterable[Mapping]) -> None:
 
 
 def atomic_torch_save(destination, payload) -> None:
+    import torch
+
     destination = Path(destination)
     temporary = _temporary_path(destination)
     try:
         torch.save(payload, temporary)
+        os.replace(temporary, destination)
+    finally:
+        if temporary.exists():
+            temporary.unlink()
+
+
+def atomic_write_jsonl_gzip(destination, rows: Iterable[Mapping]) -> None:
+    """Keep prediction-level evidence without copying model weights."""
+    destination = Path(destination)
+    temporary = _temporary_path(destination)
+    try:
+        with gzip.open(temporary, "wt", encoding="utf-8", newline="\n") as file:
+            for row in rows:
+                file.write(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n")
         os.replace(temporary, destination)
     finally:
         if temporary.exists():

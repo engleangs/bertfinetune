@@ -34,8 +34,8 @@ TRAIN_DOMAINS = [d for d in DOMAINS if d != HOLD_OUT_DOMAIN]
 MIN_EFFECT_SIZE = 0.02                # TODO: team decision — F1 points that count as "improvement"
 RARE_CATEGORY_MAX_COUNT = 5
 # Raw M-ABSA files mix long and abbreviated polarity names. src.data
-# normalizes those aliases to these canonical labels. ``conflict`` occurs in
-# a small number of restaurant examples and remains a distinct fourth class.
+# normalizes those aliases to these canonical labels. Raw ``conflict`` labels
+# occur in coursera, food, and hotel; the clean-study copy removes those rows.
 SENTIMENTS = ["positive", "negative", "neutral", "conflict"]
 BIO_LABELS = ["O", "B-ASP", "I-ASP"]
 
