@@ -1,0 +1,432 @@
+{
+  "folds": {
+    "coursera": {
+      "candidates": [
+        {
+          "lr": 2e-05,
+          "mean_dev_micro_f1": 0.46052295183322356,
+          "run_keys": [
+            "search/clean/coursera/2em05/standard/seed_13",
+            "search/clean/coursera/2em05/standard/seed_42",
+            "search/clean/coursera/2em05/weighted/seed_13",
+            "search/clean/coursera/2em05/weighted/seed_42"
+          ]
+        },
+        {
+          "lr": 3e-05,
+          "mean_dev_micro_f1": 0.46586636251138946,
+          "run_keys": [
+            "search/clean/coursera/3em05/standard/seed_13",
+            "search/clean/coursera/3em05/standard/seed_42",
+            "search/clean/coursera/3em05/weighted/seed_13",
+            "search/clean/coursera/3em05/weighted/seed_42"
+          ]
+        },
+        {
+          "lr": 5e-05,
+          "mean_dev_micro_f1": 0.4781078245818554,
+          "run_keys": [
+            "search/clean/coursera/5em05/standard/seed_13",
+            "search/clean/coursera/5em05/standard/seed_42",
+            "search/clean/coursera/5em05/weighted/seed_13",
+            "search/clean/coursera/5em05/weighted/seed_42"
+          ]
+        }
+      ],
+      "lr": 5e-05,
+      "selected_search_keys": [
+        "search/clean/coursera/5em05/standard/seed_13",
+        "search/clean/coursera/5em05/standard/seed_42",
+        "search/clean/coursera/5em05/weighted/seed_13",
+        "search/clean/coursera/5em05/weighted/seed_42"
+      ]
+    },
+    "food": {
+      "candidates": [
+        {
+          "lr": 2e-05,
+          "mean_dev_micro_f1": 0.47063946804841017,
+          "run_keys": [
+            "search/clean/food/2em05/standard/seed_13",
+            "search/clean/food/2em05/standard/seed_42",
+            "search/clean/food/2em05/weighted/seed_13",
+            "search/clean/food/2em05/weighted/seed_42"
+          ]
+        },
+        {
+          "lr": 3e-05,
+          "mean_dev_micro_f1": 0.4820463976681387,
+          "run_keys": [
+            "search/clean/food/3em05/standard/seed_13",
+            "search/clean/food/3em05/standard/seed_42",
+            "search/clean/food/3em05/weighted/seed_13",
+            "search/clean/food/3em05/weighted/seed_42"
+          ]
+        },
+        {
+          "lr": 5e-05,
+          "mean_dev_micro_f1": 0.487295228328976,
+          "run_keys": [
+            "search/clean/food/5em05/standard/seed_13",
+            "search/clean/food/5em05/standard/seed_42",
+            "search/clean/food/5em05/weighted/seed_13",
+            "search/clean/food/5em05/weighted/seed_42"
+          ]
+        }
+      ],
+      "lr": 5e-05,
+      "selected_search_keys": [
+        "search/clean/food/5em05/standard/seed_13",
+        "search/clean/food/5em05/standard/seed_42",
+        "search/clean/food/5em05/weighted/seed_13",
+        "search/clean/food/5em05/weighted/seed_42"
+      ]
+    },
+    "hotel": {
+      "candidates": [
+        {
+          "lr": 2e-05,
+          "mean_dev_micro_f1": 0.469644647312684,
+          "run_keys": [
+            "search/clean/hotel/2em05/standard/seed_13",
+            "search/clean/hotel/2em05/standard/seed_42",
+            "search/clean/hotel/2em05/weighted/seed_13",
+            "search/clean/hotel/2em05/weighted/seed_42"
+          ]
+        },
+        {
+          "lr": 3e-05,
+          "mean_dev_micro_f1": 0.47976441667220804,
+          "run_keys": [
+            "search/clean/hotel/3em05/standard/seed_13",
+            "search/clean/hotel/3em05/standard/seed_42",
+            "search/clean/hotel/3em05/weighted/seed_13",
+            "search/clean/hotel/3em05/weighted/seed_42"
+          ]
+        },
+        {
+          "lr": 5e-05,
+          "mean_dev_micro_f1": 0.4879146245094816,
+          "run_keys": [
+            "search/clean/hotel/5em05/standard/seed_13",
+            "search/clean/hotel/5em05/standard/seed_42",
+            "search/clean/hotel/5em05/weighted/seed_13",
+            "search/clean/hotel/5em05/weighted/seed_42"
+          ]
+        }
+      ],
+      "lr": 5e-05,
+      "selected_search_keys": [
+        "search/clean/hotel/5em05/standard/seed_13",
+        "search/clean/hotel/5em05/standard/seed_42",
+        "search/clean/hotel/5em05/weighted/seed_13",
+        "search/clean/hotel/5em05/weighted/seed_42"
+      ]
+    },
+    "indomain": {
+      "candidates": [
+        {
+          "lr": 2e-05,
+          "mean_dev_micro_f1": 0.46050165411169736,
+          "run_keys": [
+            "search/clean/indomain/2em05/standard/seed_13",
+            "search/clean/indomain/2em05/standard/seed_42",
+            "search/clean/indomain/2em05/weighted/seed_13",
+            "search/clean/indomain/2em05/weighted/seed_42"
+          ]
+        },
+        {
+          "lr": 3e-05,
+          "mean_dev_micro_f1": 0.47230597813421865,
+          "run_keys": [
+            "search/clean/indomain/3em05/standard/seed_13",
+            "search/clean/indomain/3em05/standard/seed_42",
+            "search/clean/indomain/3em05/weighted/seed_13",
+            "search/clean/indomain/3em05/weighted/seed_42"
+          ]
+        },
+        {
+          "lr": 5e-05,
+          "mean_dev_micro_f1": 0.4802201540809364,
+          "run_keys": [
+            "search/clean/indomain/5em05/standard/seed_13",
+            "search/clean/indomain/5em05/standard/seed_42",
+            "search/clean/indomain/5em05/weighted/seed_13",
+            "search/clean/indomain/5em05/weighted/seed_42"
+          ]
+        }
+      ],
+      "lr": 5e-05,
+      "selected_search_keys": [
+        "search/clean/indomain/5em05/standard/seed_13",
+        "search/clean/indomain/5em05/standard/seed_42",
+        "search/clean/indomain/5em05/weighted/seed_13",
+        "search/clean/indomain/5em05/weighted/seed_42"
+      ]
+    },
+    "laptop": {
+      "candidates": [
+        {
+          "lr": 2e-05,
+          "mean_dev_micro_f1": 0.474851878246779,
+          "run_keys": [
+            "search/clean/laptop/2em05/standard/seed_13",
+            "search/clean/laptop/2em05/standard/seed_42",
+            "search/clean/laptop/2em05/weighted/seed_13",
+            "search/clean/laptop/2em05/weighted/seed_42"
+          ]
+        },
+        {
+          "lr": 3e-05,
+          "mean_dev_micro_f1": 0.4843220972240505,
+          "run_keys": [
+            "search/clean/laptop/3em05/standard/seed_13",
+            "search/clean/laptop/3em05/standard/seed_42",
+            "search/clean/laptop/3em05/weighted/seed_13",
+            "search/clean/laptop/3em05/weighted/seed_42"
+          ]
+        },
+        {
+          "lr": 5e-05,
+          "mean_dev_micro_f1": 0.4863595891737174,
+          "run_keys": [
+            "search/clean/laptop/5em05/standard/seed_13",
+            "search/clean/laptop/5em05/standard/seed_42",
+            "search/clean/laptop/5em05/weighted/seed_13",
+            "search/clean/laptop/5em05/weighted/seed_42"
+          ]
+        }
+      ],
+      "lr": 5e-05,
+      "selected_search_keys": [
+        "search/clean/laptop/5em05/standard/seed_13",
+        "search/clean/laptop/5em05/standard/seed_42",
+        "search/clean/laptop/5em05/weighted/seed_13",
+        "search/clean/laptop/5em05/weighted/seed_42"
+      ]
+    },
+    "phone": {
+      "candidates": [
+        {
+          "lr": 2e-05,
+          "mean_dev_micro_f1": 0.45676061766899273,
+          "run_keys": [
+            "search/clean/phone/2em05/standard/seed_13",
+            "search/clean/phone/2em05/standard/seed_42",
+            "search/clean/phone/2em05/weighted/seed_13",
+            "search/clean/phone/2em05/weighted/seed_42"
+          ]
+        },
+        {
+          "lr": 3e-05,
+          "mean_dev_micro_f1": 0.4635107892359852,
+          "run_keys": [
+            "search/clean/phone/3em05/standard/seed_13",
+            "search/clean/phone/3em05/standard/seed_42",
+            "search/clean/phone/3em05/weighted/seed_13",
+            "search/clean/phone/3em05/weighted/seed_42"
+          ]
+        },
+        {
+          "lr": 5e-05,
+          "mean_dev_micro_f1": 0.4674080030779217,
+          "run_keys": [
+            "search/clean/phone/5em05/standard/seed_13",
+            "search/clean/phone/5em05/standard/seed_42",
+            "search/clean/phone/5em05/weighted/seed_13",
+            "search/clean/phone/5em05/weighted/seed_42"
+          ]
+        }
+      ],
+      "lr": 5e-05,
+      "selected_search_keys": [
+        "search/clean/phone/5em05/standard/seed_13",
+        "search/clean/phone/5em05/standard/seed_42",
+        "search/clean/phone/5em05/weighted/seed_13",
+        "search/clean/phone/5em05/weighted/seed_42"
+      ]
+    },
+    "restaurant": {
+      "candidates": [
+        {
+          "lr": 2e-05,
+          "mean_dev_micro_f1": 0.43793695012399697,
+          "run_keys": [
+            "search/clean/restaurant/2em05/standard/seed_13",
+            "search/clean/restaurant/2em05/standard/seed_42",
+            "search/clean/restaurant/2em05/weighted/seed_13",
+            "search/clean/restaurant/2em05/weighted/seed_42"
+          ]
+        },
+        {
+          "lr": 3e-05,
+          "mean_dev_micro_f1": 0.44427218025532633,
+          "run_keys": [
+            "search/clean/restaurant/3em05/standard/seed_13",
+            "search/clean/restaurant/3em05/standard/seed_42",
+            "search/clean/restaurant/3em05/weighted/seed_13",
+            "search/clean/restaurant/3em05/weighted/seed_42"
+          ]
+        },
+        {
+          "lr": 5e-05,
+          "mean_dev_micro_f1": 0.4466937311036616,
+          "run_keys": [
+            "search/clean/restaurant/5em05/standard/seed_13",
+            "search/clean/restaurant/5em05/standard/seed_42",
+            "search/clean/restaurant/5em05/weighted/seed_13",
+            "search/clean/restaurant/5em05/weighted/seed_42"
+          ]
+        }
+      ],
+      "lr": 5e-05,
+      "selected_search_keys": [
+        "search/clean/restaurant/5em05/standard/seed_13",
+        "search/clean/restaurant/5em05/standard/seed_42",
+        "search/clean/restaurant/5em05/weighted/seed_13",
+        "search/clean/restaurant/5em05/weighted/seed_42"
+      ]
+    },
+    "sight": {
+      "candidates": [
+        {
+          "lr": 2e-05,
+          "mean_dev_micro_f1": 0.471457352449244,
+          "run_keys": [
+            "search/clean/sight/2em05/standard/seed_13",
+            "search/clean/sight/2em05/standard/seed_42",
+            "search/clean/sight/2em05/weighted/seed_13",
+            "search/clean/sight/2em05/weighted/seed_42"
+          ]
+        },
+        {
+          "lr": 3e-05,
+          "mean_dev_micro_f1": 0.4842398041508051,
+          "run_keys": [
+            "search/clean/sight/3em05/standard/seed_13",
+            "search/clean/sight/3em05/standard/seed_42",
+            "search/clean/sight/3em05/weighted/seed_13",
+            "search/clean/sight/3em05/weighted/seed_42"
+          ]
+        },
+        {
+          "lr": 5e-05,
+          "mean_dev_micro_f1": 0.49054217496015345,
+          "run_keys": [
+            "search/clean/sight/5em05/standard/seed_13",
+            "search/clean/sight/5em05/standard/seed_42",
+            "search/clean/sight/5em05/weighted/seed_13",
+            "search/clean/sight/5em05/weighted/seed_42"
+          ]
+        }
+      ],
+      "lr": 5e-05,
+      "selected_search_keys": [
+        "search/clean/sight/5em05/standard/seed_13",
+        "search/clean/sight/5em05/standard/seed_42",
+        "search/clean/sight/5em05/weighted/seed_13",
+        "search/clean/sight/5em05/weighted/seed_42"
+      ]
+    }
+  },
+  "rule": "per-fold mean development exact-triplet micro-F1 over two losses and seeds 13/42; ties use lower learning rate",
+  "source_summary_hashes": {
+    "search/clean/coursera/2em05/standard/seed_13": "f76343dc55976e19f1a869e59c094498aa3c2fb20d9a69011f3067954e2bd202",
+    "search/clean/coursera/2em05/standard/seed_42": "7779075d55ee95f7471099bb9baee2793ef17b19936ddc35dd9152d41a9476cc",
+    "search/clean/coursera/2em05/weighted/seed_13": "afef6c95fbf4302f11c3fa4109bc88efa5b5a21b18e445713b7ad5bf14b91f79",
+    "search/clean/coursera/2em05/weighted/seed_42": "e3c1060e9cbc4a661dc86d17765d3da7fb2ad7188d49f33ae16e4f28ca33fdd6",
+    "search/clean/coursera/3em05/standard/seed_13": "30e5123fc395c9f85b519aec2411c3142b6a87925c6f0ae5e6a485d44fe1d59a",
+    "search/clean/coursera/3em05/standard/seed_42": "4774e90e9c5869f4f005c5bc22bc56b1722d37e0dfd367d57e043e1ea6822bc6",
+    "search/clean/coursera/3em05/weighted/seed_13": "cdf3e0c0f0d6c461fc63c3d0e1b8d93e1b78f461365acd6eb84f19a6bd807d6c",
+    "search/clean/coursera/3em05/weighted/seed_42": "f07e29a1f368d5036732a9633a527f0b8426ed120129480d022b64eefe4e73b4",
+    "search/clean/coursera/5em05/standard/seed_13": "dfc09edd2df70882a26c2c5d49169ce38d62e791d3387fc1ee6cfd56300f1336",
+    "search/clean/coursera/5em05/standard/seed_42": "2f488ca149908464737422e7ba22e575eb2dbfbe7ba01344415b79783201e9eb",
+    "search/clean/coursera/5em05/weighted/seed_13": "2368633d7cbd562670a7adeba12cadfdf658dcf1df94478b5b855ba82221fcf6",
+    "search/clean/coursera/5em05/weighted/seed_42": "00ed3c2047124ecc492643cda1c55beea524b20b26465900763bd22556b69545",
+    "search/clean/food/2em05/standard/seed_13": "87d1dc99db58054340b81569c2ddaefdf60c63cbd684b97d74c2b7ada70ce56f",
+    "search/clean/food/2em05/standard/seed_42": "7e675e834155747529b18450ddea83aa0f3363ed9c113f0a959e40602e5ce653",
+    "search/clean/food/2em05/weighted/seed_13": "7393f3b6e691c1a8e085be8dd63bc1fde8b866ca8be1e9fd17c677af485633ff",
+    "search/clean/food/2em05/weighted/seed_42": "282d225ddfd63e2a222f24391dcfef53cc8149c1db18a8269413f2a23cadcb91",
+    "search/clean/food/3em05/standard/seed_13": "53d21d31fc4b4b8d84589a5bc8a93acd557fa7de7801aef50f419e00e7c782c8",
+    "search/clean/food/3em05/standard/seed_42": "486da9ff652a54a4dc7fe4d33a54bc01ad2c62437ef207616a8c1a2939062478",
+    "search/clean/food/3em05/weighted/seed_13": "f1ffc82944585b0d590003700f350cbc76cf3bfb6f355436058761d8234c025f",
+    "search/clean/food/3em05/weighted/seed_42": "c6049d8888fe7b7ab8b882c61b5232b43ae45b846430e8c6f17b51bffd6becca",
+    "search/clean/food/5em05/standard/seed_13": "2c5d8c7e68b4ff0a531a9e080dfd4044930e6ee17c768fa2b87a512f7f13e376",
+    "search/clean/food/5em05/standard/seed_42": "129057a4f7deac9935273deedd11a7a22da7e7f7d4aafcbfee3518211cbb4263",
+    "search/clean/food/5em05/weighted/seed_13": "f1fc123f24c5a0bdfcf14db325d77efcbb83459e788e63dec23d574a14c95c79",
+    "search/clean/food/5em05/weighted/seed_42": "f8491dad73a4af62a46cf4fc0d829be8e436dac05a9581201da0b22e72e29342",
+    "search/clean/hotel/2em05/standard/seed_13": "39658d2abf02135ea0ec989720e2e8aa76718d3c3c090a89543d158399fec725",
+    "search/clean/hotel/2em05/standard/seed_42": "2f4f8e4a3b39819108c36f6e5a81c7fd616b60142263e1ac18ee9af94aa9f423",
+    "search/clean/hotel/2em05/weighted/seed_13": "f6c11aff58310634c104ece9d40fcc6e39df1d798415b4ce5ad625e11a6b05ce",
+    "search/clean/hotel/2em05/weighted/seed_42": "84cee8f335cda6979592494e3bdb6df3691711f09fe48fd1e396b43fbd9819ec",
+    "search/clean/hotel/3em05/standard/seed_13": "fe831e5c2bbe474e04bc36f686e57d344d64f38ede9fcdf9c07082f10c6a331b",
+    "search/clean/hotel/3em05/standard/seed_42": "425c91fb99beb36703e51da75892927c1269459a0cb1c5abc6821afde4072b03",
+    "search/clean/hotel/3em05/weighted/seed_13": "e87fd34642b5b3a9df1958a72f065ad0136c1ef7faf662d46811b6b1bb88af1a",
+    "search/clean/hotel/3em05/weighted/seed_42": "561db699e9d93066cdc9d3d1cc587e6d10e6a6bd0c023f8868ee36210f4e5066",
+    "search/clean/hotel/5em05/standard/seed_13": "2d44cc6a9fb092f014d7f3916e02568b93759312ee09fdfbf56d069cef969f46",
+    "search/clean/hotel/5em05/standard/seed_42": "a5a2a7a74787d8cae47d5d7619157f794cbf588b1f302a5214501d79118532e9",
+    "search/clean/hotel/5em05/weighted/seed_13": "fda344ea176eb3478461fc5b6d4ca6182dd1dd817b7c1678c5f8e28b9ef7e686",
+    "search/clean/hotel/5em05/weighted/seed_42": "9bc715a7bf0aa02c12afb4a8a3b4a526db71a69669912c9205ff8dfee1623a7b",
+    "search/clean/indomain/2em05/standard/seed_13": "a09291c899b066fa1d7540f40ba91bb2111ae208a6a0f74c6266a1107cf35c0e",
+    "search/clean/indomain/2em05/standard/seed_42": "04fab438b5dab5461410adc95af40acc9186bf6d39b3fb545642d38fe3d1a8a7",
+    "search/clean/indomain/2em05/weighted/seed_13": "95ecc57c6cd2e0926c532172d8e29f475aad52f47fd5faf34bba36270b4e52f8",
+    "search/clean/indomain/2em05/weighted/seed_42": "7780cabe9c3e4186f72982a35904b9083d39a134451a680891791f13b69c003c",
+    "search/clean/indomain/3em05/standard/seed_13": "80110d138eb81336b0a6c77e6e53a8cf8e99a810faca57ac3e50c2bce0876b49",
+    "search/clean/indomain/3em05/standard/seed_42": "e00c303675bf59d73b2e5f9f4cbfa507a27d08a23c99680879ff333207b08d98",
+    "search/clean/indomain/3em05/weighted/seed_13": "43425424df15c0a8e468a61c0fd0647ac61c3feae0c8faf3258bbb190763e006",
+    "search/clean/indomain/3em05/weighted/seed_42": "765dc4652f890537f4fdac3cc738bb9f95efe7d41129971e8f58325263c2dfbc",
+    "search/clean/indomain/5em05/standard/seed_13": "fcd87e1bda279676b14de6c7346d84336b8138671f825286778dc2a7af77b188",
+    "search/clean/indomain/5em05/standard/seed_42": "a57be972e4bf1ec99c925d5bd48139393adc48c445901e6ac221ab21022e6eaf",
+    "search/clean/indomain/5em05/weighted/seed_13": "853ed2e40fd79162b286946057a3ff88ec92b2adaab3db8d3c239ab0a149343f",
+    "search/clean/indomain/5em05/weighted/seed_42": "59592d40177ad3d34184ad96b157808d2e3a056ecc87df0ef3b8cc6b5b0049a8",
+    "search/clean/laptop/2em05/standard/seed_13": "ba7bb23f23aa17e8cac10456a69140d4cff796af3e6a36d1128945b17abfe3a9",
+    "search/clean/laptop/2em05/standard/seed_42": "dd1cf7c9d9ae6d2876de14e517bc3028e07d0168e035862afa188dd9c64c32a0",
+    "search/clean/laptop/2em05/weighted/seed_13": "d21a085f062620bc196e9b0e7fe1283e30b79f8884d007f003f7b44679de1847",
+    "search/clean/laptop/2em05/weighted/seed_42": "583aae688923802583dec370078c6e4f367e1723bde02da7a1ff70d2a5d82a42",
+    "search/clean/laptop/3em05/standard/seed_13": "ddef35c0637ebfb8357912d9ba816eceead99ff6ae8ab499acee974bea179b8a",
+    "search/clean/laptop/3em05/standard/seed_42": "0df1e7e1e046639e5ae9f4f46e37754116c6852cc33d9fc4378efdbf1acb795b",
+    "search/clean/laptop/3em05/weighted/seed_13": "a397df906a728a471142ec829fd196bd3ac31532a22a34db197f045b17a62098",
+    "search/clean/laptop/3em05/weighted/seed_42": "b45cddfb88fb20751b33077b07ca85342f3874d9487ced1b8bb79e40658d06a4",
+    "search/clean/laptop/5em05/standard/seed_13": "f43eff122dbf49c4cb71409353f0231572f5f80c4db2507b6957c4d956d1d95a",
+    "search/clean/laptop/5em05/standard/seed_42": "fcf76a6384863beeaee2dd876d25b0764204c11b7b64919458a9e1f44e2fb0bf",
+    "search/clean/laptop/5em05/weighted/seed_13": "1ab37fdb491b8700ed38eab70b25e563c59091b845f22f62e28c845376830c8f",
+    "search/clean/laptop/5em05/weighted/seed_42": "e9ec77f99089a7c20b7ed849d321ec4e3b88dd0105de3341f1d94302cec8f1cc",
+    "search/clean/phone/2em05/standard/seed_13": "c8f2d606cca2eda10cd7a8798fc642d49ebcccca6ffa5e65cda4ecf5bf0b7603",
+    "search/clean/phone/2em05/standard/seed_42": "90efd9fd66cdb228c3d568d76e781ec8c739240901c3fc6ddcbf15d0b954f12e",
+    "search/clean/phone/2em05/weighted/seed_13": "194ac7c1b01c962ccfce9564c901155956672ba8048f7d72d017d50dd5e64d31",
+    "search/clean/phone/2em05/weighted/seed_42": "20f472ff8fa15df400137491f20c96f3b556e50439ed031e547f0ffb1ca856ec",
+    "search/clean/phone/3em05/standard/seed_13": "a6a5af7a9f1827539f8de60909a3732897780a408cb375172d48acc5690d4fe4",
+    "search/clean/phone/3em05/standard/seed_42": "0ea460e7f301e5d15edc5bc64c9ea4389484a8d6deaea35d306358e90a6a0779",
+    "search/clean/phone/3em05/weighted/seed_13": "a69596ecc8155b55c56f16c2a2eeabacd64ff3a69d5d9be9a7c1601c54fd22bf",
+    "search/clean/phone/3em05/weighted/seed_42": "25715792c2ab8cdeeafa86c74191c77a0d93f2698e9533c47e95f6f1631356d5",
+    "search/clean/phone/5em05/standard/seed_13": "eebb1d8db241b25776c4fe6db0ee018c35911f183b23876fac20863042fe0c77",
+    "search/clean/phone/5em05/standard/seed_42": "35291e84c6f12664ad9f0e34555af0c1b948664511cb2ce5b8e8d8ea90b71d1a",
+    "search/clean/phone/5em05/weighted/seed_13": "b223e224065050e3de4d426a34d4c06aee2547a2b8cf437ffa0a8cf4cb18000a",
+    "search/clean/phone/5em05/weighted/seed_42": "9b14683adb6df22645385de7084b91d608c909a700cb8a4bcbeb2af31bc5fa14",
+    "search/clean/restaurant/2em05/standard/seed_13": "f655ff970e162c506581c0b59de0daaca26876c8e509727e828d7165fd9266a7",
+    "search/clean/restaurant/2em05/standard/seed_42": "c4f3a8c8f8490e7167eba272e44f6e64e16e89a6138c0d34487de9113f1bd56d",
+    "search/clean/restaurant/2em05/weighted/seed_13": "ce4c8f3b370308312af235c9bdf34de60d2981977ad9d0716f9bf757cffc916a",
+    "search/clean/restaurant/2em05/weighted/seed_42": "04c55502072ccc7cc9ec7f27dd0c16b4453a0125d669ed4a26ef88953d53b572",
+    "search/clean/restaurant/3em05/standard/seed_13": "0ee8394962000f44b6a493f32b71fcefeaa9c160c8d40857f3bea321ab021dfa",
+    "search/clean/restaurant/3em05/standard/seed_42": "3ded5e32067cd0e7e2267e95aff6aea13a6180cd3f627975439d1478addc393d",
+    "search/clean/restaurant/3em05/weighted/seed_13": "db8730b77bd95beef8f89f183d971c48bb37c089634f304cb019be1c3a363cb7",
+    "search/clean/restaurant/3em05/weighted/seed_42": "f313c876f55a7fece3d2769681dc48669079b9a80b5b68e31f1762c6ae44d788",
+    "search/clean/restaurant/5em05/standard/seed_13": "9320d8a1a551b952d70b443342304337c59872ec8712024bead917d1eb23a65a",
+    "search/clean/restaurant/5em05/standard/seed_42": "471753392312c8584ffce37cfbdbc9dbe225035406789c269ceffdd325b22421",
+    "search/clean/restaurant/5em05/weighted/seed_13": "b102e3df859532420286aac62edf6bcb2f6ada4998f795b5a9c153f58f1e89a7",
+    "search/clean/restaurant/5em05/weighted/seed_42": "a9a77a6a0837b101624f983c21a9609d9d0f8000fcaddf5d9c5c75a51091a8b4",
+    "search/clean/sight/2em05/standard/seed_13": "af8aab7168d2425a7fc9bb33ad9b3e489788c8b3486607d236c43ac7b75ab56b",
+    "search/clean/sight/2em05/standard/seed_42": "8e2c390402dbce1fb92c6680cf3a7439e86890702755632ac0ba837a8dcb31db",
+    "search/clean/sight/2em05/weighted/seed_13": "2454bfef64c7eacac81e8fc65ef6994ffd5015513524da483cf4eb7eb0694e9d",
+    "search/clean/sight/2em05/weighted/seed_42": "f2ec3ea62284c8cb359d06dfb0c500d54910ab74d4c2f2021cbf0c01ee2fc9da",
+    "search/clean/sight/3em05/standard/seed_13": "f5d2136f7266a6ce5991cbe586d23ab83a3030590a023dd2d36d4b0493bc20f6",
+    "search/clean/sight/3em05/standard/seed_42": "5b997dc9ace1ce454f7b61a645d4c18df253d3720d993e1aa0ef6d57105f3166",
+    "search/clean/sight/3em05/weighted/seed_13": "73a509ee16c09250eedb0f0ab339fce9111f5b4e35b5c2a8046f820d3ac1592e",
+    "search/clean/sight/3em05/weighted/seed_42": "be3c11a020efe97564e4d7271911fe75e6e818e2b1de91a8f5c0b2bb137aa788",
+    "search/clean/sight/5em05/standard/seed_13": "4eb11817a915ae42a1b6ce933240766fdd942d1318df279bbdb02824a8faae73",
+    "search/clean/sight/5em05/standard/seed_42": "0cb8b28d871df56932274ddcb5826cef2f6912ee07ca06444df0920fb5ef39b1",
+    "search/clean/sight/5em05/weighted/seed_13": "b36ab22187638e2866c4ecc5d1b4e0d5aafe6a14b88df8816dbed40cf7a57444",
+    "search/clean/sight/5em05/weighted/seed_42": "c69542dfbed34643dd8031c89c611451deea737cbc3c439763b34e9a63795b89"
+  },
+  "version": "clean-study-v1"
+}

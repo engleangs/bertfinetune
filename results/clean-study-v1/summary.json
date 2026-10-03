@@ -1,0 +1,273 @@
+{
+  "cleanup_effect": {
+    "standard": {
+      "mean_clean_minus_raw": 0.002920762134939292,
+      "paired_differences": {
+        "123": 0.008949045519014653,
+        "13": -0.004382242826055205,
+        "2024": -0.0005333240710629905,
+        "42": 0.008581369948477358,
+        "777": 0.0019889621043226446
+      }
+    },
+    "weighted": {
+      "mean_clean_minus_raw": 0.0035823449381567896,
+      "paired_differences": {
+        "123": 0.009982938976225764,
+        "13": 0.006311730995983922,
+        "2024": 0.0032350221619682484,
+        "42": 0.0022555546225742074,
+        "777": -0.0038735220659681935
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "by_loss": {
+        "standard": {
+          "mean_f1": 0.3535898718422334,
+          "std_f1": 0.009813202622067254
+        },
+        "weighted": {
+          "mean_f1": 0.2693265658009468,
+          "std_f1": 0.0036120000244641093
+        }
+      },
+      "data": "clean",
+      "fold": "indomain",
+      "group": "baseline",
+      "mean_paired_difference": -0.0842633060412866,
+      "paired_difference_std": 0.009392910222819049,
+      "paired_differences": {
+        "123": -0.09844181616675962,
+        "13": -0.07984030210652909,
+        "2024": -0.07396047848483639,
+        "42": -0.08093031310659593,
+        "777": -0.08814362034171191
+      }
+    },
+    {
+      "by_loss": {
+        "standard": {
+          "mean_f1": 0.3506691097072941,
+          "std_f1": 0.007505828609771202
+        },
+        "weighted": {
+          "mean_f1": 0.26574422086279004,
+          "std_f1": 0.0026775235171563427
+        }
+      },
+      "data": "raw",
+      "fold": "indomain",
+      "group": "baseline",
+      "mean_paired_difference": -0.08492488884450408,
+      "paired_difference_std": 0.010105380344600071,
+      "paired_differences": {
+        "123": -0.09947570962397073,
+        "13": -0.09053427592856822,
+        "2024": -0.07772882471786763,
+        "42": -0.07460449778069278,
+        "777": -0.08228113617142108
+      }
+    },
+    {
+      "by_loss": {
+        "standard": {
+          "mean_f1": 0.0,
+          "std_f1": 0.0
+        },
+        "weighted": {
+          "mean_f1": 0.0,
+          "std_f1": 0.0
+        }
+      },
+      "data": "clean",
+      "fold": "coursera",
+      "group": "final",
+      "mean_paired_difference": 0.0,
+      "paired_difference_std": 0.0,
+      "paired_differences": {
+        "123": 0.0,
+        "13": 0.0,
+        "2024": 0.0,
+        "42": 0.0,
+        "777": 0.0
+      }
+    },
+    {
+      "by_loss": {
+        "standard": {
+          "mean_f1": 0.0729032188405627,
+          "std_f1": 0.004124951580071899
+        },
+        "weighted": {
+          "mean_f1": 0.06387645620211134,
+          "std_f1": 0.005711332330378017
+        }
+      },
+      "data": "clean",
+      "fold": "food",
+      "group": "final",
+      "mean_paired_difference": -0.009026762638451348,
+      "paired_difference_std": 0.007788664398586651,
+      "paired_differences": {
+        "123": -0.003802558084529589,
+        "13": 0.0015189590662869346,
+        "2024": -0.016957156349274485,
+        "42": -0.01065215173465038,
+        "777": -0.01524090609008922
+      }
+    },
+    {
+      "by_loss": {
+        "standard": {
+          "mean_f1": 0.2594686014017534,
+          "std_f1": 0.010665940268245449
+        },
+        "weighted": {
+          "mean_f1": 0.25149338012694383,
+          "std_f1": 0.0021458870691040345
+        }
+      },
+      "data": "clean",
+      "fold": "hotel",
+      "group": "final",
+      "mean_paired_difference": -0.007975221274809574,
+      "paired_difference_std": 0.010567432907660487,
+      "paired_differences": {
+        "123": -0.007879782061046336,
+        "13": -0.0033279323764141,
+        "2024": 0.0014535519588376178,
+        "42": -0.004203747155107407,
+        "777": -0.025918196740317645
+      }
+    },
+    {
+      "by_loss": {
+        "standard": {
+          "mean_f1": 0.49679879594403414,
+          "std_f1": 0.003619441837994804
+        },
+        "weighted": {
+          "mean_f1": 0.4898046031758249,
+          "std_f1": 0.0025297189432501622
+        }
+      },
+      "data": "clean",
+      "fold": "indomain",
+      "group": "final",
+      "mean_paired_difference": -0.00699419276820924,
+      "paired_difference_std": 0.0054235480198195594,
+      "paired_differences": {
+        "123": -0.013359355277794582,
+        "13": -0.004749196422079716,
+        "2024": -0.0012452016394263743,
+        "42": -0.0034654062142795428,
+        "777": -0.012151804287465984
+      }
+    },
+    {
+      "by_loss": {
+        "standard": {
+          "mean_f1": 0.0,
+          "std_f1": 0.0
+        },
+        "weighted": {
+          "mean_f1": 0.0,
+          "std_f1": 0.0
+        }
+      },
+      "data": "clean",
+      "fold": "laptop",
+      "group": "final",
+      "mean_paired_difference": 0.0,
+      "paired_difference_std": 0.0,
+      "paired_differences": {
+        "123": 0.0,
+        "13": 0.0,
+        "2024": 0.0,
+        "42": 0.0,
+        "777": 0.0
+      }
+    },
+    {
+      "by_loss": {
+        "standard": {
+          "mean_f1": 0.0,
+          "std_f1": 0.0
+        },
+        "weighted": {
+          "mean_f1": 0.0,
+          "std_f1": 0.0
+        }
+      },
+      "data": "clean",
+      "fold": "phone",
+      "group": "final",
+      "mean_paired_difference": 0.0,
+      "paired_difference_std": 0.0,
+      "paired_differences": {
+        "123": 0.0,
+        "13": 0.0,
+        "2024": 0.0,
+        "42": 0.0,
+        "777": 0.0
+      }
+    },
+    {
+      "by_loss": {
+        "standard": {
+          "mean_f1": 0.18650716726846855,
+          "std_f1": 0.01750318479912591
+        },
+        "weighted": {
+          "mean_f1": 0.18606271363176266,
+          "std_f1": 0.004992973846008046
+        }
+      },
+      "data": "clean",
+      "fold": "restaurant",
+      "group": "final",
+      "mean_paired_difference": -0.00044445363670587713,
+      "paired_difference_std": 0.01477201538209199,
+      "paired_differences": {
+        "123": 0.02064797372715263,
+        "13": -0.004177945478905154,
+        "2024": 0.008225899055274294,
+        "42": -0.013663257119935796,
+        "777": -0.01325493836711536
+      }
+    },
+    {
+      "by_loss": {
+        "standard": {
+          "mean_f1": 0.0,
+          "std_f1": 0.0
+        },
+        "weighted": {
+          "mean_f1": 0.0,
+          "std_f1": 0.0
+        }
+      },
+      "data": "clean",
+      "fold": "sight",
+      "group": "final",
+      "mean_paired_difference": 0.0,
+      "paired_difference_std": 0.0,
+      "paired_differences": {
+        "123": 0.0,
+        "13": 0.0,
+        "2024": 0.0,
+        "42": 0.0,
+        "777": 0.0
+      }
+    }
+  ],
+  "interpretation": "Exploratory follow-up after prior test inspection; learning rates selected only from each fold's source dev. Cleanup changes examples and the sentiment output vocabulary.",
+  "result_count": 100,
+  "search_seed_reuse": [
+    13,
+    42
+  ],
+  "version": "clean-study-v1"
+}

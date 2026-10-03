@@ -1,5 +1,11 @@
 # ABSA Triplet Extraction — Group07 Scaffold
 
+## Completed clean study
+
+The completed follow-up results are available in the [English report](results/clean-study-v1/REPORT.md), [100-run test summary](results/clean-study-v1/results.csv), and [downloadable evidence package](results/clean-study-v1/README.md). The report documents the actual exploratory design and its limitations; the planning guidance below predates these results.
+
+Shared documentation and reports must be in English. Keep personal translations outside the repository.
+
 ## What changed from the LoRA version
 - **Core comparison unchanged**: BERT with standard loss vs. class-weighted
   loss. Still the one variable that differs between configs.

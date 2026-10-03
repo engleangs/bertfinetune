@@ -1,0 +1,11 @@
+{
+  "archive": "experiment_results.zip",
+  "bytes": 31675550,
+  "sha256": "929f58027f87de07a1e6be72f28bef3bd6c6ada23df1644c2fccd1a153065175",
+  "files": 1118,
+  "model_weights_included": false,
+  "source_archive_sha256": "a61431fcc37fefcfc488cb149e8bf68b9e42025ac9fcac8653ee59d6e6ca5d17",
+  "omitted_files": [
+    "reproducibility/code/CLEAN_STUDY.md"
+  ]
+}

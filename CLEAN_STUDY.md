@@ -1,106 +1,112 @@
-# Conflict 清理与参数实验：运行和保存方案
+# Conflict Cleanup and Parameter Study
 
-版本：clean-study-v1。2026-09-30 讨论后实施。旧实验已查看过测试结果，本轮属于后续探索性研究。
+Version: `clean-study-v1`. Implemented after the discussion on 30 September 2026. Earlier test results had already been inspected, so this study is an exploratory follow-up.
 
-## 实验范围
+## Experiment scope
 
-- 清理：从训练集中删除含 conflict 的 **5 条完整样本**（5 条 conflict 标注及另外 2 条 positive 标注）。原始数据保留；开发集/测试集逐字节不变。NULL 及原来的显式 aspect 筛选规则保留。
-- A：in-domain 原始/清理后 × Standard/Weighted × 5 种子 = 20 次。2e-5、5 轮、warmup 0、无梯度裁剪。
-- B：in-domain + 7 个 LODO × 两种 loss × 2e-5/3e-5/5e-5 × 种子 13/42 = 96 次。30 轮、10% warmup、梯度裁剪 1.0。仅源领域 train/dev。
-- 每个条件独立用两种 loss、两个种子的最佳开发集完整三元组 micro-F1 均值选共同学习率；并列选更低学习率。不得把其他 fold 或 in-domain 的结果用于该 LODO fold 选参数。
-- C：复用 B 选中的 32 个模型，再训练种子 123/2024/777 的 48 次，得到 80 个最终结果。最终测试只评估开发集选出的 checkpoint。
-- 基础预算共 164 次完整训练，另有两次 64 条 train / 32 条 dev 的小型 GPU 验证。Aspect-only、Category-only、1e-4 和 40 轮扩展均未加入本轮。
-- 不依赖早停，保存 30 轮完整曲线；30 轮线性调度中的第 8 轮不等同于旧 8 轮调度。若开发集最佳点仍在末轮，另行版本化扩展预算。
-- 清理同时改变样本及情感输出词表，不能将结果变化全部归因于一个巨大类别权重。五个配对种子报告均值、标准差、逐种子差异；搜索种子 13/42 的复用会在报告中注明。
+- Cleanup removes the **five complete training examples** containing conflict labels: five conflict annotations and two additional positive annotations. Raw data are preserved; development and test files remain byte-for-byte identical. NULL handling and the original explicit-aspect filtering rules are retained.
+- A: pooled in-domain, raw/clean data × Standard/Weighted × five seeds = 20 runs. Learning rate 2e-5, five epochs, no warmup, and no gradient clipping.
+- B: pooled in-domain plus seven LODO folds × two losses × learning rates 2e-5/3e-5/5e-5 × seeds 13/42 = 96 runs. Thirty epochs, 10% warmup, and gradient clipping at 1.0. Search uses source-domain train/development data only.
+- Within each condition, select a shared learning rate using mean best development exact-triplet micro-F1 across both losses and both search seeds; ties select the lower learning rate. Other folds and pooled in-domain results must not inform a LODO fold's parameter selection.
+- C: reuse the 32 selected search checkpoints and train seeds 123/2024/777 in 48 additional runs, yielding 80 final results. Test evaluation uses development-selected checkpoints.
+- The core budget is 164 full training runs, plus two GPU smoke checks using 64 training and 32 development examples. Aspect-only weighting, category-only weighting, 1e-4, and a 40-epoch extension are outside this study.
+- No early stopping is used; all 30 epochs are logged. Epoch 8 of a 30-epoch linear schedule is not equivalent to a separate eight-epoch schedule. Any extension beyond the budget requires a separately versioned study.
+- Cleanup changes both examples and the sentiment output vocabulary, so changes cannot be attributed solely to one large class weight. Report five-seed means, standard deviations, and paired differences, and disclose reuse of search seeds 13/42.
 
-## 文件保存与下载
+## Storage and downloads
 
-每次运行保存一个 `best_model.pt`；运行期间还滚动保存一个 `resume.pt`（包含当前权重、AdamW 状态、调度器、最佳状态及随机数状态），成功完成训练后自动移除恢复文件。中断后从上一完整 epoch 恢复，未完成 epoch 重做。每轮的指标写入一个小 `history.json`，不会每轮保存独立模型。
+Each run saves one `best_model.pt`. While training, it also maintains one rolling `resume.pt` containing current weights, AdamW state, scheduler state, the best model state, and random-number states. The recovery file is removed after training evidence is saved successfully. Interrupted runs resume after the last completed epoch; an unfinished epoch is repeated. Per-epoch metrics are stored in a small `history.json`, without separate model files for every epoch.
 
-| 内容 | Cluster 保存 | 本地下载 |
+| Content | Cluster retention | Local download |
 |---|---|---|
-| 结果、30 轮曲线、配置、各类别指标 | 保存全部 | 包含 |
-| 开发集和测试集逐条预测 | gzip 压缩保存 | 包含 |
-| 数据清理清单、数据哈希、原始小数据快照 | 保存一份 | 包含 |
-| 实际运行代码快照、模型来源哈希、环境版本 | 保存 | 包含 |
-| 预训练 BERT / tokenizer | 复用共享目录；tokenizer 小快照一份 | 仅 tokenizer/config 小快照 |
-| 调参最佳模型 | 选参前保留 96 个；选参后保留选中的 32 个 | 不包含 |
-| 最终模型 | 评估及结果导出成功后，默认保留每条件/方法按 dev F1 选出的 1 个，共 16 个 | 不包含 |
-| 优化器和续跑文件 | 仅未完成训练需要 | 不包含 |
+| Metrics, training curves, configuration, per-label scores | Keep all | Included |
+| Development and test predictions | Store as gzip | Included |
+| Cleanup audit, data hashes, raw-data snapshot | Keep one copy | Included |
+| Executed code snapshot, model hashes, environment versions | Keep | Included |
+| Pretrained BERT and tokenizer | Reuse shared assets; save one small tokenizer snapshot | Tokenizer/configuration only |
+| Search checkpoints | Keep 96 until selection, then the selected 32 until evaluated | Excluded |
+| Final checkpoints | After evaluation and successful export, retain one dev-selected representative per condition/loss, 16 total | Excluded |
+| Optimizer and recovery files | Needed only for unfinished training | Excluded |
 
-16 个模型预计约 7 GB，留在 cluster。结果 ZIP 不含任何模型权重；现有预测规模下通常比全量 artifacts 小很多，最终包大小会实际统计。预测文件可以重新计算指标、做错误分析和画图；对新文本推理仍需要保留的模型，或重新训练。
+The 16 retained models occupy approximately 7 GB on the cluster. The result ZIP contains no model weights; its actual size is recorded at export. Saved predictions support rescoring, error analysis, and plotting. Inference on new text requires a retained checkpoint or retraining.
 
-这是最终保留量。选参前仍需暂存候选权重；默认两个并发任务时，连同滚动续跑文件和原子写入临时文件，建议为新实验预留约 65–70 GB 的 cluster 空间。提高并发数会增加峰值占用。轻量下载不会降低这一阶段的临时存储需求。
+This is final retention, not peak storage. Candidate weights must remain available until selection. With two concurrent tasks, allow approximately 65–70 GB for the new study, including rolling recovery files and temporary atomic writes. Higher concurrency increases peak usage. A small download does not eliminate this temporary cluster storage requirement.
 
-只允许整理本轮带 study.json 标记的目录中的明确 checkpoint。旧目录、旧模型完全不参与清理。未完成任务保留恢复文件。整理前核对预测和指标哈希；已整理模型的任务保留完成标记，重跑不会误认为缺失模型而重新训练。
+Pruning targets only explicitly named checkpoints inside the new directory identified by `study.json`. Existing study directories and older models are unaffected. Unfinished runs retain recovery files. Metrics and prediction hashes are checked before pruning. Completion markers remain after checkpoint removal so rerunning a completed task does not trigger unnecessary training.
 
-## 上传与提交
+## Upload and submission
 
-本地生成 `bertfinetune-clean-v1.tar.gz`，不包含旧结果或预训练大模型。解压到 `/data/$USER`，使用新的 `bertfinetune-clean-v1` 目录。共享环境和 BERT 默认复用 `/data/$USER/bertfinetune`；若现有目录不同，设置 `CS760_SHARED_PROJECT`，也可以分别设置 `CS760_PYTHON` 和 `BERT_MODEL_PATH`。
+Build `bertfinetune-clean-v1.tar.gz` locally without old results or pretrained model weights. Extract it into `/data/$USER` to create a separate `bertfinetune-clean-v1` directory. By default, the environment and BERT assets are reused from `/data/$USER/bertfinetune`. Set `CS760_SHARED_PROJECT` if that location differs, or set `CS760_PYTHON` and `BERT_MODEL_PATH` separately.
 
-在 cluster 的新项目目录执行：
+In the new cluster project directory, run:
 
 ```bash
 sha256sum -c cluster/transfer_manifest.sha256
 bash cluster/submit_clean_study.sh
 ```
 
-以上第二条只显示任务图。查看账号 GPU 配额、最长任务时限后提交：
+The second command only prints the job graph. After checking GPU quotas and permitted wall times, submit:
 
 ```bash
 CS760_CONCURRENCY=2 CS760_TRAIN_TIME=04:00:00 bash cluster/submit_clean_study.sh --submit
 ```
 
-脚本按依赖提交：
+The script submits the following dependency chain:
 
-1. `smoke`：两个小训练任务，验证失败则后续不启动。
-2. `main`：116 个任务（A 的 20 次与 B 的 96 次交错排列），整个数组最多同时占用两个 GPU。
-3. `select`：CPU 作业，在每个 fold 内选参数，核对选中 checkpoint 后删除 64 个未选中的新搜索模型。
-4. `completion`：80 个任务（32 个只做评估，48 个新增训练）。
-5. `finalize`：检查 100 个结果、汇总、导出 ZIP、整理到 16 个模型、刷新 ZIP。
+1. `smoke`: two small training jobs. Failure prevents later stages from starting.
+2. `main`: 116 interleaved jobs, comprising 20 replication runs and 96 search runs. The entire array uses at most two GPUs concurrently by default.
+3. `select`: a CPU job selects parameters within each fold, verifies selected checkpoints, and removes the 64 unselected new search checkpoints.
+4. `completion`: 80 jobs, comprising 32 checkpoint evaluations and 48 additional training runs.
+5. `finalize`: verify 100 test results, summarize, export a ZIP, retain 16 representative checkpoints, and refresh the ZIP.
 
-GPU 任务默认 1 GPU / 4 CPU / 32 GB RAM；4 小时是可调整的申请时限，未承诺足够或符合当前账号策略。提交前运行小任务实测更合适。阵列默认使用集群分配的 GPU；A100 是否需要额外型号/分区参数须按账号实际配置确认。所有训练经 Slurm，登录节点只做准备/提交。
+GPU jobs request one GPU, four CPUs, and 32 GB RAM. Four hours is an adjustable per-task wall-time request, not a guarantee of sufficient runtime or account-policy compliance. Measure a small run before full submission when needed. GPU type is assigned by the cluster; confirm any account-specific partition or A100 request settings. Training runs through Slurm; login nodes are used for preparation and submission.
 
-如果需要先单独验证：
+To run smoke checks separately first:
 
 ```bash
 sbatch --array=0-1%2 cluster/clean_study_gpu.sbatch smoke
 ```
 
-检查小任务日志后再使用总提交脚本；总提交中的 smoke 会跳过已完成任务。脚本记录提交 job IDs，重复总提交会拒绝，避免重复花费 GPU。某索引失败时，查看报错后可直接重提对应阶段/索引，例如：
+Inspect the smoke logs before using the full submission script. The full workflow skips completed smoke tasks. Submitted job IDs are recorded; duplicate full submissions are refused. After investigating a failed array task, retry the relevant phase and index, for example:
 
 ```bash
 sbatch --array=17 cluster/clean_study_gpu.sbatch main
 ```
 
-失败会阻断依赖作业；修复重提后，需要按 `submission_jobs.txt` 检查并取消/重建仍在等待旧失败依赖的后续作业，不能假定自动解除依赖。
+A failure blocks dependent jobs. After retrying, inspect `submission_jobs.txt` and cancel/rebuild downstream jobs still waiting on the original failed dependency as needed. A retry does not automatically repair those dependencies.
 
-## 最后只下载两个小文件
+## Download only the lightweight results
 
-完成后位于新项目目录：
+After completion, the new project contains:
 
 ```text
 artifacts/clean_study_results_light.zip
 artifacts/clean_study_results_light.zip.json
 ```
 
-第二个文件记录真实大小和 SHA256。ZIP 包含 CSV、汇总 JSON、所有训练曲线、压缩预测、配置/环境/数据审计和代码快照，可用本地工具完成报告。不要将整个 `artifacts` 或 `model_cache` 目录下载。
+The second file records size and SHA256. The ZIP contains CSV and JSON summaries, training histories, compressed predictions, configuration/environment/data audits, and a code snapshot. These support local report preparation without downloading the entire `artifacts` or `model_cache` directory.
 
-## 已有实验也可以只导出小结果
+## Export lightweight evidence from older experiments
 
-在含本脚本的新项目目录，指定旧结果路径：
+From the project containing this runner, specify the old results directory:
 
 ```bash
 python run_clean_study.py export --legacy-root /path/to/old/artifacts --destination /path/to/old-results-light.zip
 ```
 
-这项操作只读取旧指标/预测，完全不读取或删除旧 checkpoint。请使用实际 Python 环境路径替换 `python`。
+This reads old metrics and predictions without reading or deleting old checkpoints. Replace `python` with the actual environment's Python executable.
 
-## 手动查看本轮清理计划
+## Inspect the pruning plan manually
 
 ```bash
 python run_clean_study.py prune --scope unselected
 python run_clean_study.py prune --scope archive
 ```
 
-默认只列出计划。`--apply` 才删除明确列出的新 checkpoint。若最终也不需要在 cluster 保留代表模型，可在结果包已下载并校验后使用 `--scope archive --keep-models none --apply`，之后重新导出以同步记录。
+The default is a dry run. `--apply` deletes only the listed new checkpoints. If representative models are no longer needed after downloading and verifying the result archive, use `--scope archive --keep-models none --apply`, then export again to refresh the retention records.
+
+## Published results and frozen study metadata
+
+The completed study is documented in [the English results report](results/clean-study-v1/REPORT.md). The publication directory also contains machine-readable summaries and the lightweight experiment evidence.
+
+Study metadata hashes refer to the exact files used for training. This English documentation update changes a fingerprinted file; do not replace files inside a prepared cluster study to apply this translation. Use the original training version, commit `e3d110f`, when resuming or re-exporting that frozen study. This publication does not require any new training.
