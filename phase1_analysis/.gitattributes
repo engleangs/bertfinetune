@@ -1,0 +1,2 @@
+# Preserve corpus/prediction bytes and SHA-256 checks across Git clones.
+* -text

@@ -1,0 +1,7 @@
+{
+  "tests_run": 46,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "test_environment": "Inherited-permission temporary directories within workspace; torch CPU threads=1"
+}

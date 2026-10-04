@@ -1,0 +1,3 @@
+# CPU analysis only. Training libraries and model downloads are unnecessary.
+pandas>=2.2
+matplotlib>=3.8

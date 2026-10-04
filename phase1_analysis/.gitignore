@@ -1,0 +1,18 @@
+# Analysis-only sharing: keep checkpoints and archives out of Git.
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.h5
+*.onnx
+*.zip
+*.tar
+*.gz
+tokenizer/
+checkpoints/
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+# This ~50 MB diagnostic table can be regenerated from the saved predictions.
+gold_error_records.jsonl

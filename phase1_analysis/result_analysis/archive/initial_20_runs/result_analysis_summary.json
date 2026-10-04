@@ -1,0 +1,262 @@
+{
+  "schema_version": 1,
+  "run_matrix": {
+    "completed_runs": 20,
+    "expected_runs": 20
+  },
+  "comparisons": {
+    "indomain": {
+      "standard": {
+        "mean": 0.35200690817243296,
+        "std": 0.00822113015030689,
+        "n": 5,
+        "min": 0.3420697108889489,
+        "max": 0.3630163934426229
+      },
+      "weighted": {
+        "mean": 0.26351942298697717,
+        "std": 0.004947821964634206,
+        "n": 5,
+        "min": 0.2577103647526182,
+        "max": 0.2693448984250171
+      },
+      "paired": [
+        {
+          "seed": 13,
+          "standard": 0.346264744429882,
+          "weighted": 0.2618347544839753
+        },
+        {
+          "seed": 42,
+          "standard": 0.3525369978858351,
+          "weighted": 0.2679599878751136
+        },
+        {
+          "seed": 123,
+          "standard": 0.3630163934426229,
+          "weighted": 0.2607471093981618
+        },
+        {
+          "seed": 777,
+          "standard": 0.356146694214876,
+          "weighted": 0.2577103647526182
+        },
+        {
+          "seed": 2024,
+          "standard": 0.3420697108889489,
+          "weighted": 0.2693448984250171
+        }
+      ],
+      "mean_difference": -0.08848748518545577,
+      "sd_difference": 0.011928269124973538,
+      "t_statistic": -16.587824265167527,
+      "p_value": 7.736486445437203e-05,
+      "ci_low": -0.09793483430830953,
+      "ci_high": -0.07977732296607969,
+      "passes_minimum_effect": false
+    },
+    "crossdomain": {
+      "standard": {
+        "mean": 0.12361499815884827,
+        "std": 0.017086118563631514,
+        "n": 5,
+        "min": 0.1011904761904761,
+        "max": 0.1453566621803499
+      },
+      "weighted": {
+        "mean": 0.2069889024696013,
+        "std": 0.022637804809901813,
+        "n": 5,
+        "min": 0.1759192501802451,
+        "max": 0.2298682284040995
+      },
+      "paired": [
+        {
+          "seed": 13,
+          "standard": 0.1327913279132791,
+          "weighted": 0.2298682284040995
+        },
+        {
+          "seed": 42,
+          "standard": 0.1253644314868804,
+          "weighted": 0.1759192501802451
+        },
+        {
+          "seed": 123,
+          "standard": 0.1133720930232558,
+          "weighted": 0.2272069464544139
+        },
+        {
+          "seed": 777,
+          "standard": 0.1011904761904761,
+          "weighted": 0.2072992700729926
+        },
+        {
+          "seed": 2024,
+          "standard": 0.1453566621803499,
+          "weighted": 0.1946508172362556
+        }
+      ],
+      "mean_difference": 0.08337390431075309,
+      "sd_difference": 0.031108834836352593,
+      "t_statistic": 5.992822250306593,
+      "p_value": 0.003899606493590959,
+      "ci_low": 0.059354969597872245,
+      "ci_high": 0.10739283902363392,
+      "passes_minimum_effect": true
+    }
+  },
+  "crossdomain_protocol_metrics": [
+    {
+      "mode": "crossdomain",
+      "config": "standard",
+      "seed": 13,
+      "full_exact_f1": 0.13279132791327913,
+      "known_category_f1": 0.17013888888888887,
+      "aspect_f1": 0.23035230352303523,
+      "aspect_sentiment_f1": 0.21680216802168023,
+      "category_coverage": 0.7127659574468085,
+      "gold_triplets": 564,
+      "known_gold_triplets": 402,
+      "unseen_gold_triplets": 162,
+      "unseen_category_count": 7,
+      "unseen_categories": "ambience general; drinks prices; drinks quality; drinks style_options; restaurant general; restaurant miscellaneous; restaurant prices"
+    },
+    {
+      "mode": "crossdomain",
+      "config": "standard",
+      "seed": 42,
+      "full_exact_f1": 0.12536443148688048,
+      "known_category_f1": 0.16412213740458015,
+      "aspect_f1": 0.24198250728862972,
+      "aspect_sentiment_f1": 0.22448979591836737,
+      "category_coverage": 0.7127659574468085,
+      "gold_triplets": 564,
+      "known_gold_triplets": 402,
+      "unseen_gold_triplets": 162,
+      "unseen_category_count": 7,
+      "unseen_categories": "ambience general; drinks prices; drinks quality; drinks style_options; restaurant general; restaurant miscellaneous; restaurant prices"
+    },
+    {
+      "mode": "crossdomain",
+      "config": "standard",
+      "seed": 123,
+      "full_exact_f1": 0.11337209302325581,
+      "known_category_f1": 0.1482889733840304,
+      "aspect_f1": 0.25,
+      "aspect_sentiment_f1": 0.22383720930232562,
+      "category_coverage": 0.7127659574468085,
+      "gold_triplets": 564,
+      "known_gold_triplets": 402,
+      "unseen_gold_triplets": 162,
+      "unseen_category_count": 7,
+      "unseen_categories": "ambience general; drinks prices; drinks quality; drinks style_options; restaurant general; restaurant miscellaneous; restaurant prices"
+    },
+    {
+      "mode": "crossdomain",
+      "config": "standard",
+      "seed": 2024,
+      "full_exact_f1": 0.14535666218034995,
+      "known_category_f1": 0.18588640275387264,
+      "aspect_f1": 0.30148048452220727,
+      "aspect_sentiment_f1": 0.2718707940780619,
+      "category_coverage": 0.7127659574468085,
+      "gold_triplets": 564,
+      "known_gold_triplets": 402,
+      "unseen_gold_triplets": 162,
+      "unseen_category_count": 7,
+      "unseen_categories": "ambience general; drinks prices; drinks quality; drinks style_options; restaurant general; restaurant miscellaneous; restaurant prices"
+    },
+    {
+      "mode": "crossdomain",
+      "config": "standard",
+      "seed": 777,
+      "full_exact_f1": 0.10119047619047619,
+      "known_category_f1": 0.13333333333333336,
+      "aspect_f1": 0.20238095238095238,
+      "aspect_sentiment_f1": 0.1875,
+      "category_coverage": 0.7127659574468085,
+      "gold_triplets": 564,
+      "known_gold_triplets": 402,
+      "unseen_gold_triplets": 162,
+      "unseen_category_count": 7,
+      "unseen_categories": "ambience general; drinks prices; drinks quality; drinks style_options; restaurant general; restaurant miscellaneous; restaurant prices"
+    },
+    {
+      "mode": "crossdomain",
+      "config": "weighted",
+      "seed": 13,
+      "full_exact_f1": 0.2298682284040995,
+      "known_category_f1": 0.260797342192691,
+      "aspect_f1": 0.629955947136564,
+      "aspect_sentiment_f1": 0.5601173020527859,
+      "category_coverage": 0.7127659574468085,
+      "gold_triplets": 564,
+      "known_gold_triplets": 402,
+      "unseen_gold_triplets": 162,
+      "unseen_category_count": 7,
+      "unseen_categories": "ambience general; drinks prices; drinks quality; drinks style_options; restaurant general; restaurant miscellaneous; restaurant prices"
+    },
+    {
+      "mode": "crossdomain",
+      "config": "weighted",
+      "seed": 42,
+      "full_exact_f1": 0.17591925018024515,
+      "known_category_f1": 0.19918367346938778,
+      "aspect_f1": 0.5891696750902526,
+      "aspect_sentiment_f1": 0.5310245310245311,
+      "category_coverage": 0.7127659574468085,
+      "gold_triplets": 564,
+      "known_gold_triplets": 402,
+      "unseen_gold_triplets": 162,
+      "unseen_category_count": 7,
+      "unseen_categories": "ambience general; drinks prices; drinks quality; drinks style_options; restaurant general; restaurant miscellaneous; restaurant prices"
+    },
+    {
+      "mode": "crossdomain",
+      "config": "weighted",
+      "seed": 123,
+      "full_exact_f1": 0.22720694645441392,
+      "known_category_f1": 0.2573770491803279,
+      "aspect_f1": 0.6357711803041274,
+      "aspect_sentiment_f1": 0.5701881331403763,
+      "category_coverage": 0.7127659574468085,
+      "gold_triplets": 564,
+      "known_gold_triplets": 402,
+      "unseen_gold_triplets": 162,
+      "unseen_category_count": 7,
+      "unseen_categories": "ambience general; drinks prices; drinks quality; drinks style_options; restaurant general; restaurant miscellaneous; restaurant prices"
+    },
+    {
+      "mode": "crossdomain",
+      "config": "weighted",
+      "seed": 2024,
+      "full_exact_f1": 0.1946508172362556,
+      "known_category_f1": 0.2212837837837838,
+      "aspect_f1": 0.6344725111441307,
+      "aspect_sentiment_f1": 0.575037147102526,
+      "category_coverage": 0.7127659574468085,
+      "gold_triplets": 564,
+      "known_gold_triplets": 402,
+      "unseen_gold_triplets": 162,
+      "unseen_category_count": 7,
+      "unseen_categories": "ambience general; drinks prices; drinks quality; drinks style_options; restaurant general; restaurant miscellaneous; restaurant prices"
+    },
+    {
+      "mode": "crossdomain",
+      "config": "weighted",
+      "seed": 777,
+      "full_exact_f1": 0.20729927007299268,
+      "known_category_f1": 0.23509933774834435,
+      "aspect_f1": 0.5960555149744339,
+      "aspect_sentiment_f1": 0.5430656934306568,
+      "category_coverage": 0.7127659574468085,
+      "gold_triplets": 564,
+      "known_gold_triplets": 402,
+      "unseen_gold_triplets": 162,
+      "unseen_category_count": 7,
+      "unseen_categories": "ambience general; drinks prices; drinks quality; drinks style_options; restaurant general; restaurant miscellaneous; restaurant prices"
+    }
+  ],
+  "interpretation_status": "Observed results; protocol deviations documented separately."
+}

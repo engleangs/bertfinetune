@@ -1,0 +1,13 @@
+held_out_domain,config,seed
+food,standard,42
+food,standard,123
+food,standard,777
+food,standard,2024
+food,weighted,42
+food,weighted,123
+food,weighted,777
+food,weighted,2024
+sight,weighted,42
+sight,weighted,123
+sight,weighted,777
+sight,weighted,2024

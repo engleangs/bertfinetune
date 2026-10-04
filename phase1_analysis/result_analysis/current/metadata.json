@@ -1,0 +1,30 @@
+{
+  "review_date": "2026-10-04",
+  "analysis_protocol_version": "1.1",
+  "data_sha256": {
+    "corpus/coursera/en/train.txt": "28722d0a3882923dcceb64efe5a5dc981cf70dc43791fe7b71b91b81e328c66e",
+    "corpus/coursera/en/dev.txt": "a89af2613f93172022128c79217dbd5ddca7f8c6e00c03675247131161df0d2e",
+    "corpus/coursera/en/test.txt": "6b2787110b697c2f6afe7f6d85ab027fa9103a9e78609e66f66e0969736c3767",
+    "corpus/hotel/en/train.txt": "6aa3ef9f57f8bc839fcbe5b737af6081c803e557cd838f6feddeae4c6a641d91",
+    "corpus/hotel/en/dev.txt": "174aff05af748032b8e47485391dc5fc9fc3ee87ca35c16d0d9457c14617963c",
+    "corpus/hotel/en/test.txt": "a9c055783acbb5a75e87f4b587ff8df7991ff9bdb745cb100760bfa7d51f809a",
+    "corpus/laptop/en/train.txt": "13feb3d973886db737d0fd0469657841c504acf7348b76cd6b0ceba0a82d8c3b",
+    "corpus/laptop/en/dev.txt": "bace3d6c94df50b654410b195b79dc6235bb184984d226110e1fb949d14df9ee",
+    "corpus/laptop/en/test.txt": "9b80e1a65d46459b8ee34f32058938b18ddfc9c6b5c992cb00c776491b283770",
+    "corpus/restaurant/en/train.txt": "2dd70becd32f8c047105963b3899f6538ec7924f1b3247db0bda24d56d7412df",
+    "corpus/restaurant/en/dev.txt": "96b154cf9a15ec9f99a1f5034a39753a9e0458bee7286e8aaeaecfa5997a7977",
+    "corpus/restaurant/en/test.txt": "c45467005a981fe05e04fe73465ac664b9630862cf8a703ed342c2dbcb5d5ecf",
+    "corpus/phone/en/train.txt": "b21f34456c08bb82b9e867bdfb9509a99692589b1d598a98fbfbc61f9be18c7f",
+    "corpus/phone/en/dev.txt": "a2768b0c69cac0d63df72f99a52e22222b0b501cdea24b11df715bf6a1560bd8",
+    "corpus/phone/en/test.txt": "fafffd4ed55124df056effce8ef5ae4273dc4ef0a230a5e189cb7fa2faecf69e",
+    "corpus/sight/en/train.txt": "f39d6214e1924374ceacbced9dda13cda9625e191ef513ba8a74b607488ba742",
+    "corpus/sight/en/dev.txt": "ffcf6ad3770e814ed0a303e69da190a326a27ef8a4ddc3120bdc0e2e993a3e76",
+    "corpus/sight/en/test.txt": "f9d5975eb90a3cc01f3f4f5e7d43840fae0195d222e0333c13f4101daf698b92",
+    "corpus/food/en/train.txt": "d979fbaf6a6a6a90804b0974ac317339daa5f5da06f7af0cf8d67de298dd372d",
+    "corpus/food/en/dev.txt": "a54f012b94dabd5b300ea76e83f8457e64a6642a6b714c44b2781c7900885531",
+    "corpus/food/en/test.txt": "9c98cd47680ebbafc69163836956066430dccf1427e557c30cb5479ff9c72b3e"
+  },
+  "missing_run_keys": [],
+  "unexpected_run_keys": [],
+  "counts_basis": "Current version-1 retained annotation scope; raw NULL counts deduplicated per sentence"
+}

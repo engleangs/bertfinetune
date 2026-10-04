@@ -1,0 +1,7 @@
+held_out_domain,matched_seeds,planned_seeds,status,seed_ids,standard_mean_f1,weighted_mean_f1,mean_difference,std_difference,p_value,ci_low,ci_high,passes_positive_0_02_effect
+coursera,5,5,complete,13;42;123;777;2024,0.0,0.0,0.0,0.0,,0.0,0.0,False
+hotel,5,5,complete,13;42;123;777;2024,0.15901712180639155,0.13125877906167618,-0.0277583427447154,0.02027911878321212,0.03763052277776954,-0.043712554308776234,-0.012476812462638482,False
+laptop,5,5,complete,13;42;123;777;2024,0.0,0.0,0.0,0.0,,0.0,0.0,False
+phone,5,5,complete,13;42;123;777;2024,0.0,0.0,0.0,0.0,,0.0,0.0,False
+sight,1,5,partial,13,0.0,0.0,0.0,0.0,,,,False
+food,1,5,partial,13,0.076103500761035,0.0211565585331452,-0.0549469422278898,0.0,,,,False
