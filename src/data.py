@@ -93,9 +93,8 @@ def build_crossdomain_split(
 ) -> Tuple[List[Example], List[Example], List[Example]]:
     """Pool source-domain train/dev and hold one entire domain out.
 
-    The current protocol combines the held-out domain's train, dev, and test
-    files for evaluation. Freeze this choice before running cross-domain work;
-    use the official test file only if that is the pre-registered decision.
+    Training and development use source domains only. Evaluation uses only
+    the held-out domain's official test file, as specified in the protocol.
     """
     train_domains = train_domains or cfg.TRAIN_DOMAINS
     test_domain = test_domain or cfg.HOLD_OUT_DOMAIN
@@ -111,14 +110,7 @@ def build_crossdomain_split(
         dev += load_domain_file(os.path.join(data_dir, files["dev"]), domain)
 
     test_files = cfg.DOMAIN_FILES[test_domain]
-    # This scaffold currently pools held-out train+dev+test for evaluation.
-    # Keep cross-domain runs disabled until the team freezes this choice and
-    # the policy for categories that do not occur in the source domains.
-    test = (
-        #load_domain_file(os.path.join(data_dir, test_files["train"]), test_domain)
-        #+ load_domain_file(os.path.join(data_dir, test_files["dev"]), test_domain)
-         load_domain_file(os.path.join(data_dir, test_files["test"]), test_domain)
-    )
+    test = load_domain_file(os.path.join(data_dir, test_files["test"]), test_domain)
     return train, dev, test
 
 

@@ -1,5 +1,9 @@
 # ABSA Triplet Extraction — Group07 Scaffold
 
+For the corrected training pipeline, NULL extension and small seed pilot,
+start with [the 5 October experiment guide](experiment-guide-2026-10-05.md)
+and `run_experiments.py`. The commands below describe the historical runner.
+
 ## What changed from the LoRA version
 - **Core comparison unchanged**: BERT with standard loss vs. class-weighted
   loss. Still the one variable that differs between configs.

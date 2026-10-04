@@ -63,11 +63,13 @@ def _triplet_set(triplets) -> set:
     return {tuple(triplet) for triplet in triplets}
 
 
-def complete_triplet_scores(gold: List[List[Triplet]], pred: List[List[Triplet]]) -> Dict:
+def complete_triplet_scores(gold: List[List[Triplet]], pred: List[List[Triplet]], category_universe=None) -> Dict:
     """Score exact aspect/category/sentiment matches with set semantics.
 
     ``macro_f1`` is the mean exact-triplet F1 across category labels.
     Duplicate annotations within one example are intentionally deduplicated.
+    Supply category_universe to freeze corrected-run macro-F1 over source
+    categories. The default preserves historical gold/prediction-union scoring.
     """
     _validate_parallel(gold, pred)
     tp, fp, fn = 0, 0, 0
@@ -90,7 +92,8 @@ def complete_triplet_scores(gold: List[List[Triplet]], pred: List[List[Triplet]]
     micro_r = tp / (tp + fn) if (tp + fn) else 0.0
     micro_f1 = 2 * micro_p * micro_r / (micro_p + micro_r) if (micro_p + micro_r) else 0.0
 
-    classes = set(per_class_tp) | set(per_class_fp) | set(per_class_fn)
+    classes = (set(category_universe) if category_universe is not None
+               else set(per_class_tp) | set(per_class_fp) | set(per_class_fn))
     class_f1s = []
     for c in classes:
         p = per_class_tp[c] / (per_class_tp[c] + per_class_fp[c]) if (per_class_tp[c] + per_class_fp[c]) else 0.0
@@ -143,13 +146,7 @@ def precision_recall_by_label(gold: List[List[Triplet]], pred: List[List[Triplet
 
 
 def identify_rare_labels(label_counts: Dict[str, int], max_count: int =5) -> List[str]:
-    """'Rare' = bottom third of labels by training-set frequency, by default.
-    TODO : eyeball the actual distribution once you have real counts —
-    if there's a natural cliff (e.g. a few labels with <20 examples vs. the
-    rest with hundreds), use that cliff instead of a fixed fraction."""
-    # sorted_labels = sorted(label_counts.items(), key=lambda kv: kv[1])
-    # cutoff = max(1, int(len(sorted_labels) * bottom_fraction))
-    # return [label for label, _ in sorted_labels[:cutoff]]
+    """Return labels with 1 through max_count retained source-training targets."""
     if max_count < 1:
         raise ValueError("max_count must be at least 1")
     return sorted(label for label, count in label_counts.items() if 1 <= count <= max_count)

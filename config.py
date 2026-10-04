@@ -6,9 +6,9 @@ Revised design per professor feedback:
       2. CROSS-DOMAIN — train on 6 domains, test on 1 held-out domain (new research Q)
   - Each (config, mode) pair is run across multiple seeds, not once.
 
-TODO (do this FIRST, before running anything):
-  Pre-register HOLD_OUT_DOMAIN and MIN_EFFECT_SIZE below, dated, in your own
-  notes/commit message. Changing these after seeing results defeats the point.
+Historical settings are recorded in protocol.md. The current reporting
+amendment and staged continuation are in protocol-amendment-2026-10-04.md.
+New loss configurations belong to a separately versioned development study.
 """
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -27,21 +27,22 @@ DOMAIN_FILES = {
     for domain in DOMAINS
 }
 
-# --- Pre-registration (fill in BEFORE running anything, then don't change it) ---
-HOLD_OUT_DOMAIN = "restaurant"          # TODO: team decision, documented + dated
+# Historical choices documented in protocol version 1.0.
+HOLD_OUT_DOMAIN = "restaurant"
 TRAIN_DOMAINS = [d for d in DOMAINS if d != HOLD_OUT_DOMAIN]
-MIN_EFFECT_SIZE = 0.02                # TODO: team decision — F1 points that count as "improvement"
+MIN_EFFECT_SIZE = 0.02  # Absolute F1 threshold: two percentage points.
 RARE_CATEGORY_MAX_COUNT = 5
 # Raw M-ABSA files mix long and abbreviated polarity names. src.data
 # normalizes those aliases to these canonical labels. ``conflict`` occurs in
-# a small number of restaurant examples and remains a distinct fourth class.
+# five deduplicated training annotations across coursera, hotel and food.
+# Only one is retained by the current explicit scope; keep the historical
+# fourth class until a separately named three-class sensitivity experiment.
 SENTIMENTS = ["positive", "negative", "neutral", "conflict"]
 BIO_LABELS = ["O", "B-ASP", "I-ASP"]
 
 MODEL_NAME = "bert-base-uncased"
 MAX_LEN = 128
-SEEDS = [13, 42, 123, 2024, 777]       # 5 seeds, per feedback. Cut to first 3 if week 4 is tight —
-                                        # documented scope reduction, same pattern as your risk cards.
+SEEDS = [13, 42, 123, 2024, 777]  # Matched five-seed comparison.
 
 
 @dataclass
