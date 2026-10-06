@@ -49,7 +49,7 @@ def parser():
     p.add_argument("--model-revision", default=BERT_REVISION, help="Immutable model/tokenizer commit SHA; custom models need their own revision")
     p.add_argument("--online", action="store_true", help="Permit downloading the pinned model instead of using its local cache")
     # None means retain the named recipe's setting, rather than silently overriding it.
-    p.add_argument("--loss", dest="loss_type", choices=("standard", "weighted", "mixed", "focal"), default=None)
+    p.add_argument("--loss",dest="loss_type",choices=("standard", "weighted", "mixed", "focal", "class_balanced"),default=None)
     p.add_argument("--loss-heads", nargs="+", choices=("bio", "category", "sentiment"), default=None)
     p.add_argument("--null-head", action=argparse.BooleanOptionalAction, default=None)
     p.add_argument("--vocabulary-scope", choices=("auto", "explicit", "explicit-null"), default=None)
@@ -62,6 +62,7 @@ def parser():
         ("null-loss-weight", float), ("null-pos-weight-cap", float), ("null-threshold", float),
         ("warmup-ratio", float), ("max-grad-norm", float), ("lr", float), ("weight-decay", float),
         ("epochs", int), ("batch-size", int), ("max-len", int),
+        ("class-balance-beta", float),
     ):
         p.add_argument(f"--{flag}", type=kind, default=None)
     return p
