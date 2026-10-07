@@ -1,8 +1,8 @@
 {
-  "verified_bundle_inputs": 138,
+  "verified_bundle_inputs": 139,
   "verified_archive_entries": 1209,
   "portable_standard_library_run": true,
   "identical_portable_comparisons": true,
   "model_weights_excluded": true,
-  "bundle_bytes": 90340391
+  "bundle_bytes": 90344039
 }
