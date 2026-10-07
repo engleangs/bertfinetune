@@ -14,6 +14,7 @@ class TrialConfig(ExperimentConfig):
     ce_weight: float = 1.0
     weighted_ce_weight: float = 0.5
     focal_gamma: float = 2.0
+    class_balance_beta: float = 0.9999
     bio_loss_weight: float = 1.0
     null_head: bool = False
     vocabulary_scope: str = "auto"
@@ -35,8 +36,12 @@ class TrialConfig(ExperimentConfig):
                    self.warmup_ratio, self.max_grad_norm, self.null_threshold, *self.null_thresholds)
         if any(not math.isfinite(value) for value in numeric):
             raise ValueError("Experiment settings must be finite")
-        if self.loss_type not in ("standard", "weighted", "mixed", "focal"):
+        if self.loss_type not in ("standard", "weighted", "mixed", "focal","class_balanced"):
             raise ValueError("Unknown loss type")
+        if not 0 <= self.class_balance_beta < 1:
+            raise ValueError(
+                "class_balance_beta must be in [0, 1)"
+            )
         if not self.loss_heads or set(self.loss_heads) - {"bio", "category", "sentiment"}:
             raise ValueError("Choose BIO, category, sentiment, or all loss heads")
         if len(set(self.loss_heads)) != len(self.loss_heads):
@@ -80,9 +85,32 @@ def candidate_recipes(suite):
     """Small named grids; flags can extend a chosen recipe without hidden tuning."""
     baseline = [{"name": "standard", "loss_type": "standard"}, {"name": "weighted", "loss_type": "weighted"}]
     loss = baseline + [
-        {"name": f"mixed_{label}", "loss_type": "mixed", "ce_weight": 1 - alpha, "weighted_ce_weight": alpha}
-        for label, alpha in [("025", 0.25), ("033", 1 / 3), ("050", 0.5), ("075", 0.75)]
-    ] + [{"name": f"focal_{gamma}", "loss_type": "focal", "focal_gamma": float(gamma)} for gamma in (1, 2)]
+    {
+        "name": f"mixed_{label}",
+        "loss_type": "mixed",
+        "ce_weight": 1 - alpha,
+        "weighted_ce_weight": alpha,
+    }
+    for label, alpha in [
+        ("025", 0.25),
+        ("033", 1 / 3),
+        ("050", 0.5),
+        ("075", 0.75),
+    ]
+] + [
+    {
+        "name": f"focal_{gamma}",
+        "loss_type": "focal",
+        "focal_gamma": float(gamma),
+    }
+    for gamma in (1, 2)
+] + [
+    {
+        "name": "class_balanced",
+        "loss_type": "class_balanced",
+        "class_balance_beta": 0.9999,
+    }
+]
     heads = baseline + [{"name": f"weighted_{head}", "loss_type": "weighted", "loss_heads": (head,)} for head in ("bio", "category", "sentiment")]
     null = [{"name": "standard_null_vocab", "loss_type": "standard", "vocabulary_scope": "explicit-null"},
             {"name": "standard_null", "loss_type": "standard", "null_head": True, "vocabulary_scope": "explicit-null"}]
