@@ -1,0 +1,26 @@
+{
+  "completed_at_utc": "2026-10-07T08:29:17.213219+00:00",
+  "domains": [
+    "coursera",
+    "hotel",
+    "laptop",
+    "restaurant",
+    "phone",
+    "sight",
+    "food"
+  ],
+  "host": "DESKTOP-SCTEHRN",
+  "pid": 13260,
+  "report": "D:\\UoA\\bertfinetune\\lodo_finetuning_results\\report.md",
+  "seeds": [
+    13,
+    42,
+    123,
+    2024,
+    777
+  ],
+  "started_at_utc": "2026-10-07T08:26:54.449966+00:00",
+  "status": "complete",
+  "trial_id": "mixed_025_da1a88a51a5f",
+  "updated_at_utc": "2026-10-07T08:29:17.213219+00:00"
+}

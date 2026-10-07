@@ -1,0 +1,732 @@
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 7552.04it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/470 [00:00<?, ?it/s]label counts:   8%|8         | 39/470 [00:00<00:01, 383.06it/s]label counts:  17%|#6        | 78/470 [00:00<00:01, 378.12it/s]label counts:  25%|##4       | 116/470 [00:00<00:00, 376.34it/s]label counts:  33%|###2      | 155/470 [00:00<00:00, 378.42it/s]label counts:  41%|####1     | 193/470 [00:00<00:00, 373.78it/s]label counts:  49%|####9     | 231/470 [00:00<00:00, 374.11it/s]label counts:  57%|#####7    | 269/470 [00:00<00:00, 355.36it/s]label counts:  65%|######4   | 305/470 [00:00<00:00, 338.90it/s]label counts:  72%|#######2  | 340/470 [00:00<00:00, 334.34it/s]label counts:  80%|#######9  | 375/470 [00:01<00:00, 338.76it/s]label counts:  87%|########7 | 410/470 [00:01<00:00, 341.22it/s]label counts:  96%|#########5| 449/470 [00:01<00:00, 354.06it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 6430.35it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/470 [00:00<?, ?it/s]label counts:   8%|8         | 38/470 [00:00<00:01, 376.25it/s]label counts:  16%|#6        | 76/470 [00:00<00:01, 376.12it/s]label counts:  24%|##4       | 114/470 [00:00<00:00, 373.50it/s]label counts:  33%|###2      | 153/470 [00:00<00:00, 377.29it/s]label counts:  41%|####      | 191/470 [00:00<00:00, 374.26it/s]label counts:  49%|####8     | 229/470 [00:00<00:00, 370.84it/s]label counts:  57%|#####6    | 267/470 [00:00<00:00, 349.78it/s]label counts:  64%|######4   | 303/470 [00:00<00:00, 343.57it/s]label counts:  72%|#######1  | 338/470 [00:00<00:00, 335.54it/s]label counts:  79%|#######9  | 373/470 [00:01<00:00, 337.79it/s]label counts:  87%|########7 | 411/470 [00:01<00:00, 348.08it/s]label counts:  96%|#########5| 451/470 [00:01<00:00, 362.62it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 5528.14it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/470 [00:00<?, ?it/s]label counts:   6%|5         | 28/470 [00:00<00:01, 275.88it/s]label counts:  12%|#2        | 58/470 [00:00<00:01, 286.63it/s]label counts:  21%|##        | 97/470 [00:00<00:01, 331.87it/s]label counts:  29%|##9       | 137/470 [00:00<00:00, 356.47it/s]label counts:  38%|###7      | 177/470 [00:00<00:00, 370.70it/s]label counts:  46%|####5     | 216/470 [00:00<00:00, 375.92it/s]label counts:  54%|#####4    | 254/470 [00:00<00:00, 356.44it/s]label counts:  62%|######1   | 290/470 [00:00<00:00, 348.97it/s]label counts:  69%|######9   | 326/470 [00:00<00:00, 343.17it/s]label counts:  77%|#######6  | 361/470 [00:01<00:00, 340.12it/s]label counts:  84%|########4 | 396/470 [00:01<00:00, 340.32it/s]label counts:  92%|#########2| 434/470 [00:01<00:00, 349.04it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 6642.84it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/470 [00:00<?, ?it/s]label counts:   9%|8         | 40/470 [00:00<00:01, 391.46it/s]label counts:  17%|#7        | 80/470 [00:00<00:01, 389.63it/s]label counts:  25%|##5       | 119/470 [00:00<00:00, 381.06it/s]label counts:  34%|###3      | 158/470 [00:00<00:00, 379.90it/s]label counts:  42%|####1     | 197/470 [00:00<00:00, 379.45it/s]label counts:  50%|#####     | 235/470 [00:00<00:00, 370.99it/s]label counts:  58%|#####8    | 273/470 [00:00<00:00, 349.59it/s]label counts:  66%|######5   | 309/470 [00:00<00:00, 339.27it/s]label counts:  73%|#######3  | 344/470 [00:00<00:00, 327.17it/s]label counts:  80%|########  | 378/470 [00:01<00:00, 329.23it/s]label counts:  89%|########8 | 417/470 [00:01<00:00, 345.50it/s]label counts:  97%|#########7| 458/470 [00:01<00:00, 363.17it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 6030.48it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/472 [00:00<?, ?it/s]label counts:   7%|6         | 31/472 [00:00<00:01, 309.85it/s]label counts:  14%|#3        | 64/472 [00:00<00:01, 314.98it/s]label counts:  21%|##        | 98/472 [00:00<00:01, 324.72it/s]label counts:  28%|##8       | 134/472 [00:00<00:01, 337.19it/s]label counts:  36%|###6      | 170/472 [00:00<00:00, 344.11it/s]label counts:  44%|####3     | 207/472 [00:00<00:00, 351.66it/s]label counts:  51%|#####1    | 243/472 [00:00<00:00, 353.22it/s]label counts:  59%|#####9    | 279/472 [00:00<00:00, 334.39it/s]label counts:  66%|######6   | 313/472 [00:00<00:00, 313.95it/s]label counts:  73%|#######3  | 345/472 [00:01<00:00, 302.91it/s]label counts:  80%|#######9  | 377/472 [00:01<00:00, 305.08it/s]label counts:  88%|########7 | 414/472 [00:01<00:00, 321.76it/s]label counts:  96%|#########5| 452/472 [00:01<00:00, 335.62it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 5862.08it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/472 [00:00<?, ?it/s]label counts:   8%|8         | 40/472 [00:00<00:01, 400.00it/s]label counts:  17%|#7        | 81/472 [00:00<00:00, 403.51it/s]label counts:  26%|##5       | 122/472 [00:00<00:00, 395.66it/s]label counts:  34%|###4      | 162/472 [00:00<00:00, 389.18it/s]label counts:  43%|####2     | 201/472 [00:00<00:00, 387.31it/s]label counts:  51%|#####1    | 241/472 [00:00<00:00, 389.42it/s]label counts:  59%|#####9    | 280/472 [00:00<00:00, 364.95it/s]label counts:  67%|######7   | 317/472 [00:00<00:00, 345.71it/s]label counts:  75%|#######4  | 352/472 [00:00<00:00, 339.36it/s]label counts:  82%|########1 | 387/472 [00:01<00:00, 337.23it/s]label counts:  90%|######### | 426/472 [00:01<00:00, 352.22it/s]label counts:  98%|#########8| 463/472 [00:01<00:00, 356.13it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 6633.34it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/472 [00:00<?, ?it/s]label counts:   8%|8         | 39/472 [00:00<00:01, 386.64it/s]label counts:  17%|#6        | 78/472 [00:00<00:01, 382.81it/s]label counts:  25%|##4       | 117/472 [00:00<00:00, 381.55it/s]label counts:  33%|###3      | 156/472 [00:00<00:00, 381.70it/s]label counts:  41%|####1     | 195/472 [00:00<00:00, 380.66it/s]label counts:  50%|####9     | 234/472 [00:00<00:00, 372.40it/s]label counts:  58%|#####7    | 272/472 [00:00<00:00, 349.06it/s]label counts:  65%|######5   | 308/472 [00:00<00:00, 341.60it/s]label counts:  73%|#######2  | 343/472 [00:00<00:00, 339.11it/s]label counts:  80%|########  | 378/472 [00:01<00:00, 340.30it/s]label counts:  88%|########8 | 416/472 [00:01<00:00, 350.34it/s]label counts:  96%|#########6| 455/472 [00:01<00:00, 361.57it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 6861.89it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/472 [00:00<?, ?it/s]label counts:   8%|8         | 40/472 [00:00<00:01, 394.35it/s]label counts:  17%|#7        | 81/472 [00:00<00:00, 398.84it/s]label counts:  26%|##5       | 121/472 [00:00<00:00, 364.39it/s]label counts:  34%|###4      | 161/472 [00:00<00:00, 376.13it/s]label counts:  43%|####2     | 201/472 [00:00<00:00, 383.12it/s]label counts:  51%|#####     | 240/472 [00:00<00:00, 381.49it/s]label counts:  59%|#####9    | 279/472 [00:00<00:00, 359.08it/s]label counts:  67%|######6   | 316/472 [00:00<00:00, 345.84it/s]label counts:  74%|#######4  | 351/472 [00:00<00:00, 339.24it/s]label counts:  82%|########1 | 386/472 [00:01<00:00, 326.56it/s]label counts:  89%|########9 | 422/472 [00:01<00:00, 334.11it/s]label counts:  98%|#########7| 462/472 [00:01<00:00, 351.67it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 5853.00it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/471 [00:00<?, ?it/s]label counts:   8%|8         | 40/471 [00:00<00:01, 392.17it/s]label counts:  17%|#7        | 81/471 [00:00<00:00, 402.55it/s]label counts:  26%|##5       | 122/471 [00:00<00:00, 360.02it/s]label counts:  34%|###4      | 162/471 [00:00<00:00, 372.63it/s]label counts:  43%|####2     | 201/471 [00:00<00:00, 376.92it/s]label counts:  51%|#####     | 239/471 [00:00<00:00, 376.10it/s]label counts:  59%|#####8    | 277/471 [00:00<00:00, 358.02it/s]label counts:  67%|######6   | 314/471 [00:00<00:00, 345.13it/s]label counts:  74%|#######4  | 349/471 [00:00<00:00, 345.12it/s]label counts:  82%|########1 | 384/471 [00:01<00:00, 339.32it/s]label counts:  90%|########9 | 423/471 [00:01<00:00, 351.21it/s]label counts:  99%|#########8| 464/471 [00:01<00:00, 367.96it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 6030.00it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/471 [00:00<?, ?it/s]label counts:   8%|8         | 40/471 [00:00<00:01, 392.16it/s]label counts:  17%|#6        | 80/471 [00:00<00:01, 387.54it/s]label counts:  25%|##5       | 119/471 [00:00<00:00, 381.08it/s]label counts:  34%|###3      | 159/471 [00:00<00:00, 386.80it/s]label counts:  42%|####2     | 198/471 [00:00<00:00, 382.51it/s]label counts:  50%|#####     | 237/471 [00:00<00:00, 378.50it/s]label counts:  58%|#####8    | 275/471 [00:00<00:00, 353.74it/s]label counts:  66%|######6   | 311/471 [00:00<00:00, 340.00it/s]label counts:  73%|#######3  | 346/471 [00:00<00:00, 326.89it/s]label counts:  81%|########  | 381/471 [00:01<00:00, 332.53it/s]label counts:  88%|########8 | 416/471 [00:01<00:00, 336.14it/s]label counts:  96%|#########6| 454/471 [00:01<00:00, 348.64it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 6633.23it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/471 [00:00<?, ?it/s]label counts:   8%|8         | 39/471 [00:00<00:01, 389.99it/s]label counts:  17%|#6        | 78/471 [00:00<00:01, 383.24it/s]label counts:  25%|##4       | 117/471 [00:00<00:00, 367.50it/s]label counts:  33%|###2      | 154/471 [00:00<00:00, 352.31it/s]label counts:  41%|####      | 191/471 [00:00<00:00, 358.22it/s]label counts:  49%|####8     | 229/471 [00:00<00:00, 364.41it/s]label counts:  56%|#####6    | 266/471 [00:00<00:00, 350.59it/s]label counts:  64%|######4   | 302/471 [00:00<00:00, 321.85it/s]label counts:  71%|#######1  | 335/471 [00:00<00:00, 308.72it/s]label counts:  78%|#######8  | 369/471 [00:01<00:00, 316.04it/s]label counts:  86%|########5 | 403/471 [00:01<00:00, 322.07it/s]label counts:  93%|#########3| 439/471 [00:01<00:00, 332.63it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 6633.34it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/471 [00:00<?, ?it/s]label counts:   8%|8         | 40/471 [00:00<00:01, 396.04it/s]label counts:  17%|#6        | 80/471 [00:00<00:01, 373.88it/s]label counts:  25%|##5       | 119/471 [00:00<00:00, 376.17it/s]label counts:  34%|###3      | 158/471 [00:00<00:00, 379.71it/s]label counts:  42%|####1     | 197/471 [00:00<00:00, 381.99it/s]label counts:  50%|#####     | 236/471 [00:00<00:00, 384.54it/s]label counts:  58%|#####8    | 275/471 [00:00<00:00, 358.12it/s]label counts:  66%|######6   | 312/471 [00:00<00:00, 343.39it/s]label counts:  74%|#######3  | 347/471 [00:00<00:00, 342.33it/s]label counts:  81%|########1 | 382/471 [00:01<00:00, 342.57it/s]label counts:  89%|########9 | 421/471 [00:01<00:00, 353.37it/s]label counts:  98%|#########8| 462/471 [00:01<00:00, 368.32it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 6633.34it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/471 [00:00<?, ?it/s]label counts:   8%|7         | 37/471 [00:00<00:01, 361.21it/s]label counts:  16%|#6        | 76/471 [00:00<00:01, 377.23it/s]label counts:  24%|##4       | 115/471 [00:00<00:00, 380.54it/s]label counts:  33%|###2      | 154/471 [00:00<00:00, 378.32it/s]label counts:  41%|####1     | 194/471 [00:00<00:00, 384.90it/s]label counts:  49%|####9     | 233/471 [00:00<00:00, 382.79it/s]label counts:  58%|#####7    | 272/471 [00:00<00:00, 361.35it/s]label counts:  66%|######5   | 309/471 [00:00<00:00, 344.24it/s]label counts:  73%|#######3  | 344/471 [00:00<00:00, 335.16it/s]label counts:  80%|########  | 378/471 [00:01<00:00, 333.27it/s]label counts:  89%|########8 | 417/471 [00:01<00:00, 349.60it/s]label counts:  97%|#########7| 459/471 [00:01<00:00, 366.93it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 5463.94it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/471 [00:00<?, ?it/s]label counts:   8%|8         | 40/471 [00:00<00:01, 388.40it/s]label counts:  17%|#6        | 79/471 [00:00<00:01, 384.62it/s]label counts:  25%|##5       | 118/471 [00:00<00:00, 383.62it/s]label counts:  34%|###3      | 158/471 [00:00<00:00, 389.79it/s]label counts:  42%|####1     | 197/471 [00:00<00:00, 389.19it/s]label counts:  50%|#####     | 236/471 [00:00<00:00, 386.81it/s]label counts:  58%|#####8    | 275/471 [00:00<00:00, 362.97it/s]label counts:  66%|######6   | 312/471 [00:00<00:00, 349.46it/s]label counts:  74%|#######3  | 348/471 [00:00<00:00, 340.56it/s]label counts:  81%|########1 | 383/471 [00:01<00:00, 334.57it/s]label counts:  89%|########9 | 421/471 [00:01<00:00, 347.35it/s]label counts:  98%|#########8| 462/471 [00:01<00:00, 365.23it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 5596.27it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/471 [00:00<?, ?it/s]label counts:   8%|8         | 40/471 [00:00<00:01, 388.37it/s]label counts:  17%|#6        | 80/471 [00:00<00:00, 391.23it/s]label counts:  25%|##5       | 120/471 [00:00<00:00, 378.12it/s]label counts:  34%|###3      | 160/471 [00:00<00:00, 383.49it/s]label counts:  42%|####2     | 199/471 [00:00<00:00, 380.35it/s]label counts:  51%|#####     | 238/471 [00:00<00:00, 377.60it/s]label counts:  59%|#####8    | 276/471 [00:00<00:00, 361.18it/s]label counts:  66%|######6   | 313/471 [00:00<00:00, 343.91it/s]label counts:  74%|#######3  | 348/471 [00:00<00:00, 338.97it/s]label counts:  81%|########1 | 383/471 [00:01<00:00, 341.13it/s]label counts:  90%|########9 | 422/471 [00:01<00:00, 354.28it/s]label counts:  97%|#########7| 459/471 [00:01<00:00, 358.33it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 6029.69it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/471 [00:00<?, ?it/s]label counts:   9%|8         | 41/471 [00:00<00:01, 402.03it/s]label counts:  17%|#7        | 82/471 [00:00<00:00, 392.28it/s]label counts:  26%|##5       | 122/471 [00:00<00:00, 387.00it/s]label counts:  34%|###4      | 161/471 [00:00<00:00, 379.43it/s]label counts:  43%|####2     | 201/471 [00:00<00:00, 385.25it/s]label counts:  51%|#####     | 240/471 [00:00<00:00, 385.81it/s]label counts:  59%|#####9    | 279/471 [00:00<00:00, 362.59it/s]label counts:  67%|######7   | 316/471 [00:00<00:00, 348.81it/s]label counts:  75%|#######4  | 352/471 [00:00<00:00, 349.41it/s]label counts:  82%|########2 | 388/471 [00:01<00:00, 338.82it/s]label counts:  91%|######### | 427/471 [00:01<00:00, 353.14it/s]label counts:  99%|#########8| 466/471 [00:01<00:00, 360.74it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 5853.28it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/470 [00:00<?, ?it/s]label counts:   8%|7         | 37/470 [00:00<00:01, 365.85it/s]label counts:  16%|#6        | 77/470 [00:00<00:01, 380.56it/s]label counts:  25%|##4       | 116/470 [00:00<00:00, 383.05it/s]label counts:  33%|###3      | 157/470 [00:00<00:00, 390.94it/s]label counts:  42%|####1     | 197/470 [00:00<00:00, 372.87it/s]label counts:  50%|#####     | 235/470 [00:00<00:00, 362.53it/s]label counts:  58%|#####8    | 273/470 [00:00<00:00, 367.03it/s]label counts:  66%|######5   | 310/470 [00:00<00:00, 361.31it/s]label counts:  74%|#######3  | 347/470 [00:00<00:00, 337.77it/s]label counts:  81%|########1 | 382/470 [00:01<00:00, 320.28it/s]label counts:  89%|########8 | 416/470 [00:01<00:00, 324.44it/s]label counts:  97%|#########7| 456/470 [00:01<00:00, 345.45it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 5853.12it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/470 [00:00<?, ?it/s]label counts:   8%|7         | 36/470 [00:00<00:01, 354.92it/s]label counts:  16%|#5        | 74/470 [00:00<00:01, 369.43it/s]label counts:  24%|##3       | 111/470 [00:00<00:00, 367.50it/s]label counts:  32%|###1      | 150/470 [00:00<00:00, 374.70it/s]label counts:  40%|####      | 188/470 [00:00<00:00, 367.18it/s]label counts:  48%|####8     | 226/470 [00:00<00:00, 370.21it/s]label counts:  56%|#####6    | 265/470 [00:00<00:00, 374.61it/s]label counts:  65%|######4   | 304/470 [00:00<00:00, 377.84it/s]label counts:  73%|#######2  | 342/470 [00:00<00:00, 363.82it/s]label counts:  81%|########  | 379/470 [00:01<00:00, 358.24it/s]label counts:  89%|########9 | 419/470 [00:01<00:00, 369.55it/s]label counts:  97%|#########7| 458/470 [00:01<00:00, 375.23it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 6030.57it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/470 [00:00<?, ?it/s]label counts:   8%|8         | 39/470 [00:00<00:01, 387.91it/s]label counts:  17%|#6        | 78/470 [00:00<00:01, 380.65it/s]label counts:  25%|##4       | 117/470 [00:00<00:00, 383.15it/s]label counts:  33%|###3      | 157/470 [00:00<00:00, 385.28it/s]label counts:  42%|####1     | 197/470 [00:00<00:00, 387.83it/s]label counts:  50%|#####     | 236/470 [00:00<00:00, 382.05it/s]label counts:  59%|#####8    | 275/470 [00:00<00:00, 379.58it/s]label counts:  67%|######6   | 313/470 [00:00<00:00, 371.92it/s]label counts:  75%|#######4  | 351/470 [00:00<00:00, 363.35it/s]label counts:  83%|########2 | 388/470 [00:01<00:00, 357.56it/s]label counts:  91%|#########1| 428/470 [00:01<00:00, 368.31it/s]label counts: 100%|#########9| 469/470 [00:01<00:00, 377.54it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 5687.72it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/470 [00:00<?, ?it/s]label counts:   4%|4         | 20/470 [00:00<00:02, 190.47it/s]label counts:   9%|8         | 40/470 [00:00<00:02, 182.31it/s]label counts:  13%|#2        | 59/470 [00:00<00:02, 180.08it/s]label counts:  17%|#6        | 79/470 [00:00<00:02, 184.78it/s]label counts:  21%|##1       | 100/470 [00:00<00:01, 190.22it/s]label counts:  26%|##5       | 120/470 [00:00<00:01, 181.09it/s]label counts:  30%|##9       | 139/470 [00:00<00:01, 175.78it/s]label counts:  34%|###3      | 158/470 [00:00<00:01, 175.56it/s]label counts:  37%|###7      | 176/470 [00:00<00:01, 173.73it/s]label counts:  41%|####1     | 195/470 [00:01<00:01, 176.71it/s]label counts:  45%|####5     | 213/470 [00:01<00:01, 163.72it/s]label counts:  49%|####9     | 232/470 [00:01<00:01, 169.10it/s]label counts:  53%|#####3    | 250/470 [00:01<00:01, 171.20it/s]label counts:  57%|#####7    | 269/470 [00:01<00:01, 174.48it/s]label counts:  61%|######1   | 288/470 [00:01<00:01, 178.42it/s]label counts:  65%|######5   | 306/470 [00:01<00:00, 177.45it/s]label counts:  69%|######8   | 324/470 [00:01<00:00, 166.54it/s]label counts:  73%|#######2  | 341/470 [00:01<00:00, 151.20it/s]label counts:  76%|#######6  | 358/470 [00:02<00:00, 154.55it/s]label counts:  80%|########  | 376/470 [00:02<00:00, 158.91it/s]label counts:  84%|########3 | 393/470 [00:02<00:00, 148.62it/s]label counts:  87%|########7 | 409/470 [00:02<00:00, 151.08it/s]label counts:  91%|#########1| 428/470 [00:02<00:00, 159.90it/s]label counts:  96%|#########5| 450/470 [00:02<00:00, 175.47it/s]label counts: 100%|##########| 470/470 [00:02<00:00, 180.39it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 5852.83it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/476 [00:00<?, ?it/s]label counts:   4%|3         | 17/476 [00:00<00:02, 161.75it/s]label counts:   7%|7         | 34/476 [00:00<00:02, 152.45it/s]label counts:  11%|#1        | 54/476 [00:00<00:02, 169.65it/s]label counts:  16%|#5        | 74/476 [00:00<00:02, 179.04it/s]label counts:  19%|#9        | 92/476 [00:00<00:02, 174.19it/s]label counts:  23%|##3       | 110/476 [00:00<00:02, 174.06it/s]label counts:  29%|##8       | 136/476 [00:00<00:01, 198.18it/s]label counts:  33%|###2      | 156/476 [00:00<00:01, 186.69it/s]label counts:  37%|###6      | 175/476 [00:01<00:01, 160.66it/s]label counts:  41%|####      | 194/476 [00:01<00:01, 168.38it/s]label counts:  45%|####4     | 213/476 [00:01<00:01, 172.80it/s]label counts:  49%|####8     | 231/476 [00:01<00:01, 172.39it/s]label counts:  52%|#####2    | 249/476 [00:01<00:01, 166.43it/s]label counts:  56%|#####6    | 267/476 [00:01<00:01, 169.26it/s]label counts:  60%|#####9    | 285/476 [00:01<00:01, 168.02it/s]label counts:  63%|######3   | 302/476 [00:01<00:01, 162.08it/s]label counts:  67%|######7   | 319/476 [00:01<00:00, 161.14it/s]label counts:  71%|#######   | 336/476 [00:02<00:00, 150.11it/s]label counts:  74%|#######3  | 352/476 [00:02<00:00, 149.55it/s]label counts:  77%|#######7  | 368/476 [00:02<00:00, 151.59it/s]label counts:  81%|########  | 384/476 [00:02<00:00, 153.09it/s]label counts:  84%|########4 | 400/476 [00:02<00:00, 149.28it/s]label counts:  87%|########7 | 415/476 [00:02<00:00, 140.03it/s]label counts:  91%|#########1| 434/476 [00:02<00:00, 151.77it/s]label counts:  95%|#########4| 450/476 [00:02<00:00, 134.80it/s]label counts:  98%|#########8| 468/476 [00:02<00:00, 144.90it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 6120.65it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/476 [00:00<?, ?it/s]label counts:   6%|5         | 27/476 [00:00<00:01, 265.99it/s]label counts:  11%|#1        | 54/476 [00:00<00:01, 217.94it/s]label counts:  16%|#6        | 77/476 [00:00<00:02, 197.30it/s]label counts:  21%|##        | 98/476 [00:00<00:02, 182.29it/s]label counts:  25%|##4       | 117/476 [00:00<00:01, 180.75it/s]label counts:  29%|##8       | 136/476 [00:00<00:01, 183.20it/s]label counts:  33%|###2      | 155/476 [00:00<00:01, 185.07it/s]label counts:  37%|###6      | 174/476 [00:00<00:01, 151.46it/s]label counts:  40%|####      | 191/476 [00:01<00:01, 153.26it/s]label counts:  44%|####3     | 208/476 [00:01<00:01, 154.20it/s]label counts:  47%|####7     | 225/476 [00:01<00:01, 158.25it/s]label counts:  52%|#####1    | 246/476 [00:01<00:01, 170.24it/s]label counts:  56%|#####5    | 265/476 [00:01<00:01, 174.57it/s]label counts:  61%|######1   | 291/476 [00:01<00:00, 196.21it/s]label counts:  65%|######5   | 311/476 [00:01<00:00, 185.83it/s]label counts:  69%|######9   | 330/476 [00:01<00:00, 180.86it/s]label counts:  73%|#######3  | 349/476 [00:01<00:00, 167.66it/s]label counts:  77%|#######7  | 367/476 [00:02<00:00, 165.00it/s]label counts:  81%|########  | 384/476 [00:02<00:00, 164.21it/s]label counts:  84%|########4 | 401/476 [00:02<00:00, 165.70it/s]label counts:  88%|########7 | 418/476 [00:02<00:00, 165.28it/s]label counts:  92%|#########2| 439/476 [00:02<00:00, 174.63it/s]label counts:  96%|#########6| 458/476 [00:02<00:00, 175.88it/s]label counts: 100%|##########| 476/476 [00:02<00:00, 167.49it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 6033.31it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/476 [00:00<?, ?it/s]label counts:   4%|3         | 17/476 [00:00<00:02, 162.25it/s]label counts:   8%|7         | 38/476 [00:00<00:02, 184.51it/s]label counts:  12%|#1        | 57/476 [00:00<00:02, 185.58it/s]label counts:  16%|#5        | 76/476 [00:00<00:02, 185.49it/s]label counts:  20%|#9        | 95/476 [00:00<00:02, 169.27it/s]label counts:  24%|##3       | 113/476 [00:00<00:02, 166.37it/s]label counts:  27%|##7       | 130/476 [00:00<00:02, 164.00it/s]label counts:  31%|###       | 147/476 [00:00<00:01, 164.77it/s]label counts:  34%|###4      | 164/476 [00:00<00:02, 154.66it/s]label counts:  38%|###7      | 180/476 [00:01<00:01, 154.92it/s]label counts:  42%|####1     | 199/476 [00:01<00:01, 163.55it/s]label counts:  46%|####6     | 220/476 [00:01<00:01, 175.36it/s]label counts:  50%|#####     | 239/476 [00:01<00:01, 179.24it/s]label counts:  54%|#####4    | 258/476 [00:01<00:01, 178.47it/s]label counts:  58%|#####8    | 277/476 [00:01<00:01, 179.22it/s]label counts:  63%|######2   | 298/476 [00:01<00:00, 185.90it/s]label counts:  67%|######6   | 317/476 [00:01<00:00, 179.79it/s]label counts:  71%|#######   | 336/476 [00:01<00:00, 164.47it/s]label counts:  74%|#######4  | 353/476 [00:02<00:00, 154.36it/s]label counts:  78%|#######7  | 370/476 [00:02<00:00, 158.06it/s]label counts:  81%|########1 | 387/476 [00:02<00:00, 154.68it/s]label counts:  85%|########5 | 405/476 [00:02<00:00, 160.10it/s]label counts:  89%|########8 | 423/476 [00:02<00:00, 165.29it/s]label counts:  93%|#########3| 445/476 [00:02<00:00, 180.13it/s]label counts:  98%|#########8| 468/476 [00:02<00:00, 192.72it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 6218.83it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/476 [00:00<?, ?it/s]label counts:   8%|7         | 38/476 [00:00<00:01, 376.23it/s]label counts:  17%|#6        | 79/476 [00:00<00:01, 391.43it/s]label counts:  25%|##5       | 119/476 [00:00<00:00, 386.57it/s]label counts:  33%|###3      | 159/476 [00:00<00:00, 389.73it/s]label counts:  42%|####1     | 199/476 [00:00<00:00, 389.21it/s]label counts:  50%|#####     | 238/476 [00:00<00:00, 389.22it/s]label counts:  59%|#####8    | 279/476 [00:00<00:00, 393.39it/s]label counts:  67%|######7   | 319/476 [00:00<00:00, 392.99it/s]label counts:  75%|#######5  | 359/476 [00:00<00:00, 373.28it/s]label counts:  83%|########3 | 397/476 [00:01<00:00, 349.05it/s]label counts:  91%|#########1| 435/476 [00:01<00:00, 354.26it/s]label counts:  99%|#########8| 471/476 [00:01<00:00, 352.16it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 5852.63it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/470 [00:00<?, ?it/s]label counts:   8%|8         | 39/470 [00:00<00:01, 382.36it/s]label counts:  17%|#6        | 78/470 [00:00<00:01, 362.59it/s]label counts:  25%|##4       | 117/470 [00:00<00:00, 373.79it/s]label counts:  33%|###3      | 156/470 [00:00<00:00, 378.85it/s]label counts:  41%|####1     | 195/470 [00:00<00:00, 380.60it/s]label counts:  50%|####9     | 234/470 [00:00<00:00, 374.19it/s]label counts:  58%|#####7    | 272/470 [00:00<00:00, 366.12it/s]label counts:  66%|######5   | 309/470 [00:00<00:00, 366.10it/s]label counts:  74%|#######3  | 346/470 [00:00<00:00, 350.57it/s]label counts:  81%|########1 | 382/470 [00:01<00:00, 329.76it/s]label counts:  89%|########8 | 416/470 [00:01<00:00, 325.78it/s]label counts:  96%|#########5| 449/470 [00:01<00:00, 324.96it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 5852.95it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/470 [00:00<?, ?it/s]label counts:   8%|7         | 36/470 [00:00<00:01, 351.82it/s]label counts:  15%|#5        | 72/470 [00:00<00:01, 345.10it/s]label counts:  23%|##3       | 110/470 [00:00<00:01, 359.57it/s]label counts:  31%|###1      | 147/470 [00:00<00:00, 363.43it/s]label counts:  39%|###9      | 184/470 [00:00<00:00, 359.96it/s]label counts:  47%|####7     | 221/470 [00:00<00:00, 357.35it/s]label counts:  55%|#####4    | 257/470 [00:00<00:00, 354.52it/s]label counts:  62%|######2   | 293/470 [00:00<00:00, 355.13it/s]label counts:  70%|#######   | 329/470 [00:00<00:00, 346.37it/s]label counts:  77%|#######7  | 364/470 [00:01<00:00, 330.84it/s]label counts:  85%|########4 | 398/470 [00:01<00:00, 323.87it/s]label counts:  92%|#########1| 431/470 [00:01<00:00, 324.60it/s]label counts:  99%|#########8| 465/470 [00:01<00:00, 326.66it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 6218.46it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/470 [00:00<?, ?it/s]label counts:   8%|8         | 38/470 [00:00<00:01, 376.24it/s]label counts:  17%|#6        | 78/470 [00:00<00:01, 387.88it/s]label counts:  25%|##4       | 117/470 [00:00<00:00, 387.99it/s]label counts:  33%|###3      | 157/470 [00:00<00:00, 390.61it/s]label counts:  42%|####1     | 197/470 [00:00<00:00, 387.87it/s]label counts:  50%|#####     | 236/470 [00:00<00:00, 384.70it/s]label counts:  59%|#####8    | 275/470 [00:00<00:00, 384.15it/s]label counts:  67%|######6   | 314/470 [00:00<00:00, 351.13it/s]label counts:  74%|#######4  | 350/470 [00:00<00:00, 327.02it/s]label counts:  82%|########1 | 384/470 [00:01<00:00, 316.31it/s]label counts:  89%|########8 | 417/470 [00:01<00:00, 307.98it/s]label counts:  96%|#########5| 450/470 [00:01<00:00, 312.61it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 6419.47it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+label counts:   0%|          | 0/470 [00:00<?, ?it/s]label counts:   7%|7         | 35/470 [00:00<00:01, 349.99it/s]label counts:  15%|#5        | 71/470 [00:00<00:01, 351.30it/s]label counts:  23%|##2       | 108/470 [00:00<00:01, 358.03it/s]label counts:  31%|###       | 145/470 [00:00<00:00, 360.86it/s]label counts:  39%|###8      | 182/470 [00:00<00:00, 355.70it/s]label counts:  47%|####6     | 219/470 [00:00<00:00, 359.65it/s]label counts:  54%|#####4    | 256/470 [00:00<00:00, 360.38it/s]label counts:  62%|######2   | 293/470 [00:00<00:00, 353.92it/s]label counts:  70%|#######   | 329/470 [00:00<00:00, 342.26it/s]label counts:  77%|#######7  | 364/470 [00:01<00:00, 331.39it/s]label counts:  85%|########4 | 398/470 [00:01<00:00, 320.15it/s]label counts:  92%|#########1| 431/470 [00:01<00:00, 321.07it/s]label counts:  99%|#########9| 466/470 [00:01<00:00, 326.55it/s]                                                                Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 4325.17it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 9949.65it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 8292.27it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 9045.33it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 9045.42it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 8291.44it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 8608.18it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 9045.52it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 8651.81it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 8651.81it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 9950.01it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 8198.60it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 9044.93it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 8653.52it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 9437.76it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 7653.84it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 8651.55it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 9041.70it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 9480.97it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 6633.45it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 8149.61it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 7654.19it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 4628.17it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Traceback (most recent call last):
+  File "D:\UoA\bertfinetune\run_experiments.py", line 272, in <module>
+    main()
+  File "D:\UoA\bertfinetune\run_experiments.py", line 267, in main
+    write_development_summary(args.output.resolve())
+  File "D:\UoA\bertfinetune\run_experiments.py", line 229, in write_development_summary
+    upsert_csv_row(output / "development_results.csv", row, list(row), ("mode", "domain", "trial_id", "seed", "scope"))
+  File "D:\UoA\bertfinetune\src\artifacts.py", line 95, in upsert_csv_row
+    os.replace(temporary, destination)
+PermissionError: [WinError 5] Access is denied: 'D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\.development_results.csv.sls3tbd1.tmp' -> 'D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\development_results.csv'
+Traceback (most recent call last):
+  File "D:\UoA\bertfinetune\continue_lodo_finetuning.py", line 277, in <module>
+    main()
+  File "D:\UoA\bertfinetune\continue_lodo_finetuning.py", line 265, in main
+    subprocess.run(command(args, variant, "final", seeds), cwd=ROOT, check=True)
+  File "C:\Users\KPG\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['D:\\UoA\\bertfinetune\\.venv\\Scripts\\python.exe', '-u', 'D:\\UoA\\bertfinetune\\run_experiments.py', '--stage', 'final', '--mode', 'crossdomain', '--held-out-domains', 'coursera', 'hotel', 'laptop', 'restaurant', 'phone', 'sight', 'food', '--suite', 'loss', '--recipes', 'mixed_025', '--seeds', '13', '42', '123', '2024', '777', '--output', 'D:\\UoA\\bertfinetune\\artifacts\\experiments_v2', '--device', 'auto', '--model-name', 'bert-base-uncased', '--model-revision', '86b5e0934494bd15c9632b12f734a8a67f723594', '--loss', 'mixed', '--loss-heads', 'bio', 'category', 'sentiment', '--vocabulary-scope', 'auto', '--selection-metric', 'explicit', '--null-thresholds', '0.2', '0.3', '0.4', '0.5', '0.6', '0.7', '0.8', '--no-null-head', '--no-drop-conflict', '--execute', '--lr', '3e-05', '--epochs', '5', '--batch-size', '16', '--max-len', '128', '--weight-decay', '0.01', '--ce-weight', '0.75', '--weighted-ce-weight', '0.25', '--focal-gamma', '2.0', '--bio-loss-weight', '1.0', '--category-loss-weight', '1.0', '--sentiment-loss-weight', '1.0', '--null-loss-weight', '0.5', '--null-pos-weight-cap', '1.0', '--null-threshold', '0.5', '--warmup-ratio', '0.1', '--max-grad-norm', '1.0']' returned non-zero exit status 1.

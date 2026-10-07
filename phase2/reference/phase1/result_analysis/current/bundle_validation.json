@@ -1,0 +1,16 @@
+{
+  "validated_at": "2026-10-04T23:14:05.609173+00:00",
+  "validated_runs": 80,
+  "matched_seed_pairs": 40,
+  "notebook_code_cells_executed": 11,
+  "notebook_errors": 0,
+  "notebook_sha256": "9d98d7a5ece54abcf1ca70305e23ba1be7c9a9122bc912357842819354ebbdf5",
+  "torch_or_transformers_imported": false,
+  "analysis_protocol_version": "1.1",
+  "checks": [
+    "Full-triplet precision/recall/F1 match saved metrics and indexes",
+    "Gold sentences, annotation scope and source-training vocabularies/counts match corpus",
+    "80 planned logical runs and 40 matched seed pairs, without duplicates",
+    "All packaged notebook code cells run from repository root using CPU-only analysis"
+  ]
+}

@@ -1,0 +1,144 @@
+{"at": "2026-10-06T10:18:30.827552+00:00", "event": "legacy_calibrated", "seed": 13, "threshold": 1.0}
+{"at": "2026-10-06T10:24:16.618186+00:00", "event": "run_started", "seed": 13, "stage": "2-3_loss_screen", "trial_id": "null_off_e2306bf501df"}
+{"at": "2026-10-06T10:26:27.640646+00:00", "epoch": 1, "event": "epoch_completed", "seconds": 124.84400000000005, "seed": 13, "trial_id": "null_off_e2306bf501df"}
+{"at": "2026-10-06T10:28:35.787840+00:00", "epoch": 2, "event": "epoch_completed", "seconds": 126.34400000000005, "seed": 13, "trial_id": "null_off_e2306bf501df"}
+{"at": "2026-10-06T10:30:43.703031+00:00", "epoch": 3, "event": "epoch_completed", "seconds": 126.14100000000053, "seed": 13, "trial_id": "null_off_e2306bf501df"}
+{"at": "2026-10-06T10:30:44.636666+00:00", "combined_f1": 0.28803758583303213, "event": "run_completed", "null_f1": 0.0, "seed": 13, "stage": "2-3_loss_screen", "trial_id": "null_off_e2306bf501df"}
+{"at": "2026-10-06T10:30:45.183401+00:00", "event": "run_started", "seed": 13, "stage": "2-3_loss_screen", "trial_id": "bce_cls_72b9117e2b7f"}
+{"at": "2026-10-06T10:32:55.319641+00:00", "epoch": 1, "event": "epoch_completed", "seconds": 127.59400000000005, "seed": 13, "trial_id": "bce_cls_72b9117e2b7f"}
+{"at": "2026-10-06T10:35:05.569345+00:00", "epoch": 2, "event": "epoch_completed", "seconds": 128.48500000000058, "seed": 13, "trial_id": "bce_cls_72b9117e2b7f"}
+{"at": "2026-10-06T10:37:15.481896+00:00", "epoch": 3, "event": "epoch_completed", "seconds": 128.07800000000043, "seed": 13, "trial_id": "bce_cls_72b9117e2b7f"}
+{"at": "2026-10-06T10:37:16.387176+00:00", "combined_f1": 0.2878842676311031, "event": "run_completed", "null_f1": 0.0, "seed": 13, "stage": "2-3_loss_screen", "trial_id": "bce_cls_72b9117e2b7f"}
+{"at": "2026-10-06T10:37:17.001628+00:00", "event": "run_started", "seed": 13, "stage": "2-3_loss_screen", "trial_id": "focal_cls_cb0f8a9e7ef7"}
+{"at": "2026-10-06T10:39:27.447102+00:00", "epoch": 1, "event": "epoch_completed", "seconds": 127.84400000000005, "seed": 13, "trial_id": "focal_cls_cb0f8a9e7ef7"}
+{"at": "2026-10-06T10:41:37.009659+00:00", "epoch": 2, "event": "epoch_completed", "seconds": 127.73500000000058, "seed": 13, "trial_id": "focal_cls_cb0f8a9e7ef7"}
+{"at": "2026-10-06T10:43:47.254202+00:00", "epoch": 3, "event": "epoch_completed", "seconds": 128.45300000000043, "seed": 13, "trial_id": "focal_cls_cb0f8a9e7ef7"}
+{"at": "2026-10-06T10:43:48.294355+00:00", "combined_f1": 0.28825235678027555, "event": "run_completed", "null_f1": 0.0, "seed": 13, "stage": "2-3_loss_screen", "trial_id": "focal_cls_cb0f8a9e7ef7"}
+{"at": "2026-10-06T10:43:48.698390+00:00", "event": "run_started", "seed": 13, "stage": "2-3_loss_screen", "trial_id": "asl_cls_ccd29d82c495"}
+{"at": "2026-10-06T10:45:59.194897+00:00", "epoch": 1, "event": "epoch_completed", "seconds": 128.03200000000015, "seed": 13, "trial_id": "asl_cls_ccd29d82c495"}
+{"at": "2026-10-06T10:48:10.910400+00:00", "epoch": 2, "event": "epoch_completed", "seconds": 129.64100000000053, "seed": 13, "trial_id": "asl_cls_ccd29d82c495"}
+{"at": "2026-10-06T10:50:21.362174+00:00", "epoch": 3, "event": "epoch_completed", "seconds": 128.64100000000053, "seed": 13, "trial_id": "asl_cls_ccd29d82c495"}
+{"at": "2026-10-06T10:50:22.396044+00:00", "combined_f1": 0.282787634900311, "event": "run_completed", "null_f1": 0.0, "seed": 13, "stage": "2-3_loss_screen", "trial_id": "asl_cls_ccd29d82c495"}
+{"at": "2026-10-06T10:50:22.863049+00:00", "event": "run_started", "seed": 13, "stage": "4_implicit_representation", "trial_id": "focal_ia_3a9090049047"}
+{"at": "2026-10-06T10:52:36.877930+00:00", "epoch": 1, "event": "epoch_completed", "seconds": 128.0630000000001, "seed": 13, "trial_id": "focal_ia_3a9090049047"}
+{"at": "2026-10-06T10:54:46.458581+00:00", "epoch": 2, "event": "epoch_completed", "seconds": 127.79700000000048, "seed": 13, "trial_id": "focal_ia_3a9090049047"}
+{"at": "2026-10-06T10:56:55.297774+00:00", "epoch": 3, "event": "epoch_completed", "seconds": 127.03099999999995, "seed": 13, "trial_id": "focal_ia_3a9090049047"}
+{"at": "2026-10-06T10:56:56.348484+00:00", "combined_f1": 0.29263005780346824, "event": "run_completed", "null_f1": 0.0, "seed": 13, "stage": "4_implicit_representation", "trial_id": "focal_ia_3a9090049047"}
+{"at": "2026-10-06T10:56:57.070934+00:00", "event": "run_started", "seed": 13, "stage": "4_implicit_representation", "trial_id": "focal_ia_attention_013a87dbfbd4"}
+{"at": "2026-10-06T10:59:15.182233+00:00", "epoch": 1, "event": "epoch_completed", "seconds": 134.60900000000038, "seed": 13, "trial_id": "focal_ia_attention_013a87dbfbd4"}
+{"at": "2026-10-06T11:01:32.453404+00:00", "epoch": 2, "event": "epoch_completed", "seconds": 134.5619999999999, "seed": 13, "trial_id": "focal_ia_attention_013a87dbfbd4"}
+{"at": "2026-10-06T11:03:49.765966+00:00", "epoch": 3, "event": "epoch_completed", "seconds": 134.8119999999999, "seed": 13, "trial_id": "focal_ia_attention_013a87dbfbd4"}
+{"at": "2026-10-06T11:03:51.067015+00:00", "combined_f1": 0.2932031814895156, "event": "run_completed", "null_f1": 0.0, "seed": 13, "stage": "4_implicit_representation", "trial_id": "focal_ia_attention_013a87dbfbd4"}
+{"at": "2026-10-06T11:03:51.950896+00:00", "event": "run_started", "seed": 13, "stage": "5_negative_sampling", "trial_id": "focal_ia_attention_random_b3d539181258"}
+{"at": "2026-10-06T11:06:06.969065+00:00", "epoch": 1, "event": "epoch_completed", "seconds": 131.85999999999967, "seed": 13, "trial_id": "focal_ia_attention_random_b3d539181258"}
+{"at": "2026-10-06T11:08:19.351563+00:00", "epoch": 2, "event": "epoch_completed", "seconds": 130.625, "seed": 13, "trial_id": "focal_ia_attention_random_b3d539181258"}
+{"at": "2026-10-06T11:10:32.203296+00:00", "epoch": 3, "event": "epoch_completed", "seconds": 131.09299999999985, "seed": 13, "trial_id": "focal_ia_attention_random_b3d539181258"}
+{"at": "2026-10-06T11:10:33.574879+00:00", "combined_f1": 0.2888522789676002, "event": "run_completed", "null_f1": 0.0, "seed": 13, "stage": "5_negative_sampling", "trial_id": "focal_ia_attention_random_b3d539181258"}
+{"at": "2026-10-06T11:10:34.084918+00:00", "event": "run_started", "seed": 13, "stage": "5_negative_sampling", "trial_id": "focal_ia_attention_hard_95336217e8b1"}
+{"at": "2026-10-06T11:12:47.998728+00:00", "epoch": 1, "event": "epoch_completed", "seconds": 131.51599999999962, "seed": 13, "trial_id": "focal_ia_attention_hard_95336217e8b1"}
+{"at": "2026-10-06T11:15:01.085006+00:00", "epoch": 2, "event": "epoch_completed", "seconds": 131.32800000000043, "seed": 13, "trial_id": "focal_ia_attention_hard_95336217e8b1"}
+{"at": "2026-10-06T11:17:14.553753+00:00", "epoch": 3, "event": "epoch_completed", "seconds": 131.6869999999999, "seed": 13, "trial_id": "focal_ia_attention_hard_95336217e8b1"}
+{"at": "2026-10-06T11:17:15.446475+00:00", "combined_f1": 0.28931047063115656, "event": "run_completed", "null_f1": 0.0, "seed": 13, "stage": "5_negative_sampling", "trial_id": "focal_ia_attention_hard_95336217e8b1"}
+{"at": "2026-10-06T11:17:16.119524+00:00", "event": "run_started", "seed": 13, "stage": "parameter_tuning", "trial_id": "focal_ia_attention_weight_846ad93ada99"}
+{"at": "2026-10-06T11:19:26.116252+00:00", "epoch": 1, "event": "epoch_completed", "seconds": 127.53200000000015, "seed": 13, "trial_id": "focal_ia_attention_weight_846ad93ada99"}
+{"at": "2026-10-06T11:21:35.401436+00:00", "epoch": 2, "event": "epoch_completed", "seconds": 127.56299999999919, "seed": 13, "trial_id": "focal_ia_attention_weight_846ad93ada99"}
+{"at": "2026-10-06T11:23:44.970312+00:00", "epoch": 3, "event": "epoch_completed", "seconds": 127.79700000000048, "seed": 13, "trial_id": "focal_ia_attention_weight_846ad93ada99"}
+{"at": "2026-10-06T11:23:45.849696+00:00", "combined_f1": 0.290632360934952, "event": "run_completed", "null_f1": 0.0, "seed": 13, "stage": "parameter_tuning", "trial_id": "focal_ia_attention_weight_846ad93ada99"}
+{"at": "2026-10-06T11:23:46.517742+00:00", "event": "run_started", "seed": 13, "stage": "parameter_tuning", "trial_id": "focal_ia_attention_gamma_6fd4c60ddd2d"}
+{"at": "2026-10-06T11:25:56.552060+00:00", "epoch": 1, "event": "epoch_completed", "seconds": 127.5619999999999, "seed": 13, "trial_id": "focal_ia_attention_gamma_6fd4c60ddd2d"}
+{"at": "2026-10-06T11:28:06.178169+00:00", "epoch": 2, "event": "epoch_completed", "seconds": 127.51500000000124, "seed": 13, "trial_id": "focal_ia_attention_gamma_6fd4c60ddd2d"}
+{"at": "2026-10-06T11:30:15.658644+00:00", "epoch": 3, "event": "epoch_completed", "seconds": 127.73400000000038, "seed": 13, "trial_id": "focal_ia_attention_gamma_6fd4c60ddd2d"}
+{"at": "2026-10-06T11:30:16.526854+00:00", "combined_f1": 0.2914554670528603, "event": "run_completed", "null_f1": 0.0, "seed": 13, "stage": "parameter_tuning", "trial_id": "focal_ia_attention_gamma_6fd4c60ddd2d"}
+{"at": "2026-10-06T11:30:17.150011+00:00", "event": "search_selected", "objective": "combined", "selected_null": {"amp_initial_scale": 1024.0, "asl_gamma_negative": 4.0, "asl_gamma_positive": 0.0, "asl_margin": 0.05, "attention_size": 128, "batch_size": 16, "bio_loss_weight": 1.0, "category_loss_weight": 1.0, "ce_weight": 0.75, "drop_conflict": false, "epochs": 3, "focal_gamma": 2.0, "hard_fraction": 0.5, "loss_heads": ["bio", "category", "sentiment"], "loss_type": "mixed", "lr": 3e-05, "max_grad_norm": 1.0, "max_len": 128, "minimum_negatives": 16, "model_name": "bert-base-uncased", "model_revision": "86b5e0934494bd15c9632b12f734a8a67f723594", "name": "focal_ia_attention", "negative_ratio": 8.0, "negative_sampling": "all", "null_focal_gamma": 2.0, "null_head": true, "null_loss": "focal", "null_loss_weight": 0.5, "null_pos_weight_cap": 10.0, "null_threshold": 0.5, "null_thresholds": [0.02, 0.05, 0.1, 0.12, 0.14, 0.16, 0.18, 0.2, 0.22, 0.24, 0.26, 0.28, 0.3, 0.32, 0.34, 0.36, 0.38, 0.4, 0.45, 0.5, 0.6, 0.8], "offline": true, "precision": "amp", "representation": "ia_attention", "selection_metric": "combined", "sentiment_loss_weight": 1.0, "vocabulary_scope": "explicit-null", "warmup_ratio": 0.1, "weight_decay": 0.01, "weighted_ce_weight": 0.25}}
+{"at": "2026-10-06T11:30:17.333850+00:00", "event": "run_started", "seed": 13, "stage": "confirmation", "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T11:32:27.383971+00:00", "epoch": 1, "event": "epoch_completed", "seconds": 127.59400000000096, "seed": 13, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T11:34:36.723858+00:00", "epoch": 2, "event": "epoch_completed", "seconds": 127.59399999999914, "seed": 13, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T11:36:46.376744+00:00", "epoch": 3, "event": "epoch_completed", "seconds": 127.875, "seed": 13, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T11:38:55.761456+00:00", "epoch": 4, "event": "epoch_completed", "seconds": 127.59399999999914, "seed": 13, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T11:41:05.077072+00:00", "epoch": 5, "event": "epoch_completed", "seconds": 127.5619999999999, "seed": 13, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T11:41:05.978316+00:00", "combined_f1": 0.32321396109798217, "event": "run_completed", "null_f1": 0.0, "seed": 13, "stage": "confirmation", "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T11:41:06.683001+00:00", "event": "run_started", "seed": 42, "stage": "confirmation", "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T11:43:16.902890+00:00", "epoch": 1, "event": "epoch_completed", "seconds": 127.8119999999999, "seed": 42, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T11:45:26.370439+00:00", "epoch": 2, "event": "epoch_completed", "seconds": 127.59399999999914, "seed": 42, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T11:47:36.307068+00:00", "epoch": 3, "event": "epoch_completed", "seconds": 127.89100000000144, "seed": 42, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T11:49:45.591167+00:00", "epoch": 4, "event": "epoch_completed", "seconds": 127.51500000000124, "seed": 42, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T11:51:55.061605+00:00", "epoch": 5, "event": "epoch_completed", "seconds": 127.67200000000048, "seed": 42, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T11:51:55.946971+00:00", "combined_f1": 0.33483314585676793, "event": "run_completed", "null_f1": 0.0, "seed": 42, "stage": "confirmation", "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T11:51:56.635786+00:00", "event": "run_started", "seed": 13, "stage": "confirmation", "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T11:54:04.171261+00:00", "epoch": 1, "event": "epoch_completed", "seconds": 125.125, "seed": 13, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T11:56:11.010950+00:00", "epoch": 2, "event": "epoch_completed", "seconds": 125.10900000000038, "seed": 13, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T11:58:18.162408+00:00", "epoch": 3, "event": "epoch_completed", "seconds": 125.375, "seed": 13, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T12:00:25.068188+00:00", "epoch": 4, "event": "epoch_completed", "seconds": 125.14099999999962, "seed": 13, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T12:02:32.024498+00:00", "epoch": 5, "event": "epoch_completed", "seconds": 125.17199999999866, "seed": 13, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T12:02:32.927429+00:00", "combined_f1": 0.32238155745144315, "event": "run_completed", "null_f1": 0.0, "seed": 13, "stage": "confirmation", "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T12:02:33.631952+00:00", "event": "run_started", "seed": 42, "stage": "confirmation", "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T12:04:41.295783+00:00", "epoch": 1, "event": "epoch_completed", "seconds": 125.26500000000124, "seed": 42, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T12:06:48.286548+00:00", "epoch": 2, "event": "epoch_completed", "seconds": 125.1869999999999, "seed": 42, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T12:08:55.488098+00:00", "epoch": 3, "event": "epoch_completed", "seconds": 125.45299999999952, "seed": 42, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T12:11:02.574088+00:00", "epoch": 4, "event": "epoch_completed", "seconds": 125.29700000000048, "seed": 42, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T12:13:09.458747+00:00", "epoch": 5, "event": "epoch_completed", "seconds": 125.10999999999876, "seed": 42, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T12:13:10.426828+00:00", "combined_f1": 0.33358405415569764, "event": "run_completed", "null_f1": 0.0, "seed": 42, "stage": "confirmation", "trial_id": "null_off_e53896d9134f"}
+{"archive": "D:\\UoA\\bertfinetune\\artifacts\\null_fast_track\\selections\\selection_2seeds_939bb8be6b9b.json", "at": "2026-10-06T12:13:11.062870+00:00", "event": "development_frozen", "seeds": [13, 42], "selected": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T12:13:36.328123+00:00", "event": "run_started", "seed": 123, "stage": "confirmation", "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T12:15:51.342203+00:00", "epoch": 1, "event": "epoch_completed", "seconds": 128.75, "seed": 123, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T12:18:02.032677+00:00", "epoch": 2, "event": "epoch_completed", "seconds": 128.90600000000086, "seed": 123, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T12:20:11.276042+00:00", "epoch": 3, "event": "epoch_completed", "seconds": 127.46900000000096, "seed": 123, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T12:22:20.742115+00:00", "epoch": 4, "event": "epoch_completed", "seconds": 127.625, "seed": 123, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T12:24:29.921993+00:00", "epoch": 5, "event": "epoch_completed", "seconds": 127.375, "seed": 123, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T12:24:30.851076+00:00", "combined_f1": 0.3317109696742793, "event": "run_completed", "null_f1": 0.0, "seed": 123, "stage": "confirmation", "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T12:24:31.484069+00:00", "event": "run_started", "seed": 2024, "stage": "confirmation", "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T12:26:41.470029+00:00", "epoch": 1, "event": "epoch_completed", "seconds": 127.59400000000096, "seed": 2024, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T12:28:50.679345+00:00", "epoch": 2, "event": "epoch_completed", "seconds": 127.5, "seed": 2024, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T12:30:59.944929+00:00", "epoch": 3, "event": "epoch_completed", "seconds": 127.53100000000086, "seed": 2024, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T12:33:09.119667+00:00", "epoch": 4, "event": "epoch_completed", "seconds": 127.42199999999866, "seed": 2024, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T12:35:18.472148+00:00", "epoch": 5, "event": "epoch_completed", "seconds": 127.59400000000096, "seed": 2024, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T12:35:19.342575+00:00", "combined_f1": 0.3299776286353468, "event": "run_completed", "null_f1": 0.0, "seed": 2024, "stage": "confirmation", "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T12:35:19.996663+00:00", "event": "run_started", "seed": 777, "stage": "confirmation", "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T12:37:29.870202+00:00", "epoch": 1, "event": "epoch_completed", "seconds": 127.34399999999914, "seed": 777, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T12:39:38.982523+00:00", "epoch": 2, "event": "epoch_completed", "seconds": 127.375, "seed": 777, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T12:41:48.356871+00:00", "epoch": 3, "event": "epoch_completed", "seconds": 127.61000000000058, "seed": 777, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T12:43:57.633022+00:00", "epoch": 4, "event": "epoch_completed", "seconds": 127.46900000000096, "seed": 777, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T12:46:07.063457+00:00", "epoch": 5, "event": "epoch_completed", "seconds": 127.65599999999904, "seed": 777, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T12:46:07.908772+00:00", "combined_f1": 0.3245227606461087, "event": "run_completed", "null_f1": 0.0, "seed": 777, "stage": "confirmation", "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T12:46:09.708619+00:00", "event": "run_started", "seed": 123, "stage": "confirmation", "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T12:48:20.125518+00:00", "epoch": 1, "event": "epoch_completed", "seconds": 124.65699999999924, "seed": 123, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T12:50:26.748501+00:00", "epoch": 2, "event": "epoch_completed", "seconds": 124.85899999999856, "seed": 123, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T12:52:33.678229+00:00", "epoch": 3, "event": "epoch_completed", "seconds": 125.1869999999999, "seed": 123, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T12:54:40.342073+00:00", "epoch": 4, "event": "epoch_completed", "seconds": 124.92200000000048, "seed": 123, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T12:56:47.052514+00:00", "epoch": 5, "event": "epoch_completed", "seconds": 124.90600000000086, "seed": 123, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T12:56:47.999936+00:00", "combined_f1": 0.33502157193772275, "event": "run_completed", "null_f1": 0.0, "seed": 123, "stage": "confirmation", "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T12:56:48.645270+00:00", "event": "run_started", "seed": 2024, "stage": "confirmation", "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T12:58:56.278259+00:00", "epoch": 1, "event": "epoch_completed", "seconds": 125.15699999999924, "seed": 2024, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T13:01:03.152596+00:00", "epoch": 2, "event": "epoch_completed", "seconds": 124.90699999999924, "seed": 2024, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T13:03:10.293971+00:00", "epoch": 3, "event": "epoch_completed", "seconds": 125.375, "seed": 2024, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T13:05:17.327125+00:00", "epoch": 4, "event": "epoch_completed", "seconds": 125.17200000000048, "seed": 2024, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T13:07:23.923759+00:00", "epoch": 5, "event": "epoch_completed", "seconds": 124.84399999999914, "seed": 2024, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T13:07:25.260720+00:00", "combined_f1": 0.32808902532617035, "event": "run_completed", "null_f1": 0.0, "seed": 2024, "stage": "confirmation", "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T13:07:25.957217+00:00", "event": "run_started", "seed": 777, "stage": "confirmation", "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T13:09:33.598392+00:00", "epoch": 1, "event": "epoch_completed", "seconds": 125.09399999999914, "seed": 777, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T13:11:40.556437+00:00", "epoch": 2, "event": "epoch_completed", "seconds": 125.20299999999952, "seed": 777, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T13:13:47.576325+00:00", "epoch": 3, "event": "epoch_completed", "seconds": 125.23400000000038, "seed": 777, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T13:15:54.371732+00:00", "epoch": 4, "event": "epoch_completed", "seconds": 125.03099999999904, "seed": 777, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T13:18:01.120251+00:00", "epoch": 5, "event": "epoch_completed", "seconds": 124.98500000000058, "seed": 777, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T13:18:02.070114+00:00", "combined_f1": 0.3257868580894534, "event": "run_completed", "null_f1": 0.0, "seed": 777, "stage": "confirmation", "trial_id": "null_off_e53896d9134f"}
+{"archive": "D:\\UoA\\bertfinetune\\artifacts\\null_fast_track\\selections\\selection_5seeds_9334ae72c3c9.json", "at": "2026-10-06T13:18:02.723663+00:00", "event": "development_frozen", "seeds": [13, 42, 123, 2024, 777], "selected": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T13:18:21.041406+00:00", "event": "test_evaluated", "seed": 13, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T13:18:33.931536+00:00", "event": "test_evaluated", "seed": 42, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T13:18:47.087068+00:00", "event": "test_evaluated", "seed": 123, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T13:19:00.034686+00:00", "event": "test_evaluated", "seed": 2024, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T13:19:13.192293+00:00", "event": "test_evaluated", "seed": 777, "trial_id": "focal_ia_attention_e6801d313247"}
+{"at": "2026-10-06T13:19:27.066549+00:00", "event": "test_evaluated", "seed": 13, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T13:19:39.640809+00:00", "event": "test_evaluated", "seed": 42, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T13:19:51.984067+00:00", "event": "test_evaluated", "seed": 123, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T13:20:04.615802+00:00", "event": "test_evaluated", "seed": 2024, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T13:20:17.013245+00:00", "event": "test_evaluated", "seed": 777, "trial_id": "null_off_e53896d9134f"}
+{"at": "2026-10-06T13:24:40.834684+00:00", "event": "test_evaluated", "seed": 13, "trial_id": "null_off_e2306bf501df"}
+{"at": "2026-10-06T13:24:54.820406+00:00", "event": "test_evaluated", "seed": 13, "trial_id": "bce_cls_72b9117e2b7f"}
+{"at": "2026-10-06T13:25:08.759736+00:00", "event": "test_evaluated", "seed": 13, "trial_id": "focal_cls_cb0f8a9e7ef7"}
+{"at": "2026-10-06T13:25:22.697754+00:00", "event": "test_evaluated", "seed": 13, "trial_id": "asl_cls_ccd29d82c495"}
+{"at": "2026-10-06T13:25:36.713452+00:00", "event": "test_evaluated", "seed": 13, "trial_id": "focal_ia_3a9090049047"}
+{"at": "2026-10-06T13:25:51.256284+00:00", "event": "test_evaluated", "seed": 13, "trial_id": "focal_ia_attention_013a87dbfbd4"}
+{"at": "2026-10-06T13:26:05.828874+00:00", "event": "test_evaluated", "seed": 13, "trial_id": "focal_ia_attention_random_b3d539181258"}
+{"at": "2026-10-06T13:26:20.314741+00:00", "event": "test_evaluated", "seed": 13, "trial_id": "focal_ia_attention_hard_95336217e8b1"}
+{"at": "2026-10-06T13:26:34.862693+00:00", "event": "test_evaluated", "seed": 13, "trial_id": "focal_ia_attention_weight_846ad93ada99"}
+{"at": "2026-10-06T13:26:49.186948+00:00", "event": "test_evaluated", "seed": 13, "trial_id": "focal_ia_attention_gamma_6fd4c60ddd2d"}

@@ -1,0 +1,380 @@
+{
+  "config": {
+    "batch_size": 16,
+    "bio_loss_weight": 1.0,
+    "category_loss_weight": 1.0,
+    "ce_weight": 0.75,
+    "drop_conflict": false,
+    "epochs": 5,
+    "focal_gamma": 2.0,
+    "loss_heads": [
+      "bio",
+      "category",
+      "sentiment"
+    ],
+    "loss_type": "mixed",
+    "lr": 3e-05,
+    "max_grad_norm": 1.0,
+    "max_len": 128,
+    "model_name": "bert-base-uncased",
+    "model_revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+    "name": "mixed_025",
+    "null_head": false,
+    "null_loss_weight": 0.5,
+    "null_pos_weight_cap": 1.0,
+    "null_threshold": 0.5,
+    "null_thresholds": [
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8
+    ],
+    "offline": true,
+    "selection_metric": "explicit",
+    "sentiment_loss_weight": 1.0,
+    "vocabulary_scope": "auto",
+    "warmup_ratio": 0.1,
+    "weight_decay": 0.01,
+    "weighted_ce_weight": 0.25
+  },
+  "created_at_utc": "2026-10-07T08:01:59.346697+00:00",
+  "domains": [
+    "coursera",
+    "hotel",
+    "laptop",
+    "restaurant",
+    "phone",
+    "sight",
+    "food"
+  ],
+  "exploratory": true,
+  "runs": [
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "30960dbfdb5d2c8ba3bacc5975c4fe9c64b11d96a1befcddc9822c6d9b5e1ebf",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\coursera\\mixed_025_da1a88a51a5f\\seed_13",
+      "domain": "coursera",
+      "fingerprint": "d8bbbf30dbb49828bf104cae60c8b4dfc1ec1ee9273c5d2f952560c63470730a",
+      "null_threshold": 0.5,
+      "seed": 13
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "31f3000b6d1df0115f8d52b73fa953e423ec3cd6cf78de6c0fc70249d7eb1e4c",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\coursera\\mixed_025_da1a88a51a5f\\seed_42",
+      "domain": "coursera",
+      "fingerprint": "89e5df6c9ea179e5f73c8545eaa8a7008cbd1778020e8f34a6d05c89a2756687",
+      "null_threshold": 0.5,
+      "seed": 42
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "ccaa4e74c28d8d18dea94efecdd6539520eaeb8b14b3bb3dfb37e7b6815c0384",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\coursera\\mixed_025_da1a88a51a5f\\seed_123",
+      "domain": "coursera",
+      "fingerprint": "7bf3aa4d56c94134ccf2caa7e445df5ee3ea510a3152488a6a5fa4614abc6ed0",
+      "null_threshold": 0.5,
+      "seed": 123
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "26c0683ea46e1bf10fec944121f2a5899b205a6d7a8e70eb6dcce8681e7a03d5",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\coursera\\mixed_025_da1a88a51a5f\\seed_2024",
+      "domain": "coursera",
+      "fingerprint": "50013e705140900bb3006b6dd6a647c18f31866175ffaf8cb4b05083b12fed6f",
+      "null_threshold": 0.5,
+      "seed": 2024
+    },
+    {
+      "best_epoch": 4,
+      "checkpoint_sha256": "0f90a144614d526ab2b7d3f94774f53159520ffe56edcfa763f794364b3bee7e",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\coursera\\mixed_025_da1a88a51a5f\\seed_777",
+      "domain": "coursera",
+      "fingerprint": "896b80cf240a3b2f28080bad9d6338c61c8d22b5532d2025267c567c0f18dcc9",
+      "null_threshold": 0.5,
+      "seed": 777
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "82b0753e29fc3b28d9a6c43fc308027e45db1466278ad257787c18fd97a76bc1",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\hotel\\mixed_025_da1a88a51a5f\\seed_13",
+      "domain": "hotel",
+      "fingerprint": "a18844b8ececd2be3d3437d003d9a7076702f702d8f8b6965c757c76f00b00c7",
+      "null_threshold": 0.5,
+      "seed": 13
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "5c2bfc56a7279bd93d7287f063ffb3c0f668586760a61f188ba84ddf71664c94",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\hotel\\mixed_025_da1a88a51a5f\\seed_42",
+      "domain": "hotel",
+      "fingerprint": "08ea5c0d33248824e472f2fac24d8bf34a1b4b0bb83815a4ee3f4f9013155138",
+      "null_threshold": 0.5,
+      "seed": 42
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "5d3ab93ed21b64031042e50669068f7f31a732d023776e3bf3702ea44decb4a5",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\hotel\\mixed_025_da1a88a51a5f\\seed_123",
+      "domain": "hotel",
+      "fingerprint": "e409920e61e59c1641995f366a2a9bf78432c9857b452587af7c3a6050c7e772",
+      "null_threshold": 0.5,
+      "seed": 123
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "997eb613d433777bfe3513bd414205da0659d88a6e5cdb517fa3023f22e80341",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\hotel\\mixed_025_da1a88a51a5f\\seed_2024",
+      "domain": "hotel",
+      "fingerprint": "08bf33566e782fdd5b91526ad6182f786cdc464f96ecfb4eead37b5f6e65091c",
+      "null_threshold": 0.5,
+      "seed": 2024
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "987945b1230e6ffc034221f61d620606f85cea40b4f95b4a9a927a8438090b7d",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\hotel\\mixed_025_da1a88a51a5f\\seed_777",
+      "domain": "hotel",
+      "fingerprint": "c1c4f6904d56d58eb14025c7c232c42546e2546f7716e3267932e75cb56d79a5",
+      "null_threshold": 0.5,
+      "seed": 777
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "fa4e6d651f12795d29ede2c3d9f7f4eb0ab9844c6c93ac5f857830aa2c671c6a",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\laptop\\mixed_025_da1a88a51a5f\\seed_13",
+      "domain": "laptop",
+      "fingerprint": "0b747a8165b66e157b099951df477b1f0aed182b6501e0a685ed6a142affdea9",
+      "null_threshold": 0.5,
+      "seed": 13
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "ba1d26d466a7a63f058211f86659b07f193c14dbc1706ba22753c0bc026c5faa",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\laptop\\mixed_025_da1a88a51a5f\\seed_42",
+      "domain": "laptop",
+      "fingerprint": "dbcc9102b860b637fb1a51d0ce972a06a54deee11697c077ad5a8f659d20249b",
+      "null_threshold": 0.5,
+      "seed": 42
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "7ee22d152354c2215a24be13dbc8ec1d8cb618304430fbbff14acca4e9c8e0a5",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\laptop\\mixed_025_da1a88a51a5f\\seed_123",
+      "domain": "laptop",
+      "fingerprint": "10c3f5de09a1b81fdbdd278bc4c645291b6eedeea74a9c82afb77cc179e677e7",
+      "null_threshold": 0.5,
+      "seed": 123
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "55e5e217caf521c6d6f90322ab399136ad09eb01693a02f081832241e6ca303b",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\laptop\\mixed_025_da1a88a51a5f\\seed_2024",
+      "domain": "laptop",
+      "fingerprint": "547b1b3a9a9ed3a7677a76a5a643e956553ec2915722082c4ab2e03eb6697888",
+      "null_threshold": 0.5,
+      "seed": 2024
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "843554127d97caf1a4d3c6cd0add11bc664a74f29a33018e54a080fafb10c674",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\laptop\\mixed_025_da1a88a51a5f\\seed_777",
+      "domain": "laptop",
+      "fingerprint": "7241a302e415a7467c5bb4ad59c56254ac4ce2fd4e71616233ef0c6e8d3adf5d",
+      "null_threshold": 0.5,
+      "seed": 777
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "382292cfc86cd66c9653faca5eb8c8177494e732235be533a80f62c5c1f7e53a",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\restaurant\\mixed_025_da1a88a51a5f\\seed_13",
+      "domain": "restaurant",
+      "fingerprint": "70dbee8aae4abd8df6c3d51d5838a4b4b31a18c2be6dda98df879d3fd76d8998",
+      "null_threshold": 0.5,
+      "seed": 13
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "e0277476c906c8daecf285782b0970730f99eb14ac74ff7476734b1d442c4737",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\restaurant\\mixed_025_da1a88a51a5f\\seed_42",
+      "domain": "restaurant",
+      "fingerprint": "1f96da98f047ab14ef7abaad681cbef1356817bea9629e240abc7861b95a61ca",
+      "null_threshold": 0.5,
+      "seed": 42
+    },
+    {
+      "best_epoch": 4,
+      "checkpoint_sha256": "45dabf6baafd9925a3c0ae1320e393cfdcb85d14664160a561959125a087c741",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\restaurant\\mixed_025_da1a88a51a5f\\seed_123",
+      "domain": "restaurant",
+      "fingerprint": "0ee5c310cc974a3c90d1fb16983f21df39005e216b07da8d8ba10836d2ec42bf",
+      "null_threshold": 0.5,
+      "seed": 123
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "711072759138c7663c99b4ef874cc06d048e9eb94982d982c1a84fe6c796380c",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\restaurant\\mixed_025_da1a88a51a5f\\seed_2024",
+      "domain": "restaurant",
+      "fingerprint": "f9fe0766fe87928dfbc09117205431fa18fbe2c4fc42f9fa30959365138e7447",
+      "null_threshold": 0.5,
+      "seed": 2024
+    },
+    {
+      "best_epoch": 4,
+      "checkpoint_sha256": "9d0c2df6673ad0fece1bb616676be73845a5ff09be15136cc63087562446cd4a",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\restaurant\\mixed_025_da1a88a51a5f\\seed_777",
+      "domain": "restaurant",
+      "fingerprint": "65d47e5fb2572a34617ff71b13d8b85e6089dd546ab65af5ec6a10950d21c709",
+      "null_threshold": 0.5,
+      "seed": 777
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "a848771fe0cd8f05161e4dff62a4cda824148c6b3aac574411094e45d3fda427",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\phone\\mixed_025_da1a88a51a5f\\seed_13",
+      "domain": "phone",
+      "fingerprint": "88cabdfe8f1624762a174bb260f3b5bd4f378588d76811a1e57bdb3f52db56c2",
+      "null_threshold": 0.5,
+      "seed": 13
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "84ad97a093ac44e6a122aee8c78b84f462cdb8d1fba4e48f08dada6f876ebc58",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\phone\\mixed_025_da1a88a51a5f\\seed_42",
+      "domain": "phone",
+      "fingerprint": "7db91494e180f820db4e43c7fbb8d9c1d87d626b7d526868cb2cc509d1709c34",
+      "null_threshold": 0.5,
+      "seed": 42
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "10298d3252fe65142c5e984e9f58b23be879ebbe18fd24a0f93f3e04e72608d7",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\phone\\mixed_025_da1a88a51a5f\\seed_123",
+      "domain": "phone",
+      "fingerprint": "ed4cf3dde0763cecf405ebdce4b136ad46c0623462f266531f7cf1ed9e12ed15",
+      "null_threshold": 0.5,
+      "seed": 123
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "0914becf21361bf37956f36be5b3521518dbeaf98b1be7851306ba4fa12a5334",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\phone\\mixed_025_da1a88a51a5f\\seed_2024",
+      "domain": "phone",
+      "fingerprint": "2c5c75636211842745b82ebb213a3794e743f216402ac5bf094267e3b9816d8f",
+      "null_threshold": 0.5,
+      "seed": 2024
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "f3d443d0033c25e72c3d895e912fa1ec63548b1e8c243c34522bce50e49bfc9f",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\phone\\mixed_025_da1a88a51a5f\\seed_777",
+      "domain": "phone",
+      "fingerprint": "794b2b7e123e42381abf8d8ad769ec85243e1b9f45e9b8440d1ff71ecce5173d",
+      "null_threshold": 0.5,
+      "seed": 777
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "d092d6c76fb63a6ece7a0e979628d2f1307854de879cb305e5fe4e66a290686e",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\sight\\mixed_025_da1a88a51a5f\\seed_13",
+      "domain": "sight",
+      "fingerprint": "b14a64ecd4b169cb9c28c338a937c46b71c023cde8820a162eb795dc93106d89",
+      "null_threshold": 0.5,
+      "seed": 13
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "82b73dc62545d95937e61256f385c0b961707b656b1f02813b3d26f7454cffd8",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\sight\\mixed_025_da1a88a51a5f\\seed_42",
+      "domain": "sight",
+      "fingerprint": "374fb91426ca9707a1930f07155db13544b35b88f5ddae6b8279b09ba3f52dfb",
+      "null_threshold": 0.5,
+      "seed": 42
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "e9a4dd1abfe0e639a0920855fe2935e4d15a8b9ffe5fb99713f1d141a588f7c5",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\sight\\mixed_025_da1a88a51a5f\\seed_123",
+      "domain": "sight",
+      "fingerprint": "62bc99f9d5762074bb40ef1cd911a3f79493ea0b577c0214c948591178910912",
+      "null_threshold": 0.5,
+      "seed": 123
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "f769e7ded93f575c929b6fbf0ab5c3c711e8c6126defcff3ae91c73c73208a7f",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\sight\\mixed_025_da1a88a51a5f\\seed_2024",
+      "domain": "sight",
+      "fingerprint": "92f9ea7c6486acd21dae91fc3f5f5319d2b577753360732e22e7359274ce2c39",
+      "null_threshold": 0.5,
+      "seed": 2024
+    },
+    {
+      "best_epoch": 4,
+      "checkpoint_sha256": "3c0da47922034e447e8805149e4b82f0bdabcd230bcebbb8046e00e1f138a75b",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\sight\\mixed_025_da1a88a51a5f\\seed_777",
+      "domain": "sight",
+      "fingerprint": "cc3688344510f469c739b4024755c8ab0cfa3fc429d00664e6164bf53ba492eb",
+      "null_threshold": 0.5,
+      "seed": 777
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "cb11141a50e398265af6337f036568777185b2e5c9b27462f36dfbbfd7e64024",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\food\\mixed_025_da1a88a51a5f\\seed_13",
+      "domain": "food",
+      "fingerprint": "a6dfe456b44a80ec6ea28f41974499456a7bdaa9ab0f33dad2a2272bdfff06a3",
+      "null_threshold": 0.5,
+      "seed": 13
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "10f7f85e9d3a18764499d1f4bfef57f8edf2f937ab96964d59acb6a7f7c282b8",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\food\\mixed_025_da1a88a51a5f\\seed_42",
+      "domain": "food",
+      "fingerprint": "2cc93eb58ca5c06cbaefd3e9efe3ec9bcdf346ced194a1d114723e278f39f844",
+      "null_threshold": 0.5,
+      "seed": 42
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "3c319bfa227a506a31ddd11c1a13e817a2f583fb3d338716fde3cc98d5995c18",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\food\\mixed_025_da1a88a51a5f\\seed_123",
+      "domain": "food",
+      "fingerprint": "9a13ef30b09c6db031ac39c69ca86e1516200049fe108b782d1a1c65822e6974",
+      "null_threshold": 0.5,
+      "seed": 123
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "ce6b9c6fcf58f054a73f8ea85d2c5c18b6c1151f241c9a6d6ab3f103b7548c15",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\food\\mixed_025_da1a88a51a5f\\seed_2024",
+      "domain": "food",
+      "fingerprint": "2192be7ff7172a81502d625754f51f6a5c4d7681e77bfa17b62f69ff34b716f3",
+      "null_threshold": 0.5,
+      "seed": 2024
+    },
+    {
+      "best_epoch": 5,
+      "checkpoint_sha256": "cf5c53fae645f9aee9166caea93fa38ed799080b8ca5268cae3db0bb7c395bb1",
+      "directory": "D:\\UoA\\bertfinetune\\artifacts\\experiments_v2\\research\\crossdomain\\food\\mixed_025_da1a88a51a5f\\seed_777",
+      "domain": "food",
+      "fingerprint": "d5636edfa3a0e19ce78ad9240b93bbde711ed23d6f8b0628ad171de982de1ffc",
+      "null_threshold": 0.5,
+      "seed": 777
+    }
+  ],
+  "seeds": [
+    13,
+    42,
+    123,
+    2024,
+    777
+  ],
+  "selection": "Explicit source-development F1; parameters transferred from frozen in-domain selection",
+  "trial_id": "mixed_025_da1a88a51a5f"
+}

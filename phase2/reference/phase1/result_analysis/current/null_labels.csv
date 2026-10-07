@@ -1,0 +1,505 @@
+domain,split,category,sentiment,count
+coursera,dev,assignments quality,neutral,1
+coursera,dev,assignments quality,positive,2
+coursera,dev,assignments workload,positive,1
+coursera,dev,course comprehensiveness,negative,2
+coursera,dev,course comprehensiveness,positive,5
+coursera,dev,course general,negative,3
+coursera,dev,course general,neutral,1
+coursera,dev,course general,positive,52
+coursera,dev,course quality,negative,3
+coursera,dev,course quality,neutral,1
+coursera,dev,course quality,positive,10
+coursera,dev,course relatability,positive,1
+coursera,dev,course workload,negative,1
+coursera,dev,course workload,positive,1
+coursera,dev,faculty comprehensiveness,positive,2
+coursera,dev,faculty general,neutral,1
+coursera,dev,faculty general,positive,7
+coursera,dev,material quality,negative,1
+coursera,dev,material quality,neutral,1
+coursera,dev,material quality,positive,1
+coursera,dev,material quantity,negative,1
+coursera,dev,presentation comprehensiveness,positive,2
+coursera,dev,presentation quality,negative,1
+coursera,dev,presentation quality,positive,2
+coursera,dev,presentation relatability,positive,1
+coursera,test,assignments quality,neutral,3
+coursera,test,assignments quality,positive,4
+coursera,test,assignments workload,negative,1
+coursera,test,course comprehensiveness,negative,3
+coursera,test,course comprehensiveness,neutral,1
+coursera,test,course comprehensiveness,positive,14
+coursera,test,course general,negative,12
+coursera,test,course general,neutral,4
+coursera,test,course general,positive,98
+coursera,test,course quality,negative,10
+coursera,test,course quality,neutral,2
+coursera,test,course quality,positive,25
+coursera,test,course relatability,negative,2
+coursera,test,course relatability,positive,3
+coursera,test,course value,negative,1
+coursera,test,course value,positive,3
+coursera,test,course workload,negative,2
+coursera,test,faculty comprehensiveness,negative,1
+coursera,test,faculty comprehensiveness,positive,7
+coursera,test,faculty general,negative,3
+coursera,test,faculty general,positive,10
+coursera,test,faculty relatability,positive,2
+coursera,test,faculty response,negative,2
+coursera,test,faculty response,positive,1
+coursera,test,grades general,negative,2
+coursera,test,material comprehensiveness,negative,1
+coursera,test,material quality,negative,1
+coursera,test,material quality,neutral,1
+coursera,test,material quality,positive,5
+coursera,test,material quantity,negative,5
+coursera,test,polarity positive,positive,1
+coursera,test,presentation comprehensiveness,negative,1
+coursera,test,presentation comprehensiveness,positive,6
+coursera,test,presentation quality,negative,5
+coursera,test,presentation quality,positive,8
+coursera,test,presentation quantity,positive,1
+coursera,test,presentation relatability,negative,3
+coursera,test,presentation relatability,neutral,1
+coursera,test,presentation relatability,positive,3
+coursera,train,assignments comprehensiveness,negative,3
+coursera,train,assignments quality,negative,4
+coursera,train,assignments quality,positive,2
+coursera,train,assignments quantity,negative,1
+coursera,train,assignments relatability,negative,1
+coursera,train,assignments relatability,positive,1
+coursera,train,course comprehensiveness,negative,6
+coursera,train,course comprehensiveness,neutral,4
+coursera,train,course comprehensiveness,positive,19
+coursera,train,course general,conflict,1
+coursera,train,course general,negative,26
+coursera,train,course general,neutral,10
+coursera,train,course general,positive,178
+coursera,train,course quality,negative,5
+coursera,train,course quality,neutral,2
+coursera,train,course quality,positive,32
+coursera,train,course relatability,negative,1
+coursera,train,course relatability,neutral,1
+coursera,train,course relatability,positive,9
+coursera,train,course value,negative,6
+coursera,train,course value,positive,2
+coursera,train,course workload,negative,2
+coursera,train,course workload,neutral,1
+coursera,train,course workload,positive,3
+coursera,train,faculty comprehensiveness,negative,1
+coursera,train,faculty comprehensiveness,positive,5
+coursera,train,faculty general,negative,4
+coursera,train,faculty general,positive,14
+coursera,train,faculty relatability,positive,2
+coursera,train,faculty response,negative,9
+coursera,train,faculty response,neutral,2
+coursera,train,faculty response,positive,4
+coursera,train,grades general,negative,2
+coursera,train,grades general,positive,1
+coursera,train,material comprehensiveness,negative,1
+coursera,train,material quality,negative,2
+coursera,train,material quality,positive,3
+coursera,train,material quantity,positive,5
+coursera,train,material relatability,negative,1
+coursera,train,polarity negative,positive,1
+coursera,train,polarity neutral,positive,1
+coursera,train,polarity positive,positive,4
+coursera,train,presentation comprehensiveness,negative,6
+coursera,train,presentation comprehensiveness,positive,7
+coursera,train,presentation quality,negative,5
+coursera,train,presentation quality,neutral,2
+coursera,train,presentation quality,positive,9
+coursera,train,presentation relatability,negative,3
+coursera,train,presentation relatability,positive,2
+coursera,train,presentation workload,negative,1
+food,dev,amazon availability,neutral,1
+food,dev,amazon availability,positive,2
+food,dev,amazon prices,negative,1
+food,dev,amazon prices,neutral,1
+food,dev,food general,negative,17
+food,dev,food general,neutral,4
+food,dev,food general,positive,75
+food,dev,food prices,negative,2
+food,dev,food prices,positive,9
+food,dev,food quality,negative,5
+food,dev,food quality,neutral,7
+food,dev,food quality,positive,28
+food,dev,food recommendation,negative,2
+food,dev,food recommendation,positive,7
+food,dev,food style_options,negative,1
+food,dev,food style_options,neutral,3
+food,dev,food style_options,positive,9
+food,dev,shipment delivery,positive,3
+food,dev,shipment prices,negative,1
+food,dev,shipment prices,positive,1
+food,dev,shipment quality,negative,1
+food,dev,shipment quality,positive,2
+food,test,amazon availability,negative,2
+food,test,amazon availability,positive,3
+food,test,amazon prices,positive,2
+food,test,food general,negative,36
+food,test,food general,neutral,17
+food,test,food general,positive,137
+food,test,food prices,negative,5
+food,test,food prices,neutral,2
+food,test,food prices,positive,6
+food,test,food quality,negative,16
+food,test,food quality,neutral,17
+food,test,food quality,positive,51
+food,test,food recommendation,negative,1
+food,test,food recommendation,neutral,1
+food,test,food recommendation,positive,22
+food,test,food style_options,negative,14
+food,test,food style_options,neutral,8
+food,test,food style_options,positive,13
+food,test,shipment delivery,negative,1
+food,test,shipment delivery,positive,8
+food,test,shipment quality,positive,2
+food,train,amazon availability,conflict,1
+food,train,amazon availability,negative,2
+food,train,amazon availability,positive,13
+food,train,amazon prices,negative,2
+food,train,amazon prices,positive,6
+food,train,food general,negative,41
+food,train,food general,neutral,11
+food,train,food general,positive,212
+food,train,food prices,negative,4
+food,train,food prices,neutral,2
+food,train,food prices,positive,17
+food,train,food quality,conflict,1
+food,train,food quality,negative,53
+food,train,food quality,neutral,8
+food,train,food quality,positive,177
+food,train,food recommendation,negative,3
+food,train,food recommendation,neutral,3
+food,train,food recommendation,positive,21
+food,train,food style_options,negative,7
+food,train,food style_options,neutral,4
+food,train,food style_options,positive,33
+food,train,shipment delivery,negative,1
+food,train,shipment delivery,positive,13
+food,train,shipment prices,positive,1
+food,train,shipment quality,negative,6
+food,train,shipment quality,positive,8
+hotel,dev,hotel cleanliness,negative,1
+hotel,dev,hotel cleanliness,positive,3
+hotel,dev,hotel comfort,positive,2
+hotel,dev,hotel design_features,negative,1
+hotel,dev,hotel design_features,positive,1
+hotel,dev,hotel general,negative,5
+hotel,dev,hotel general,positive,20
+hotel,dev,hotel prices,negative,3
+hotel,dev,hotel prices,positive,6
+hotel,dev,location general,positive,12
+hotel,dev,room_amenities general,positive,1
+hotel,dev,rooms comfort,negative,1
+hotel,dev,rooms design_features,positive,1
+hotel,dev,rooms general,neutral,1
+hotel,dev,rooms general,positive,3
+hotel,dev,rooms prices,positive,1
+hotel,dev,rooms quality,negative,1
+hotel,dev,service general,negative,1
+hotel,dev,service general,positive,4
+hotel,test,facilities comfort,neutral,1
+hotel,test,facilities design_features,negative,1
+hotel,test,facilities design_features,positive,3
+hotel,test,facilities general,negative,2
+hotel,test,facilities general,positive,1
+hotel,test,facilities miscellaneous,positive,1
+hotel,test,facilities prices,negative,1
+hotel,test,facilities prices,positive,2
+hotel,test,food_drinks prices,negative,3
+hotel,test,food_drinks quality,negative,1
+hotel,test,food_drinks quality,positive,2
+hotel,test,food_drinks style_options,positive,3
+hotel,test,hotel cleanliness,positive,7
+hotel,test,hotel comfort,positive,7
+hotel,test,hotel design_features,negative,3
+hotel,test,hotel design_features,positive,3
+hotel,test,hotel general,negative,10
+hotel,test,hotel general,neutral,4
+hotel,test,hotel general,positive,81
+hotel,test,hotel miscellaneous,negative,3
+hotel,test,hotel miscellaneous,positive,8
+hotel,test,hotel prices,negative,2
+hotel,test,hotel prices,neutral,1
+hotel,test,hotel prices,positive,13
+hotel,test,hotel quality,positive,1
+hotel,test,location general,negative,1
+hotel,test,location general,positive,35
+hotel,test,room_amenities cleanliness,negative,1
+hotel,test,room_amenities comfort,positive,4
+hotel,test,room_amenities design_features,negative,1
+hotel,test,room_amenities general,negative,1
+hotel,test,room_amenities general,positive,2
+hotel,test,room_amenities quality,positive,1
+hotel,test,rooms cleanliness,negative,1
+hotel,test,rooms cleanliness,positive,2
+hotel,test,rooms comfort,negative,3
+hotel,test,rooms comfort,positive,1
+hotel,test,rooms design_features,positive,2
+hotel,test,rooms general,positive,1
+hotel,test,service general,negative,5
+hotel,test,service general,neutral,1
+hotel,test,service general,positive,21
+hotel,train,facilities design_features,negative,1
+hotel,train,facilities design_features,positive,7
+hotel,train,facilities general,negative,2
+hotel,train,facilities general,neutral,1
+hotel,train,facilities general,positive,7
+hotel,train,facilities prices,negative,2
+hotel,train,food_drinks prices,negative,2
+hotel,train,food_drinks prices,positive,1
+hotel,train,food_drinks quality,negative,1
+hotel,train,food_drinks quality,positive,2
+hotel,train,food_drinks style_options,negative,1
+hotel,train,food_drinks style_options,positive,3
+hotel,train,hotel cleanliness,positive,3
+hotel,train,hotel comfort,negative,4
+hotel,train,hotel comfort,neutral,1
+hotel,train,hotel comfort,positive,17
+hotel,train,hotel design_features,negative,4
+hotel,train,hotel design_features,neutral,1
+hotel,train,hotel design_features,positive,5
+hotel,train,hotel general,negative,19
+hotel,train,hotel general,neutral,3
+hotel,train,hotel general,positive,110
+hotel,train,hotel miscellaneous,negative,1
+hotel,train,hotel miscellaneous,positive,5
+hotel,train,hotel prices,negative,8
+hotel,train,hotel prices,neutral,1
+hotel,train,hotel prices,positive,29
+hotel,train,hotel quality,negative,1
+hotel,train,hotel quality,positive,4
+hotel,train,location general,negative,3
+hotel,train,location general,positive,37
+hotel,train,polarity positive,positive,2
+hotel,train,room_amenities comfort,positive,2
+hotel,train,room_amenities design_features,negative,2
+hotel,train,room_amenities design_features,positive,7
+hotel,train,room_amenities general,negative,1
+hotel,train,room_amenities general,positive,4
+hotel,train,rooms cleanliness,negative,2
+hotel,train,rooms cleanliness,positive,3
+hotel,train,rooms comfort,negative,3
+hotel,train,rooms comfort,positive,4
+hotel,train,rooms design_features,neutral,1
+hotel,train,rooms design_features,positive,1
+hotel,train,rooms general,positive,5
+hotel,train,rooms quality,negative,1
+hotel,train,rooms quality,positive,2
+hotel,train,service general,negative,11
+hotel,train,service general,positive,24
+laptop,dev,BATTERY#OPERATION_PERFORMANCE,negative,1
+laptop,dev,DISPLAY#OPERATION_PERFORMANCE,negative,1
+laptop,dev,HARDWARE#GENERAL,positive,1
+laptop,dev,HARDWARE#OPERATION_PERFORMANCE,positive,1
+laptop,dev,LAPTOP#CONNECTIVITY,negative,1
+laptop,dev,LAPTOP#DESIGN_FEATURES,negative,3
+laptop,dev,LAPTOP#DESIGN_FEATURES,positive,7
+laptop,dev,LAPTOP#GENERAL,negative,5
+laptop,dev,LAPTOP#GENERAL,neutral,2
+laptop,dev,LAPTOP#GENERAL,positive,19
+laptop,dev,LAPTOP#OPERATION_PERFORMANCE,negative,9
+laptop,dev,LAPTOP#OPERATION_PERFORMANCE,positive,13
+laptop,dev,LAPTOP#PORTABILITY,positive,1
+laptop,dev,LAPTOP#PRICE,negative,1
+laptop,dev,LAPTOP#PRICE,positive,4
+laptop,dev,LAPTOP#QUALITY,positive,2
+laptop,dev,OS#GENERAL,positive,1
+laptop,dev,OS#OPERATION_PERFORMANCE,positive,1
+laptop,dev,POWER_SUPPLY#GENERAL,negative,1
+laptop,dev,POWER_SUPPLY#OPERATION_PERFORMANCE,negative,1
+laptop,dev,POWER_SUPPLY#OPERATION_PERFORMANCE,positive,1
+laptop,dev,SHIPPING#GENERAL,positive,1
+laptop,dev,SOFTWARE#GENERAL,positive,1
+laptop,test,BATTERY#GENERAL,positive,1
+laptop,test,COMPANY#GENERAL,positive,1
+laptop,test,DISPLAY#DESIGN_FEATURES,neutral,1
+laptop,test,DISPLAY#DESIGN_FEATURES,positive,1
+laptop,test,DISPLAY#GENERAL,positive,1
+laptop,test,DISPLAY#USABILITY,positive,1
+laptop,test,HARDWARE#OPERATION_PERFORMANCE,negative,1
+laptop,test,HARD_DISC#OPERATION_PERFORMANCE,negative,1
+laptop,test,KEYBOARD#DESIGN_FEATURES,negative,1
+laptop,test,KEYBOARD#GENERAL,negative,1
+laptop,test,LAPTOP#CONNECTIVITY,negative,1
+laptop,test,LAPTOP#CONNECTIVITY,neutral,1
+laptop,test,LAPTOP#DESIGN_FEATURES,negative,2
+laptop,test,LAPTOP#DESIGN_FEATURES,neutral,1
+laptop,test,LAPTOP#DESIGN_FEATURES,positive,11
+laptop,test,LAPTOP#GENERAL,negative,13
+laptop,test,LAPTOP#GENERAL,neutral,5
+laptop,test,LAPTOP#GENERAL,positive,27
+laptop,test,LAPTOP#OPERATION_PERFORMANCE,negative,9
+laptop,test,LAPTOP#OPERATION_PERFORMANCE,positive,23
+laptop,test,LAPTOP#PORTABILITY,positive,4
+laptop,test,LAPTOP#PRICE,negative,1
+laptop,test,LAPTOP#PRICE,neutral,1
+laptop,test,LAPTOP#PRICE,positive,5
+laptop,test,LAPTOP#QUALITY,negative,5
+laptop,test,LAPTOP#QUALITY,positive,1
+laptop,test,LAPTOP#USABILITY,negative,1
+laptop,test,LAPTOP#USABILITY,positive,1
+laptop,test,MULTIMEDIA_DEVICES#OPERATION_PERFORMANCE,positive,1
+laptop,test,OS#DESIGN_FEATURES,negative,1
+laptop,test,OS#OPERATION_PERFORMANCE,negative,1
+laptop,test,PORTS#OPERATION_PERFORMANCE,negative,1
+laptop,test,POWER_SUPPLY#OPERATION_PERFORMANCE,positive,1
+laptop,test,SOFTWARE#DESIGN_FEATURES,negative,1
+laptop,test,SOFTWARE#OPERATION_PERFORMANCE,positive,2
+laptop,train,BATTERY#OPERATION_PERFORMANCE,negative,2
+laptop,train,BATTERY#OPERATION_PERFORMANCE,positive,1
+laptop,train,CPU#OPERATION_PERFORMANCE,positive,3
+laptop,train,DISPLAY#DESIGN_FEATURES,positive,1
+laptop,train,DISPLAY#OPERATION_PERFORMANCE,negative,1
+laptop,train,DISPLAY#OPERATION_PERFORMANCE,positive,2
+laptop,train,FANS&COOLING#GENERAL,positive,1
+laptop,train,HARDWARE#GENERAL,positive,1
+laptop,train,HARD_DISC#GENERAL,positive,1
+laptop,train,KEYBOARD#DESIGN_FEATURES,positive,1
+laptop,train,KEYBOARD#GENERAL,negative,2
+laptop,train,KEYBOARD#OPERATION_PERFORMANCE,negative,1
+laptop,train,LAPTOP#DESIGN_FEATURES,negative,8
+laptop,train,LAPTOP#DESIGN_FEATURES,neutral,1
+laptop,train,LAPTOP#DESIGN_FEATURES,positive,23
+laptop,train,LAPTOP#GENERAL,negative,34
+laptop,train,LAPTOP#GENERAL,neutral,2
+laptop,train,LAPTOP#GENERAL,positive,64
+laptop,train,LAPTOP#MISCELLANEOUS,positive,2
+laptop,train,LAPTOP#OPERATION_PERFORMANCE,negative,29
+laptop,train,LAPTOP#OPERATION_PERFORMANCE,neutral,6
+laptop,train,LAPTOP#OPERATION_PERFORMANCE,positive,57
+laptop,train,LAPTOP#PORTABILITY,positive,14
+laptop,train,LAPTOP#PRICE,negative,3
+laptop,train,LAPTOP#PRICE,neutral,3
+laptop,train,LAPTOP#PRICE,positive,21
+laptop,train,LAPTOP#QUALITY,negative,5
+laptop,train,LAPTOP#QUALITY,positive,10
+laptop,train,LAPTOP#USABILITY,negative,4
+laptop,train,LAPTOP#USABILITY,positive,22
+laptop,train,MEMORY#GENERAL,negative,1
+laptop,train,MULTIMEDIA_DEVICES#OPERATION_PERFORMANCE,neutral,1
+laptop,train,MULTIMEDIA_DEVICES#QUALITY,positive,1
+laptop,train,OS#DESIGN_FEATURES,neutral,1
+laptop,train,OS#OPERATION_PERFORMANCE,negative,3
+laptop,train,OS#OPERATION_PERFORMANCE,positive,2
+laptop,train,POWER_SUPPLY#GENERAL,positive,1
+laptop,train,POWER_SUPPLY#OPERATION_PERFORMANCE,negative,1
+laptop,train,POWER_SUPPLY#OPERATION_PERFORMANCE,positive,3
+laptop,train,SHIPPING#GENERAL,negative,1
+laptop,train,SHIPPING#GENERAL,positive,1
+laptop,train,SHIPPING#OPERATION_PERFORMANCE,positive,1
+laptop,train,SHIPPING#QUALITY,positive,1
+laptop,train,SOFTWARE#DESIGN_FEATURES,negative,1
+laptop,train,SOFTWARE#GENERAL,neutral,1
+laptop,train,SOFTWARE#OPERATION_PERFORMANCE,negative,1
+laptop,train,SOFTWARE#OPERATION_PERFORMANCE,positive,1
+laptop,train,SUPPORT#GENERAL,negative,4
+laptop,train,SUPPORT#OPERATION_PERFORMANCE,negative,1
+restaurant,dev,ambience general,positive,3
+restaurant,dev,drinks quality,positive,1
+restaurant,dev,food prices,negative,4
+restaurant,dev,food quality,negative,6
+restaurant,dev,food quality,positive,10
+restaurant,dev,food style_options,positive,2
+restaurant,dev,location general,positive,1
+restaurant,dev,restaurant general,negative,12
+restaurant,dev,restaurant general,positive,27
+restaurant,dev,restaurant miscellaneous,negative,1
+restaurant,dev,restaurant miscellaneous,positive,1
+restaurant,dev,restaurant prices,negative,4
+restaurant,dev,restaurant prices,neutral,2
+restaurant,dev,restaurant prices,positive,4
+restaurant,dev,service general,negative,13
+restaurant,dev,service general,neutral,1
+restaurant,dev,service general,positive,5
+restaurant,test,ambience general,positive,7
+restaurant,test,food quality,negative,1
+restaurant,test,food quality,neutral,1
+restaurant,test,food quality,positive,23
+restaurant,test,food style_options,negative,1
+restaurant,test,food style_options,neutral,1
+restaurant,test,food style_options,positive,2
+restaurant,test,location general,neutral,1
+restaurant,test,location general,positive,2
+restaurant,test,restaurant general,negative,18
+restaurant,test,restaurant general,neutral,1
+restaurant,test,restaurant general,positive,57
+restaurant,test,restaurant miscellaneous,negative,5
+restaurant,test,restaurant miscellaneous,positive,8
+restaurant,test,restaurant prices,negative,7
+restaurant,test,restaurant prices,neutral,2
+restaurant,test,restaurant prices,positive,6
+restaurant,test,service general,negative,21
+restaurant,test,service general,neutral,3
+restaurant,test,service general,positive,5
+restaurant,train,ambience general,negative,3
+restaurant,train,ambience general,neutral,3
+restaurant,train,ambience general,positive,14
+restaurant,train,drinks quality,negative,1
+restaurant,train,drinks quality,positive,1
+restaurant,train,food prices,negative,6
+restaurant,train,food prices,neutral,1
+restaurant,train,food prices,positive,5
+restaurant,train,food quality,negative,25
+restaurant,train,food quality,neutral,2
+restaurant,train,food quality,positive,34
+restaurant,train,food style_options,negative,9
+restaurant,train,food style_options,positive,6
+restaurant,train,location general,negative,2
+restaurant,train,location general,positive,3
+restaurant,train,restaurant general,negative,37
+restaurant,train,restaurant general,neutral,2
+restaurant,train,restaurant general,positive,116
+restaurant,train,restaurant miscellaneous,negative,13
+restaurant,train,restaurant miscellaneous,neutral,2
+restaurant,train,restaurant miscellaneous,positive,21
+restaurant,train,restaurant prices,negative,20
+restaurant,train,restaurant prices,neutral,3
+restaurant,train,restaurant prices,positive,18
+restaurant,train,service general,negative,53
+restaurant,train,service general,neutral,1
+restaurant,train,service general,positive,17
+sight,dev,Course_General_Feedback,positive,3
+sight,dev,Instructor,negative,4
+sight,dev,Instructor,neutral,9
+sight,dev,Instructor,positive,14
+sight,dev,Mathematical_Related_Concept,neutral,2
+sight,dev,Mathematical_Related_Concept,positive,1
+sight,dev,Other,negative,5
+sight,dev,Other,neutral,2
+sight,dev,Other,positive,3
+sight,dev,Teaching_Setup,negative,1
+sight,dev,Teaching_Setup,neutral,1
+sight,dev,Teaching_Setup,positive,1
+sight,test,Course_General_Feedback,negative,3
+sight,test,Course_General_Feedback,neutral,3
+sight,test,Course_General_Feedback,positive,2
+sight,test,Instructor,negative,15
+sight,test,Instructor,neutral,12
+sight,test,Instructor,positive,54
+sight,test,Mathematical_Related_Concept,negative,2
+sight,test,Mathematical_Related_Concept,neutral,5
+sight,test,Mathematical_Related_Concept,positive,2
+sight,test,Other,negative,8
+sight,test,Other,neutral,9
+sight,test,Other,positive,11
+sight,test,Teaching_Setup,negative,1
+sight,test,Teaching_Setup,neutral,1
+sight,test,Teaching_Setup,positive,1
+sight,train,Course_General_Feedback,negative,1
+sight,train,Course_General_Feedback,neutral,4
+sight,train,Course_General_Feedback,positive,12
+sight,train,Instructor,negative,21
+sight,train,Instructor,neutral,23
+sight,train,Instructor,positive,78
+sight,train,Mathematical_Related_Concept,negative,2
+sight,train,Mathematical_Related_Concept,neutral,9
+sight,train,Mathematical_Related_Concept,positive,4
+sight,train,Other,negative,12
+sight,train,Other,neutral,12
+sight,train,Other,positive,16
+sight,train,Teaching_Setup,negative,2
+sight,train,Teaching_Setup,positive,1

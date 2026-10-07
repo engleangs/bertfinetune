@@ -1,0 +1,1346 @@
+LODO continuation: wait for seed 13; 28 remaining training runs; then 35 test evaluations.
+Fixed configuration: mixed_025_da1a88a51a5f; no new hyperparameter search; NULL head off.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 0/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 1/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 2/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 3/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 4/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 5/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Waiting for seed 13: 6/7 development folds complete; no continuation training started.
+Version 2.0-exploratory-2026-10-05; 28 runs; exploratory research; stage=full
+Test access: disabled
+  mixed_025: seed=42, held_out=coursera, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=123, held_out=coursera, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=2024, held_out=coursera, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=777, held_out=coursera, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=42, held_out=hotel, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=123, held_out=hotel, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=2024, held_out=hotel, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=777, held_out=hotel, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=42, held_out=laptop, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=123, held_out=laptop, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=2024, held_out=laptop, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=777, held_out=laptop, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=42, held_out=restaurant, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=123, held_out=restaurant, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=2024, held_out=restaurant, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=777, held_out=restaurant, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=42, held_out=phone, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=123, held_out=phone, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=2024, held_out=phone, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=777, held_out=phone, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=42, held_out=sight, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=123, held_out=sight, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=2024, held_out=sight, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=777, held_out=sight, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=42, held_out=food, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=123, held_out=food, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=2024, held_out=food, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=777, held_out=food, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+Run mixed_025, seed 42, coursera, stage full
+  seed 42, epoch 1: batch 72/470, mean objective 7.2982
+  seed 42, epoch 1: batch 145/470, mean objective 6.8200
+  seed 42, epoch 1: batch 217/470, mean objective 6.4241
+  seed 42, epoch 1: batch 289/470, mean objective 6.0297
+  seed 42, epoch 1: batch 361/470, mean objective 5.6723
+  seed 42, epoch 1: batch 433/470, mean objective 5.4047
+  seed 42, epoch 1/5: dev explicit F1=0.2197; NULL F1=0.0000; combined F1=0.1991
+  seed 42, epoch 2: batch 72/470, mean objective 3.5399
+  seed 42, epoch 2: batch 144/470, mean objective 3.3369
+  seed 42, epoch 2: batch 216/470, mean objective 3.2354
+  seed 42, epoch 2: batch 288/470, mean objective 3.1858
+  seed 42, epoch 2: batch 360/470, mean objective 3.1171
+  seed 42, epoch 2: batch 432/470, mean objective 3.0691
+  seed 42, epoch 2/5: dev explicit F1=0.2817; NULL F1=0.0000; combined F1=0.2568
+  seed 42, epoch 3: batch 72/470, mean objective 2.3371
+  seed 42, epoch 3: batch 144/470, mean objective 2.3121
+  seed 42, epoch 3: batch 216/470, mean objective 2.2776
+  seed 42, epoch 3: batch 288/470, mean objective 2.2714
+  seed 42, epoch 3: batch 360/470, mean objective 2.2389
+  seed 42, epoch 3: batch 432/470, mean objective 2.2302
+  seed 42, epoch 3/5: dev explicit F1=0.3162; NULL F1=0.0000; combined F1=0.2881
+  seed 42, epoch 4: batch 72/470, mean objective 1.7208
+  seed 42, epoch 4: batch 144/470, mean objective 1.7280
+  seed 42, epoch 4: batch 216/470, mean objective 1.7179
+  seed 42, epoch 4: batch 288/470, mean objective 1.7366
+  seed 42, epoch 4: batch 360/470, mean objective 1.7288
+  seed 42, epoch 4: batch 432/470, mean objective 1.7241
+  seed 42, epoch 4/5: dev explicit F1=0.3554; NULL F1=0.0000; combined F1=0.3218
+  seed 42, epoch 5: batch 72/470, mean objective 1.4275
+  seed 42, epoch 5: batch 144/470, mean objective 1.4686
+  seed 42, epoch 5: batch 214/470, mean objective 1.4593
+  seed 42, epoch 5: batch 285/470, mean objective 1.4671
+  seed 42, epoch 5: batch 357/470, mean objective 1.4766
+  seed 42, epoch 5: batch 429/470, mean objective 1.4715
+  seed 42, epoch 5/5: dev explicit F1=0.3631; NULL F1=0.0000; combined F1=0.3274
+Run mixed_025, seed 123, coursera, stage full
+  seed 123, epoch 1: batch 71/470, mean objective 7.2865
+  seed 123, epoch 1: batch 143/470, mean objective 6.8422
+  seed 123, epoch 1: batch 215/470, mean objective 6.4089
+  seed 123, epoch 1: batch 287/470, mean objective 6.0319
+  seed 123, epoch 1: batch 359/470, mean objective 5.6694
+  seed 123, epoch 1: batch 431/470, mean objective 5.3966
+  seed 123, epoch 1/5: dev explicit F1=0.2233; NULL F1=0.0000; combined F1=0.2019
+  seed 123, epoch 2: batch 71/470, mean objective 3.4839
+  seed 123, epoch 2: batch 143/470, mean objective 3.2914
+  seed 123, epoch 2: batch 215/470, mean objective 3.1686
+  seed 123, epoch 2: batch 287/470, mean objective 3.1403
+  seed 123, epoch 2: batch 359/470, mean objective 3.0953
+  seed 123, epoch 2: batch 431/470, mean objective 3.0379
+  seed 123, epoch 2/5: dev explicit F1=0.2960; NULL F1=0.0000; combined F1=0.2690
+  seed 123, epoch 3: batch 72/470, mean objective 2.3573
+  seed 123, epoch 3: batch 144/470, mean objective 2.3146
+  seed 123, epoch 3: batch 216/470, mean objective 2.2776
+  seed 123, epoch 3: batch 288/470, mean objective 2.2147
+  seed 123, epoch 3: batch 360/470, mean objective 2.1815
+  seed 123, epoch 3: batch 432/470, mean objective 2.1703
+  seed 123, epoch 3/5: dev explicit F1=0.3542; NULL F1=0.0000; combined F1=0.3186
+  seed 123, epoch 4: batch 71/470, mean objective 1.8052
+  seed 123, epoch 4: batch 143/470, mean objective 1.7491
+  seed 123, epoch 4: batch 215/470, mean objective 1.7374
+  seed 123, epoch 4: batch 287/470, mean objective 1.7247
+  seed 123, epoch 4: batch 359/470, mean objective 1.6933
+  seed 123, epoch 4: batch 431/470, mean objective 1.6941
+  seed 123, epoch 4/5: dev explicit F1=0.3615; NULL F1=0.0000; combined F1=0.3267
+  seed 123, epoch 5: batch 72/470, mean objective 1.4113
+  seed 123, epoch 5: batch 144/470, mean objective 1.4473
+  seed 123, epoch 5: batch 216/470, mean objective 1.4339
+  seed 123, epoch 5: batch 288/470, mean objective 1.4514
+  seed 123, epoch 5: batch 360/470, mean objective 1.4474
+  seed 123, epoch 5: batch 432/470, mean objective 1.4391
+  seed 123, epoch 5/5: dev explicit F1=0.3707; NULL F1=0.0000; combined F1=0.3348
+Run mixed_025, seed 2024, coursera, stage full
+  seed 2024, epoch 1: batch 71/470, mean objective 7.2927
+  seed 2024, epoch 1: batch 143/470, mean objective 6.8211
+  seed 2024, epoch 1: batch 215/470, mean objective 6.3822
+  seed 2024, epoch 1: batch 287/470, mean objective 5.9756
+  seed 2024, epoch 1: batch 359/470, mean objective 5.6389
+  seed 2024, epoch 1: batch 431/470, mean objective 5.3580
+  seed 2024, epoch 1/5: dev explicit F1=0.2211; NULL F1=0.0000; combined F1=0.2004
+  seed 2024, epoch 2: batch 72/470, mean objective 3.3098
+  seed 2024, epoch 2: batch 144/470, mean objective 3.2505
+  seed 2024, epoch 2: batch 216/470, mean objective 3.2018
+  seed 2024, epoch 2: batch 288/470, mean objective 3.1309
+  seed 2024, epoch 2: batch 360/470, mean objective 3.0868
+  seed 2024, epoch 2: batch 432/470, mean objective 3.0202
+  seed 2024, epoch 2/5: dev explicit F1=0.2765; NULL F1=0.0000; combined F1=0.2526
+  seed 2024, epoch 3: batch 72/470, mean objective 2.2893
+  seed 2024, epoch 3: batch 144/470, mean objective 2.2935
+  seed 2024, epoch 3: batch 216/470, mean objective 2.2018
+  seed 2024, epoch 3: batch 288/470, mean objective 2.1913
+  seed 2024, epoch 3: batch 360/470, mean objective 2.1850
+  seed 2024, epoch 3: batch 432/470, mean objective 2.1738
+  seed 2024, epoch 3/5: dev explicit F1=0.3245; NULL F1=0.0000; combined F1=0.2956
+  seed 2024, epoch 4: batch 72/470, mean objective 1.7682
+  seed 2024, epoch 4: batch 144/470, mean objective 1.7675
+  seed 2024, epoch 4: batch 216/470, mean objective 1.7366
+  seed 2024, epoch 4: batch 288/470, mean objective 1.7096
+  seed 2024, epoch 4: batch 360/470, mean objective 1.7259
+  seed 2024, epoch 4: batch 432/470, mean objective 1.7089
+  seed 2024, epoch 4/5: dev explicit F1=0.3527; NULL F1=0.0000; combined F1=0.3186
+  seed 2024, epoch 5: batch 72/470, mean objective 1.4553
+  seed 2024, epoch 5: batch 144/470, mean objective 1.4554
+  seed 2024, epoch 5: batch 216/470, mean objective 1.4548
+  seed 2024, epoch 5: batch 288/470, mean objective 1.4417
+  seed 2024, epoch 5: batch 360/470, mean objective 1.4367
+  seed 2024, epoch 5: batch 432/470, mean objective 1.4420
+  seed 2024, epoch 5/5: dev explicit F1=0.3582; NULL F1=0.0000; combined F1=0.3234
+Run mixed_025, seed 777, coursera, stage full
+  seed 777, epoch 1: batch 70/470, mean objective 7.5306
+  seed 777, epoch 1: batch 141/470, mean objective 7.0047
+  seed 777, epoch 1: batch 213/470, mean objective 6.4975
+  seed 777, epoch 1: batch 285/470, mean objective 6.0737
+  seed 777, epoch 1: batch 357/470, mean objective 5.7080
+  seed 777, epoch 1: batch 429/470, mean objective 5.4338
+  seed 777, epoch 1/5: dev explicit F1=0.2206; NULL F1=0.0000; combined F1=0.2011
+  seed 777, epoch 2: batch 72/470, mean objective 3.4655
+  seed 777, epoch 2: batch 144/470, mean objective 3.2761
+  seed 777, epoch 2: batch 216/470, mean objective 3.2125
+  seed 777, epoch 2: batch 288/470, mean objective 3.1601
+  seed 777, epoch 2: batch 360/470, mean objective 3.0942
+  seed 777, epoch 2: batch 432/470, mean objective 3.0387
+  seed 777, epoch 2/5: dev explicit F1=0.3139; NULL F1=0.0000; combined F1=0.2826
+  seed 777, epoch 3: batch 70/470, mean objective 2.2916
+  seed 777, epoch 3: batch 142/470, mean objective 2.2484
+  seed 777, epoch 3: batch 214/470, mean objective 2.2283
+  seed 777, epoch 3: batch 286/470, mean objective 2.1840
+  seed 777, epoch 3: batch 358/470, mean objective 2.1514
+  seed 777, epoch 3: batch 430/470, mean objective 2.1410
+  seed 777, epoch 3/5: dev explicit F1=0.3246; NULL F1=0.0000; combined F1=0.2956
+  seed 777, epoch 4: batch 72/470, mean objective 1.7187
+  seed 777, epoch 4: batch 144/470, mean objective 1.7187
+  seed 777, epoch 4: batch 216/470, mean objective 1.7278
+  seed 777, epoch 4: batch 288/470, mean objective 1.7453
+  seed 777, epoch 4: batch 360/470, mean objective 1.7097
+  seed 777, epoch 4: batch 432/470, mean objective 1.7045
+  seed 777, epoch 4/5: dev explicit F1=0.3639; NULL F1=0.0000; combined F1=0.3275
+  seed 777, epoch 5: batch 72/470, mean objective 1.4873
+  seed 777, epoch 5: batch 144/470, mean objective 1.4648
+  seed 777, epoch 5: batch 216/470, mean objective 1.4710
+  seed 777, epoch 5: batch 288/470, mean objective 1.4704
+  seed 777, epoch 5: batch 360/470, mean objective 1.4554
+  seed 777, epoch 5: batch 432/470, mean objective 1.4378
+  seed 777, epoch 5/5: dev explicit F1=0.3638; NULL F1=0.0000; combined F1=0.3283
+Run mixed_025, seed 42, hotel, stage full
+  seed 42, epoch 1: batch 67/472, mean objective 7.5250
+  seed 42, epoch 1: batch 139/472, mean objective 6.9823
+  seed 42, epoch 1: batch 211/472, mean objective 6.5293
+  seed 42, epoch 1: batch 283/472, mean objective 6.1432
+  seed 42, epoch 1: batch 355/472, mean objective 5.8078
+  seed 42, epoch 1: batch 427/472, mean objective 5.5120
+  seed 42, epoch 1/5: dev explicit F1=0.1983; NULL F1=0.0000; combined F1=0.1790
+  seed 42, epoch 2: batch 72/472, mean objective 3.4400
+  seed 42, epoch 2: batch 144/472, mean objective 3.3798
+  seed 42, epoch 2: batch 216/472, mean objective 3.3371
+  seed 42, epoch 2: batch 288/472, mean objective 3.2338
+  seed 42, epoch 2: batch 360/472, mean objective 3.1958
+  seed 42, epoch 2: batch 432/472, mean objective 3.1422
+  seed 42, epoch 2/5: dev explicit F1=0.3068; NULL F1=0.0000; combined F1=0.2756
+  seed 42, epoch 3: batch 71/472, mean objective 2.4182
+  seed 42, epoch 3: batch 143/472, mean objective 2.3894
+  seed 42, epoch 3: batch 215/472, mean objective 2.3311
+  seed 42, epoch 3: batch 287/472, mean objective 2.3092
+  seed 42, epoch 3: batch 359/472, mean objective 2.2790
+  seed 42, epoch 3: batch 431/472, mean objective 2.2486
+  seed 42, epoch 3/5: dev explicit F1=0.3401; NULL F1=0.0000; combined F1=0.3063
+  seed 42, epoch 4: batch 72/472, mean objective 1.8697
+  seed 42, epoch 4: batch 144/472, mean objective 1.8150
+  seed 42, epoch 4: batch 216/472, mean objective 1.8065
+  seed 42, epoch 4: batch 288/472, mean objective 1.7889
+  seed 42, epoch 4: batch 360/472, mean objective 1.7606
+  seed 42, epoch 4: batch 432/472, mean objective 1.7445
+  seed 42, epoch 4/5: dev explicit F1=0.3707; NULL F1=0.0000; combined F1=0.3301
+  seed 42, epoch 5: batch 72/472, mean objective 1.4680
+  seed 42, epoch 5: batch 144/472, mean objective 1.4675
+  seed 42, epoch 5: batch 216/472, mean objective 1.5039
+  seed 42, epoch 5: batch 288/472, mean objective 1.4788
+  seed 42, epoch 5: batch 360/472, mean objective 1.4816
+  seed 42, epoch 5: batch 432/472, mean objective 1.4745
+  seed 42, epoch 5/5: dev explicit F1=0.3717; NULL F1=0.0000; combined F1=0.3324
+Run mixed_025, seed 123, hotel, stage full
+  seed 123, epoch 1: batch 71/472, mean objective 7.5349
+  seed 123, epoch 1: batch 143/472, mean objective 7.0016
+  seed 123, epoch 1: batch 215/472, mean objective 6.5128
+  seed 123, epoch 1: batch 287/472, mean objective 6.1415
+  seed 123, epoch 1: batch 359/472, mean objective 5.8143
+  seed 123, epoch 1: batch 430/472, mean objective 5.5400
+  seed 123, epoch 1/5: dev explicit F1=0.2276; NULL F1=0.0000; combined F1=0.2038
+  seed 123, epoch 2: batch 72/472, mean objective 3.5367
+  seed 123, epoch 2: batch 143/472, mean objective 3.4117
+  seed 123, epoch 2: batch 215/472, mean objective 3.3546
+  seed 123, epoch 2: batch 287/472, mean objective 3.2772
+  seed 123, epoch 2: batch 359/472, mean objective 3.2040
+  seed 123, epoch 2: batch 431/472, mean objective 3.1476
+  seed 123, epoch 2/5: dev explicit F1=0.2902; NULL F1=0.0000; combined F1=0.2618
+  seed 123, epoch 3: batch 72/472, mean objective 2.2932
+  seed 123, epoch 3: batch 144/472, mean objective 2.2502
+  seed 123, epoch 3: batch 216/472, mean objective 2.2527
+  seed 123, epoch 3: batch 285/472, mean objective 2.2545
+  seed 123, epoch 3: batch 352/472, mean objective 2.2695
+  seed 123, epoch 3: batch 423/472, mean objective 2.2831
+  seed 123, epoch 3/5: dev explicit F1=0.3431; NULL F1=0.0000; combined F1=0.3079
+  seed 123, epoch 4: batch 69/472, mean objective 1.7709
+  seed 123, epoch 4: batch 140/472, mean objective 1.8039
+  seed 123, epoch 4: batch 212/472, mean objective 1.8149
+  seed 123, epoch 4: batch 283/472, mean objective 1.7900
+  seed 123, epoch 4: batch 355/472, mean objective 1.7755
+  seed 123, epoch 4: batch 427/472, mean objective 1.7456
+  seed 123, epoch 4/5: dev explicit F1=0.3702; NULL F1=0.0000; combined F1=0.3304
+  seed 123, epoch 5: batch 72/472, mean objective 1.4625
+  seed 123, epoch 5: batch 143/472, mean objective 1.5158
+  seed 123, epoch 5: batch 213/472, mean objective 1.5209
+  seed 123, epoch 5: batch 283/472, mean objective 1.4868
+  seed 123, epoch 5: batch 353/472, mean objective 1.4880
+  seed 123, epoch 5: batch 424/472, mean objective 1.4937
+  seed 123, epoch 5/5: dev explicit F1=0.3711; NULL F1=0.0000; combined F1=0.3321
+Run mixed_025, seed 2024, hotel, stage full
+  seed 2024, epoch 1: batch 72/472, mean objective 7.5589
+  seed 2024, epoch 1: batch 144/472, mean objective 6.9627
+  seed 2024, epoch 1: batch 216/472, mean objective 6.5094
+  seed 2024, epoch 1: batch 288/472, mean objective 6.1468
+  seed 2024, epoch 1: batch 360/472, mean objective 5.8213
+  seed 2024, epoch 1: batch 432/472, mean objective 5.5687
+  seed 2024, epoch 1/5: dev explicit F1=0.2175; NULL F1=0.0000; combined F1=0.1950
+  seed 2024, epoch 2: batch 72/472, mean objective 3.4833
+  seed 2024, epoch 2: batch 144/472, mean objective 3.3921
+  seed 2024, epoch 2: batch 216/472, mean objective 3.3180
+  seed 2024, epoch 2: batch 288/472, mean objective 3.2299
+  seed 2024, epoch 2: batch 360/472, mean objective 3.1993
+  seed 2024, epoch 2: batch 432/472, mean objective 3.1635
+  seed 2024, epoch 2/5: dev explicit F1=0.2984; NULL F1=0.0000; combined F1=0.2665
+  seed 2024, epoch 3: batch 72/472, mean objective 2.4475
+  seed 2024, epoch 3: batch 144/472, mean objective 2.3729
+  seed 2024, epoch 3: batch 216/472, mean objective 2.3515
+  seed 2024, epoch 3: batch 288/472, mean objective 2.3228
+  seed 2024, epoch 3: batch 360/472, mean objective 2.2961
+  seed 2024, epoch 3: batch 431/472, mean objective 2.2660
+  seed 2024, epoch 3/5: dev explicit F1=0.3421; NULL F1=0.0000; combined F1=0.3052
+  seed 2024, epoch 4: batch 71/472, mean objective 1.8621
+  seed 2024, epoch 4: batch 143/472, mean objective 1.7767
+  seed 2024, epoch 4: batch 215/472, mean objective 1.7501
+  seed 2024, epoch 4: batch 287/472, mean objective 1.7779
+  seed 2024, epoch 4: batch 358/472, mean objective 1.7739
+  seed 2024, epoch 4: batch 430/472, mean objective 1.7565
+  seed 2024, epoch 4/5: dev explicit F1=0.3566; NULL F1=0.0000; combined F1=0.3195
+  seed 2024, epoch 5: batch 72/472, mean objective 1.4454
+  seed 2024, epoch 5: batch 144/472, mean objective 1.4853
+  seed 2024, epoch 5: batch 216/472, mean objective 1.4849
+  seed 2024, epoch 5: batch 288/472, mean objective 1.4796
+  seed 2024, epoch 5: batch 360/472, mean objective 1.4875
+  seed 2024, epoch 5: batch 432/472, mean objective 1.4836
+  seed 2024, epoch 5/5: dev explicit F1=0.3666; NULL F1=0.0000; combined F1=0.3279
+Run mixed_025, seed 777, hotel, stage full
+  seed 777, epoch 1: batch 72/472, mean objective 7.5673
+  seed 777, epoch 1: batch 144/472, mean objective 7.0052
+  seed 777, epoch 1: batch 216/472, mean objective 6.4990
+  seed 777, epoch 1: batch 288/472, mean objective 6.1088
+  seed 777, epoch 1: batch 360/472, mean objective 5.7981
+  seed 777, epoch 1: batch 432/472, mean objective 5.5114
+  seed 777, epoch 1/5: dev explicit F1=0.2274; NULL F1=0.0000; combined F1=0.2026
+  seed 777, epoch 2: batch 72/472, mean objective 3.4329
+  seed 777, epoch 2: batch 144/472, mean objective 3.3316
+  seed 777, epoch 2: batch 216/472, mean objective 3.2927
+  seed 777, epoch 2: batch 288/472, mean objective 3.2321
+  seed 777, epoch 2: batch 360/472, mean objective 3.1873
+  seed 777, epoch 2: batch 432/472, mean objective 3.1246
+  seed 777, epoch 2/5: dev explicit F1=0.3056; NULL F1=0.0000; combined F1=0.2730
+  seed 777, epoch 3: batch 72/472, mean objective 2.3363
+  seed 777, epoch 3: batch 144/472, mean objective 2.3215
+  seed 777, epoch 3: batch 216/472, mean objective 2.2838
+  seed 777, epoch 3: batch 288/472, mean objective 2.2662
+  seed 777, epoch 3: batch 360/472, mean objective 2.2358
+  seed 777, epoch 3: batch 432/472, mean objective 2.2218
+  seed 777, epoch 3/5: dev explicit F1=0.3169; NULL F1=0.0000; combined F1=0.2859
+  seed 777, epoch 4: batch 72/472, mean objective 1.8043
+  seed 777, epoch 4: batch 144/472, mean objective 1.8139
+  seed 777, epoch 4: batch 216/472, mean objective 1.8044
+  seed 777, epoch 4: batch 288/472, mean objective 1.7694
+  seed 777, epoch 4: batch 360/472, mean objective 1.7490
+  seed 777, epoch 4: batch 432/472, mean objective 1.7230
+  seed 777, epoch 4/5: dev explicit F1=0.3731; NULL F1=0.0000; combined F1=0.3334
+  seed 777, epoch 5: batch 72/472, mean objective 1.5026
+  seed 777, epoch 5: batch 144/472, mean objective 1.4841
+  seed 777, epoch 5: batch 216/472, mean objective 1.4827
+  seed 777, epoch 5: batch 288/472, mean objective 1.4746
+  seed 777, epoch 5: batch 359/472, mean objective 1.4546
+  seed 777, epoch 5: batch 431/472, mean objective 1.4490
+  seed 777, epoch 5/5: dev explicit F1=0.3761; NULL F1=0.0000; combined F1=0.3365
+Run mixed_025, seed 42, laptop, stage full
+  seed 42, epoch 1: batch 71/471, mean objective 7.0883
+  seed 42, epoch 1: batch 143/471, mean objective 6.4975
+  seed 42, epoch 1: batch 214/471, mean objective 6.0388
+  seed 42, epoch 1: batch 286/471, mean objective 5.5959
+  seed 42, epoch 1: batch 358/471, mean objective 5.2617
+  seed 42, epoch 1: batch 430/471, mean objective 4.9735
+  seed 42, epoch 1/5: dev explicit F1=0.2310; NULL F1=0.0000; combined F1=0.2079
+  seed 42, epoch 2: batch 72/471, mean objective 2.9608
+  seed 42, epoch 2: batch 144/471, mean objective 2.8810
+  seed 42, epoch 2: batch 216/471, mean objective 2.8246
+  seed 42, epoch 2: batch 287/471, mean objective 2.7705
+  seed 42, epoch 2: batch 359/471, mean objective 2.7034
+  seed 42, epoch 2: batch 431/471, mean objective 2.6505
+  seed 42, epoch 2/5: dev explicit F1=0.3152; NULL F1=0.0000; combined F1=0.2831
+  seed 42, epoch 3: batch 72/471, mean objective 1.9864
+  seed 42, epoch 3: batch 144/471, mean objective 1.9118
+  seed 42, epoch 3: batch 216/471, mean objective 1.8664
+  seed 42, epoch 3: batch 288/471, mean objective 1.8341
+  seed 42, epoch 3: batch 360/471, mean objective 1.8056
+  seed 42, epoch 3: batch 432/471, mean objective 1.7944
+  seed 42, epoch 3/5: dev explicit F1=0.3444; NULL F1=0.0000; combined F1=0.3090
+  seed 42, epoch 4: batch 70/471, mean objective 1.5303
+  seed 42, epoch 4: batch 139/471, mean objective 1.4778
+  seed 42, epoch 4: batch 209/471, mean objective 1.4327
+  seed 42, epoch 4: batch 280/471, mean objective 1.3814
+  seed 42, epoch 4: batch 352/471, mean objective 1.3751
+  seed 42, epoch 4: batch 424/471, mean objective 1.3507
+  seed 42, epoch 4/5: dev explicit F1=0.3664; NULL F1=0.0000; combined F1=0.3272
+  seed 42, epoch 5: batch 72/471, mean objective 1.0487
+  seed 42, epoch 5: batch 144/471, mean objective 1.0695
+  seed 42, epoch 5: batch 215/471, mean objective 1.0732
+  seed 42, epoch 5: batch 287/471, mean objective 1.0886
+  seed 42, epoch 5: batch 359/471, mean objective 1.0963
+  seed 42, epoch 5: batch 430/471, mean objective 1.0889
+  seed 42, epoch 5/5: dev explicit F1=0.3674; NULL F1=0.0000; combined F1=0.3290
+Run mixed_025, seed 123, laptop, stage full
+  seed 123, epoch 1: batch 72/471, mean objective 7.0102
+  seed 123, epoch 1: batch 144/471, mean objective 6.4547
+  seed 123, epoch 1: batch 216/471, mean objective 5.9543
+  seed 123, epoch 1: batch 288/471, mean objective 5.5542
+  seed 123, epoch 1: batch 359/471, mean objective 5.2299
+  seed 123, epoch 1: batch 431/471, mean objective 4.9277
+  seed 123, epoch 1/5: dev explicit F1=0.2606; NULL F1=0.0000; combined F1=0.2317
+  seed 123, epoch 2: batch 72/471, mean objective 2.8877
+  seed 123, epoch 2: batch 144/471, mean objective 2.8457
+  seed 123, epoch 2: batch 216/471, mean objective 2.7314
+  seed 123, epoch 2: batch 288/471, mean objective 2.6767
+  seed 123, epoch 2: batch 360/471, mean objective 2.6277
+  seed 123, epoch 2: batch 432/471, mean objective 2.5734
+  seed 123, epoch 2/5: dev explicit F1=0.3504; NULL F1=0.0000; combined F1=0.3121
+  seed 123, epoch 3: batch 72/471, mean objective 1.9180
+  seed 123, epoch 3: batch 144/471, mean objective 1.8716
+  seed 123, epoch 3: batch 216/471, mean objective 1.8710
+  seed 123, epoch 3: batch 288/471, mean objective 1.8288
+  seed 123, epoch 3: batch 360/471, mean objective 1.8005
+  seed 123, epoch 3: batch 430/471, mean objective 1.7777
+  seed 123, epoch 3/5: dev explicit F1=0.3472; NULL F1=0.0000; combined F1=0.3128
+  seed 123, epoch 4: batch 72/471, mean objective 1.3556
+  seed 123, epoch 4: batch 144/471, mean objective 1.3448
+  seed 123, epoch 4: batch 216/471, mean objective 1.3405
+  seed 123, epoch 4: batch 288/471, mean objective 1.2962
+  seed 123, epoch 4: batch 359/471, mean objective 1.2993
+  seed 123, epoch 4: batch 431/471, mean objective 1.3003
+  seed 123, epoch 4/5: dev explicit F1=0.3879; NULL F1=0.0000; combined F1=0.3459
+  seed 123, epoch 5: batch 72/471, mean objective 1.0183
+  seed 123, epoch 5: batch 144/471, mean objective 1.0687
+  seed 123, epoch 5: batch 216/471, mean objective 1.0648
+  seed 123, epoch 5: batch 287/471, mean objective 1.0800
+  seed 123, epoch 5: batch 358/471, mean objective 1.0843
+  seed 123, epoch 5: batch 430/471, mean objective 1.0719
+  seed 123, epoch 5/5: dev explicit F1=0.3896; NULL F1=0.0000; combined F1=0.3480
+Run mixed_025, seed 2024, laptop, stage full
+  seed 2024, epoch 1: batch 71/471, mean objective 7.0330
+  seed 2024, epoch 1: batch 143/471, mean objective 6.4751
+  seed 2024, epoch 1: batch 215/471, mean objective 6.0041
+  seed 2024, epoch 1: batch 287/471, mean objective 5.5739
+  seed 2024, epoch 1: batch 359/471, mean objective 5.2318
+  seed 2024, epoch 1: batch 431/471, mean objective 4.9492
+  seed 2024, epoch 1/5: dev explicit F1=0.2567; NULL F1=0.0000; combined F1=0.2273
+  seed 2024, epoch 2: batch 72/471, mean objective 2.9182
+  seed 2024, epoch 2: batch 144/471, mean objective 2.8662
+  seed 2024, epoch 2: batch 216/471, mean objective 2.8130
+  seed 2024, epoch 2: batch 288/471, mean objective 2.7024
+  seed 2024, epoch 2: batch 360/471, mean objective 2.6222
+  seed 2024, epoch 2: batch 432/471, mean objective 2.5589
+  seed 2024, epoch 2/5: dev explicit F1=0.3170; NULL F1=0.0000; combined F1=0.2837
+  seed 2024, epoch 3: batch 72/471, mean objective 1.8887
+  seed 2024, epoch 3: batch 144/471, mean objective 1.8509
+  seed 2024, epoch 3: batch 216/471, mean objective 1.8145
+  seed 2024, epoch 3: batch 288/471, mean objective 1.7788
+  seed 2024, epoch 3: batch 360/471, mean objective 1.7627
+  seed 2024, epoch 3: batch 432/471, mean objective 1.7488
+  seed 2024, epoch 3/5: dev explicit F1=0.3488; NULL F1=0.0000; combined F1=0.3122
+  seed 2024, epoch 4: batch 72/471, mean objective 1.3788
+  seed 2024, epoch 4: batch 144/471, mean objective 1.3620
+  seed 2024, epoch 4: batch 216/471, mean objective 1.3533
+  seed 2024, epoch 4: batch 284/471, mean objective 1.3340
+  seed 2024, epoch 4: batch 354/471, mean objective 1.3233
+  seed 2024, epoch 4: batch 426/471, mean objective 1.3007
+  seed 2024, epoch 4/5: dev explicit F1=0.3775; NULL F1=0.0000; combined F1=0.3373
+  seed 2024, epoch 5: batch 72/471, mean objective 1.1122
+  seed 2024, epoch 5: batch 144/471, mean objective 1.0287
+  seed 2024, epoch 5: batch 216/471, mean objective 1.0375
+  seed 2024, epoch 5: batch 288/471, mean objective 1.0459
+  seed 2024, epoch 5: batch 360/471, mean objective 1.0345
+  seed 2024, epoch 5: batch 432/471, mean objective 1.0399
+  seed 2024, epoch 5/5: dev explicit F1=0.3807; NULL F1=0.0000; combined F1=0.3399
+Run mixed_025, seed 777, laptop, stage full
+  seed 777, epoch 1: batch 71/471, mean objective 7.3017
+  seed 777, epoch 1: batch 143/471, mean objective 6.6173
+  seed 777, epoch 1: batch 215/471, mean objective 6.1070
+  seed 777, epoch 1: batch 287/471, mean objective 5.6509
+  seed 777, epoch 1: batch 359/471, mean objective 5.2586
+  seed 777, epoch 1: batch 431/471, mean objective 4.9558
+  seed 777, epoch 1/5: dev explicit F1=0.2871; NULL F1=0.0000; combined F1=0.2529
+  seed 777, epoch 2: batch 72/471, mean objective 2.8422
+  seed 777, epoch 2: batch 144/471, mean objective 2.7398
+  seed 777, epoch 2: batch 216/471, mean objective 2.7003
+  seed 777, epoch 2: batch 288/471, mean objective 2.6317
+  seed 777, epoch 2: batch 360/471, mean objective 2.5765
+  seed 777, epoch 2: batch 432/471, mean objective 2.5257
+  seed 777, epoch 2/5: dev explicit F1=0.3153; NULL F1=0.0000; combined F1=0.2836
+  seed 777, epoch 3: batch 71/471, mean objective 1.8551
+  seed 777, epoch 3: batch 143/471, mean objective 1.8672
+  seed 777, epoch 3: batch 215/471, mean objective 1.8096
+  seed 777, epoch 3: batch 287/471, mean objective 1.7799
+  seed 777, epoch 3: batch 358/471, mean objective 1.7531
+  seed 777, epoch 3: batch 429/471, mean objective 1.7438
+  seed 777, epoch 3/5: dev explicit F1=0.3729; NULL F1=0.0000; combined F1=0.3326
+  seed 777, epoch 4: batch 72/471, mean objective 1.3778
+  seed 777, epoch 4: batch 144/471, mean objective 1.3462
+  seed 777, epoch 4: batch 216/471, mean objective 1.3341
+  seed 777, epoch 4: batch 288/471, mean objective 1.2960
+  seed 777, epoch 4: batch 360/471, mean objective 1.2877
+  seed 777, epoch 4: batch 432/471, mean objective 1.2790
+  seed 777, epoch 4/5: dev explicit F1=0.3759; NULL F1=0.0000; combined F1=0.3374
+  seed 777, epoch 5: batch 72/471, mean objective 1.0284
+  seed 777, epoch 5: batch 144/471, mean objective 1.0416
+  seed 777, epoch 5: batch 216/471, mean objective 1.0210
+  seed 777, epoch 5: batch 288/471, mean objective 1.0448
+  seed 777, epoch 5: batch 360/471, mean objective 1.0476
+  seed 777, epoch 5: batch 432/471, mean objective 1.0481
+  seed 777, epoch 5/5: dev explicit F1=0.3945; NULL F1=0.0000; combined F1=0.3520
+Run mixed_025, seed 42, restaurant, stage full
+  seed 42, epoch 1: batch 71/471, mean objective 7.5999
+  seed 42, epoch 1: batch 143/471, mean objective 7.0853
+  seed 42, epoch 1: batch 215/471, mean objective 6.6641
+  seed 42, epoch 1: batch 287/471, mean objective 6.2636
+  seed 42, epoch 1: batch 358/471, mean objective 5.9568
+  seed 42, epoch 1: batch 429/471, mean objective 5.6963
+  seed 42, epoch 1/5: dev explicit F1=0.1796; NULL F1=0.0000; combined F1=0.1599
+  seed 42, epoch 2: batch 72/471, mean objective 3.7100
+  seed 42, epoch 2: batch 144/471, mean objective 3.5822
+  seed 42, epoch 2: batch 213/471, mean objective 3.5437
+  seed 42, epoch 2: batch 285/471, mean objective 3.4705
+  seed 42, epoch 2: batch 356/471, mean objective 3.4087
+  seed 42, epoch 2: batch 428/471, mean objective 3.3463
+  seed 42, epoch 2/5: dev explicit F1=0.2911; NULL F1=0.0000; combined F1=0.2591
+  seed 42, epoch 3: batch 72/471, mean objective 2.5781
+  seed 42, epoch 3: batch 143/471, mean objective 2.5453
+  seed 42, epoch 3: batch 214/471, mean objective 2.4983
+  seed 42, epoch 3: batch 285/471, mean objective 2.4556
+  seed 42, epoch 3: batch 356/471, mean objective 2.4384
+  seed 42, epoch 3: batch 427/471, mean objective 2.4077
+  seed 42, epoch 3/5: dev explicit F1=0.3175; NULL F1=0.0000; combined F1=0.2832
+  seed 42, epoch 4: batch 71/471, mean objective 2.0237
+  seed 42, epoch 4: batch 142/471, mean objective 2.0350
+  seed 42, epoch 4: batch 213/471, mean objective 1.9925
+  seed 42, epoch 4: batch 285/471, mean objective 1.9617
+  seed 42, epoch 4: batch 351/471, mean objective 1.9366
+  seed 42, epoch 4: batch 422/471, mean objective 1.9179
+  seed 42, epoch 4/5: dev explicit F1=0.3382; NULL F1=0.0000; combined F1=0.3019
+  seed 42, epoch 5: batch 72/471, mean objective 1.6435
+  seed 42, epoch 5: batch 144/471, mean objective 1.5933
+  seed 42, epoch 5: batch 216/471, mean objective 1.6034
+  seed 42, epoch 5: batch 288/471, mean objective 1.6073
+  seed 42, epoch 5: batch 360/471, mean objective 1.6180
+  seed 42, epoch 5: batch 432/471, mean objective 1.6145
+  seed 42, epoch 5/5: dev explicit F1=0.3444; NULL F1=0.0000; combined F1=0.3079
+Run mixed_025, seed 123, restaurant, stage full
+  seed 123, epoch 1: batch 72/471, mean objective 7.5354
+  seed 123, epoch 1: batch 144/471, mean objective 7.0594
+  seed 123, epoch 1: batch 216/471, mean objective 6.6084
+  seed 123, epoch 1: batch 288/471, mean objective 6.2362
+  seed 123, epoch 1: batch 360/471, mean objective 5.9129
+  seed 123, epoch 1: batch 432/471, mean objective 5.6415
+  seed 123, epoch 1/5: dev explicit F1=0.1998; NULL F1=0.0000; combined F1=0.1782
+  seed 123, epoch 2: batch 72/471, mean objective 3.5268
+  seed 123, epoch 2: batch 144/471, mean objective 3.5397
+  seed 123, epoch 2: batch 215/471, mean objective 3.4252
+  seed 123, epoch 2: batch 286/471, mean objective 3.3726
+  seed 123, epoch 2: batch 357/471, mean objective 3.3162
+  seed 123, epoch 2: batch 428/471, mean objective 3.2728
+  seed 123, epoch 2/5: dev explicit F1=0.2821; NULL F1=0.0000; combined F1=0.2536
+  seed 123, epoch 3: batch 72/471, mean objective 2.5123
+  seed 123, epoch 3: batch 144/471, mean objective 2.4450
+  seed 123, epoch 3: batch 216/471, mean objective 2.4624
+  seed 123, epoch 3: batch 288/471, mean objective 2.4147
+  seed 123, epoch 3: batch 359/471, mean objective 2.4011
+  seed 123, epoch 3: batch 431/471, mean objective 2.3779
+  seed 123, epoch 3/5: dev explicit F1=0.3093; NULL F1=0.0000; combined F1=0.2787
+  seed 123, epoch 4: batch 72/471, mean objective 1.9030
+  seed 123, epoch 4: batch 144/471, mean objective 1.8955
+  seed 123, epoch 4: batch 216/471, mean objective 1.8807
+  seed 123, epoch 4: batch 288/471, mean objective 1.8618
+  seed 123, epoch 4: batch 360/471, mean objective 1.8536
+  seed 123, epoch 4: batch 432/471, mean objective 1.8528
+  seed 123, epoch 4/5: dev explicit F1=0.3425; NULL F1=0.0000; combined F1=0.3058
+  seed 123, epoch 5: batch 72/471, mean objective 1.5592
+  seed 123, epoch 5: batch 144/471, mean objective 1.6429
+  seed 123, epoch 5: batch 216/471, mean objective 1.5936
+  seed 123, epoch 5: batch 288/471, mean objective 1.5909
+  seed 123, epoch 5: batch 360/471, mean objective 1.5779
+  seed 123, epoch 5: batch 432/471, mean objective 1.5793
+  seed 123, epoch 5/5: dev explicit F1=0.3421; NULL F1=0.0000; combined F1=0.3060
+Run mixed_025, seed 2024, restaurant, stage full
+  seed 2024, epoch 1: batch 72/471, mean objective 7.5591
+  seed 2024, epoch 1: batch 144/471, mean objective 7.0505
+  seed 2024, epoch 1: batch 216/471, mean objective 6.6427
+  seed 2024, epoch 1: batch 288/471, mean objective 6.2481
+  seed 2024, epoch 1: batch 360/471, mean objective 5.9111
+  seed 2024, epoch 1: batch 432/471, mean objective 5.6485
+  seed 2024, epoch 1/5: dev explicit F1=0.1980; NULL F1=0.0000; combined F1=0.1775
+  seed 2024, epoch 2: batch 72/471, mean objective 3.6878
+  seed 2024, epoch 2: batch 144/471, mean objective 3.6304
+  seed 2024, epoch 2: batch 216/471, mean objective 3.5493
+  seed 2024, epoch 2: batch 288/471, mean objective 3.4035
+  seed 2024, epoch 2: batch 360/471, mean objective 3.3586
+  seed 2024, epoch 2: batch 432/471, mean objective 3.2956
+  seed 2024, epoch 2/5: dev explicit F1=0.2793; NULL F1=0.0000; combined F1=0.2500
+  seed 2024, epoch 3: batch 72/471, mean objective 2.5090
+  seed 2024, epoch 3: batch 143/471, mean objective 2.4857
+  seed 2024, epoch 3: batch 215/471, mean objective 2.4858
+  seed 2024, epoch 3: batch 287/471, mean objective 2.4584
+  seed 2024, epoch 3: batch 359/471, mean objective 2.4281
+  seed 2024, epoch 3: batch 431/471, mean objective 2.4135
+  seed 2024, epoch 3/5: dev explicit F1=0.3098; NULL F1=0.0000; combined F1=0.2773
+  seed 2024, epoch 4: batch 72/471, mean objective 2.0884
+  seed 2024, epoch 4: batch 141/471, mean objective 1.9963
+  seed 2024, epoch 4: batch 212/471, mean objective 1.9582
+  seed 2024, epoch 4: batch 284/471, mean objective 1.9681
+  seed 2024, epoch 4: batch 356/471, mean objective 1.9365
+  seed 2024, epoch 4: batch 428/471, mean objective 1.8996
+  seed 2024, epoch 4/5: dev explicit F1=0.3285; NULL F1=0.0000; combined F1=0.2935
+  seed 2024, epoch 5: batch 72/471, mean objective 1.6546
+  seed 2024, epoch 5: batch 144/471, mean objective 1.5593
+  seed 2024, epoch 5: batch 216/471, mean objective 1.6073
+  seed 2024, epoch 5: batch 288/471, mean objective 1.6031
+  seed 2024, epoch 5: batch 360/471, mean objective 1.6086
+  seed 2024, epoch 5: batch 432/471, mean objective 1.6050
+  seed 2024, epoch 5/5: dev explicit F1=0.3373; NULL F1=0.0000; combined F1=0.3014
+Run mixed_025, seed 777, restaurant, stage full
+  seed 777, epoch 1: batch 72/471, mean objective 7.6674
+  seed 777, epoch 1: batch 144/471, mean objective 7.0776
+  seed 777, epoch 1: batch 216/471, mean objective 6.6395
+  seed 777, epoch 1: batch 288/471, mean objective 6.2534
+  seed 777, epoch 1: batch 360/471, mean objective 5.9189
+  seed 777, epoch 1: batch 431/471, mean objective 5.6498
+  seed 777, epoch 1/5: dev explicit F1=0.2049; NULL F1=0.0000; combined F1=0.1823
+  seed 777, epoch 2: batch 72/471, mean objective 3.5529
+  seed 777, epoch 2: batch 144/471, mean objective 3.4786
+  seed 777, epoch 2: batch 215/471, mean objective 3.4436
+  seed 777, epoch 2: batch 286/471, mean objective 3.3817
+  seed 777, epoch 2: batch 358/471, mean objective 3.3205
+  seed 777, epoch 2: batch 430/471, mean objective 3.2691
+  seed 777, epoch 2/5: dev explicit F1=0.2577; NULL F1=0.0000; combined F1=0.2332
+  seed 777, epoch 3: batch 72/471, mean objective 2.5779
+  seed 777, epoch 3: batch 143/471, mean objective 2.5575
+  seed 777, epoch 3: batch 213/471, mean objective 2.4913
+  seed 777, epoch 3: batch 285/471, mean objective 2.4585
+  seed 777, epoch 3: batch 357/471, mean objective 2.4247
+  seed 777, epoch 3: batch 429/471, mean objective 2.4136
+  seed 777, epoch 3/5: dev explicit F1=0.3131; NULL F1=0.0000; combined F1=0.2792
+  seed 777, epoch 4: batch 72/471, mean objective 2.0186
+  seed 777, epoch 4: batch 144/471, mean objective 2.0061
+  seed 777, epoch 4: batch 216/471, mean objective 1.9691
+  seed 777, epoch 4: batch 288/471, mean objective 1.9364
+  seed 777, epoch 4: batch 360/471, mean objective 1.9149
+  seed 777, epoch 4: batch 432/471, mean objective 1.8927
+  seed 777, epoch 4/5: dev explicit F1=0.3298; NULL F1=0.0000; combined F1=0.2955
+  seed 777, epoch 5: batch 71/471, mean objective 1.5941
+  seed 777, epoch 5: batch 142/471, mean objective 1.6012
+  seed 777, epoch 5: batch 213/471, mean objective 1.6019
+  seed 777, epoch 5: batch 284/471, mean objective 1.6115
+  seed 777, epoch 5: batch 356/471, mean objective 1.6066
+  seed 777, epoch 5: batch 428/471, mean objective 1.6169
+  seed 777, epoch 5/5: dev explicit F1=0.3294; NULL F1=0.0000; combined F1=0.2947
+Run mixed_025, seed 42, phone, stage full
+  seed 42, epoch 1: batch 71/470, mean objective 7.2304
+  seed 42, epoch 1: batch 143/470, mean objective 6.5904
+  seed 42, epoch 1: batch 215/470, mean objective 6.0502
+  seed 42, epoch 1: batch 287/470, mean objective 5.6605
+  seed 42, epoch 1: batch 359/470, mean objective 5.2950
+  seed 42, epoch 1: batch 431/470, mean objective 5.0014
+  seed 42, epoch 1/5: dev explicit F1=0.2442; NULL F1=0.0000; combined F1=0.2108
+  seed 42, epoch 2: batch 72/470, mean objective 2.9246
+  seed 42, epoch 2: batch 144/470, mean objective 2.8823
+  seed 42, epoch 2: batch 216/470, mean objective 2.8812
+  seed 42, epoch 2: batch 288/470, mean objective 2.8473
+  seed 42, epoch 2: batch 360/470, mean objective 2.8230
+  seed 42, epoch 2: batch 432/470, mean objective 2.7634
+  seed 42, epoch 2/5: dev explicit F1=0.3196; NULL F1=0.0000; combined F1=0.2739
+  seed 42, epoch 3: batch 72/470, mean objective 2.1410
+  seed 42, epoch 3: batch 144/470, mean objective 2.0837
+  seed 42, epoch 3: batch 216/470, mean objective 2.0806
+  seed 42, epoch 3: batch 288/470, mean objective 2.0593
+  seed 42, epoch 3: batch 360/470, mean objective 2.0071
+  seed 42, epoch 3: batch 432/470, mean objective 1.9862
+  seed 42, epoch 3/5: dev explicit F1=0.3547; NULL F1=0.0000; combined F1=0.3024
+  seed 42, epoch 4: batch 72/470, mean objective 1.5411
+  seed 42, epoch 4: batch 144/470, mean objective 1.5674
+  seed 42, epoch 4: batch 216/470, mean objective 1.5299
+  seed 42, epoch 4: batch 288/470, mean objective 1.5574
+  seed 42, epoch 4: batch 360/470, mean objective 1.5326
+  seed 42, epoch 4: batch 432/470, mean objective 1.5195
+  seed 42, epoch 4/5: dev explicit F1=0.3619; NULL F1=0.0000; combined F1=0.3101
+  seed 42, epoch 5: batch 72/470, mean objective 1.3108
+  seed 42, epoch 5: batch 144/470, mean objective 1.2745
+  seed 42, epoch 5: batch 216/470, mean objective 1.2463
+  seed 42, epoch 5: batch 288/470, mean objective 1.2463
+  seed 42, epoch 5: batch 360/470, mean objective 1.2572
+  seed 42, epoch 5: batch 432/470, mean objective 1.2541
+  seed 42, epoch 5/5: dev explicit F1=0.3665; NULL F1=0.0000; combined F1=0.3132
+Run mixed_025, seed 123, phone, stage full
+  seed 123, epoch 1: batch 72/470, mean objective 7.1682
+  seed 123, epoch 1: batch 144/470, mean objective 6.5791
+  seed 123, epoch 1: batch 216/470, mean objective 6.0025
+  seed 123, epoch 1: batch 288/470, mean objective 5.6047
+  seed 123, epoch 1: batch 360/470, mean objective 5.2631
+  seed 123, epoch 1: batch 432/470, mean objective 4.9667
+  seed 123, epoch 1/5: dev explicit F1=0.2770; NULL F1=0.0000; combined F1=0.2316
+  seed 123, epoch 2: batch 72/470, mean objective 3.0759
+  seed 123, epoch 2: batch 144/470, mean objective 2.9311
+  seed 123, epoch 2: batch 215/470, mean objective 2.8743
+  seed 123, epoch 2: batch 287/470, mean objective 2.8462
+  seed 123, epoch 2: batch 359/470, mean objective 2.8068
+  seed 123, epoch 2: batch 431/470, mean objective 2.7930
+  seed 123, epoch 2/5: dev explicit F1=0.3125; NULL F1=0.0000; combined F1=0.2691
+  seed 123, epoch 3: batch 72/470, mean objective 2.0834
+  seed 123, epoch 3: batch 144/470, mean objective 2.0833
+  seed 123, epoch 3: batch 216/470, mean objective 2.0627
+  seed 123, epoch 3: batch 288/470, mean objective 2.0389
+  seed 123, epoch 3: batch 360/470, mean objective 2.0133
+  seed 123, epoch 3: batch 432/470, mean objective 2.0112
+  seed 123, epoch 3/5: dev explicit F1=0.3508; NULL F1=0.0000; combined F1=0.3000
+  seed 123, epoch 4: batch 72/470, mean objective 1.5721
+  seed 123, epoch 4: batch 144/470, mean objective 1.6327
+  seed 123, epoch 4: batch 216/470, mean objective 1.6070
+  seed 123, epoch 4: batch 288/470, mean objective 1.5865
+  seed 123, epoch 4: batch 360/470, mean objective 1.5809
+  seed 123, epoch 4: batch 432/470, mean objective 1.5538
+  seed 123, epoch 4/5: dev explicit F1=0.3666; NULL F1=0.0000; combined F1=0.3129
+  seed 123, epoch 5: batch 72/470, mean objective 1.3138
+  seed 123, epoch 5: batch 144/470, mean objective 1.3065
+  seed 123, epoch 5: batch 216/470, mean objective 1.3003
+  seed 123, epoch 5: batch 288/470, mean objective 1.2815
+  seed 123, epoch 5: batch 360/470, mean objective 1.2940
+  seed 123, epoch 5: batch 432/470, mean objective 1.2830
+  seed 123, epoch 5/5: dev explicit F1=0.3727; NULL F1=0.0000; combined F1=0.3177
+Run mixed_025, seed 2024, phone, stage full
+  seed 2024, epoch 1: batch 71/470, mean objective 7.1539
+  seed 2024, epoch 1: batch 143/470, mean objective 6.5178
+  seed 2024, epoch 1: batch 215/470, mean objective 5.9481
+  seed 2024, epoch 1: batch 287/470, mean objective 5.5327
+  seed 2024, epoch 1: batch 359/470, mean objective 5.2109
+  seed 2024, epoch 1: batch 431/470, mean objective 4.9613
+  seed 2024, epoch 1/5: dev explicit F1=0.2753; NULL F1=0.0000; combined F1=0.2307
+  seed 2024, epoch 2: batch 72/470, mean objective 2.9281
+  seed 2024, epoch 2: batch 144/470, mean objective 2.9298
+  seed 2024, epoch 2: batch 216/470, mean objective 2.8654
+  seed 2024, epoch 2: batch 288/470, mean objective 2.8252
+  seed 2024, epoch 2: batch 360/470, mean objective 2.7682
+  seed 2024, epoch 2: batch 432/470, mean objective 2.7328
+  seed 2024, epoch 2/5: dev explicit F1=0.3361; NULL F1=0.0000; combined F1=0.2858
+  seed 2024, epoch 3: batch 72/470, mean objective 1.9753
+  seed 2024, epoch 3: batch 144/470, mean objective 1.9973
+  seed 2024, epoch 3: batch 216/470, mean objective 2.0725
+  seed 2024, epoch 3: batch 288/470, mean objective 2.0323
+  seed 2024, epoch 3: batch 360/470, mean objective 2.0206
+  seed 2024, epoch 3: batch 432/470, mean objective 2.0039
+  seed 2024, epoch 3/5: dev explicit F1=0.3380; NULL F1=0.0000; combined F1=0.2901
+  seed 2024, epoch 4: batch 68/470, mean objective 1.6647
+  seed 2024, epoch 4: batch 135/470, mean objective 1.6327
+  seed 2024, epoch 4: batch 204/470, mean objective 1.6061
+  seed 2024, epoch 4: batch 269/470, mean objective 1.5740
+  seed 2024, epoch 4: batch 332/470, mean objective 1.5649
+  seed 2024, epoch 4: batch 396/470, mean objective 1.5662
+  seed 2024, epoch 4: batch 464/470, mean objective 1.5442
+  seed 2024, epoch 4/5: dev explicit F1=0.3541; NULL F1=0.0000; combined F1=0.3033
+  seed 2024, epoch 5: batch 68/470, mean objective 1.3851
+  seed 2024, epoch 5: batch 136/470, mean objective 1.3372
+  seed 2024, epoch 5: batch 204/470, mean objective 1.2951
+  seed 2024, epoch 5: batch 273/470, mean objective 1.2802
+  seed 2024, epoch 5: batch 342/470, mean objective 1.2793
+  seed 2024, epoch 5: batch 412/470, mean objective 1.2761
+  seed 2024, epoch 5/5: dev explicit F1=0.3651; NULL F1=0.0000; combined F1=0.3111
+Run mixed_025, seed 777, phone, stage full
+  seed 777, epoch 1: batch 68/470, mean objective 7.4096
+  seed 777, epoch 1: batch 139/470, mean objective 6.7928
+  seed 777, epoch 1: batch 210/470, mean objective 6.2118
+  seed 777, epoch 1: batch 279/470, mean objective 5.7556
+  seed 777, epoch 1: batch 347/470, mean objective 5.3939
+  seed 777, epoch 1: batch 414/470, mean objective 5.0807
+  seed 777, epoch 1/5: dev explicit F1=0.2382; NULL F1=0.0000; combined F1=0.2086
+  seed 777, epoch 2: batch 65/470, mean objective 2.9054
+  seed 777, epoch 2: batch 129/470, mean objective 2.9036
+  seed 777, epoch 2: batch 197/470, mean objective 2.8724
+  seed 777, epoch 2: batch 260/470, mean objective 2.8272
+  seed 777, epoch 2: batch 329/470, mean objective 2.8147
+  seed 777, epoch 2: batch 399/470, mean objective 2.7801
+  seed 777, epoch 2: batch 468/470, mean objective 2.7523
+  seed 777, epoch 2/5: dev explicit F1=0.3138; NULL F1=0.0000; combined F1=0.2698
+  seed 777, epoch 3: batch 67/470, mean objective 1.9904
+  seed 777, epoch 3: batch 129/470, mean objective 2.0265
+  seed 777, epoch 3: batch 197/470, mean objective 1.9975
+  seed 777, epoch 3: batch 267/470, mean objective 1.9977
+  seed 777, epoch 3: batch 334/470, mean objective 2.0061
+  seed 777, epoch 3: batch 404/470, mean objective 1.9995
+  seed 777, epoch 3/5: dev explicit F1=0.3553; NULL F1=0.0000; combined F1=0.3029
+  seed 777, epoch 4: batch 70/470, mean objective 1.5792
+  seed 777, epoch 4: batch 138/470, mean objective 1.6043
+  seed 777, epoch 4: batch 208/470, mean objective 1.5880
+  seed 777, epoch 4: batch 278/470, mean objective 1.5562
+  seed 777, epoch 4: batch 346/470, mean objective 1.5472
+  seed 777, epoch 4: batch 415/470, mean objective 1.5379
+  seed 777, epoch 4/5: dev explicit F1=0.3601; NULL F1=0.0000; combined F1=0.3080
+  seed 777, epoch 5: batch 70/470, mean objective 1.2635
+  seed 777, epoch 5: batch 138/470, mean objective 1.2756
+  seed 777, epoch 5: batch 205/470, mean objective 1.2905
+  seed 777, epoch 5: batch 274/470, mean objective 1.2672
+  seed 777, epoch 5: batch 344/470, mean objective 1.2550
+  seed 777, epoch 5: batch 414/470, mean objective 1.2650
+  seed 777, epoch 5/5: dev explicit F1=0.3774; NULL F1=0.0000; combined F1=0.3216
+Run mixed_025, seed 42, sight, stage full
+  seed 42, epoch 1: batch 69/476, mean objective 7.5926
+  seed 42, epoch 1: batch 139/476, mean objective 7.0804
+  seed 42, epoch 1: batch 209/476, mean objective 6.6322
+  seed 42, epoch 1: batch 278/476, mean objective 6.2939
+  seed 42, epoch 1: batch 348/476, mean objective 5.9927
+  seed 42, epoch 1: batch 418/476, mean objective 5.7219
+  seed 42, epoch 1/5: dev explicit F1=0.2365; NULL F1=0.0000; combined F1=0.2103
+  seed 42, epoch 2: batch 69/476, mean objective 3.5022
+  seed 42, epoch 2: batch 139/476, mean objective 3.4735
+  seed 42, epoch 2: batch 209/476, mean objective 3.4462
+  seed 42, epoch 2: batch 279/476, mean objective 3.4249
+  seed 42, epoch 2: batch 349/476, mean objective 3.3318
+  seed 42, epoch 2: batch 419/476, mean objective 3.3016
+  seed 42, epoch 2/5: dev explicit F1=0.3257; NULL F1=0.0000; combined F1=0.2861
+  seed 42, epoch 3: batch 68/476, mean objective 2.5365
+  seed 42, epoch 3: batch 138/476, mean objective 2.4772
+  seed 42, epoch 3: batch 208/476, mean objective 2.4438
+  seed 42, epoch 3: batch 278/476, mean objective 2.4094
+  seed 42, epoch 3: batch 348/476, mean objective 2.3727
+  seed 42, epoch 3: batch 418/476, mean objective 2.3755
+  seed 42, epoch 3/5: dev explicit F1=0.3523; NULL F1=0.0000; combined F1=0.3139
+  seed 42, epoch 4: batch 69/476, mean objective 1.9695
+  seed 42, epoch 4: batch 137/476, mean objective 1.9425
+  seed 42, epoch 4: batch 206/476, mean objective 1.9453
+  seed 42, epoch 4: batch 273/476, mean objective 1.9503
+  seed 42, epoch 4: batch 343/476, mean objective 1.9280
+  seed 42, epoch 4: batch 411/476, mean objective 1.8869
+  seed 42, epoch 4/5: dev explicit F1=0.3764; NULL F1=0.0000; combined F1=0.3347
+  seed 42, epoch 5: batch 70/476, mean objective 1.6463
+  seed 42, epoch 5: batch 140/476, mean objective 1.6166
+  seed 42, epoch 5: batch 210/476, mean objective 1.5863
+  seed 42, epoch 5: batch 280/476, mean objective 1.6064
+  seed 42, epoch 5: batch 350/476, mean objective 1.5837
+  seed 42, epoch 5: batch 420/476, mean objective 1.5782
+  seed 42, epoch 5/5: dev explicit F1=0.3844; NULL F1=0.0000; combined F1=0.3407
+Run mixed_025, seed 123, sight, stage full
+  seed 123, epoch 1: batch 70/476, mean objective 7.6225
+  seed 123, epoch 1: batch 141/476, mean objective 7.0565
+  seed 123, epoch 1: batch 211/476, mean objective 6.6346
+  seed 123, epoch 1: batch 279/476, mean objective 6.2988
+  seed 123, epoch 1: batch 347/476, mean objective 5.9672
+  seed 123, epoch 1: batch 417/476, mean objective 5.6931
+  seed 123, epoch 1/5: dev explicit F1=0.2423; NULL F1=0.0000; combined F1=0.2140
+  seed 123, epoch 2: batch 70/476, mean objective 3.6426
+  seed 123, epoch 2: batch 140/476, mean objective 3.5685
+  seed 123, epoch 2: batch 210/476, mean objective 3.4871
+  seed 123, epoch 2: batch 280/476, mean objective 3.4149
+  seed 123, epoch 2: batch 348/476, mean objective 3.3636
+  seed 123, epoch 2: batch 417/476, mean objective 3.2845
+  seed 123, epoch 2/5: dev explicit F1=0.3332; NULL F1=0.0000; combined F1=0.2952
+  seed 123, epoch 3: batch 69/476, mean objective 2.5198
+  seed 123, epoch 3: batch 137/476, mean objective 2.4503
+  seed 123, epoch 3: batch 205/476, mean objective 2.4206
+  seed 123, epoch 3: batch 274/476, mean objective 2.3773
+  seed 123, epoch 3: batch 344/476, mean objective 2.3701
+  seed 123, epoch 3: batch 414/476, mean objective 2.3627
+  seed 123, epoch 3/5: dev explicit F1=0.3549; NULL F1=0.0000; combined F1=0.3162
+  seed 123, epoch 4: batch 68/476, mean objective 1.8977
+  seed 123, epoch 4: batch 138/476, mean objective 1.8619
+  seed 123, epoch 4: batch 208/476, mean objective 1.8676
+  seed 123, epoch 4: batch 278/476, mean objective 1.8741
+  seed 123, epoch 4: batch 347/476, mean objective 1.8579
+  seed 123, epoch 4: batch 414/476, mean objective 1.8430
+  seed 123, epoch 4/5: dev explicit F1=0.3799; NULL F1=0.0000; combined F1=0.3364
+  seed 123, epoch 5: batch 70/476, mean objective 1.5083
+  seed 123, epoch 5: batch 138/476, mean objective 1.5470
+  seed 123, epoch 5: batch 207/476, mean objective 1.5824
+  seed 123, epoch 5: batch 277/476, mean objective 1.5837
+  seed 123, epoch 5: batch 348/476, mean objective 1.5826
+  seed 123, epoch 5: batch 418/476, mean objective 1.5825
+  seed 123, epoch 5/5: dev explicit F1=0.3935; NULL F1=0.0000; combined F1=0.3485
+Run mixed_025, seed 2024, sight, stage full
+  seed 2024, epoch 1: batch 71/476, mean objective 7.4529
+  seed 2024, epoch 1: batch 143/476, mean objective 6.9596
+  seed 2024, epoch 1: batch 215/476, mean objective 6.5447
+  seed 2024, epoch 1: batch 287/476, mean objective 6.1781
+  seed 2024, epoch 1: batch 359/476, mean objective 5.8412
+  seed 2024, epoch 1: batch 431/476, mean objective 5.5976
+  seed 2024, epoch 1/5: dev explicit F1=0.2544; NULL F1=0.0000; combined F1=0.2231
+  seed 2024, epoch 2: batch 72/476, mean objective 3.6456
+  seed 2024, epoch 2: batch 144/476, mean objective 3.4850
+  seed 2024, epoch 2: batch 216/476, mean objective 3.4309
+  seed 2024, epoch 2: batch 288/476, mean objective 3.3398
+  seed 2024, epoch 2: batch 360/476, mean objective 3.2781
+  seed 2024, epoch 2: batch 432/476, mean objective 3.2446
+  seed 2024, epoch 2/5: dev explicit F1=0.3161; NULL F1=0.0000; combined F1=0.2800
+  seed 2024, epoch 3: batch 72/476, mean objective 2.5149
+  seed 2024, epoch 3: batch 144/476, mean objective 2.4520
+  seed 2024, epoch 3: batch 216/476, mean objective 2.4228
+  seed 2024, epoch 3: batch 288/476, mean objective 2.4231
+  seed 2024, epoch 3: batch 360/476, mean objective 2.3960
+  seed 2024, epoch 3: batch 432/476, mean objective 2.3747
+  seed 2024, epoch 3/5: dev explicit F1=0.3559; NULL F1=0.0000; combined F1=0.3164
+  seed 2024, epoch 4: batch 72/476, mean objective 1.8763
+  seed 2024, epoch 4: batch 144/476, mean objective 1.8887
+  seed 2024, epoch 4: batch 216/476, mean objective 1.9091
+  seed 2024, epoch 4: batch 288/476, mean objective 1.8678
+  seed 2024, epoch 4: batch 360/476, mean objective 1.8704
+  seed 2024, epoch 4: batch 432/476, mean objective 1.8534
+  seed 2024, epoch 4/5: dev explicit F1=0.3677; NULL F1=0.0000; combined F1=0.3263
+  seed 2024, epoch 5: batch 72/476, mean objective 1.6043
+  seed 2024, epoch 5: batch 144/476, mean objective 1.5633
+  seed 2024, epoch 5: batch 216/476, mean objective 1.5920
+  seed 2024, epoch 5: batch 288/476, mean objective 1.5782
+  seed 2024, epoch 5: batch 360/476, mean objective 1.5750
+  seed 2024, epoch 5: batch 432/476, mean objective 1.5688
+  seed 2024, epoch 5/5: dev explicit F1=0.3816; NULL F1=0.0000; combined F1=0.3379
+Run mixed_025, seed 777, sight, stage full
+  seed 777, epoch 1: batch 71/476, mean objective 7.6446
+  seed 777, epoch 1: batch 143/476, mean objective 7.0962
+  seed 777, epoch 1: batch 215/476, mean objective 6.6188
+  seed 777, epoch 1: batch 287/476, mean objective 6.2577
+  seed 777, epoch 1: batch 359/476, mean objective 5.9344
+  seed 777, epoch 1: batch 431/476, mean objective 5.6558
+  seed 777, epoch 1/5: dev explicit F1=0.2143; NULL F1=0.0000; combined F1=0.1914
+  seed 777, epoch 2: batch 72/476, mean objective 3.5542
+  seed 777, epoch 2: batch 144/476, mean objective 3.5334
+  seed 777, epoch 2: batch 216/476, mean objective 3.4413
+  seed 777, epoch 2: batch 288/476, mean objective 3.3905
+  seed 777, epoch 2: batch 360/476, mean objective 3.3116
+  seed 777, epoch 2: batch 432/476, mean objective 3.2645
+  seed 777, epoch 2/5: dev explicit F1=0.3228; NULL F1=0.0000; combined F1=0.2867
+  seed 777, epoch 3: batch 72/476, mean objective 2.4679
+  seed 777, epoch 3: batch 144/476, mean objective 2.4506
+  seed 777, epoch 3: batch 216/476, mean objective 2.4386
+  seed 777, epoch 3: batch 288/476, mean objective 2.3922
+  seed 777, epoch 3: batch 360/476, mean objective 2.3588
+  seed 777, epoch 3: batch 432/476, mean objective 2.3434
+  seed 777, epoch 3/5: dev explicit F1=0.3558; NULL F1=0.0000; combined F1=0.3168
+  seed 777, epoch 4: batch 72/476, mean objective 1.8599
+  seed 777, epoch 4: batch 144/476, mean objective 1.8993
+  seed 777, epoch 4: batch 216/476, mean objective 1.8875
+  seed 777, epoch 4: batch 288/476, mean objective 1.8652
+  seed 777, epoch 4: batch 360/476, mean objective 1.8673
+  seed 777, epoch 4: batch 432/476, mean objective 1.8555
+  seed 777, epoch 4/5: dev explicit F1=0.3884; NULL F1=0.0000; combined F1=0.3425
+  seed 777, epoch 5: batch 72/476, mean objective 1.5975
+  seed 777, epoch 5: batch 144/476, mean objective 1.6382
+  seed 777, epoch 5: batch 216/476, mean objective 1.6088
+  seed 777, epoch 5: batch 288/476, mean objective 1.6022
+  seed 777, epoch 5: batch 360/476, mean objective 1.5816
+  seed 777, epoch 5: batch 432/476, mean objective 1.5809
+  seed 777, epoch 5/5: dev explicit F1=0.3847; NULL F1=0.0000; combined F1=0.3411
+Run mixed_025, seed 42, food, stage full
+  seed 42, epoch 1: batch 71/470, mean objective 7.4884
+  seed 42, epoch 1: batch 143/470, mean objective 7.0142
+  seed 42, epoch 1: batch 215/470, mean objective 6.5276
+  seed 42, epoch 1: batch 287/470, mean objective 6.1340
+  seed 42, epoch 1: batch 359/470, mean objective 5.8135
+  seed 42, epoch 1: batch 431/470, mean objective 5.5549
+  seed 42, epoch 1/5: dev explicit F1=0.2300; NULL F1=0.0000; combined F1=0.2128
+  seed 42, epoch 2: batch 72/470, mean objective 3.5384
+  seed 42, epoch 2: batch 144/470, mean objective 3.4923
+  seed 42, epoch 2: batch 216/470, mean objective 3.3977
+  seed 42, epoch 2: batch 288/470, mean objective 3.3058
+  seed 42, epoch 2: batch 360/470, mean objective 3.2631
+  seed 42, epoch 2: batch 432/470, mean objective 3.2146
+  seed 42, epoch 2/5: dev explicit F1=0.3051; NULL F1=0.0000; combined F1=0.2812
+  seed 42, epoch 3: batch 72/470, mean objective 2.3301
+  seed 42, epoch 3: batch 144/470, mean objective 2.3548
+  seed 42, epoch 3: batch 216/470, mean objective 2.3350
+  seed 42, epoch 3: batch 288/470, mean objective 2.3007
+  seed 42, epoch 3: batch 360/470, mean objective 2.3101
+  seed 42, epoch 3: batch 432/470, mean objective 2.2963
+  seed 42, epoch 3/5: dev explicit F1=0.3387; NULL F1=0.0000; combined F1=0.3132
+  seed 42, epoch 4: batch 72/470, mean objective 1.8548
+  seed 42, epoch 4: batch 144/470, mean objective 1.8752
+  seed 42, epoch 4: batch 216/470, mean objective 1.8431
+  seed 42, epoch 4: batch 288/470, mean objective 1.8440
+  seed 42, epoch 4: batch 360/470, mean objective 1.8456
+  seed 42, epoch 4: batch 432/470, mean objective 1.8411
+  seed 42, epoch 4/5: dev explicit F1=0.3716; NULL F1=0.0000; combined F1=0.3421
+  seed 42, epoch 5: batch 72/470, mean objective 1.6495
+  seed 42, epoch 5: batch 144/470, mean objective 1.5873
+  seed 42, epoch 5: batch 216/470, mean objective 1.5757
+  seed 42, epoch 5: batch 288/470, mean objective 1.5696
+  seed 42, epoch 5: batch 360/470, mean objective 1.5697
+  seed 42, epoch 5: batch 432/470, mean objective 1.5757
+  seed 42, epoch 5/5: dev explicit F1=0.3819; NULL F1=0.0000; combined F1=0.3516
+Run mixed_025, seed 123, food, stage full
+  seed 123, epoch 1: batch 71/470, mean objective 7.5145
+  seed 123, epoch 1: batch 143/470, mean objective 7.0547
+  seed 123, epoch 1: batch 215/470, mean objective 6.5714
+  seed 123, epoch 1: batch 287/470, mean objective 6.1532
+  seed 123, epoch 1: batch 359/470, mean objective 5.8262
+  seed 123, epoch 1: batch 431/470, mean objective 5.5496
+  seed 123, epoch 1/5: dev explicit F1=0.2706; NULL F1=0.0000; combined F1=0.2479
+  seed 123, epoch 2: batch 72/470, mean objective 3.5413
+  seed 123, epoch 2: batch 144/470, mean objective 3.4321
+  seed 123, epoch 2: batch 216/470, mean objective 3.3568
+  seed 123, epoch 2: batch 288/470, mean objective 3.2776
+  seed 123, epoch 2: batch 360/470, mean objective 3.2207
+  seed 123, epoch 2: batch 432/470, mean objective 3.1770
+  seed 123, epoch 2/5: dev explicit F1=0.3347; NULL F1=0.0000; combined F1=0.3074
+  seed 123, epoch 3: batch 72/470, mean objective 2.4326
+  seed 123, epoch 3: batch 144/470, mean objective 2.4008
+  seed 123, epoch 3: batch 216/470, mean objective 2.3754
+  seed 123, epoch 3: batch 288/470, mean objective 2.3277
+  seed 123, epoch 3: batch 360/470, mean objective 2.3317
+  seed 123, epoch 3: batch 432/470, mean objective 2.2947
+  seed 123, epoch 3/5: dev explicit F1=0.3355; NULL F1=0.0000; combined F1=0.3110
+  seed 123, epoch 4: batch 72/470, mean objective 1.8347
+  seed 123, epoch 4: batch 144/470, mean objective 1.8468
+  seed 123, epoch 4: batch 216/470, mean objective 1.8545
+  seed 123, epoch 4: batch 288/470, mean objective 1.8306
+  seed 123, epoch 4: batch 360/470, mean objective 1.8074
+  seed 123, epoch 4: batch 432/470, mean objective 1.8040
+  seed 123, epoch 4/5: dev explicit F1=0.3607; NULL F1=0.0000; combined F1=0.3332
+  seed 123, epoch 5: batch 72/470, mean objective 1.5919
+  seed 123, epoch 5: batch 144/470, mean objective 1.5887
+  seed 123, epoch 5: batch 216/470, mean objective 1.5627
+  seed 123, epoch 5: batch 288/470, mean objective 1.5388
+  seed 123, epoch 5: batch 360/470, mean objective 1.5412
+  seed 123, epoch 5: batch 432/470, mean objective 1.5512
+  seed 123, epoch 5/5: dev explicit F1=0.3718; NULL F1=0.0000; combined F1=0.3427
+Run mixed_025, seed 2024, food, stage full
+  seed 2024, epoch 1: batch 71/470, mean objective 7.5691
+  seed 2024, epoch 1: batch 143/470, mean objective 7.0185
+  seed 2024, epoch 1: batch 215/470, mean objective 6.5118
+  seed 2024, epoch 1: batch 287/470, mean objective 6.1174
+  seed 2024, epoch 1: batch 359/470, mean objective 5.7780
+  seed 2024, epoch 1: batch 431/470, mean objective 5.5027
+  seed 2024, epoch 1/5: dev explicit F1=0.2351; NULL F1=0.0000; combined F1=0.2167
+  seed 2024, epoch 2: batch 72/470, mean objective 3.4702
+  seed 2024, epoch 2: batch 144/470, mean objective 3.3682
+  seed 2024, epoch 2: batch 216/470, mean objective 3.3061
+  seed 2024, epoch 2: batch 288/470, mean objective 3.2634
+  seed 2024, epoch 2: batch 360/470, mean objective 3.2099
+  seed 2024, epoch 2: batch 432/470, mean objective 3.1641
+  seed 2024, epoch 2/5: dev explicit F1=0.2932; NULL F1=0.0000; combined F1=0.2716
+  seed 2024, epoch 3: batch 72/470, mean objective 2.3694
+  seed 2024, epoch 3: batch 144/470, mean objective 2.4003
+  seed 2024, epoch 3: batch 216/470, mean objective 2.3835
+  seed 2024, epoch 3: batch 288/470, mean objective 2.3530
+  seed 2024, epoch 3: batch 360/470, mean objective 2.3239
+  seed 2024, epoch 3: batch 432/470, mean objective 2.3125
+  seed 2024, epoch 3/5: dev explicit F1=0.3248; NULL F1=0.0000; combined F1=0.3015
+  seed 2024, epoch 4: batch 72/470, mean objective 1.9117
+  seed 2024, epoch 4: batch 144/470, mean objective 1.8871
+  seed 2024, epoch 4: batch 216/470, mean objective 1.8630
+  seed 2024, epoch 4: batch 288/470, mean objective 1.8562
+  seed 2024, epoch 4: batch 360/470, mean objective 1.8358
+  seed 2024, epoch 4: batch 432/470, mean objective 1.8144
+  seed 2024, epoch 4/5: dev explicit F1=0.3756; NULL F1=0.0000; combined F1=0.3459
+  seed 2024, epoch 5: batch 72/470, mean objective 1.6166
+  seed 2024, epoch 5: batch 144/470, mean objective 1.5817
+  seed 2024, epoch 5: batch 216/470, mean objective 1.5383
+  seed 2024, epoch 5: batch 288/470, mean objective 1.5455
+  seed 2024, epoch 5: batch 360/470, mean objective 1.5344
+  seed 2024, epoch 5: batch 432/470, mean objective 1.5521
+  seed 2024, epoch 5/5: dev explicit F1=0.3794; NULL F1=0.0000; combined F1=0.3493
+Run mixed_025, seed 777, food, stage full
+  seed 777, epoch 1: batch 71/470, mean objective 7.6960
+  seed 777, epoch 1: batch 143/470, mean objective 7.0953
+  seed 777, epoch 1: batch 215/470, mean objective 6.6081
+  seed 777, epoch 1: batch 287/470, mean objective 6.1773
+  seed 777, epoch 1: batch 359/470, mean objective 5.8448
+  seed 777, epoch 1: batch 431/470, mean objective 5.5528
+  seed 777, epoch 1/5: dev explicit F1=0.2389; NULL F1=0.0000; combined F1=0.2208
+  seed 777, epoch 2: batch 72/470, mean objective 3.2937
+  seed 777, epoch 2: batch 144/470, mean objective 3.2971
+  seed 777, epoch 2: batch 216/470, mean objective 3.2340
+  seed 777, epoch 2: batch 288/470, mean objective 3.2223
+  seed 777, epoch 2: batch 360/470, mean objective 3.2013
+  seed 777, epoch 2: batch 431/470, mean objective 3.1647
+  seed 777, epoch 2/5: dev explicit F1=0.3096; NULL F1=0.0000; combined F1=0.2872
+  seed 777, epoch 3: batch 72/470, mean objective 2.3720
+  seed 777, epoch 3: batch 144/470, mean objective 2.3477
+  seed 777, epoch 3: batch 216/470, mean objective 2.3146
+  seed 777, epoch 3: batch 288/470, mean objective 2.3025
+  seed 777, epoch 3: batch 360/470, mean objective 2.2928
+  seed 777, epoch 3: batch 432/470, mean objective 2.2769
+  seed 777, epoch 3/5: dev explicit F1=0.3446; NULL F1=0.0000; combined F1=0.3185
+  seed 777, epoch 4: batch 72/470, mean objective 1.8938
+  seed 777, epoch 4: batch 144/470, mean objective 1.8132
+  seed 777, epoch 4: batch 216/470, mean objective 1.8280
+  seed 777, epoch 4: batch 288/470, mean objective 1.8318
+  seed 777, epoch 4: batch 360/470, mean objective 1.8357
+  seed 777, epoch 4: batch 432/470, mean objective 1.8169
+  seed 777, epoch 4/5: dev explicit F1=0.3591; NULL F1=0.0000; combined F1=0.3326
+  seed 777, epoch 5: batch 72/470, mean objective 1.6198
+  seed 777, epoch 5: batch 144/470, mean objective 1.5784
+  seed 777, epoch 5: batch 216/470, mean objective 1.5573
+  seed 777, epoch 5: batch 288/470, mean objective 1.5624
+  seed 777, epoch 5: batch 360/470, mean objective 1.5372
+  seed 777, epoch 5: batch 432/470, mean objective 1.5361
+  seed 777, epoch 5/5: dev explicit F1=0.3800; NULL F1=0.0000; combined F1=0.3503
+Finished. Development summary: D:\UoA\bertfinetune\artifacts\experiments_v2\development_results.csv
+Version 2.0-exploratory-2026-10-05; 35 runs; exploratory research; stage=final
+Test access: frozen checkpoint evaluation
+  mixed_025: seed=13, held_out=coursera, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=42, held_out=coursera, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=123, held_out=coursera, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=2024, held_out=coursera, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=777, held_out=coursera, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=13, held_out=hotel, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=42, held_out=hotel, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=123, held_out=hotel, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=2024, held_out=hotel, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=777, held_out=hotel, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=13, held_out=laptop, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=42, held_out=laptop, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=123, held_out=laptop, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=2024, held_out=laptop, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=777, held_out=laptop, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=13, held_out=restaurant, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=42, held_out=restaurant, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=123, held_out=restaurant, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=2024, held_out=restaurant, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=777, held_out=restaurant, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=13, held_out=phone, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=42, held_out=phone, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=123, held_out=phone, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=2024, held_out=phone, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=777, held_out=phone, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=13, held_out=sight, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=42, held_out=sight, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=123, held_out=sight, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=2024, held_out=sight, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=777, held_out=sight, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=13, held_out=food, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=42, held_out=food, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=123, held_out=food, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=2024, held_out=food, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=777, held_out=food, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+Run mixed_025, seed 13, coursera, stage final
+Run mixed_025, seed 42, coursera, stage final
+Run mixed_025, seed 123, coursera, stage final
+Run mixed_025, seed 2024, coursera, stage final
+Run mixed_025, seed 777, coursera, stage final
+Run mixed_025, seed 13, hotel, stage final
+Run mixed_025, seed 42, hotel, stage final
+Run mixed_025, seed 123, hotel, stage final
+Run mixed_025, seed 2024, hotel, stage final
+Run mixed_025, seed 777, hotel, stage final
+Run mixed_025, seed 13, laptop, stage final
+Run mixed_025, seed 42, laptop, stage final
+Run mixed_025, seed 123, laptop, stage final
+Run mixed_025, seed 2024, laptop, stage final
+Run mixed_025, seed 777, laptop, stage final
+Run mixed_025, seed 13, restaurant, stage final
+Run mixed_025, seed 42, restaurant, stage final
+Run mixed_025, seed 123, restaurant, stage final
+Run mixed_025, seed 2024, restaurant, stage final
+Run mixed_025, seed 777, restaurant, stage final
+Run mixed_025, seed 13, phone, stage final
+Run mixed_025, seed 42, phone, stage final
+Run mixed_025, seed 123, phone, stage final

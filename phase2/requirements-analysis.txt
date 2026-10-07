@@ -1,0 +1,2 @@
+# Optional: tables and Markdown need only Python 3.10+.
+matplotlib>=3.8

@@ -1,0 +1,78 @@
+LODO continuation: wait for seed 13; 28 remaining training runs; then 35 test evaluations.
+Fixed configuration: mixed_025_da1a88a51a5f; no new hyperparameter search; NULL head off.
+All development folds are complete; reusing all trained models.
+Version 2.0-exploratory-2026-10-05; 35 runs; exploratory research; stage=final
+Test access: frozen checkpoint evaluation
+  mixed_025: seed=13, held_out=coursera, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=42, held_out=coursera, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=123, held_out=coursera, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=2024, held_out=coursera, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=777, held_out=coursera, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=13, held_out=hotel, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=42, held_out=hotel, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=123, held_out=hotel, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=2024, held_out=hotel, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=777, held_out=hotel, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=13, held_out=laptop, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=42, held_out=laptop, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=123, held_out=laptop, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=2024, held_out=laptop, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=777, held_out=laptop, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=13, held_out=restaurant, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=42, held_out=restaurant, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=123, held_out=restaurant, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=2024, held_out=restaurant, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=777, held_out=restaurant, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=13, held_out=phone, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=42, held_out=phone, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=123, held_out=phone, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=2024, held_out=phone, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=777, held_out=phone, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=13, held_out=sight, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=42, held_out=sight, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=123, held_out=sight, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=2024, held_out=sight, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=777, held_out=sight, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=13, held_out=food, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=42, held_out=food, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=123, held_out=food, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=2024, held_out=food, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+  mixed_025: seed=777, held_out=food, loss=mixed, heads=bio,category,sentiment, alpha=0.250, gamma=2, NULL=False, epochs=5, lr=3e-05; id=mixed_025_da1a88a51a5f
+Skip completed mixed_025, seed 13, coursera
+Skip completed mixed_025, seed 42, coursera
+Skip completed mixed_025, seed 123, coursera
+Skip completed mixed_025, seed 2024, coursera
+Skip completed mixed_025, seed 777, coursera
+Summary CSV is locked; preserving D:\UoA\bertfinetune\artifacts\experiments_v2\development_results.csv and writing D:\UoA\bertfinetune\artifacts\experiments_v2\development_results_lodo_recovery.csv instead.
+Skip completed mixed_025, seed 13, hotel
+Skip completed mixed_025, seed 42, hotel
+Skip completed mixed_025, seed 123, hotel
+Skip completed mixed_025, seed 2024, hotel
+Skip completed mixed_025, seed 777, hotel
+Skip completed mixed_025, seed 13, laptop
+Skip completed mixed_025, seed 42, laptop
+Skip completed mixed_025, seed 123, laptop
+Skip completed mixed_025, seed 2024, laptop
+Skip completed mixed_025, seed 777, laptop
+Skip completed mixed_025, seed 13, restaurant
+Skip completed mixed_025, seed 42, restaurant
+Skip completed mixed_025, seed 123, restaurant
+Skip completed mixed_025, seed 2024, restaurant
+Skip completed mixed_025, seed 777, restaurant
+Skip completed mixed_025, seed 13, phone
+Skip completed mixed_025, seed 42, phone
+Skip completed mixed_025, seed 123, phone
+Run mixed_025, seed 2024, phone, stage final
+Run mixed_025, seed 777, phone, stage final
+Run mixed_025, seed 13, sight, stage final
+Run mixed_025, seed 42, sight, stage final
+Run mixed_025, seed 123, sight, stage final
+Run mixed_025, seed 2024, sight, stage final
+Run mixed_025, seed 777, sight, stage final
+Run mixed_025, seed 13, food, stage final
+Run mixed_025, seed 42, food, stage final
+Run mixed_025, seed 123, food, stage final
+Run mixed_025, seed 2024, food, stage final
+Run mixed_025, seed 777, food, stage final
+Finished. Development summary: D:\UoA\bertfinetune\artifacts\experiments_v2\development_results.csv
+LODO continuation complete: D:\UoA\bertfinetune\lodo_finetuning_results\report.md

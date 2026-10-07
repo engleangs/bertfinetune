@@ -1,0 +1,666 @@
+{
+  "created_at": "2026-10-06T13:18:02.721664+00:00",
+  "environment": {
+    "cuda_available": true,
+    "cuda_runtime": "13.0",
+    "gpu": "NVIDIA GeForce RTX 3050",
+    "packages": [
+      "Jinja2==3.1.6",
+      "MarkupSafe==3.0.3",
+      "PyYAML==6.0.3",
+      "Pygments==2.21.0",
+      "aiohappyeyeballs==2.7.1",
+      "aiohttp==3.14.3",
+      "aiosignal==1.4.0",
+      "annotated-doc==0.0.5",
+      "anyio==4.14.2",
+      "attrs==26.1.0",
+      "certifi==2026.7.22",
+      "charset-normalizer==3.5.1",
+      "click==8.5.0",
+      "cloudpickle==3.1.2",
+      "colorama==0.4.6",
+      "contourpy==1.4.0",
+      "cycler==0.12.1",
+      "datasets==5.0.1",
+      "dill==0.4.1",
+      "filelock==3.32.5",
+      "fonttools==4.65.0",
+      "frozenlist==1.8.0",
+      "fsspec==2026.6.0",
+      "h11==0.16.0",
+      "hf-xet==1.6.0",
+      "httpcore==1.0.9",
+      "httpx==0.28.1",
+      "huggingface_hub==1.29.0",
+      "idna==3.19",
+      "joblib==1.6.0",
+      "kiwisolver==1.5.1",
+      "markdown-it-py==4.2.0",
+      "matplotlib==3.11.2",
+      "mdurl==0.1.2",
+      "mpmath==1.3.0",
+      "multidict==6.7.1",
+      "multiprocess==0.70.19",
+      "narwhals==2.25.0",
+      "networkx==3.6.1",
+      "numpy==2.5.2",
+      "packaging==26.3",
+      "pandas==3.0.5",
+      "pillow==12.3.0",
+      "pip==26.2.1",
+      "propcache==0.5.2",
+      "pyarrow==25.0.1",
+      "pyparsing==3.3.2",
+      "python-dateutil==2.9.0.post0",
+      "regex==2026.9.3",
+      "requests==2.34.2",
+      "rich==15.0.0",
+      "safetensors==0.8.0",
+      "scikit-learn==1.9.0",
+      "scipy==1.18.1",
+      "setuptools==84.0.0",
+      "shellingham==1.5.4",
+      "six==1.17.0",
+      "sympy==1.14.0",
+      "threadpoolctl==3.6.0",
+      "tokenizers==0.23.1",
+      "torch==2.13.0+cu130",
+      "tqdm==4.70.0",
+      "transformers==5.16.1",
+      "typer==0.27.2",
+      "typing_extensions==4.16.0",
+      "tzdata==2026.3",
+      "urllib3==2.7.0",
+      "xxhash==4.0.1",
+      "yarl==1.24.5"
+    ],
+    "platform": "Windows-11-10.0.26300-SP0",
+    "python": "3.12.6",
+    "torch": "2.13.0+cu130"
+  },
+  "scope": "Exploratory M-ABSA, eligible explicit + deduplicated NULL; no new cross-domain claim",
+  "seeds": [
+    13,
+    42,
+    123,
+    2024,
+    777
+  ],
+  "selection_rule": "combined development F1",
+  "smoke": false,
+  "source_data_sha256": {
+    "coursera/en/dev.txt": "a89af2613f93172022128c79217dbd5ddca7f8c6e00c03675247131161df0d2e",
+    "coursera/en/train.txt": "28722d0a3882923dcceb64efe5a5dc981cf70dc43791fe7b71b91b81e328c66e",
+    "food/en/dev.txt": "a54f012b94dabd5b300ea76e83f8457e64a6642a6b714c44b2781c7900885531",
+    "food/en/train.txt": "d979fbaf6a6a6a90804b0974ac317339daa5f5da06f7af0cf8d67de298dd372d",
+    "hotel/en/dev.txt": "174aff05af748032b8e47485391dc5fc9fc3ee87ca35c16d0d9457c14617963c",
+    "hotel/en/train.txt": "6aa3ef9f57f8bc839fcbe5b737af6081c803e557cd838f6feddeae4c6a641d91",
+    "laptop/en/dev.txt": "bace3d6c94df50b654410b195b79dc6235bb184984d226110e1fb949d14df9ee",
+    "laptop/en/train.txt": "13feb3d973886db737d0fd0469657841c504acf7348b76cd6b0ceba0a82d8c3b",
+    "phone/en/dev.txt": "a2768b0c69cac0d63df72f99a52e22222b0b501cdea24b11df715bf6a1560bd8",
+    "phone/en/train.txt": "b21f34456c08bb82b9e867bdfb9509a99692589b1d598a98fbfbc61f9be18c7f",
+    "restaurant/en/dev.txt": "96b154cf9a15ec9f99a1f5034a39753a9e0458bee7286e8aaeaecfa5997a7977",
+    "restaurant/en/train.txt": "2dd70becd32f8c047105963b3899f6538ec7924f1b3247db0bda24d56d7412df",
+    "sight/en/dev.txt": "ffcf6ad3770e814ed0a303e69da190a326a27ef8a4ddc3120bdc0e2e993a3e76",
+    "sight/en/train.txt": "f39d6214e1924374ceacbced9dda13cda9625e191ef513ba8a74b607488ba742"
+  },
+  "source_sha256": {
+    "config.py": "63e3df0339e824c6aeea031f3469c5a47ff4097a64b456881efc5fb2404437e5",
+    "null_experiments/__init__.py": "4779426003a1e0f5b3d737cb4ddeb58a27e8a2f8c02d2f3ac27596c13cca81d3",
+    "null_experiments/config.py": "30a92104aaaec5c23cb4ba9b4279d42d4b5a587f46c524885dbf3fccd76a2b78",
+    "null_experiments/data.py": "c823d2e409509208c041aa3fb5381014847fbbb734b1c815d393522774b77365",
+    "null_experiments/evaluation.py": "c87a61a38665a56657b5ad026c56fdb89ed9c82ee3bdc6cc70ee1cb35f577884",
+    "null_experiments/losses.py": "32b38e0dd217cfc2c601bf29d2bc880d299145af314346f06520dea98430d431",
+    "null_experiments/model.py": "5be01e5eee9712480b7ba08a5f5b1282ec5c1498a43fba2e80f731a67c626bb2",
+    "null_experiments/reporting.py": "b4f4c70b7cf2b13bcb39de8faf192a933511062cb14d0c2ba5af9a0ca01f998f",
+    "null_experiments/storage.py": "1e9a6138a491e54701e41c2be046b879bc1d52771602875adde8b6e2a1d2efd5",
+    "null_experiments/study.py": "c104c11309f8b0fc99444c9e43a6bbc5f6ef372d25afcbd29c56e3fc8ae9e0c8",
+    "null_experiments/training.py": "91bb8c0fccbb4fc2fe91c49f4f4cb8262a5c00b203485c2efee6cc0bd449bff6",
+    "run_experiments.py": "b9237b2611c1ed345852c8a29549a1766feb5de1e26a8e4c48820a87f75f0970",
+    "run_null_fast_track.py": "0507063afc95dbf57e0de814d21bc501dd4dea8fa16f2a1fcdb8c2e983520618",
+    "src/artifacts.py": "c52a626ad019e82b5a8f4e349eeebd6a38a43c9008ba711134da96f5670004a0",
+    "src/data.py": "28591685598dd9cbb919ebc062c1cccb4f789efc4e523cba434922ca287381c9",
+    "src/dataset_audit.py": "7dc96a05b979a0acc6f8c3e49d478e784178d141c513f2eb6b18d6cd7670ffd5",
+    "src/evaluate.py": "4744a9a0f0254498e814f3e3ada5736506b82d3747397a4975f17edd719cbe96",
+    "src/experiment_config.py": "68594bb1434a9dfa0d9865a624f50d90dfa44f444c91eac998247a7c06099d36",
+    "src/experiment_data.py": "ce7b4e27bdd69e13d1222cbe94a227a074038e0671d216b46fa3a4ddee40b995",
+    "src/experiment_losses.py": "2401893943314a8741197c8ba32824598fce3dd042721029fac2a4ab62624bea",
+    "src/experiment_model.py": "f1ec49937a0f4535ed41bdcbb3fa3f66c6761591cdc7c867d9d6b8d616bbd544",
+    "src/experiment_runtime.py": "9b0c3c988bba49a2b97926c880f1e8fe1426f32a9777d5fde954928f49271548",
+    "src/experiment_train.py": "3f79674d9735524fb5f9b9d801ecd83ae87ad738d8c66694409f257dac519430",
+    "src/losses.py": "d55168f119131eba823e7fff3843b4d9e295c2dbb5ae46966fe5d1e77da75df6",
+    "src/model.py": "3cc88e5088bed6fc5df9fa717a7bfc20a101c14e6b7b2a7a52f4d25b2dbe2bc2",
+    "src/result_analysis.py": "aae35f7421dbd04f3c68b312fea72055277d833ab3825f0513c9b334a888a1e7",
+    "src/stats.py": "f31177e4be1f77184b37437b6f4e2004b99409ac0afc924ac2749318fcfe6aa7",
+    "src/team_diagnostics.py": "03b20a3f1a1e65474b7b9613946f41707626719267fd66541eab3470b052348b",
+    "src/team_report.py": "da64928c640173efafc1bdd5d245eab3a85470d6a9ba215f9e91cf78ca21cf9a",
+    "src/team_taxonomy.py": "7b8c25d6c90d9f88cf29e06a8baf70cefd7e14e96ffd49c5da0ae9cf9af081c9",
+    "src/text_analysis.py": "c860f4cee338f68eafbc6e3b8507bccd5d80ce6d5cb2df403cd15114cb0aac1e",
+    "src/train.py": "81a434eaa8d1d7a8d50d3e54421d90735cffb9db027a6d2fbfe6ae931882ee2b",
+    "src/utils.py": "782a7b03aa5631d4098bd932598ef15cbc69bd8f683904613d1360ca03701f61"
+  },
+  "variants": [
+    {
+      "config": {
+        "amp_initial_scale": 1024.0,
+        "asl_gamma_negative": 4.0,
+        "asl_gamma_positive": 0.0,
+        "asl_margin": 0.05,
+        "attention_size": 128,
+        "batch_size": 16,
+        "bio_loss_weight": 1.0,
+        "category_loss_weight": 1.0,
+        "ce_weight": 0.75,
+        "drop_conflict": false,
+        "epochs": 5,
+        "focal_gamma": 2.0,
+        "hard_fraction": 0.5,
+        "loss_heads": [
+          "bio",
+          "category",
+          "sentiment"
+        ],
+        "loss_type": "mixed",
+        "lr": 3e-05,
+        "max_grad_norm": 1.0,
+        "max_len": 128,
+        "minimum_negatives": 16,
+        "model_name": "bert-base-uncased",
+        "model_revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+        "name": "focal_ia_attention",
+        "negative_ratio": 8.0,
+        "negative_sampling": "all",
+        "null_focal_gamma": 2.0,
+        "null_head": true,
+        "null_loss": "focal",
+        "null_loss_weight": 0.5,
+        "null_pos_weight_cap": 10.0,
+        "null_threshold": 0.5,
+        "null_thresholds": [
+          0.02,
+          0.05,
+          0.1,
+          0.12,
+          0.14,
+          0.16,
+          0.18,
+          0.2,
+          0.22,
+          0.24,
+          0.26,
+          0.28,
+          0.3,
+          0.32,
+          0.34,
+          0.36,
+          0.38,
+          0.4,
+          0.45,
+          0.5,
+          0.6,
+          0.8
+        ],
+        "offline": true,
+        "precision": "amp",
+        "representation": "ia_attention",
+        "selection_metric": "combined",
+        "sentiment_loss_weight": 1.0,
+        "vocabulary_scope": "explicit-null",
+        "warmup_ratio": 0.1,
+        "weight_decay": 0.01,
+        "weighted_ce_weight": 0.25
+      },
+      "role": "Best NULL on",
+      "runs": [
+        {
+          "best_epoch": 5,
+          "checkpoint_sha256": "a1dab9e65fecba2b5d4c8cfa0f49906896c50d2e33e3540f80870d58f58f458f",
+          "development": {
+            "combined": {
+              "false_negatives": 1541,
+              "false_positives": 2182,
+              "macro_f1": 0.11738006116455,
+              "micro_f1": 0.32321396109798217,
+              "micro_precision": 0.289482253337675,
+              "micro_recall": 0.365843621399177,
+              "true_positives": 889
+            },
+            "explicit": {
+              "false_negatives": 966,
+              "false_positives": 2182,
+              "macro_f1": 0.12316305314495166,
+              "micro_f1": 0.3609419407226959,
+              "micro_precision": 0.289482253337675,
+              "micro_recall": 0.47924528301886793,
+              "true_positives": 889
+            },
+            "null": {
+              "false_negatives": 575,
+              "false_positives": 0,
+              "macro_f1": 0.0,
+              "micro_f1": 0.0,
+              "micro_precision": 0.0,
+              "micro_recall": 0.0,
+              "true_positives": 0
+            }
+          },
+          "directory": "D:\\UoA\\bertfinetune\\artifacts\\null_fast_track\\research\\focal_ia_attention_e6801d313247\\seed_13",
+          "fingerprint": "a40637bb8cea43db96ca486184680589da142a05057944a9c0e2fed8d462e768",
+          "null_threshold": 1.0,
+          "seed": 13
+        },
+        {
+          "best_epoch": 5,
+          "checkpoint_sha256": "4d1176f912cd41429822173a7b79e4cd0d7ec104bb4ab5201ccf532f520fb11d",
+          "development": {
+            "combined": {
+              "false_negatives": 1537,
+              "false_positives": 2011,
+              "macro_f1": 0.11695264543504977,
+              "micro_f1": 0.33483314585676793,
+              "micro_precision": 0.3075068870523416,
+              "micro_recall": 0.36748971193415636,
+              "true_positives": 893
+            },
+            "explicit": {
+              "false_negatives": 962,
+              "false_positives": 2011,
+              "macro_f1": 0.12277377422048784,
+              "micro_f1": 0.3752889262450095,
+              "micro_precision": 0.3075068870523416,
+              "micro_recall": 0.4814016172506739,
+              "true_positives": 893
+            },
+            "null": {
+              "false_negatives": 575,
+              "false_positives": 0,
+              "macro_f1": 0.0,
+              "micro_f1": 0.0,
+              "micro_precision": 0.0,
+              "micro_recall": 0.0,
+              "true_positives": 0
+            }
+          },
+          "directory": "D:\\UoA\\bertfinetune\\artifacts\\null_fast_track\\research\\focal_ia_attention_e6801d313247\\seed_42",
+          "fingerprint": "d3a4fe0648d9ced061f38857f5ebc0ae50175b726df331678890b2bcc1e248f6",
+          "null_threshold": 1.0,
+          "seed": 42
+        },
+        {
+          "best_epoch": 5,
+          "checkpoint_sha256": "e0289eb5712d932db1ce17c810af4c1ce983d91e33909582f16d1972337cef07",
+          "development": {
+            "combined": {
+              "false_negatives": 1544,
+              "false_positives": 2026,
+              "macro_f1": 0.12060115590172424,
+              "micro_f1": 0.3317109696742793,
+              "micro_precision": 0.30425824175824173,
+              "micro_recall": 0.36460905349794237,
+              "true_positives": 886
+            },
+            "explicit": {
+              "false_negatives": 969,
+              "false_positives": 2026,
+              "macro_f1": 0.12604477545245202,
+              "micro_f1": 0.3717222571848122,
+              "micro_precision": 0.30425824175824173,
+              "micro_recall": 0.4776280323450135,
+              "true_positives": 886
+            },
+            "null": {
+              "false_negatives": 575,
+              "false_positives": 0,
+              "macro_f1": 0.0,
+              "micro_f1": 0.0,
+              "micro_precision": 0.0,
+              "micro_recall": 0.0,
+              "true_positives": 0
+            }
+          },
+          "directory": "D:\\UoA\\bertfinetune\\artifacts\\null_fast_track\\research\\focal_ia_attention_e6801d313247\\seed_123",
+          "fingerprint": "1c5e5029249ccb766aee47b21aec1e1961a8e630fde677635955e2d88ed07cb5",
+          "null_threshold": 1.0,
+          "seed": 123
+        },
+        {
+          "best_epoch": 5,
+          "checkpoint_sha256": "739a78c643538ab5006b9f0e19b7e1842122343c37ff63e285031a674b936dac",
+          "development": {
+            "combined": {
+              "false_negatives": 1545,
+              "false_positives": 2049,
+              "macro_f1": 0.11355062839510469,
+              "micro_f1": 0.3299776286353468,
+              "micro_precision": 0.3016359918200409,
+              "micro_recall": 0.36419753086419754,
+              "true_positives": 885
+            },
+            "explicit": {
+              "false_negatives": 970,
+              "false_positives": 2049,
+              "macro_f1": 0.12000619704992574,
+              "micro_f1": 0.3695969931092087,
+              "micro_precision": 0.3016359918200409,
+              "micro_recall": 0.477088948787062,
+              "true_positives": 885
+            },
+            "null": {
+              "false_negatives": 575,
+              "false_positives": 0,
+              "macro_f1": 0.0,
+              "micro_f1": 0.0,
+              "micro_precision": 0.0,
+              "micro_recall": 0.0,
+              "true_positives": 0
+            }
+          },
+          "directory": "D:\\UoA\\bertfinetune\\artifacts\\null_fast_track\\research\\focal_ia_attention_e6801d313247\\seed_2024",
+          "fingerprint": "3dd41fb7dc8659d675529348b38a7cbd748996bde1586edd4d61b8fe5e7d73d2",
+          "null_threshold": 1.0,
+          "seed": 2024
+        },
+        {
+          "best_epoch": 5,
+          "checkpoint_sha256": "8dd5b7241cfcb4e6060ea256d7e47c94a25e7e5f5531e01f2bfd747958c89936",
+          "development": {
+            "combined": {
+              "false_negatives": 1546,
+              "false_positives": 2134,
+              "macro_f1": 0.11586531724235466,
+              "micro_f1": 0.3245227606461087,
+              "micro_precision": 0.292909211398277,
+              "micro_recall": 0.36378600823045265,
+              "true_positives": 884
+            },
+            "explicit": {
+              "false_negatives": 971,
+              "false_positives": 2134,
+              "macro_f1": 0.12167378627827032,
+              "micro_f1": 0.36281551405704904,
+              "micro_precision": 0.292909211398277,
+              "micro_recall": 0.4765498652291105,
+              "true_positives": 884
+            },
+            "null": {
+              "false_negatives": 575,
+              "false_positives": 0,
+              "macro_f1": 0.0,
+              "micro_f1": 0.0,
+              "micro_precision": 0.0,
+              "micro_recall": 0.0,
+              "true_positives": 0
+            }
+          },
+          "directory": "D:\\UoA\\bertfinetune\\artifacts\\null_fast_track\\research\\focal_ia_attention_e6801d313247\\seed_777",
+          "fingerprint": "07b751a36aaed31777f54e3a7c69899b4f10763e22972996d6e08f258c85c37c",
+          "null_threshold": 1.0,
+          "seed": 777
+        }
+      ],
+      "trial_id": "focal_ia_attention_e6801d313247"
+    },
+    {
+      "config": {
+        "amp_initial_scale": 1024.0,
+        "asl_gamma_negative": 4.0,
+        "asl_gamma_positive": 0.0,
+        "asl_margin": 0.05,
+        "attention_size": 128,
+        "batch_size": 16,
+        "bio_loss_weight": 1.0,
+        "category_loss_weight": 1.0,
+        "ce_weight": 0.75,
+        "drop_conflict": false,
+        "epochs": 5,
+        "focal_gamma": 2.0,
+        "hard_fraction": 0.5,
+        "loss_heads": [
+          "bio",
+          "category",
+          "sentiment"
+        ],
+        "loss_type": "mixed",
+        "lr": 3e-05,
+        "max_grad_norm": 1.0,
+        "max_len": 128,
+        "minimum_negatives": 16,
+        "model_name": "bert-base-uncased",
+        "model_revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+        "name": "null_off",
+        "negative_ratio": 8.0,
+        "negative_sampling": "all",
+        "null_focal_gamma": 2.0,
+        "null_head": false,
+        "null_loss": "bce",
+        "null_loss_weight": 0.5,
+        "null_pos_weight_cap": 10.0,
+        "null_threshold": 0.5,
+        "null_thresholds": [
+          0.02,
+          0.05,
+          0.1,
+          0.12,
+          0.14,
+          0.16,
+          0.18,
+          0.2,
+          0.22,
+          0.24,
+          0.26,
+          0.28,
+          0.3,
+          0.32,
+          0.34,
+          0.36,
+          0.38,
+          0.4,
+          0.45,
+          0.5,
+          0.6,
+          0.8
+        ],
+        "offline": true,
+        "precision": "amp",
+        "representation": "cls",
+        "selection_metric": "combined",
+        "sentiment_loss_weight": 1.0,
+        "vocabulary_scope": "explicit-null",
+        "warmup_ratio": 0.1,
+        "weight_decay": 0.01,
+        "weighted_ce_weight": 0.25
+      },
+      "role": "NULL off control",
+      "runs": [
+        {
+          "best_epoch": 5,
+          "checkpoint_sha256": "ef1f63aadd916b21cbc3415ab30baf14701caed48775a172403a2b8f38791250",
+          "development": {
+            "combined": {
+              "false_negatives": 1542,
+              "false_positives": 2191,
+              "macro_f1": 0.11403788368547349,
+              "micro_f1": 0.32238155745144315,
+              "micro_precision": 0.28840532640467686,
+              "micro_recall": 0.3654320987654321,
+              "true_positives": 888
+            },
+            "explicit": {
+              "false_negatives": 967,
+              "false_positives": 2191,
+              "macro_f1": 0.11990955249515035,
+              "micro_f1": 0.35995135792460475,
+              "micro_precision": 0.28840532640467686,
+              "micro_recall": 0.4787061994609164,
+              "true_positives": 888
+            },
+            "null": {
+              "false_negatives": 575,
+              "false_positives": 0,
+              "macro_f1": 0.0,
+              "micro_f1": 0.0,
+              "micro_precision": 0.0,
+              "micro_recall": 0.0,
+              "true_positives": 0
+            }
+          },
+          "directory": "D:\\UoA\\bertfinetune\\artifacts\\null_fast_track\\research\\null_off_e53896d9134f\\seed_13",
+          "fingerprint": "abd726d6f1282b025c89dc2418d8c03d40feb163db8df4c4775a5947618ce00e",
+          "null_threshold": 1.0,
+          "seed": 13
+        },
+        {
+          "best_epoch": 5,
+          "checkpoint_sha256": "a92fccb602cd172f3aa2df1680d416a68c46ef14a44c88b977421a98c14db3f0",
+          "development": {
+            "combined": {
+              "false_negatives": 1543,
+              "false_positives": 2001,
+              "macro_f1": 0.11422619198166699,
+              "micro_f1": 0.33358405415569764,
+              "micro_precision": 0.30713296398891965,
+              "micro_recall": 0.36502057613168726,
+              "true_positives": 887
+            },
+            "explicit": {
+              "false_negatives": 968,
+              "false_positives": 2001,
+              "macro_f1": 0.11981073385368032,
+              "micro_f1": 0.3740248787687118,
+              "micro_precision": 0.30713296398891965,
+              "micro_recall": 0.47816711590296496,
+              "true_positives": 887
+            },
+            "null": {
+              "false_negatives": 575,
+              "false_positives": 0,
+              "macro_f1": 0.0,
+              "micro_f1": 0.0,
+              "micro_precision": 0.0,
+              "micro_recall": 0.0,
+              "true_positives": 0
+            }
+          },
+          "directory": "D:\\UoA\\bertfinetune\\artifacts\\null_fast_track\\research\\null_off_e53896d9134f\\seed_42",
+          "fingerprint": "faec0da7dc7807dcbbec734bcb19f53ca07e17217cf31e67c383fd46520f1299",
+          "null_threshold": 1.0,
+          "seed": 42
+        },
+        {
+          "best_epoch": 5,
+          "checkpoint_sha256": "eceedf9706feb36d4628f001902aabdd3d3af4b6e9020ed80076ecd442969d4e",
+          "development": {
+            "combined": {
+              "false_negatives": 1537,
+              "false_positives": 2008,
+              "macro_f1": 0.12107699124890155,
+              "micro_f1": 0.33502157193772275,
+              "micro_precision": 0.3078248879696656,
+              "micro_recall": 0.36748971193415636,
+              "true_positives": 893
+            },
+            "explicit": {
+              "false_negatives": 962,
+              "false_positives": 2008,
+              "macro_f1": 0.12669474511513173,
+              "micro_f1": 0.37552565180824216,
+              "micro_precision": 0.3078248879696656,
+              "micro_recall": 0.4814016172506739,
+              "true_positives": 893
+            },
+            "null": {
+              "false_negatives": 575,
+              "false_positives": 0,
+              "macro_f1": 0.0,
+              "micro_f1": 0.0,
+              "micro_precision": 0.0,
+              "micro_recall": 0.0,
+              "true_positives": 0
+            }
+          },
+          "directory": "D:\\UoA\\bertfinetune\\artifacts\\null_fast_track\\research\\null_off_e53896d9134f\\seed_123",
+          "fingerprint": "24c556d9982e4d1623ac0ff96d8e06de564aef49e83e999f1d69a311bf58e5b9",
+          "null_threshold": 1.0,
+          "seed": 123
+        },
+        {
+          "best_epoch": 4,
+          "checkpoint_sha256": "4878eba3a9ad476319638606203c98ba757c41924bd4f2365128c86dc642f75d",
+          "development": {
+            "combined": {
+              "false_negatives": 1575,
+              "false_positives": 1927,
+              "macro_f1": 0.10972932627313373,
+              "micro_f1": 0.32808902532617035,
+              "micro_precision": 0.30733285406182603,
+              "micro_recall": 0.35185185185185186,
+              "true_positives": 855
+            },
+            "explicit": {
+              "false_negatives": 1000,
+              "false_positives": 1927,
+              "macro_f1": 0.11595264215461552,
+              "micro_f1": 0.36877291352167346,
+              "micro_precision": 0.30733285406182603,
+              "micro_recall": 0.4609164420485175,
+              "true_positives": 855
+            },
+            "null": {
+              "false_negatives": 575,
+              "false_positives": 0,
+              "macro_f1": 0.0,
+              "micro_f1": 0.0,
+              "micro_precision": 0.0,
+              "micro_recall": 0.0,
+              "true_positives": 0
+            }
+          },
+          "directory": "D:\\UoA\\bertfinetune\\artifacts\\null_fast_track\\research\\null_off_e53896d9134f\\seed_2024",
+          "fingerprint": "b9ee3dd661dc53e85a5127224594e83fbc75cef5935f03396137c89aca3e2fa4",
+          "null_threshold": 1.0,
+          "seed": 2024
+        },
+        {
+          "best_epoch": 5,
+          "checkpoint_sha256": "b9870693d1086659f7a6bb023b663e4e533e5c52deabefb0c1d713d79324594a",
+          "development": {
+            "combined": {
+              "false_negatives": 1545,
+              "false_positives": 2118,
+              "macro_f1": 0.10843566930075324,
+              "micro_f1": 0.3257868580894534,
+              "micro_precision": 0.2947052947052947,
+              "micro_recall": 0.36419753086419754,
+              "true_positives": 885
+            },
+            "explicit": {
+              "false_negatives": 970,
+              "false_positives": 2118,
+              "macro_f1": 0.11464418022523726,
+              "micro_f1": 0.3643474680938658,
+              "micro_precision": 0.2947052947052947,
+              "micro_recall": 0.477088948787062,
+              "true_positives": 885
+            },
+            "null": {
+              "false_negatives": 575,
+              "false_positives": 0,
+              "macro_f1": 0.0,
+              "micro_f1": 0.0,
+              "micro_precision": 0.0,
+              "micro_recall": 0.0,
+              "true_positives": 0
+            }
+          },
+          "directory": "D:\\UoA\\bertfinetune\\artifacts\\null_fast_track\\research\\null_off_e53896d9134f\\seed_777",
+          "fingerprint": "18c1835a97de4f8cb14309a99e0aa43cff854f4077111e2b0c2de85637c3f83a",
+          "null_threshold": 1.0,
+          "seed": 777
+        }
+      ],
+      "trial_id": "null_off_e53896d9134f"
+    }
+  ],
+  "version": "null-fast-track-1.0-2026-10-06"
+}

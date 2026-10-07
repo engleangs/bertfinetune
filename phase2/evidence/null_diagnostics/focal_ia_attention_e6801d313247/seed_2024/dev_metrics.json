@@ -1,0 +1,2890 @@
+{
+  "category_by_label": {
+    "After-sales Service#Exchange/Warranty/Return": {
+      "f1": 0.07142857142857144,
+      "precision": 0.05,
+      "recall": 0.125,
+      "support": 8
+    },
+    "Appearance Design#Aesthetics General": {
+      "f1": 0.2,
+      "precision": 0.16666666666666666,
+      "recall": 0.25,
+      "support": 4
+    },
+    "Appearance Design#Color": {
+      "f1": 0.6666666666666666,
+      "precision": 0.5,
+      "recall": 1.0,
+      "support": 3
+    },
+    "Appearance Design#Fuselage Size": {
+      "f1": 0.28571428571428575,
+      "precision": 0.3333333333333333,
+      "recall": 0.25,
+      "support": 12
+    },
+    "Appearance Design#Grip Feeling": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "Appearance Design#Weight": {
+      "f1": 0.16666666666666666,
+      "precision": 0.1111111111111111,
+      "recall": 0.3333333333333333,
+      "support": 3
+    },
+    "Audio/Sound#Tone quality": {
+      "f1": 0.6666666666666666,
+      "precision": 0.5714285714285714,
+      "recall": 0.8,
+      "support": 5
+    },
+    "Audio/Sound#Volume and Speaker": {
+      "f1": 0.37499999999999994,
+      "precision": 0.3,
+      "recall": 0.5,
+      "support": 6
+    },
+    "BATTERY#GENERAL": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "BATTERY#OPERATION_PERFORMANCE": {
+      "f1": 0.5714285714285714,
+      "precision": 0.46153846153846156,
+      "recall": 0.75,
+      "support": 8
+    },
+    "BATTERY#QUALITY": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "Battery/Longevity#Battery Capacity": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "Battery/Longevity#Battery Life": {
+      "f1": 0.761904761904762,
+      "precision": 0.7272727272727273,
+      "recall": 0.8,
+      "support": 10
+    },
+    "Battery/Longevity#Charging Speed": {
+      "f1": 0.3157894736842105,
+      "precision": 0.25,
+      "recall": 0.42857142857142855,
+      "support": 7
+    },
+    "Battery/Longevity#General": {
+      "f1": 0.4827586206896552,
+      "precision": 0.3181818181818182,
+      "recall": 1.0,
+      "support": 7
+    },
+    "Battery/Longevity#Power Consumption Speed": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "Battery/Longevity#Standby Time": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "Branding/Marketing#Promotional Giveaways": {
+      "f1": 0.5,
+      "precision": 0.4166666666666667,
+      "recall": 0.625,
+      "support": 8
+    },
+    "Buyer Attitude#Loyalty": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 6
+    },
+    "Buyer Attitude#Recommendable": {
+      "f1": 0.45161290322580644,
+      "precision": 0.3888888888888889,
+      "recall": 0.5384615384615384,
+      "support": 26
+    },
+    "Buyer Attitude#Repurchase and Churn Tendency": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 5
+    },
+    "Buyer Attitude#Shopping Experiences": {
+      "f1": 0.5128205128205128,
+      "precision": 0.38461538461538464,
+      "recall": 0.7692307692307693,
+      "support": 13
+    },
+    "Buyer Attitude#Shopping Willingness": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "COMPANY#DESIGN_FEATURES": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "COMPANY#GENERAL": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 5
+    },
+    "CPU#GENERAL": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 4
+    },
+    "CPU#OPERATION_PERFORMANCE": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 0
+    },
+    "Camera#Fill light": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "Camera#Front Camera": {
+      "f1": 0.4,
+      "precision": 0.5,
+      "recall": 0.3333333333333333,
+      "support": 3
+    },
+    "Camera#General": {
+      "f1": 0.52,
+      "precision": 0.40625,
+      "recall": 0.7222222222222222,
+      "support": 18
+    },
+    "Camera#Rear Camera": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "Course_General_Feedback": {
+      "f1": 0.4,
+      "precision": 0.3218390804597701,
+      "recall": 0.5283018867924528,
+      "support": 53
+    },
+    "DISPLAY#DESIGN_FEATURES": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 4
+    },
+    "DISPLAY#GENERAL": {
+      "f1": 0.5853658536585366,
+      "precision": 0.5217391304347826,
+      "recall": 0.6666666666666666,
+      "support": 18
+    },
+    "DISPLAY#OPERATION_PERFORMANCE": {
+      "f1": 0.21052631578947367,
+      "precision": 0.15384615384615385,
+      "recall": 0.3333333333333333,
+      "support": 6
+    },
+    "DISPLAY#QUALITY": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "Ease of Use#Audience Groups": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "Ease of Use#Easy to Use": {
+      "f1": 0.47058823529411764,
+      "precision": 0.3333333333333333,
+      "recall": 0.8,
+      "support": 10
+    },
+    "FANS&COOLING#OPERATION_PERFORMANCE": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "GRAPHICS#GENERAL": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "GRAPHICS#OPERATION_PERFORMANCE": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "HARDWARE#DESIGN_FEATURES": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "HARDWARE#GENERAL": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "HARDWARE#OPERATION_PERFORMANCE": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 3
+    },
+    "HARDWARE#QUALITY": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "HARD_DISC#DESIGN_FEATURES": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "HARD_DISC#GENERAL": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 3
+    },
+    "HARD_DISC#MISCELLANEOUS": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "HARD_DISC#OPERATION_PERFORMANCE": {
+      "f1": 0.36363636363636365,
+      "precision": 0.2857142857142857,
+      "recall": 0.5,
+      "support": 4
+    },
+    "HARD_DISC#PRICE": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "Instructor": {
+      "f1": 0.5000000000000001,
+      "precision": 0.38372093023255816,
+      "recall": 0.717391304347826,
+      "support": 46
+    },
+    "KEYBOARD#DESIGN_FEATURES": {
+      "f1": 0.1,
+      "precision": 0.07142857142857142,
+      "recall": 0.16666666666666666,
+      "support": 6
+    },
+    "KEYBOARD#GENERAL": {
+      "f1": 0.32,
+      "precision": 0.2857142857142857,
+      "recall": 0.36363636363636365,
+      "support": 11
+    },
+    "KEYBOARD#OPERATION_PERFORMANCE": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 3
+    },
+    "KEYBOARD#PORTABILITY": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "KEYBOARD#QUALITY": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "KEYBOARD#USABILITY": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "Key Design#General": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "LAPTOP#CONNECTIVITY": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "LAPTOP#DESIGN_FEATURES": {
+      "f1": 0.22950819672131145,
+      "precision": 0.21875,
+      "recall": 0.2413793103448276,
+      "support": 29
+    },
+    "LAPTOP#GENERAL": {
+      "f1": 0.48520710059171596,
+      "precision": 0.36283185840707965,
+      "recall": 0.7321428571428571,
+      "support": 56
+    },
+    "LAPTOP#MISCELLANEOUS": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "LAPTOP#OPERATION_PERFORMANCE": {
+      "f1": 0.22857142857142854,
+      "precision": 0.19047619047619047,
+      "recall": 0.2857142857142857,
+      "support": 14
+    },
+    "LAPTOP#PORTABILITY": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "LAPTOP#PRICE": {
+      "f1": 0.47058823529411764,
+      "precision": 0.5,
+      "recall": 0.4444444444444444,
+      "support": 9
+    },
+    "LAPTOP#QUALITY": {
+      "f1": 0.10526315789473685,
+      "precision": 0.1,
+      "recall": 0.1111111111111111,
+      "support": 9
+    },
+    "LAPTOP#USABILITY": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 7
+    },
+    "Logistics#Lost and Damaged": {
+      "f1": 0.3488372093023256,
+      "precision": 0.2830188679245283,
+      "recall": 0.45454545454545453,
+      "support": 33
+    },
+    "Logistics#Speed": {
+      "f1": 0.46808510638297873,
+      "precision": 0.3626373626373626,
+      "recall": 0.66,
+      "support": 50
+    },
+    "Logistics#general": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 3
+    },
+    "MEMORY#DESIGN_FEATURES": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "MEMORY#GENERAL": {
+      "f1": 0.25,
+      "precision": 0.16666666666666666,
+      "recall": 0.5,
+      "support": 2
+    },
+    "MEMORY#OPERATION_PERFORMANCE": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "MOUSE#DESIGN_FEATURES": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "MULTIMEDIA_DEVICES#CONNECTIVITY": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "MULTIMEDIA_DEVICES#DESIGN_FEATURES": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "MULTIMEDIA_DEVICES#GENERAL": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 0
+    },
+    "MULTIMEDIA_DEVICES#OPERATION_PERFORMANCE": {
+      "f1": 0.15384615384615385,
+      "precision": 0.125,
+      "recall": 0.2,
+      "support": 5
+    },
+    "Mathematical_Related_Concept": {
+      "f1": 0.18532818532818532,
+      "precision": 0.13636363636363635,
+      "recall": 0.2891566265060241,
+      "support": 83
+    },
+    "OPTICAL_DRIVES#GENERAL": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "OS#DESIGN_FEATURES": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 3
+    },
+    "OS#GENERAL": {
+      "f1": 0.5,
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "support": 3
+    },
+    "OS#OPERATION_PERFORMANCE": {
+      "f1": 0.2857142857142857,
+      "precision": 0.16666666666666666,
+      "recall": 1.0,
+      "support": 1
+    },
+    "OS#PRICE": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "Other": {
+      "f1": 0.10810810810810811,
+      "precision": 0.08823529411764706,
+      "recall": 0.13953488372093023,
+      "support": 43
+    },
+    "Out_Of_Scope#GENERAL": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "Overall#Overall": {
+      "f1": 0.4444444444444445,
+      "precision": 0.37037037037037035,
+      "recall": 0.5555555555555556,
+      "support": 108
+    },
+    "PORTS#CONNECTIVITY": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 0
+    },
+    "PORTS#DESIGN_FEATURES": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "PORTS#GENERAL": {
+      "f1": 0.5,
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "support": 3
+    },
+    "PORTS#OPERATION_PERFORMANCE": {
+      "f1": 0.25,
+      "precision": 0.16666666666666666,
+      "recall": 0.5,
+      "support": 2
+    },
+    "PORTS#USABILITY": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "POWER_SUPPLY#DESIGN_FEATURES": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 3
+    },
+    "POWER_SUPPLY#GENERAL": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "POWER_SUPPLY#OPERATION_PERFORMANCE": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "Performance#General": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 7
+    },
+    "Performance#Heat Generation": {
+      "f1": 0.6666666666666666,
+      "precision": 0.5,
+      "recall": 1.0,
+      "support": 1
+    },
+    "Performance#Running Speed": {
+      "f1": 0.4,
+      "precision": 0.3333333333333333,
+      "recall": 0.5,
+      "support": 2
+    },
+    "Price#Price": {
+      "f1": 0.5217391304347827,
+      "precision": 0.4,
+      "recall": 0.75,
+      "support": 16
+    },
+    "Price#Value for Money": {
+      "f1": 0.3225806451612903,
+      "precision": 0.2631578947368421,
+      "recall": 0.4166666666666667,
+      "support": 12
+    },
+    "Product Accessories#Cell Phone Film": {
+      "f1": 0.375,
+      "precision": 0.25,
+      "recall": 0.75,
+      "support": 4
+    },
+    "Product Accessories#Charger": {
+      "f1": 0.21052631578947364,
+      "precision": 0.14285714285714285,
+      "recall": 0.4,
+      "support": 5
+    },
+    "Product Accessories#Charging Cable": {
+      "f1": 0.25,
+      "precision": 0.25,
+      "recall": 0.25,
+      "support": 4
+    },
+    "Product Accessories#Headphones": {
+      "f1": 0.25,
+      "precision": 0.16666666666666666,
+      "recall": 0.5,
+      "support": 4
+    },
+    "Product Accessories#Phone Cases": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 4
+    },
+    "Product Configuration#CPU": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 3
+    },
+    "Product Configuration#Memory": {
+      "f1": 0.12244897959183673,
+      "precision": 0.075,
+      "recall": 0.3333333333333333,
+      "support": 9
+    },
+    "Product Configuration#Operating Memory": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 6
+    },
+    "Product Packaging#Completeness of Accessories": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 4
+    },
+    "Product Packaging#General": {
+      "f1": 0.5818181818181818,
+      "precision": 0.5,
+      "recall": 0.6956521739130435,
+      "support": 23
+    },
+    "Product Packaging#Packaging Grade": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "Product Packaging#Packaging Materials": {
+      "f1": 0.38095238095238093,
+      "precision": 0.2857142857142857,
+      "recall": 0.5714285714285714,
+      "support": 7
+    },
+    "Product Quality#Fall Protection": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "Product Quality#General": {
+      "f1": 0.5294117647058824,
+      "precision": 0.42857142857142855,
+      "recall": 0.6923076923076923,
+      "support": 13
+    },
+    "Product Quality#Genuine Product": {
+      "f1": 0.4,
+      "precision": 0.5,
+      "recall": 0.3333333333333333,
+      "support": 6
+    },
+    "Product Quality#Water Resistant": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "SHIPPING#GENERAL": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "SHIPPING#QUALITY": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 3
+    },
+    "SOFTWARE#DESIGN_FEATURES": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "SOFTWARE#GENERAL": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 4
+    },
+    "SOFTWARE#OPERATION_PERFORMANCE": {
+      "f1": 0.17142857142857143,
+      "precision": 0.10714285714285714,
+      "recall": 0.42857142857142855,
+      "support": 7
+    },
+    "SOFTWARE#USABILITY": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "SUPPORT#GENERAL": {
+      "f1": 0.23529411764705882,
+      "precision": 0.16666666666666666,
+      "recall": 0.4,
+      "support": 5
+    },
+    "SUPPORT#QUALITY": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "Screen#Clarity": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 3
+    },
+    "Screen#General": {
+      "f1": 0.37037037037037035,
+      "precision": 0.23809523809523808,
+      "recall": 0.8333333333333334,
+      "support": 6
+    },
+    "Screen#Size": {
+      "f1": 0.25,
+      "precision": 0.25,
+      "recall": 0.25,
+      "support": 4
+    },
+    "Security#Screen Unlock": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 4
+    },
+    "Seller Service#Attitude": {
+      "f1": 0.40625,
+      "precision": 0.3170731707317073,
+      "recall": 0.5652173913043478,
+      "support": 23
+    },
+    "Seller Service#Shipping": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 4
+    },
+    "Seller Service#Timeliness of Seller Service": {
+      "f1": 0.4571428571428571,
+      "precision": 0.38095238095238093,
+      "recall": 0.5714285714285714,
+      "support": 14
+    },
+    "Shooting Functions#General": {
+      "f1": 0.47619047619047616,
+      "precision": 0.45454545454545453,
+      "recall": 0.5,
+      "support": 10
+    },
+    "Shooting Functions#Pixel": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 0
+    },
+    "Signal#Signal General": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "Signal#Signal of Mobile Network": {
+      "f1": 0.48,
+      "precision": 0.4,
+      "recall": 0.6,
+      "support": 10
+    },
+    "Signal#Wifi Signal": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 0
+    },
+    "Smart Connect#Bluetooth Connection": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 0
+    },
+    "Smart Connect#Positioning and GPS": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "System#Application": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 5
+    },
+    "System#Lock Screen Design": {
+      "f1": 0.42105263157894735,
+      "precision": 0.27586206896551724,
+      "recall": 0.8888888888888888,
+      "support": 9
+    },
+    "System#NFC": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "System#Operation Smoothness": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "System#Software Compatibility": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "System#System General": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "System#System Upgrade": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 3
+    },
+    "System#UI Interface Aesthetics": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 3
+    },
+    "Teaching_Setup": {
+      "f1": 0.1818181818181818,
+      "precision": 0.1875,
+      "recall": 0.17647058823529413,
+      "support": 17
+    },
+    "WARRANTY#GENERAL": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "amazon availability": {
+      "f1": 0.3529411764705882,
+      "precision": 0.23076923076923078,
+      "recall": 0.75,
+      "support": 4
+    },
+    "amazon prices": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 0
+    },
+    "ambience general": {
+      "f1": 0.380952380952381,
+      "precision": 0.2891566265060241,
+      "recall": 0.5581395348837209,
+      "support": 43
+    },
+    "assignments comprehensiveness": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "assignments quality": {
+      "f1": 0.21428571428571427,
+      "precision": 0.1875,
+      "recall": 0.25,
+      "support": 12
+    },
+    "assignments relatability": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "course comprehensiveness": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "course general": {
+      "f1": 0.5918367346938775,
+      "precision": 0.46774193548387094,
+      "recall": 0.8055555555555556,
+      "support": 72
+    },
+    "course quality": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 10
+    },
+    "course relatability": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "course value": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "drinks prices": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "drinks quality": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 5
+    },
+    "drinks style_options": {
+      "f1": 0.26666666666666666,
+      "precision": 0.16666666666666666,
+      "recall": 0.6666666666666666,
+      "support": 3
+    },
+    "facilities cleanliness": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "facilities design_features": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "facilities general": {
+      "f1": 0.0909090909090909,
+      "precision": 0.1,
+      "recall": 0.08333333333333333,
+      "support": 12
+    },
+    "facilities prices": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 3
+    },
+    "faculty comprehensiveness": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "faculty general": {
+      "f1": 0.5507246376811594,
+      "precision": 0.4523809523809524,
+      "recall": 0.7037037037037037,
+      "support": 27
+    },
+    "faculty relatability": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "faculty response": {
+      "f1": 0.4,
+      "precision": 0.5,
+      "recall": 0.3333333333333333,
+      "support": 3
+    },
+    "food general": {
+      "f1": 0.3,
+      "precision": 0.24,
+      "recall": 0.4,
+      "support": 45
+    },
+    "food prices": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 6
+    },
+    "food quality": {
+      "f1": 0.5187032418952618,
+      "precision": 0.40784313725490196,
+      "recall": 0.7123287671232876,
+      "support": 146
+    },
+    "food style_options": {
+      "f1": 0.2222222222222222,
+      "precision": 0.21052631578947367,
+      "recall": 0.23529411764705882,
+      "support": 17
+    },
+    "food_drinks prices": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 3
+    },
+    "food_drinks quality": {
+      "f1": 0.39999999999999997,
+      "precision": 0.2727272727272727,
+      "recall": 0.75,
+      "support": 8
+    },
+    "food_drinks style_options": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "grades general": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 3
+    },
+    "hotel cleanliness": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "hotel design_features": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "hotel general": {
+      "f1": 0.27184466019417475,
+      "precision": 0.17721518987341772,
+      "recall": 0.5833333333333334,
+      "support": 24
+    },
+    "hotel prices": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 5
+    },
+    "hotel quality": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "location general": {
+      "f1": 0.6944444444444445,
+      "precision": 0.5813953488372093,
+      "recall": 0.8620689655172413,
+      "support": 29
+    },
+    "material comprehensiveness": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "material quality": {
+      "f1": 0.3448275862068966,
+      "precision": 0.4166666666666667,
+      "recall": 0.29411764705882354,
+      "support": 17
+    },
+    "material quantity": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 5
+    },
+    "polarity negative": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "presentation comprehensiveness": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 4
+    },
+    "presentation quality": {
+      "f1": 0.1739130434782609,
+      "precision": 0.1111111111111111,
+      "recall": 0.4,
+      "support": 5
+    },
+    "presentation quantity": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "presentation relatability": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "restaurant general": {
+      "f1": 0.3404255319148936,
+      "precision": 0.22535211267605634,
+      "recall": 0.6956521739130435,
+      "support": 23
+    },
+    "restaurant miscellaneous": {
+      "f1": 0.6666666666666666,
+      "precision": 1.0,
+      "recall": 0.5,
+      "support": 4
+    },
+    "restaurant prices": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 3
+    },
+    "room_amenities cleanliness": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "room_amenities comfort": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 4
+    },
+    "room_amenities design_features": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "room_amenities general": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 11
+    },
+    "room_amenities prices": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "room_amenities quality": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "rooms cleanliness": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 4
+    },
+    "rooms comfort": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 3
+    },
+    "rooms design_features": {
+      "f1": 0.25000000000000006,
+      "precision": 0.16279069767441862,
+      "recall": 0.5384615384615384,
+      "support": 13
+    },
+    "rooms general": {
+      "f1": 0.19047619047619047,
+      "precision": 0.125,
+      "recall": 0.4,
+      "support": 10
+    },
+    "rooms prices": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 2
+    },
+    "rooms quality": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 4
+    },
+    "service general": {
+      "f1": 0.6070038910505836,
+      "precision": 0.5064935064935064,
+      "recall": 0.7572815533980582,
+      "support": 103
+    },
+    "shipment delivery": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "shipment quality": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 3
+    }
+  },
+  "combined": {
+    "false_negatives": 1545,
+    "false_positives": 2049,
+    "macro_f1": 0.11355062839510469,
+    "micro_f1": 0.3299776286353468,
+    "micro_precision": 0.3016359918200409,
+    "micro_recall": 0.36419753086419754,
+    "true_positives": 885
+  },
+  "explicit": {
+    "false_negatives": 970,
+    "false_positives": 2049,
+    "macro_f1": 0.12000619704992574,
+    "micro_f1": 0.3695969931092087,
+    "micro_precision": 0.3016359918200409,
+    "micro_recall": 0.477088948787062,
+    "true_positives": 885
+  },
+  "explicit_boundary": {
+    "f1": 0.5334441213128376,
+    "false_negatives": 571,
+    "false_positives": 1675,
+    "precision": 0.4339303818857722,
+    "recall": 0.6921832884097036,
+    "true_positives": 1284
+  },
+  "macro_category_universe": [
+    "After-sales Service#Exchange/Warranty/Return",
+    "Appearance Design#Aesthetics General",
+    "Appearance Design#Color",
+    "Appearance Design#Exterior Design Material",
+    "Appearance Design#Fuselage Size",
+    "Appearance Design#Grip Feeling",
+    "Appearance Design#Thickness",
+    "Appearance Design#Weight",
+    "Appearance Design#Workmanship and Texture",
+    "Audio/Sound#Tone quality",
+    "Audio/Sound#Volume and Speaker",
+    "BATTERY#DESIGN_FEATURES",
+    "BATTERY#GENERAL",
+    "BATTERY#OPERATION_PERFORMANCE",
+    "BATTERY#QUALITY",
+    "Battery/Longevity#Battery Capacity",
+    "Battery/Longevity#Battery Life",
+    "Battery/Longevity#Charging Method",
+    "Battery/Longevity#Charging Speed",
+    "Battery/Longevity#General",
+    "Battery/Longevity#Power Consumption Speed",
+    "Battery/Longevity#Standby Time",
+    "Branding/Marketing#Promotional Giveaways",
+    "Buyer Attitude#Loyalty",
+    "Buyer Attitude#Recommendable",
+    "Buyer Attitude#Repurchase and Churn Tendency",
+    "Buyer Attitude#Shopping Experiences",
+    "Buyer Attitude#Shopping Willingness",
+    "COMPANY#GENERAL",
+    "COMPANY#OPERATION_PERFORMANCE",
+    "COMPANY#QUALITY",
+    "CPU#DESIGN_FEATURES",
+    "CPU#GENERAL",
+    "CPU#OPERATION_PERFORMANCE",
+    "CPU#PRICE",
+    "Camera#Fill light",
+    "Camera#Front Camera",
+    "Camera#General",
+    "Camera#Rear Camera",
+    "Course_General_Feedback",
+    "DISPLAY#DESIGN_FEATURES",
+    "DISPLAY#GENERAL",
+    "DISPLAY#OPERATION_PERFORMANCE",
+    "DISPLAY#PRICE",
+    "DISPLAY#QUALITY",
+    "DISPLAY#USABILITY",
+    "Ease of Use#Audience Groups",
+    "Ease of Use#Easy to Use",
+    "FANS&COOLING#GENERAL",
+    "FANS&COOLING#OPERATION_PERFORMANCE",
+    "GRAPHICS#DESIGN_FEATURES",
+    "GRAPHICS#GENERAL",
+    "GRAPHICS#OPERATION_PERFORMANCE",
+    "GRAPHICS#USABILITY",
+    "HARDWARE#DESIGN_FEATURES",
+    "HARDWARE#GENERAL",
+    "HARDWARE#OPERATION_PERFORMANCE",
+    "HARDWARE#QUALITY",
+    "HARDWARE#USABILITY",
+    "HARD_DISC#DESIGN_FEATURES",
+    "HARD_DISC#GENERAL",
+    "HARD_DISC#OPERATION_PERFORMANCE",
+    "HARD_DISC#PRICE",
+    "HARD_DISC#QUALITY",
+    "HARD_DISC#USABILITY",
+    "Instructor",
+    "Intelligent Assistant#Intelligent Assistant General",
+    "KEYBOARD#DESIGN_FEATURES",
+    "KEYBOARD#GENERAL",
+    "KEYBOARD#OPERATION_PERFORMANCE",
+    "KEYBOARD#PRICE",
+    "KEYBOARD#QUALITY",
+    "KEYBOARD#USABILITY",
+    "Key Design#General",
+    "LAPTOP#CONNECTIVITY",
+    "LAPTOP#DESIGN_FEATURES",
+    "LAPTOP#GENERAL",
+    "LAPTOP#MISCELLANEOUS",
+    "LAPTOP#OPERATION_PERFORMANCE",
+    "LAPTOP#PORTABILITY",
+    "LAPTOP#PRICE",
+    "LAPTOP#QUALITY",
+    "LAPTOP#USABILITY",
+    "Logistics#Lost and Damaged",
+    "Logistics#Shipping Fee",
+    "Logistics#Speed",
+    "Logistics#general",
+    "MEMORY#DESIGN_FEATURES",
+    "MEMORY#GENERAL",
+    "MEMORY#OPERATION_PERFORMANCE",
+    "MEMORY#QUALITY",
+    "MEMORY#USABILITY",
+    "MOTHERBOARD#QUALITY",
+    "MOUSE#GENERAL",
+    "MULTIMEDIA_DEVICES#DESIGN_FEATURES",
+    "MULTIMEDIA_DEVICES#GENERAL",
+    "MULTIMEDIA_DEVICES#OPERATION_PERFORMANCE",
+    "MULTIMEDIA_DEVICES#QUALITY",
+    "Mathematical_Related_Concept",
+    "OPTICAL_DRIVES#USABILITY",
+    "OS#DESIGN_FEATURES",
+    "OS#GENERAL",
+    "OS#OPERATION_PERFORMANCE",
+    "OS#USABILITY",
+    "Other",
+    "Out_Of_Scope#GENERAL",
+    "Out_Of_Scope#OPERATION_PERFORMANCE",
+    "Out_Of_Scope#USABILITY",
+    "Overall#Overall",
+    "PORTS#CONNECTIVITY",
+    "PORTS#DESIGN_FEATURES",
+    "PORTS#GENERAL",
+    "PORTS#OPERATION_PERFORMANCE",
+    "PORTS#PORTABILITY",
+    "PORTS#QUALITY",
+    "PORTS#USABILITY",
+    "POWER_SUPPLY#DESIGN_FEATURES",
+    "POWER_SUPPLY#GENERAL",
+    "POWER_SUPPLY#OPERATION_PERFORMANCE",
+    "POWER_SUPPLY#QUALITY",
+    "Performance#General",
+    "Performance#Heat Generation",
+    "Performance#Running Speed",
+    "Price#Price",
+    "Price#Value for Money",
+    "Product Accessories#Cell Phone Film",
+    "Product Accessories#Charger",
+    "Product Accessories#Charging Cable",
+    "Product Accessories#Headphones",
+    "Product Accessories#Phone Cases",
+    "Product Configuration#CPU",
+    "Product Configuration#Memory",
+    "Product Configuration#Operating Memory",
+    "Product Packaging#Completeness of Accessories",
+    "Product Packaging#General",
+    "Product Packaging#Packaging Grade",
+    "Product Packaging#Packaging Materials",
+    "Product Quality#Cleanliness",
+    "Product Quality#Dustproof",
+    "Product Quality#Fall Protection",
+    "Product Quality#General",
+    "Product Quality#Genuine Product",
+    "Product Quality#Water Resistant",
+    "SHIPPING#GENERAL",
+    "SHIPPING#OPERATION_PERFORMANCE",
+    "SHIPPING#QUALITY",
+    "SOFTWARE#DESIGN_FEATURES",
+    "SOFTWARE#GENERAL",
+    "SOFTWARE#OPERATION_PERFORMANCE",
+    "SOFTWARE#PORTABILITY",
+    "SOFTWARE#PRICE",
+    "SOFTWARE#QUALITY",
+    "SOFTWARE#USABILITY",
+    "SUPPORT#GENERAL",
+    "SUPPORT#OPERATION_PERFORMANCE",
+    "SUPPORT#PRICE",
+    "SUPPORT#QUALITY",
+    "Screen#Clarity",
+    "Screen#General",
+    "Screen#Size",
+    "Security#Screen Unlock",
+    "Seller Service#Attitude",
+    "Seller Service#Inventory",
+    "Seller Service#Seller Expertise",
+    "Seller Service#Shipping",
+    "Seller Service#Timeliness of Seller Service",
+    "Shooting Functions#General",
+    "Shooting Functions#Pixel",
+    "Signal#Call Quality",
+    "Signal#Signal General",
+    "Signal#Signal of Mobile Network",
+    "Signal#Wifi Signal",
+    "Smart Connect#Bluetooth Connection",
+    "System#Application",
+    "System#Lock Screen Design",
+    "System#NFC",
+    "System#Operation Smoothness",
+    "System#Software Compatibility",
+    "System#System General",
+    "System#System Upgrade",
+    "System#UI Interface Aesthetics",
+    "Teaching_Setup",
+    "WARRANTY#GENERAL",
+    "amazon availability",
+    "amazon prices",
+    "ambience general",
+    "assignments comprehensiveness",
+    "assignments quality",
+    "assignments quantity",
+    "assignments relatability",
+    "assignments workload",
+    "course comprehensiveness",
+    "course general",
+    "course quality",
+    "course relatability",
+    "course value",
+    "course workload",
+    "drinks prices",
+    "drinks quality",
+    "drinks style_options",
+    "facilities cleanliness",
+    "facilities comfort",
+    "facilities design_features",
+    "facilities general",
+    "facilities miscellaneous",
+    "facilities prices",
+    "facilities quality",
+    "faculty comprehensiveness",
+    "faculty general",
+    "faculty relatability",
+    "faculty response",
+    "faculty value",
+    "food general",
+    "food prices",
+    "food quality",
+    "food recommendation",
+    "food style_options",
+    "food_drinks prices",
+    "food_drinks quality",
+    "food_drinks style_options",
+    "grades general",
+    "hotel cleanliness",
+    "hotel comfort",
+    "hotel design_features",
+    "hotel general",
+    "hotel miscellaneous",
+    "hotel prices",
+    "hotel quality",
+    "location general",
+    "material comprehensiveness",
+    "material quality",
+    "material quantity",
+    "material relatability",
+    "polarity negative",
+    "polarity neutral",
+    "polarity positive",
+    "presentation comprehensiveness",
+    "presentation quality",
+    "presentation quantity",
+    "presentation relatability",
+    "presentation workload",
+    "restaurant general",
+    "restaurant miscellaneous",
+    "restaurant prices",
+    "room_amenities cleanliness",
+    "room_amenities comfort",
+    "room_amenities design_features",
+    "room_amenities general",
+    "room_amenities quality",
+    "rooms cleanliness",
+    "rooms comfort",
+    "rooms design_features",
+    "rooms general",
+    "rooms miscellaneous",
+    "rooms prices",
+    "rooms quality",
+    "service general",
+    "shipment delivery",
+    "shipment prices",
+    "shipment quality"
+  ],
+  "null": {
+    "false_negatives": 575,
+    "false_positives": 0,
+    "macro_f1": 0.0,
+    "micro_f1": 0.0,
+    "micro_precision": 0.0,
+    "micro_recall": 0.0,
+    "true_positives": 0
+  },
+  "null_diagnostics": {
+    "by_rarity": {
+      "frequent_pair": {
+        "correct": 0,
+        "gold": 508,
+        "recall": 0.0
+      },
+      "rare_pair": {
+        "correct": 0,
+        "gold": 50,
+        "recall": 0.0
+      },
+      "unseen_pair": {
+        "correct": 0,
+        "gold": 17,
+        "recall": 0.0
+      }
+    },
+    "by_sentence_scope": {
+      "mixed": {
+        "category_projection": {
+          "false_negatives": 67,
+          "false_positives": 0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "micro_precision": 0.0,
+          "micro_recall": 0.0,
+          "true_positives": 0
+        },
+        "null": {
+          "false_negatives": 67,
+          "false_positives": 0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "micro_precision": 0.0,
+          "micro_recall": 0.0,
+          "true_positives": 0
+        },
+        "sentences": 59
+      },
+      "null_only": {
+        "category_projection": {
+          "false_negatives": 493,
+          "false_positives": 0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "micro_precision": 0.0,
+          "micro_recall": 0.0,
+          "true_positives": 0
+        },
+        "null": {
+          "false_negatives": 508,
+          "false_positives": 0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "micro_precision": 0.0,
+          "micro_recall": 0.0,
+          "true_positives": 0
+        },
+        "sentences": 447
+      },
+      "without_gold_null": {
+        "category_projection": {
+          "false_negatives": 0,
+          "false_positives": 0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "micro_precision": 0.0,
+          "micro_recall": 0.0,
+          "true_positives": 0
+        },
+        "null": {
+          "false_negatives": 0,
+          "false_positives": 0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "micro_precision": 0.0,
+          "micro_recall": 0.0,
+          "true_positives": 0
+        },
+        "sentences": 1680
+      }
+    },
+    "category_projection": {
+      "false_negatives": 560,
+      "false_positives": 0,
+      "macro_f1": 0.0,
+      "micro_f1": 0.0,
+      "micro_precision": 0.0,
+      "micro_recall": 0.0,
+      "true_positives": 0
+    },
+    "errors": {
+      "fp_on_sentence_without_gold_null": 0
+    },
+    "presence": {
+      "false_negatives": 506,
+      "false_positives": 0,
+      "micro_f1": 0.0,
+      "micro_precision": 0.0,
+      "micro_recall": 0.0,
+      "true_positives": 0
+    }
+  },
+  "null_gold": 575,
+  "null_outcome_counts": {
+    "category_missing": 575
+  },
+  "null_threshold": 1.0,
+  "null_threshold_curve": [
+    {
+      "combined": {
+        "false_negatives": 970,
+        "false_positives": 2202769,
+        "micro_f1": 0.0013232674373339969,
+        "micro_precision": 0.0006623631210731734,
+        "micro_recall": 0.6008230452674898,
+        "true_positives": 1460
+      },
+      "null": {
+        "false_negatives": 0,
+        "false_positives": 2200720,
+        "micro_f1": 0.0005222833318951619,
+        "micro_precision": 0.00026120987873047455,
+        "micro_recall": 1.0,
+        "true_positives": 575
+      },
+      "threshold": 0.02
+    },
+    {
+      "combined": {
+        "false_negatives": 996,
+        "false_positives": 1352121,
+        "micro_f1": 0.00211506764455359,
+        "micro_precision": 0.0010594323836120437,
+        "micro_recall": 0.5901234567901235,
+        "true_positives": 1434
+      },
+      "null": {
+        "false_negatives": 26,
+        "false_positives": 1350072,
+        "micro_f1": 0.0008126134180385377,
+        "micro_precision": 0.00040647968601110156,
+        "micro_recall": 0.9547826086956521,
+        "true_positives": 549
+      },
+      "threshold": 0.05
+    },
+    {
+      "combined": {
+        "false_negatives": 1100,
+        "false_positives": 519204,
+        "micro_f1": 0.00508639217995885,
+        "micro_precision": 0.0025550684489389743,
+        "micro_recall": 0.5473251028806584,
+        "true_positives": 1330
+      },
+      "null": {
+        "false_negatives": 130,
+        "false_positives": 517155,
+        "micro_f1": 0.0017175664592077966,
+        "micro_precision": 0.0008597372488408037,
+        "micro_recall": 0.7739130434782608,
+        "true_positives": 445
+      },
+      "threshold": 0.1
+    },
+    {
+      "combined": {
+        "false_negatives": 1217,
+        "false_positives": 329924,
+        "micro_f1": 0.007272901695911166,
+        "micro_precision": 0.0036631364057776693,
+        "micro_recall": 0.4991769547325103,
+        "true_positives": 1213
+      },
+      "null": {
+        "false_negatives": 247,
+        "false_positives": 327875,
+        "micro_f1": 0.0019952673232393895,
+        "micro_precision": 0.0009993814803642867,
+        "micro_recall": 0.5704347826086956,
+        "true_positives": 328
+      },
+      "threshold": 0.12
+    },
+    {
+      "combined": {
+        "false_negatives": 1332,
+        "false_positives": 194619,
+        "micro_f1": 0.011082681039834062,
+        "micro_precision": 0.005610141173224605,
+        "micro_recall": 0.45185185185185184,
+        "true_positives": 1098
+      },
+      "null": {
+        "false_negatives": 362,
+        "false_positives": 192570,
+        "micro_f1": 0.0022031671821181437,
+        "micro_precision": 0.0011048692052722491,
+        "micro_recall": 0.37043478260869567,
+        "true_positives": 213
+      },
+      "threshold": 0.14
+    },
+    {
+      "combined": {
+        "false_negatives": 1448,
+        "false_positives": 79268,
+        "micro_f1": 0.023754233188195452,
+        "micro_precision": 0.012236760124610592,
+        "micro_recall": 0.40411522633744856,
+        "true_positives": 982
+      },
+      "null": {
+        "false_negatives": 478,
+        "false_positives": 77219,
+        "micro_f1": 0.0024906600249066002,
+        "micro_precision": 0.0012545915463810853,
+        "micro_recall": 0.16869565217391305,
+        "true_positives": 97
+      },
+      "threshold": 0.16
+    },
+    {
+      "combined": {
+        "false_negatives": 1515,
+        "false_positives": 29327,
+        "micro_f1": 0.05601126346718903,
+        "micro_precision": 0.030255935454004367,
+        "micro_recall": 0.3765432098765432,
+        "true_positives": 915
+      },
+      "null": {
+        "false_negatives": 545,
+        "false_positives": 27278,
+        "micro_f1": 0.002151848796757881,
+        "micro_precision": 0.001098579170938919,
+        "micro_recall": 0.05217391304347826,
+        "true_positives": 30
+      },
+      "threshold": 0.18
+    },
+    {
+      "combined": {
+        "false_negatives": 1537,
+        "false_positives": 12440,
+        "micro_f1": 0.11330330520839942,
+        "micro_precision": 0.06697667441686042,
+        "micro_recall": 0.36748971193415636,
+        "true_positives": 893
+      },
+      "null": {
+        "false_negatives": 567,
+        "false_positives": 10391,
+        "micro_f1": 0.001457991616548205,
+        "micro_precision": 0.0007693047408404654,
+        "micro_recall": 0.01391304347826087,
+        "true_positives": 8
+      },
+      "threshold": 0.2
+    },
+    {
+      "combined": {
+        "false_negatives": 1542,
+        "false_positives": 6206,
+        "micro_f1": 0.1864762704745905,
+        "micro_precision": 0.12517620524386805,
+        "micro_recall": 0.3654320987654321,
+        "true_positives": 888
+      },
+      "null": {
+        "false_negatives": 572,
+        "false_positives": 4157,
+        "micro_f1": 0.0012671594508975714,
+        "micro_precision": 0.0007211538461538462,
+        "micro_recall": 0.0052173913043478265,
+        "true_positives": 3
+      },
+      "threshold": 0.22
+    },
+    {
+      "combined": {
+        "false_negatives": 1544,
+        "false_positives": 4648,
+        "micro_f1": 0.22250125565042692,
+        "micro_precision": 0.16010119262739428,
+        "micro_recall": 0.36460905349794237,
+        "true_positives": 886
+      },
+      "null": {
+        "false_negatives": 574,
+        "false_positives": 2599,
+        "micro_f1": 0.0006299212598425197,
+        "micro_precision": 0.0003846153846153846,
+        "micro_recall": 0.0017391304347826088,
+        "true_positives": 1
+      },
+      "threshold": 0.24
+    },
+    {
+      "combined": {
+        "false_negatives": 1545,
+        "false_positives": 3869,
+        "micro_f1": 0.24638084632516705,
+        "micro_precision": 0.18615902397980646,
+        "micro_recall": 0.36419753086419754,
+        "true_positives": 885
+      },
+      "null": {
+        "false_negatives": 575,
+        "false_positives": 1820,
+        "micro_f1": 0.0,
+        "micro_precision": 0.0,
+        "micro_recall": 0.0,
+        "true_positives": 0
+      },
+      "threshold": 0.26
+    },
+    {
+      "combined": {
+        "false_negatives": 1545,
+        "false_positives": 3349,
+        "micro_f1": 0.2656062424969988,
+        "micro_precision": 0.20902220122815304,
+        "micro_recall": 0.36419753086419754,
+        "true_positives": 885
+      },
+      "null": {
+        "false_negatives": 575,
+        "false_positives": 1300,
+        "micro_f1": 0.0,
+        "micro_precision": 0.0,
+        "micro_recall": 0.0,
+        "true_positives": 0
+      },
+      "threshold": 0.28
+    },
+    {
+      "combined": {
+        "false_negatives": 1545,
+        "false_positives": 2569,
+        "micro_f1": 0.3008157715839565,
+        "micro_precision": 0.25622466705269253,
+        "micro_recall": 0.36419753086419754,
+        "true_positives": 885
+      },
+      "null": {
+        "false_negatives": 575,
+        "false_positives": 520,
+        "micro_f1": 0.0,
+        "micro_precision": 0.0,
+        "micro_recall": 0.0,
+        "true_positives": 0
+      },
+      "threshold": 0.3
+    },
+    {
+      "combined": {
+        "false_negatives": 1545,
+        "false_positives": 2309,
+        "micro_f1": 0.3147226173541963,
+        "micro_precision": 0.2770820288040075,
+        "micro_recall": 0.36419753086419754,
+        "true_positives": 885
+      },
+      "null": {
+        "false_negatives": 575,
+        "false_positives": 260,
+        "micro_f1": 0.0,
+        "micro_precision": 0.0,
+        "micro_recall": 0.0,
+        "true_positives": 0
+      },
+      "threshold": 0.32
+    },
+    {
+      "combined": {
+        "false_negatives": 1545,
+        "false_positives": 2049,
+        "micro_f1": 0.32997762863534674,
+        "micro_precision": 0.3016359918200409,
+        "micro_recall": 0.36419753086419754,
+        "true_positives": 885
+      },
+      "null": {
+        "false_negatives": 575,
+        "false_positives": 0,
+        "micro_f1": 0.0,
+        "micro_precision": 0.0,
+        "micro_recall": 0.0,
+        "true_positives": 0
+      },
+      "threshold": 0.34
+    },
+    {
+      "combined": {
+        "false_negatives": 1545,
+        "false_positives": 2049,
+        "micro_f1": 0.32997762863534674,
+        "micro_precision": 0.3016359918200409,
+        "micro_recall": 0.36419753086419754,
+        "true_positives": 885
+      },
+      "null": {
+        "false_negatives": 575,
+        "false_positives": 0,
+        "micro_f1": 0.0,
+        "micro_precision": 0.0,
+        "micro_recall": 0.0,
+        "true_positives": 0
+      },
+      "threshold": 0.36
+    },
+    {
+      "combined": {
+        "false_negatives": 1545,
+        "false_positives": 2049,
+        "micro_f1": 0.32997762863534674,
+        "micro_precision": 0.3016359918200409,
+        "micro_recall": 0.36419753086419754,
+        "true_positives": 885
+      },
+      "null": {
+        "false_negatives": 575,
+        "false_positives": 0,
+        "micro_f1": 0.0,
+        "micro_precision": 0.0,
+        "micro_recall": 0.0,
+        "true_positives": 0
+      },
+      "threshold": 0.38
+    },
+    {
+      "combined": {
+        "false_negatives": 1545,
+        "false_positives": 2049,
+        "micro_f1": 0.32997762863534674,
+        "micro_precision": 0.3016359918200409,
+        "micro_recall": 0.36419753086419754,
+        "true_positives": 885
+      },
+      "null": {
+        "false_negatives": 575,
+        "false_positives": 0,
+        "micro_f1": 0.0,
+        "micro_precision": 0.0,
+        "micro_recall": 0.0,
+        "true_positives": 0
+      },
+      "threshold": 0.4
+    },
+    {
+      "combined": {
+        "false_negatives": 1545,
+        "false_positives": 2049,
+        "micro_f1": 0.32997762863534674,
+        "micro_precision": 0.3016359918200409,
+        "micro_recall": 0.36419753086419754,
+        "true_positives": 885
+      },
+      "null": {
+        "false_negatives": 575,
+        "false_positives": 0,
+        "micro_f1": 0.0,
+        "micro_precision": 0.0,
+        "micro_recall": 0.0,
+        "true_positives": 0
+      },
+      "threshold": 0.45
+    },
+    {
+      "combined": {
+        "false_negatives": 1545,
+        "false_positives": 2049,
+        "micro_f1": 0.32997762863534674,
+        "micro_precision": 0.3016359918200409,
+        "micro_recall": 0.36419753086419754,
+        "true_positives": 885
+      },
+      "null": {
+        "false_negatives": 575,
+        "false_positives": 0,
+        "micro_f1": 0.0,
+        "micro_precision": 0.0,
+        "micro_recall": 0.0,
+        "true_positives": 0
+      },
+      "threshold": 0.5
+    },
+    {
+      "combined": {
+        "false_negatives": 1545,
+        "false_positives": 2049,
+        "micro_f1": 0.32997762863534674,
+        "micro_precision": 0.3016359918200409,
+        "micro_recall": 0.36419753086419754,
+        "true_positives": 885
+      },
+      "null": {
+        "false_negatives": 575,
+        "false_positives": 0,
+        "micro_f1": 0.0,
+        "micro_precision": 0.0,
+        "micro_recall": 0.0,
+        "true_positives": 0
+      },
+      "threshold": 0.6
+    },
+    {
+      "combined": {
+        "false_negatives": 1545,
+        "false_positives": 2049,
+        "micro_f1": 0.32997762863534674,
+        "micro_precision": 0.3016359918200409,
+        "micro_recall": 0.36419753086419754,
+        "true_positives": 885
+      },
+      "null": {
+        "false_negatives": 575,
+        "false_positives": 0,
+        "micro_f1": 0.0,
+        "micro_precision": 0.0,
+        "micro_recall": 0.0,
+        "true_positives": 0
+      },
+      "threshold": 0.8
+    },
+    {
+      "combined": {
+        "false_negatives": 1545,
+        "false_positives": 2049,
+        "micro_f1": 0.32997762863534674,
+        "micro_precision": 0.3016359918200409,
+        "micro_recall": 0.36419753086419754,
+        "true_positives": 885
+      },
+      "null": {
+        "false_negatives": 575,
+        "false_positives": 0,
+        "micro_f1": 0.0,
+        "micro_precision": 0.0,
+        "micro_recall": 0.0,
+        "true_positives": 0
+      },
+      "threshold": 1.0
+    }
+  ],
+  "null_unseen_category_gold": 0,
+  "num_examples": 2186,
+  "per_domain": {
+    "coursera": {
+      "components": {
+        "aspect_plus_sentiment": {
+          "f1": 0.5625,
+          "false_negatives": 56,
+          "false_positives": 126,
+          "precision": 0.48148148148148145,
+          "recall": 0.6763005780346821,
+          "true_positives": 117
+        },
+        "aspect_span": {
+          "f1": 0.6153846153846154,
+          "false_negatives": 45,
+          "false_positives": 115,
+          "precision": 0.5267489711934157,
+          "recall": 0.7398843930635838,
+          "true_positives": 128
+        },
+        "full_exact_triplet": {
+          "f1": 0.4230769230769231,
+          "false_negatives": 85,
+          "false_positives": 155,
+          "precision": 0.36213991769547327,
+          "recall": 0.5086705202312138,
+          "true_positives": 88
+        },
+        "gold_category_coverage": 1.0,
+        "gold_triplets": 173,
+        "source_known_exact_triplet": {
+          "f1": 0.4230769230769231,
+          "false_negatives": 85,
+          "false_positives": 155,
+          "precision": 0.36213991769547327,
+          "recall": 0.5086705202312138,
+          "true_positives": 88
+        },
+        "source_known_gold_triplets": 173,
+        "term_plus_category": {
+          "f1": 0.44711538461538464,
+          "false_negatives": 80,
+          "false_positives": 150,
+          "precision": 0.38271604938271603,
+          "recall": 0.5375722543352601,
+          "true_positives": 93
+        },
+        "unseen_categories": [],
+        "unseen_category_count": 0,
+        "unseen_gold_triplets": 0
+      },
+      "explicit": {
+        "false_negatives": 85,
+        "false_positives": 155,
+        "macro_f1": 0.009011133132448569,
+        "micro_f1": 0.4230769230769231,
+        "micro_precision": 0.36213991769547327,
+        "micro_recall": 0.5086705202312138,
+        "true_positives": 88
+      },
+      "null": {
+        "false_negatives": 104,
+        "false_positives": 0,
+        "macro_f1": 0.0,
+        "micro_f1": 0.0,
+        "micro_precision": 0.0,
+        "micro_recall": 0.0,
+        "true_positives": 0
+      },
+      "primary_outcome_counts": {
+        "category": 35,
+        "correct": 88,
+        "sentiment": 5,
+        "term": 45
+      }
+    },
+    "food": {
+      "components": {
+        "aspect_plus_sentiment": {
+          "f1": 0.37914691943127965,
+          "false_negatives": 22,
+          "false_positives": 109,
+          "precision": 0.2684563758389262,
+          "recall": 0.6451612903225806,
+          "true_positives": 40
+        },
+        "aspect_span": {
+          "f1": 0.4075829383886256,
+          "false_negatives": 19,
+          "false_positives": 106,
+          "precision": 0.28859060402684567,
+          "recall": 0.6935483870967742,
+          "true_positives": 43
+        },
+        "full_exact_triplet": {
+          "f1": 0.24644549763033174,
+          "false_negatives": 36,
+          "false_positives": 123,
+          "precision": 0.174496644295302,
+          "recall": 0.41935483870967744,
+          "true_positives": 26
+        },
+        "gold_category_coverage": 1.0,
+        "gold_triplets": 62,
+        "source_known_exact_triplet": {
+          "f1": 0.24644549763033174,
+          "false_negatives": 36,
+          "false_positives": 123,
+          "precision": 0.174496644295302,
+          "recall": 0.41935483870967744,
+          "true_positives": 26
+        },
+        "source_known_gold_triplets": 62,
+        "term_plus_category": {
+          "f1": 0.26540284360189575,
+          "false_negatives": 34,
+          "false_positives": 121,
+          "precision": 0.18791946308724833,
+          "recall": 0.45161290322580644,
+          "true_positives": 28
+        },
+        "unseen_categories": [],
+        "unseen_category_count": 0,
+        "unseen_gold_triplets": 0
+      },
+      "explicit": {
+        "false_negatives": 36,
+        "false_positives": 123,
+        "macro_f1": 0.0035950535950535945,
+        "micro_f1": 0.24644549763033174,
+        "micro_precision": 0.174496644295302,
+        "micro_recall": 0.41935483870967744,
+        "true_positives": 26
+      },
+      "null": {
+        "false_negatives": 182,
+        "false_positives": 0,
+        "macro_f1": 0.0,
+        "micro_f1": 0.0,
+        "micro_precision": 0.0,
+        "micro_recall": 0.0,
+        "true_positives": 0
+      },
+      "primary_outcome_counts": {
+        "category": 15,
+        "correct": 26,
+        "sentiment": 2,
+        "term": 19
+      }
+    },
+    "hotel": {
+      "components": {
+        "aspect_plus_sentiment": {
+          "f1": 0.45871559633027514,
+          "false_negatives": 57,
+          "false_positives": 238,
+          "precision": 0.3443526170798898,
+          "recall": 0.6868131868131868,
+          "true_positives": 125
+        },
+        "aspect_span": {
+          "f1": 0.4880733944954128,
+          "false_negatives": 49,
+          "false_positives": 230,
+          "precision": 0.36639118457300274,
+          "recall": 0.7307692307692307,
+          "true_positives": 133
+        },
+        "full_exact_triplet": {
+          "f1": 0.3192660550458716,
+          "false_negatives": 95,
+          "false_positives": 276,
+          "precision": 0.2396694214876033,
+          "recall": 0.47802197802197804,
+          "true_positives": 87
+        },
+        "gold_category_coverage": 0.989010989010989,
+        "gold_triplets": 182,
+        "source_known_exact_triplet": {
+          "f1": 0.3204419889502762,
+          "false_negatives": 93,
+          "false_positives": 276,
+          "precision": 0.2396694214876033,
+          "recall": 0.48333333333333334,
+          "true_positives": 87
+        },
+        "source_known_gold_triplets": 180,
+        "term_plus_category": {
+          "f1": 0.344954128440367,
+          "false_negatives": 88,
+          "false_positives": 269,
+          "precision": 0.25895316804407714,
+          "recall": 0.5164835164835165,
+          "true_positives": 94
+        },
+        "unseen_categories": [
+          "room_amenities prices"
+        ],
+        "unseen_category_count": 1,
+        "unseen_gold_triplets": 2
+      },
+      "explicit": {
+        "false_negatives": 95,
+        "false_positives": 276,
+        "macro_f1": 0.009810603443092196,
+        "micro_f1": 0.3192660550458716,
+        "micro_precision": 0.2396694214876033,
+        "micro_recall": 0.47802197802197804,
+        "true_positives": 87
+      },
+      "null": {
+        "false_negatives": 68,
+        "false_positives": 0,
+        "macro_f1": 0.0,
+        "micro_f1": 0.0,
+        "micro_precision": 0.0,
+        "micro_recall": 0.0,
+        "true_positives": 0
+      },
+      "primary_outcome_counts": {
+        "category": 39,
+        "correct": 87,
+        "sentiment": 7,
+        "term": 49
+      }
+    },
+    "laptop": {
+      "components": {
+        "aspect_plus_sentiment": {
+          "f1": 0.5920471281296024,
+          "false_negatives": 84,
+          "false_positives": 193,
+          "precision": 0.5101522842639594,
+          "recall": 0.7052631578947368,
+          "true_positives": 201
+        },
+        "aspect_span": {
+          "f1": 0.6745213549337261,
+          "false_negatives": 56,
+          "false_positives": 165,
+          "precision": 0.5812182741116751,
+          "recall": 0.8035087719298246,
+          "true_positives": 229
+        },
+        "full_exact_triplet": {
+          "f1": 0.27982326951399117,
+          "false_negatives": 190,
+          "false_positives": 299,
+          "precision": 0.24111675126903553,
+          "recall": 0.3333333333333333,
+          "true_positives": 95
+        },
+        "gold_category_coverage": 0.9754385964912281,
+        "gold_triplets": 285,
+        "source_known_exact_triplet": {
+          "f1": 0.28273809523809523,
+          "false_negatives": 183,
+          "false_positives": 299,
+          "precision": 0.24111675126903553,
+          "recall": 0.34172661870503596,
+          "true_positives": 95
+        },
+        "source_known_gold_triplets": 278,
+        "term_plus_category": {
+          "f1": 0.30633284241531666,
+          "false_negatives": 181,
+          "false_positives": 290,
+          "precision": 0.2639593908629442,
+          "recall": 0.3649122807017544,
+          "true_positives": 104
+        },
+        "unseen_categories": [
+          "COMPANY#DESIGN_FEATURES",
+          "HARD_DISC#MISCELLANEOUS",
+          "KEYBOARD#PORTABILITY",
+          "MOUSE#DESIGN_FEATURES",
+          "MULTIMEDIA_DEVICES#CONNECTIVITY",
+          "OPTICAL_DRIVES#GENERAL",
+          "OS#PRICE"
+        ],
+        "unseen_category_count": 7,
+        "unseen_gold_triplets": 7
+      },
+      "explicit": {
+        "false_negatives": 190,
+        "false_positives": 299,
+        "macro_f1": 0.02475147825659657,
+        "micro_f1": 0.27982326951399117,
+        "micro_precision": 0.24111675126903553,
+        "micro_recall": 0.3333333333333333,
+        "true_positives": 95
+      },
+      "null": {
+        "false_negatives": 78,
+        "false_positives": 0,
+        "macro_f1": 0.0,
+        "micro_f1": 0.0,
+        "micro_precision": 0.0,
+        "micro_recall": 0.0,
+        "true_positives": 0
+      },
+      "primary_outcome_counts": {
+        "category": 125,
+        "correct": 95,
+        "sentiment": 9,
+        "term": 56
+      }
+    },
+    "phone": {
+      "components": {
+        "aspect_plus_sentiment": {
+          "f1": 0.45865633074935397,
+          "false_negatives": 245,
+          "false_positives": 593,
+          "precision": 0.3744725738396624,
+          "recall": 0.5916666666666667,
+          "true_positives": 355
+        },
+        "aspect_span": {
+          "f1": 0.4760672703751617,
+          "false_negatives": 232,
+          "false_positives": 578,
+          "precision": 0.3890063424947146,
+          "recall": 0.6133333333333333,
+          "true_positives": 368
+        },
+        "full_exact_triplet": {
+          "f1": 0.38734667527437056,
+          "false_negatives": 300,
+          "false_positives": 649,
+          "precision": 0.31612223393045313,
+          "recall": 0.5,
+          "true_positives": 300
+        },
+        "gold_category_coverage": 0.9983333333333333,
+        "gold_triplets": 600,
+        "source_known_exact_triplet": {
+          "f1": 0.3875968992248062,
+          "false_negatives": 299,
+          "false_positives": 649,
+          "precision": 0.31612223393045313,
+          "recall": 0.5008347245409015,
+          "true_positives": 300
+        },
+        "source_known_gold_triplets": 599,
+        "term_plus_category": {
+          "f1": 0.4007756948933419,
+          "false_negatives": 290,
+          "false_positives": 637,
+          "precision": 0.3273495248152059,
+          "recall": 0.5166666666666667,
+          "true_positives": 310
+        },
+        "unseen_categories": [
+          "Smart Connect#Positioning and GPS"
+        ],
+        "unseen_category_count": 1,
+        "unseen_gold_triplets": 1
+      },
+      "explicit": {
+        "false_negatives": 300,
+        "false_positives": 649,
+        "macro_f1": 0.06482999627606312,
+        "micro_f1": 0.38734667527437056,
+        "micro_precision": 0.31612223393045313,
+        "micro_recall": 0.5,
+        "true_positives": 300
+      },
+      "null": {
+        "false_negatives": 0,
+        "false_positives": 0,
+        "macro_f1": 0.0,
+        "micro_f1": 0.0,
+        "micro_precision": 0.0,
+        "micro_recall": 0.0,
+        "true_positives": 0
+      },
+      "primary_outcome_counts": {
+        "category": 58,
+        "correct": 300,
+        "sentiment": 10,
+        "term": 232
+      }
+    },
+    "restaurant": {
+      "components": {
+        "aspect_plus_sentiment": {
+          "f1": 0.6200274348422496,
+          "false_negatives": 85,
+          "false_positives": 192,
+          "precision": 0.5406698564593302,
+          "recall": 0.7266881028938906,
+          "true_positives": 226
+        },
+        "aspect_span": {
+          "f1": 0.6995884773662552,
+          "false_negatives": 56,
+          "false_positives": 163,
+          "precision": 0.6100478468899522,
+          "recall": 0.819935691318328,
+          "true_positives": 255
+        },
+        "full_exact_triplet": {
+          "f1": 0.5349794238683128,
+          "false_negatives": 116,
+          "false_positives": 223,
+          "precision": 0.4665071770334928,
+          "recall": 0.6270096463022508,
+          "true_positives": 195
+        },
+        "gold_category_coverage": 1.0,
+        "gold_triplets": 311,
+        "source_known_exact_triplet": {
+          "f1": 0.5349794238683128,
+          "false_negatives": 116,
+          "false_positives": 223,
+          "precision": 0.4665071770334928,
+          "recall": 0.6270096463022508,
+          "true_positives": 195
+        },
+        "source_known_gold_triplets": 311,
+        "term_plus_category": {
+          "f1": 0.6090534979423868,
+          "false_negatives": 89,
+          "false_positives": 196,
+          "precision": 0.5311004784688995,
+          "recall": 0.7138263665594855,
+          "true_positives": 222
+        },
+        "unseen_categories": [],
+        "unseen_category_count": 0,
+        "unseen_gold_triplets": 0
+      },
+      "explicit": {
+        "false_negatives": 116,
+        "false_positives": 223,
+        "macro_f1": 0.016059438524672405,
+        "micro_f1": 0.5349794238683128,
+        "micro_precision": 0.4665071770334928,
+        "micro_recall": 0.6270096463022508,
+        "true_positives": 195
+      },
+      "null": {
+        "false_negatives": 97,
+        "false_positives": 0,
+        "macro_f1": 0.0,
+        "micro_f1": 0.0,
+        "micro_precision": 0.0,
+        "micro_recall": 0.0,
+        "true_positives": 0
+      },
+      "primary_outcome_counts": {
+        "category": 33,
+        "correct": 195,
+        "sentiment": 27,
+        "term": 56
+      }
+    },
+    "sight": {
+      "components": {
+        "aspect_plus_sentiment": {
+          "f1": 0.33939393939393936,
+          "false_negatives": 130,
+          "false_positives": 306,
+          "precision": 0.2679425837320574,
+          "recall": 0.4628099173553719,
+          "true_positives": 112
+        },
+        "aspect_span": {
+          "f1": 0.3878787878787878,
+          "false_negatives": 114,
+          "false_positives": 290,
+          "precision": 0.3062200956937799,
+          "recall": 0.5289256198347108,
+          "true_positives": 128
+        },
+        "full_exact_triplet": {
+          "f1": 0.28484848484848485,
+          "false_negatives": 148,
+          "false_positives": 324,
+          "precision": 0.22488038277511962,
+          "recall": 0.3884297520661157,
+          "true_positives": 94
+        },
+        "gold_category_coverage": 1.0,
+        "gold_triplets": 242,
+        "source_known_exact_triplet": {
+          "f1": 0.28484848484848485,
+          "false_negatives": 148,
+          "false_positives": 324,
+          "precision": 0.22488038277511962,
+          "recall": 0.3884297520661157,
+          "true_positives": 94
+        },
+        "source_known_gold_triplets": 242,
+        "term_plus_category": {
+          "f1": 0.3212121212121212,
+          "false_negatives": 136,
+          "false_positives": 312,
+          "precision": 0.2535885167464115,
+          "recall": 0.4380165289256198,
+          "true_positives": 106
+        },
+        "unseen_categories": [],
+        "unseen_category_count": 0,
+        "unseen_gold_triplets": 0
+      },
+      "explicit": {
+        "false_negatives": 148,
+        "false_positives": 324,
+        "macro_f1": 0.00558701818119982,
+        "micro_f1": 0.28484848484848485,
+        "micro_precision": 0.22488038277511962,
+        "micro_recall": 0.3884297520661157,
+        "true_positives": 94
+      },
+      "null": {
+        "false_negatives": 46,
+        "false_positives": 0,
+        "macro_f1": 0.0,
+        "micro_f1": 0.0,
+        "micro_precision": 0.0,
+        "micro_recall": 0.0,
+        "true_positives": 0
+      },
+      "primary_outcome_counts": {
+        "category": 22,
+        "correct": 94,
+        "sentiment": 12,
+        "term": 114
+      }
+    }
+  },
+  "scope": "Eligible explicit annotations and deduplicated NULL; other annotation exclusions remain. Not full-annotation TASD.",
+  "selection_metric": "combined",
+  "sentiment_by_label": {
+    "negative": {
+      "f1": 0.29056603773584905,
+      "precision": 0.23655913978494625,
+      "recall": 0.3765281173594132,
+      "support": 409
+    },
+    "neutral": {
+      "f1": 0.14849187935034802,
+      "precision": 0.12307692307692308,
+      "recall": 0.1871345029239766,
+      "support": 171
+    },
+    "positive": {
+      "f1": 0.4238932686476652,
+      "precision": 0.3455264458724666,
+      "recall": 0.548235294117647,
+      "support": 1275
+    }
+  },
+  "taxonomy": {
+    "by_rarity": [
+      {
+        "error_rate": 1.0,
+        "gold_triplets": 10,
+        "primary_outcome_counts": {
+          "category": 9,
+          "correct": 0,
+          "sentiment": 0,
+          "term": 1
+        },
+        "rarity": "unseen"
+      },
+      {
+        "error_rate": 0.9857142857142858,
+        "gold_triplets": 70,
+        "primary_outcome_counts": {
+          "category": 35,
+          "correct": 1,
+          "sentiment": 0,
+          "term": 34
+        },
+        "rarity": "rare"
+      },
+      {
+        "error_rate": 0.875,
+        "gold_triplets": 176,
+        "primary_outcome_counts": {
+          "category": 75,
+          "correct": 22,
+          "sentiment": 3,
+          "term": 76
+        },
+        "rarity": "low"
+      },
+      {
+        "error_rate": 0.5627240143369175,
+        "gold_triplets": 558,
+        "primary_outcome_counts": {
+          "category": 122,
+          "correct": 244,
+          "sentiment": 15,
+          "term": 177
+        },
+        "rarity": "medium"
+      },
+      {
+        "error_rate": 0.40634005763688763,
+        "gold_triplets": 1041,
+        "primary_outcome_counts": {
+          "category": 86,
+          "correct": 618,
+          "sentiment": 54,
+          "term": 283
+        },
+        "rarity": "frequent"
+      }
+    ],
+    "by_source_seen": [
+      {
+        "error_rate": 0.5203252032520325,
+        "gold_triplets": 1845,
+        "primary_outcome_counts": {
+          "category": 318,
+          "correct": 885,
+          "sentiment": 72,
+          "term": 570
+        },
+        "source_category_seen": true
+      },
+      {
+        "error_rate": 1.0,
+        "gold_triplets": 10,
+        "primary_outcome_counts": {
+          "category": 9,
+          "correct": 0,
+          "sentiment": 0,
+          "term": 1
+        },
+        "source_category_seen": false
+      }
+    ],
+    "category_mismatch_with_correct_term_sentiment": 291,
+    "conditional_accuracy": {
+      "category_on_matched_term": {
+        "accuracy": 0.7453271028037384,
+        "correct": 957,
+        "denominator": 1284
+      },
+      "sentiment_on_matched_term": {
+        "accuracy": 0.9158878504672897,
+        "correct": 1176,
+        "denominator": 1284
+      },
+      "sentiment_on_matched_term_and_category": {
+        "accuracy": 0.9247648902821317,
+        "correct": 885,
+        "denominator": 957
+      }
+    },
+    "duplicate_counts": {
+      "gold": 0,
+      "predicted": 25
+    },
+    "examples": 2186,
+    "gold_triplets": 1855,
+    "metrics": {
+      "aspect_plus_sentiment": {
+        "f1": 0.49122807017543857,
+        "false_negatives": 679,
+        "false_positives": 1757,
+        "precision": 0.4009546539379475,
+        "recall": 0.6339622641509434,
+        "true_positives": 1176
+      },
+      "aspect_span": {
+        "f1": 0.5365649811951526,
+        "false_negatives": 571,
+        "false_positives": 1647,
+        "precision": 0.43807574206755373,
+        "recall": 0.6921832884097036,
+        "true_positives": 1284
+      },
+      "full_exact_triplet": {
+        "f1": 0.3695969931092087,
+        "false_negatives": 970,
+        "false_positives": 2049,
+        "precision": 0.3016359918200409,
+        "recall": 0.477088948787062,
+        "true_positives": 885
+      },
+      "gold_category_coverage": 0.9946091644204852,
+      "gold_triplets": 1855,
+      "source_known_exact_triplet": {
+        "f1": 0.37037037037037035,
+        "false_negatives": 960,
+        "false_positives": 2049,
+        "precision": 0.3016359918200409,
+        "recall": 0.4796747967479675,
+        "true_positives": 885
+      },
+      "source_known_gold_triplets": 1845,
+      "term_plus_category": {
+        "f1": 0.3998328807186129,
+        "false_negatives": 898,
+        "false_positives": 1975,
+        "precision": 0.32639836289222374,
+        "recall": 0.5159029649595688,
+        "true_positives": 957
+      },
+      "unseen_categories": [
+        "COMPANY#DESIGN_FEATURES",
+        "HARD_DISC#MISCELLANEOUS",
+        "KEYBOARD#PORTABILITY",
+        "MOUSE#DESIGN_FEATURES",
+        "MULTIMEDIA_DEVICES#CONNECTIVITY",
+        "OPTICAL_DRIVES#GENERAL",
+        "OS#PRICE",
+        "Smart Connect#Positioning and GPS",
+        "room_amenities prices"
+      ],
+      "unseen_category_count": 9,
+      "unseen_gold_triplets": 10
+    },
+    "notes": {
+      "conditional_flags": "Membership accuracy over unique gold triplets; multiple predictions on a term may satisfy different flags.",
+      "confusion": "Conditional on exact term; exact triplet then same category then lexicographic selection.",
+      "duplicates": "Counted separately and removed from scores and primary outcomes.",
+      "frequencies": "Eligible source training triplets only; unseen=0, rare=1-5, low=6-20, medium=21-100, frequent>100.",
+      "matching": "Exact, case-sensitive surface strings; repeated occurrences require offsets.",
+      "primary_error": "First failed component, with independent flags for other component failures."
+    },
+    "prediction_counts": {
+      "incorrect_label_triplets_on_gold_term": 399,
+      "incorrect_triplets": 2049,
+      "spurious_aspects": 1647,
+      "spurious_triplets": 1650,
+      "unique_triplets": 2934
+    },
+    "primary_outcome_counts": {
+      "category": 327,
+      "correct": 885,
+      "sentiment": 72,
+      "term": 571
+    },
+    "schema_version": 1,
+    "sentiment_confusion": {
+      "chosen_prediction_accuracy": {
+        "accuracy": 0.9158878504672897,
+        "correct": 1176,
+        "denominator": 1284
+      },
+      "labels": [
+        "negative",
+        "neutral",
+        "positive"
+      ],
+      "matched_gold": 1284,
+      "matrix": [
+        [
+          249,
+          8,
+          20
+        ],
+        [
+          20,
+          40,
+          28
+        ],
+        [
+          19,
+          13,
+          887
+        ]
+      ],
+      "unmatched_gold": 571
+    }
+  },
+  "unweighted_loss": 1.9135798137056501,
+  "unweighted_loss_by_head": {
+    "bio": 0.1779413325973515,
+    "category": 1.3265913733335442,
+    "null": 0.07401809976961538,
+    "sentiment": 0.33502900800513913
+  }
+}

@@ -1,0 +1,301 @@
+﻿study,role,trial_id,seed,rarity,eligible_gold,error_rate,category,correct,sentiment,term
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,123,unseen,14,1.0,7,0,0,7
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,123,rare,180,0.9944444444444445,119,1,0,60
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,123,low,359,0.8662952646239555,169,48,6,136
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,123,medium,1113,0.5283018867924528,216,525,39,333
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,123,frequent,2062,0.3797284190106692,138,1279,94,551
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,13,unseen,14,1.0,7,0,0,7
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,13,rare,180,0.9777777777777777,113,4,1,62
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,13,low,359,0.8467966573816156,173,55,4,127
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,13,medium,1113,0.5471698113207547,207,504,42,360
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,13,frequent,2062,0.3739088263821533,132,1291,107,532
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,2024,unseen,14,1.0,7,0,0,7
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,2024,rare,180,0.9722222222222222,108,5,1,66
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,2024,low,359,0.8857938718662952,180,41,3,135
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,2024,medium,1113,0.5633423180592991,218,486,42,367
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,2024,frequent,2062,0.4034917555771096,123,1230,100,609
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,42,unseen,14,1.0,7,0,0,7
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,42,rare,180,0.9833333333333333,109,3,1,67
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,42,low,359,0.8635097493036212,166,49,6,138
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,42,medium,1113,0.5588499550763701,213,491,44,365
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,42,frequent,2062,0.3918525703200776,128,1254,103,577
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,777,unseen,14,1.0,6,0,0,8
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,777,rare,180,0.9944444444444445,104,1,1,74
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,777,low,359,0.8495821727019499,168,54,5,132
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,777,medium,1113,0.5453728661275832,211,506,42,354
+Quick tuning,Best NULL off,mixed_025_da1a88a51a5f,777,frequent,2062,0.4000969932104753,112,1237,100,613
+Quick tuning,Best NULL on,mixed_025_d578b358d050,123,unseen,10,1.0,5,0,0,5
+Quick tuning,Best NULL on,mixed_025_d578b358d050,123,rare,117,0.9658119658119658,81,4,1,31
+Quick tuning,Best NULL on,mixed_025_d578b358d050,123,low,347,0.8587896253602305,161,49,5,132
+Quick tuning,Best NULL on,mixed_025_d578b358d050,123,medium,1062,0.5574387947269304,231,470,35,326
+Quick tuning,Best NULL on,mixed_025_d578b358d050,123,frequent,2192,0.3882299270072993,161,1341,100,590
+Quick tuning,Best NULL on,mixed_025_d578b358d050,13,unseen,10,1.0,3,0,0,7
+Quick tuning,Best NULL on,mixed_025_d578b358d050,13,rare,117,0.9658119658119658,77,4,1,35
+Quick tuning,Best NULL on,mixed_025_d578b358d050,13,low,347,0.8789625360230547,165,42,6,134
+Quick tuning,Best NULL on,mixed_025_d578b358d050,13,medium,1062,0.5659133709981168,244,461,30,327
+Quick tuning,Best NULL on,mixed_025_d578b358d050,13,frequent,2192,0.38275547445255476,167,1353,116,556
+Quick tuning,Best NULL on,mixed_025_d578b358d050,2024,unseen,10,1.0,4,0,0,6
+Quick tuning,Best NULL on,mixed_025_d578b358d050,2024,rare,117,0.9658119658119658,71,4,1,41
+Quick tuning,Best NULL on,mixed_025_d578b358d050,2024,low,347,0.8760806916426513,157,43,6,141
+Quick tuning,Best NULL on,mixed_025_d578b358d050,2024,medium,1062,0.5856873822975518,231,440,32,359
+Quick tuning,Best NULL on,mixed_025_d578b358d050,2024,frequent,2192,0.41286496350364965,161,1287,112,632
+Quick tuning,Best NULL on,mixed_025_d578b358d050,42,unseen,10,1.0,5,0,0,5
+Quick tuning,Best NULL on,mixed_025_d578b358d050,42,rare,117,0.9743589743589743,74,3,0,40
+Quick tuning,Best NULL on,mixed_025_d578b358d050,42,low,347,0.8789625360230547,157,42,6,142
+Quick tuning,Best NULL on,mixed_025_d578b358d050,42,medium,1062,0.57909604519774,231,447,37,347
+Quick tuning,Best NULL on,mixed_025_d578b358d050,42,frequent,2192,0.4014598540145985,169,1312,105,606
+Quick tuning,Best NULL on,mixed_025_d578b358d050,777,unseen,10,1.0,4,0,0,6
+Quick tuning,Best NULL on,mixed_025_d578b358d050,777,rare,117,0.9829059829059829,81,2,1,33
+Quick tuning,Best NULL on,mixed_025_d578b358d050,777,low,347,0.8501440922190202,164,52,3,128
+Quick tuning,Best NULL on,mixed_025_d578b358d050,777,medium,1062,0.588512241054614,237,437,33,355
+Quick tuning,Best NULL on,mixed_025_d578b358d050,777,frequent,2192,0.39507299270072993,155,1326,99,612
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,123,unseen,10,1.0,5,0,0,5
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,123,rare,117,0.9829059829059829,80,2,1,34
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,123,low,347,0.8703170028818443,163,45,3,136
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,123,medium,1062,0.5612052730696798,229,466,34,333
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,123,frequent,2192,0.38640510948905105,162,1345,100,585
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,13,unseen,10,1.0,3,0,0,7
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,13,rare,117,0.9658119658119658,77,4,1,35
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,13,low,347,0.8760806916426513,164,43,4,136
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,13,medium,1062,0.5677966101694916,242,459,30,331
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,13,frequent,2192,0.38549270072992703,156,1347,118,571
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,2024,unseen,10,1.0,4,0,0,6
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,2024,rare,117,0.9743589743589743,77,3,1,36
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,2024,low,347,0.8645533141210375,159,47,7,134
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,2024,medium,1062,0.5743879472693032,228,452,36,346
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,2024,frequent,2192,0.39461678832116787,154,1327,108,603
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,42,unseen,10,1.0,5,0,0,5
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,42,rare,117,0.9743589743589743,75,3,0,39
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,42,low,347,0.8789625360230547,154,42,6,145
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,42,medium,1062,0.5781544256120528,229,448,36,349
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,42,frequent,2192,0.40191605839416056,169,1311,103,609
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,777,unseen,10,1.0,3,0,0,7
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,777,rare,117,0.9914529914529915,80,1,1,35
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,777,low,347,0.8530259365994236,163,51,2,131
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,777,medium,1062,0.5856873822975518,235,440,33,354
+Quick tuning,Vocabulary control,mixed_025_393b9e11646e,777,frequent,2192,0.3927919708029197,144,1331,106,611
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,13,unseen,10,1.0,5,0,0,5
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,13,rare,117,0.9658119658119658,80,4,1,32
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,13,low,347,0.8731988472622478,160,44,4,139
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,13,medium,1062,0.5696798493408664,240,457,38,327
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,13,frequent,2192,0.3895985401459854,159,1338,115,580
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,42,unseen,10,1.0,4,0,0,6
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,42,rare,117,0.9743589743589743,77,3,0,37
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,42,low,347,0.8645533141210375,164,47,6,130
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,42,medium,1062,0.57909604519774,231,447,33,351
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,42,frequent,2192,0.4037408759124088,159,1307,100,626
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,123,unseen,10,1.0,5,0,0,5
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,123,rare,117,0.9658119658119658,78,4,1,34
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,123,low,347,0.8530259365994236,167,51,4,125
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,123,medium,1062,0.5593220338983051,225,468,30,339
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,123,frequent,2192,0.40191605839416056,172,1311,108,601
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,2024,unseen,10,1.0,4,0,0,6
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,2024,rare,117,0.9743589743589743,69,3,1,44
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,2024,low,347,0.8674351585014409,159,46,8,134
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,2024,medium,1062,0.57909604519774,231,447,43,341
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,2024,frequent,2192,0.39461678832116787,152,1327,109,604
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,777,unseen,10,1.0,3,0,0,7
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,777,rare,117,0.9914529914529915,83,1,1,32
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,777,low,347,0.8414985590778098,160,55,4,128
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,777,medium,1062,0.5583804143126176,231,469,33,329
+NULL adaptation,Best NULL on,focal_ia_attention_e6801d313247,777,frequent,2192,0.38868613138686137,158,1340,114,580
+NULL adaptation,NULL off control,null_off_e53896d9134f,13,unseen,10,1.0,3,0,0,7
+NULL adaptation,NULL off control,null_off_e53896d9134f,13,rare,117,0.9658119658119658,79,4,1,33
+NULL adaptation,NULL off control,null_off_e53896d9134f,13,low,347,0.8847262247838616,166,40,5,136
+NULL adaptation,NULL off control,null_off_e53896d9134f,13,medium,1062,0.5649717514124294,240,462,29,331
+NULL adaptation,NULL off control,null_off_e53896d9134f,13,frequent,2192,0.38275547445255476,159,1353,108,572
+NULL adaptation,NULL off control,null_off_e53896d9134f,42,unseen,10,1.0,5,0,0,5
+NULL adaptation,NULL off control,null_off_e53896d9134f,42,rare,117,0.9658119658119658,74,4,0,39
+NULL adaptation,NULL off control,null_off_e53896d9134f,42,low,347,0.8760806916426513,160,43,6,138
+NULL adaptation,NULL off control,null_off_e53896d9134f,42,medium,1062,0.5725047080979284,227,454,33,348
+NULL adaptation,NULL off control,null_off_e53896d9134f,42,frequent,2192,0.4051094890510949,153,1304,104,631
+NULL adaptation,NULL off control,null_off_e53896d9134f,123,unseen,10,1.0,5,0,0,5
+NULL adaptation,NULL off control,null_off_e53896d9134f,123,rare,117,0.9914529914529915,83,1,1,32
+NULL adaptation,NULL off control,null_off_e53896d9134f,123,low,347,0.861671469740634,166,48,5,128
+NULL adaptation,NULL off control,null_off_e53896d9134f,123,medium,1062,0.5612052730696798,231,466,34,331
+NULL adaptation,NULL off control,null_off_e53896d9134f,123,frequent,2192,0.39598540145985406,163,1324,102,603
+NULL adaptation,NULL off control,null_off_e53896d9134f,2024,unseen,10,1.0,4,0,0,6
+NULL adaptation,NULL off control,null_off_e53896d9134f,2024,rare,117,0.9743589743589743,68,3,1,45
+NULL adaptation,NULL off control,null_off_e53896d9134f,2024,low,347,0.8789625360230547,161,42,8,136
+NULL adaptation,NULL off control,null_off_e53896d9134f,2024,medium,1062,0.583804143126177,219,442,35,366
+NULL adaptation,NULL off control,null_off_e53896d9134f,2024,frequent,2192,0.4183394160583942,155,1275,109,653
+NULL adaptation,NULL off control,null_off_e53896d9134f,777,unseen,10,1.0,3,0,0,7
+NULL adaptation,NULL off control,null_off_e53896d9134f,777,rare,117,0.9914529914529915,85,1,1,30
+NULL adaptation,NULL off control,null_off_e53896d9134f,777,low,347,0.8443804034582132,161,54,5,127
+NULL adaptation,NULL off control,null_off_e53896d9134f,777,medium,1062,0.5593220338983051,228,468,38,328
+NULL adaptation,NULL off control,null_off_e53896d9134f,777,frequent,2192,0.3927919708029197,165,1331,120,576
+LODO,coursera,mixed_025_da1a88a51a5f,13,unseen,351,1.0,255,0,0,96
+LODO,coursera,mixed_025_da1a88a51a5f,13,rare,0,,0,0,0,0
+LODO,coursera,mixed_025_da1a88a51a5f,13,low,0,,0,0,0,0
+LODO,coursera,mixed_025_da1a88a51a5f,13,medium,0,,0,0,0,0
+LODO,coursera,mixed_025_da1a88a51a5f,13,frequent,0,,0,0,0,0
+LODO,coursera,mixed_025_da1a88a51a5f,42,unseen,351,1.0,265,0,0,86
+LODO,coursera,mixed_025_da1a88a51a5f,42,rare,0,,0,0,0,0
+LODO,coursera,mixed_025_da1a88a51a5f,42,low,0,,0,0,0,0
+LODO,coursera,mixed_025_da1a88a51a5f,42,medium,0,,0,0,0,0
+LODO,coursera,mixed_025_da1a88a51a5f,42,frequent,0,,0,0,0,0
+LODO,coursera,mixed_025_da1a88a51a5f,123,unseen,351,1.0,267,0,0,84
+LODO,coursera,mixed_025_da1a88a51a5f,123,rare,0,,0,0,0,0
+LODO,coursera,mixed_025_da1a88a51a5f,123,low,0,,0,0,0,0
+LODO,coursera,mixed_025_da1a88a51a5f,123,medium,0,,0,0,0,0
+LODO,coursera,mixed_025_da1a88a51a5f,123,frequent,0,,0,0,0,0
+LODO,coursera,mixed_025_da1a88a51a5f,2024,unseen,351,1.0,261,0,0,90
+LODO,coursera,mixed_025_da1a88a51a5f,2024,rare,0,,0,0,0,0
+LODO,coursera,mixed_025_da1a88a51a5f,2024,low,0,,0,0,0,0
+LODO,coursera,mixed_025_da1a88a51a5f,2024,medium,0,,0,0,0,0
+LODO,coursera,mixed_025_da1a88a51a5f,2024,frequent,0,,0,0,0,0
+LODO,coursera,mixed_025_da1a88a51a5f,777,unseen,351,1.0,261,0,0,90
+LODO,coursera,mixed_025_da1a88a51a5f,777,rare,0,,0,0,0,0
+LODO,coursera,mixed_025_da1a88a51a5f,777,low,0,,0,0,0,0
+LODO,coursera,mixed_025_da1a88a51a5f,777,medium,0,,0,0,0,0
+LODO,coursera,mixed_025_da1a88a51a5f,777,frequent,0,,0,0,0,0
+LODO,hotel,mixed_025_da1a88a51a5f,13,unseen,242,1.0,186,0,0,56
+LODO,hotel,mixed_025_da1a88a51a5f,13,rare,1,1.0,1,0,0,0
+LODO,hotel,mixed_025_da1a88a51a5f,13,low,81,0.5925925925925926,28,33,0,20
+LODO,hotel,mixed_025_da1a88a51a5f,13,medium,0,,0,0,0,0
+LODO,hotel,mixed_025_da1a88a51a5f,13,frequent,112,0.1875,3,91,4,14
+LODO,hotel,mixed_025_da1a88a51a5f,42,unseen,242,1.0,187,0,0,55
+LODO,hotel,mixed_025_da1a88a51a5f,42,rare,1,1.0,1,0,0,0
+LODO,hotel,mixed_025_da1a88a51a5f,42,low,81,0.654320987654321,37,28,0,16
+LODO,hotel,mixed_025_da1a88a51a5f,42,medium,0,,0,0,0,0
+LODO,hotel,mixed_025_da1a88a51a5f,42,frequent,112,0.2053571428571429,2,89,4,17
+LODO,hotel,mixed_025_da1a88a51a5f,123,unseen,242,1.0,182,0,0,60
+LODO,hotel,mixed_025_da1a88a51a5f,123,rare,1,1.0,1,0,0,0
+LODO,hotel,mixed_025_da1a88a51a5f,123,low,81,0.8641975308641976,56,11,0,14
+LODO,hotel,mixed_025_da1a88a51a5f,123,medium,0,,0,0,0,0
+LODO,hotel,mixed_025_da1a88a51a5f,123,frequent,112,0.2053571428571429,2,89,6,15
+LODO,hotel,mixed_025_da1a88a51a5f,2024,unseen,242,1.0,181,0,0,61
+LODO,hotel,mixed_025_da1a88a51a5f,2024,rare,1,1.0,1,0,0,0
+LODO,hotel,mixed_025_da1a88a51a5f,2024,low,81,0.4320987654320988,20,46,0,15
+LODO,hotel,mixed_025_da1a88a51a5f,2024,medium,0,,0,0,0,0
+LODO,hotel,mixed_025_da1a88a51a5f,2024,frequent,112,0.2142857142857143,5,88,3,16
+LODO,hotel,mixed_025_da1a88a51a5f,777,unseen,242,1.0,184,0,0,58
+LODO,hotel,mixed_025_da1a88a51a5f,777,rare,1,1.0,1,0,0,0
+LODO,hotel,mixed_025_da1a88a51a5f,777,low,81,0.5925925925925926,32,33,0,16
+LODO,hotel,mixed_025_da1a88a51a5f,777,medium,0,,0,0,0,0
+LODO,hotel,mixed_025_da1a88a51a5f,777,frequent,112,0.1696428571428571,4,93,3,12
+LODO,laptop,mixed_025_da1a88a51a5f,13,unseen,494,1.0,304,0,0,190
+LODO,laptop,mixed_025_da1a88a51a5f,13,rare,0,,0,0,0,0
+LODO,laptop,mixed_025_da1a88a51a5f,13,low,0,,0,0,0,0
+LODO,laptop,mixed_025_da1a88a51a5f,13,medium,0,,0,0,0,0
+LODO,laptop,mixed_025_da1a88a51a5f,13,frequent,0,,0,0,0,0
+LODO,laptop,mixed_025_da1a88a51a5f,42,unseen,494,1.0,301,0,0,193
+LODO,laptop,mixed_025_da1a88a51a5f,42,rare,0,,0,0,0,0
+LODO,laptop,mixed_025_da1a88a51a5f,42,low,0,,0,0,0,0
+LODO,laptop,mixed_025_da1a88a51a5f,42,medium,0,,0,0,0,0
+LODO,laptop,mixed_025_da1a88a51a5f,42,frequent,0,,0,0,0,0
+LODO,laptop,mixed_025_da1a88a51a5f,123,unseen,494,1.0,312,0,0,182
+LODO,laptop,mixed_025_da1a88a51a5f,123,rare,0,,0,0,0,0
+LODO,laptop,mixed_025_da1a88a51a5f,123,low,0,,0,0,0,0
+LODO,laptop,mixed_025_da1a88a51a5f,123,medium,0,,0,0,0,0
+LODO,laptop,mixed_025_da1a88a51a5f,123,frequent,0,,0,0,0,0
+LODO,laptop,mixed_025_da1a88a51a5f,2024,unseen,494,1.0,309,0,0,185
+LODO,laptop,mixed_025_da1a88a51a5f,2024,rare,0,,0,0,0,0
+LODO,laptop,mixed_025_da1a88a51a5f,2024,low,0,,0,0,0,0
+LODO,laptop,mixed_025_da1a88a51a5f,2024,medium,0,,0,0,0,0
+LODO,laptop,mixed_025_da1a88a51a5f,2024,frequent,0,,0,0,0,0
+LODO,laptop,mixed_025_da1a88a51a5f,777,unseen,494,1.0,277,0,0,217
+LODO,laptop,mixed_025_da1a88a51a5f,777,rare,0,,0,0,0,0
+LODO,laptop,mixed_025_da1a88a51a5f,777,low,0,,0,0,0,0
+LODO,laptop,mixed_025_da1a88a51a5f,777,medium,0,,0,0,0,0
+LODO,laptop,mixed_025_da1a88a51a5f,777,frequent,0,,0,0,0,0
+LODO,restaurant,mixed_025_da1a88a51a5f,13,unseen,156,1.0,35,0,0,121
+LODO,restaurant,mixed_025_da1a88a51a5f,13,rare,7,1.0,1,0,0,6
+LODO,restaurant,mixed_025_da1a88a51a5f,13,low,32,1.0,5,0,0,27
+LODO,restaurant,mixed_025_da1a88a51a5f,13,medium,223,0.9461883408071748,82,12,1,128
+LODO,restaurant,mixed_025_da1a88a51a5f,13,frequent,105,0.36190476190476195,4,67,4,30
+LODO,restaurant,mixed_025_da1a88a51a5f,42,unseen,156,1.0,49,0,0,107
+LODO,restaurant,mixed_025_da1a88a51a5f,42,rare,7,1.0,2,0,0,5
+LODO,restaurant,mixed_025_da1a88a51a5f,42,low,32,1.0,9,0,0,23
+LODO,restaurant,mixed_025_da1a88a51a5f,42,medium,223,0.9192825112107623,102,18,1,102
+LODO,restaurant,mixed_025_da1a88a51a5f,42,frequent,105,0.35238095238095235,6,68,6,25
+LODO,restaurant,mixed_025_da1a88a51a5f,123,unseen,156,1.0,46,0,0,110
+LODO,restaurant,mixed_025_da1a88a51a5f,123,rare,7,1.0,3,0,0,4
+LODO,restaurant,mixed_025_da1a88a51a5f,123,low,32,1.0,9,0,0,23
+LODO,restaurant,mixed_025_da1a88a51a5f,123,medium,223,0.9147982062780269,108,19,3,93
+LODO,restaurant,mixed_025_da1a88a51a5f,123,frequent,105,0.2857142857142857,6,75,5,19
+LODO,restaurant,mixed_025_da1a88a51a5f,2024,unseen,156,1.0,49,0,0,107
+LODO,restaurant,mixed_025_da1a88a51a5f,2024,rare,7,1.0,2,0,0,5
+LODO,restaurant,mixed_025_da1a88a51a5f,2024,low,32,1.0,7,0,0,25
+LODO,restaurant,mixed_025_da1a88a51a5f,2024,medium,223,0.9865470852017937,114,3,0,106
+LODO,restaurant,mixed_025_da1a88a51a5f,2024,frequent,105,0.2571428571428571,5,78,8,14
+LODO,restaurant,mixed_025_da1a88a51a5f,777,unseen,156,1.0,50,0,0,106
+LODO,restaurant,mixed_025_da1a88a51a5f,777,rare,7,1.0,2,0,0,5
+LODO,restaurant,mixed_025_da1a88a51a5f,777,low,32,1.0,8,0,0,24
+LODO,restaurant,mixed_025_da1a88a51a5f,777,medium,223,0.9417040358744395,105,13,1,104
+LODO,restaurant,mixed_025_da1a88a51a5f,777,frequent,105,0.3047619047619048,5,73,7,20
+LODO,phone,mixed_025_da1a88a51a5f,13,unseen,1089,1.0,302,0,0,787
+LODO,phone,mixed_025_da1a88a51a5f,13,rare,0,,0,0,0,0
+LODO,phone,mixed_025_da1a88a51a5f,13,low,0,,0,0,0,0
+LODO,phone,mixed_025_da1a88a51a5f,13,medium,0,,0,0,0,0
+LODO,phone,mixed_025_da1a88a51a5f,13,frequent,0,,0,0,0,0
+LODO,phone,mixed_025_da1a88a51a5f,42,unseen,1089,1.0,335,0,0,754
+LODO,phone,mixed_025_da1a88a51a5f,42,rare,0,,0,0,0,0
+LODO,phone,mixed_025_da1a88a51a5f,42,low,0,,0,0,0,0
+LODO,phone,mixed_025_da1a88a51a5f,42,medium,0,,0,0,0,0
+LODO,phone,mixed_025_da1a88a51a5f,42,frequent,0,,0,0,0,0
+LODO,phone,mixed_025_da1a88a51a5f,123,unseen,1089,1.0,315,0,0,774
+LODO,phone,mixed_025_da1a88a51a5f,123,rare,0,,0,0,0,0
+LODO,phone,mixed_025_da1a88a51a5f,123,low,0,,0,0,0,0
+LODO,phone,mixed_025_da1a88a51a5f,123,medium,0,,0,0,0,0
+LODO,phone,mixed_025_da1a88a51a5f,123,frequent,0,,0,0,0,0
+LODO,phone,mixed_025_da1a88a51a5f,2024,unseen,1089,1.0,328,0,0,761
+LODO,phone,mixed_025_da1a88a51a5f,2024,rare,0,,0,0,0,0
+LODO,phone,mixed_025_da1a88a51a5f,2024,low,0,,0,0,0,0
+LODO,phone,mixed_025_da1a88a51a5f,2024,medium,0,,0,0,0,0
+LODO,phone,mixed_025_da1a88a51a5f,2024,frequent,0,,0,0,0,0
+LODO,phone,mixed_025_da1a88a51a5f,777,unseen,1089,1.0,328,0,0,761
+LODO,phone,mixed_025_da1a88a51a5f,777,rare,0,,0,0,0,0
+LODO,phone,mixed_025_da1a88a51a5f,777,low,0,,0,0,0,0
+LODO,phone,mixed_025_da1a88a51a5f,777,medium,0,,0,0,0,0
+LODO,phone,mixed_025_da1a88a51a5f,777,frequent,0,,0,0,0,0
+LODO,sight,mixed_025_da1a88a51a5f,13,unseen,636,1.0,224,0,0,412
+LODO,sight,mixed_025_da1a88a51a5f,13,rare,0,,0,0,0,0
+LODO,sight,mixed_025_da1a88a51a5f,13,low,0,,0,0,0,0
+LODO,sight,mixed_025_da1a88a51a5f,13,medium,0,,0,0,0,0
+LODO,sight,mixed_025_da1a88a51a5f,13,frequent,0,,0,0,0,0
+LODO,sight,mixed_025_da1a88a51a5f,42,unseen,636,1.0,220,0,0,416
+LODO,sight,mixed_025_da1a88a51a5f,42,rare,0,,0,0,0,0
+LODO,sight,mixed_025_da1a88a51a5f,42,low,0,,0,0,0,0
+LODO,sight,mixed_025_da1a88a51a5f,42,medium,0,,0,0,0,0
+LODO,sight,mixed_025_da1a88a51a5f,42,frequent,0,,0,0,0,0
+LODO,sight,mixed_025_da1a88a51a5f,123,unseen,636,1.0,204,0,0,432
+LODO,sight,mixed_025_da1a88a51a5f,123,rare,0,,0,0,0,0
+LODO,sight,mixed_025_da1a88a51a5f,123,low,0,,0,0,0,0
+LODO,sight,mixed_025_da1a88a51a5f,123,medium,0,,0,0,0,0
+LODO,sight,mixed_025_da1a88a51a5f,123,frequent,0,,0,0,0,0
+LODO,sight,mixed_025_da1a88a51a5f,2024,unseen,636,1.0,208,0,0,428
+LODO,sight,mixed_025_da1a88a51a5f,2024,rare,0,,0,0,0,0
+LODO,sight,mixed_025_da1a88a51a5f,2024,low,0,,0,0,0,0
+LODO,sight,mixed_025_da1a88a51a5f,2024,medium,0,,0,0,0,0
+LODO,sight,mixed_025_da1a88a51a5f,2024,frequent,0,,0,0,0,0
+LODO,sight,mixed_025_da1a88a51a5f,777,unseen,636,1.0,224,0,0,412
+LODO,sight,mixed_025_da1a88a51a5f,777,rare,0,,0,0,0,0
+LODO,sight,mixed_025_da1a88a51a5f,777,low,0,,0,0,0,0
+LODO,sight,mixed_025_da1a88a51a5f,777,medium,0,,0,0,0,0
+LODO,sight,mixed_025_da1a88a51a5f,777,frequent,0,,0,0,0,0
+LODO,food,mixed_025_da1a88a51a5f,13,unseen,155,1.0,116,0,0,39
+LODO,food,mixed_025_da1a88a51a5f,13,rare,0,,0,0,0,0
+LODO,food,mixed_025_da1a88a51a5f,13,low,2,1.0,0,0,0,2
+LODO,food,mixed_025_da1a88a51a5f,13,medium,14,1.0,6,0,1,7
+LODO,food,mixed_025_da1a88a51a5f,13,frequent,28,0.5357142857142857,6,13,4,5
+LODO,food,mixed_025_da1a88a51a5f,42,unseen,155,1.0,112,0,0,43
+LODO,food,mixed_025_da1a88a51a5f,42,rare,0,,0,0,0,0
+LODO,food,mixed_025_da1a88a51a5f,42,low,2,1.0,0,0,0,2
+LODO,food,mixed_025_da1a88a51a5f,42,medium,14,1.0,5,0,0,9
+LODO,food,mixed_025_da1a88a51a5f,42,frequent,28,0.5357142857142857,6,13,4,5
+LODO,food,mixed_025_da1a88a51a5f,123,unseen,155,1.0,118,0,0,37
+LODO,food,mixed_025_da1a88a51a5f,123,rare,0,,0,0,0,0
+LODO,food,mixed_025_da1a88a51a5f,123,low,2,1.0,0,0,0,2
+LODO,food,mixed_025_da1a88a51a5f,123,medium,14,1.0,8,0,0,6
+LODO,food,mixed_025_da1a88a51a5f,123,frequent,28,0.5,5,14,4,5
+LODO,food,mixed_025_da1a88a51a5f,2024,unseen,155,1.0,108,0,0,47
+LODO,food,mixed_025_da1a88a51a5f,2024,rare,0,,0,0,0,0
+LODO,food,mixed_025_da1a88a51a5f,2024,low,2,1.0,0,0,0,2
+LODO,food,mixed_025_da1a88a51a5f,2024,medium,14,1.0,5,0,1,8
+LODO,food,mixed_025_da1a88a51a5f,2024,frequent,28,0.5,5,14,4,5
+LODO,food,mixed_025_da1a88a51a5f,777,unseen,155,1.0,110,0,0,45
+LODO,food,mixed_025_da1a88a51a5f,777,rare,0,,0,0,0,0
+LODO,food,mixed_025_da1a88a51a5f,777,low,2,1.0,0,0,0,2
+LODO,food,mixed_025_da1a88a51a5f,777,medium,14,1.0,7,0,1,6
+LODO,food,mixed_025_da1a88a51a5f,777,frequent,28,0.5357142857142857,4,13,4,7

@@ -1,0 +1,6542 @@
+{
+  "domains": [
+    "coursera",
+    "hotel",
+    "laptop",
+    "restaurant",
+    "phone",
+    "sight",
+    "food"
+  ],
+  "method": "Replace historical gold with matched Phase 2 eligible explicit gold; keep every prediction and false positive. No model inference or test tuning.",
+  "paired": [
+    {
+      "baseline": "phase1_standard",
+      "domain": "coursera",
+      "explicit_delta_pp": 0.0,
+      "seed": 13,
+      "term_delta_pp": 4.565923289155305,
+      "term_sentiment_delta_pp": 1.6939708012927712
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "coursera",
+      "explicit_delta_pp": 0.0,
+      "seed": 42,
+      "term_delta_pp": 4.704878280070979,
+      "term_sentiment_delta_pp": 1.7659888643537347
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "coursera",
+      "explicit_delta_pp": 0.0,
+      "seed": 123,
+      "term_delta_pp": 1.1511094770535024,
+      "term_sentiment_delta_pp": -2.7088109347290166
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "coursera",
+      "explicit_delta_pp": 0.0,
+      "seed": 2024,
+      "term_delta_pp": 6.414129676969549,
+      "term_sentiment_delta_pp": 3.9746758779991453
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "coursera",
+      "explicit_delta_pp": 0.0,
+      "seed": 777,
+      "term_delta_pp": -1.742042724070958,
+      "term_sentiment_delta_pp": -4.7307527731147765
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "coursera",
+      "explicit_delta_pp": 0.0,
+      "seed": 13,
+      "term_delta_pp": 9.163701785678914,
+      "term_sentiment_delta_pp": 11.101918895372249
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "coursera",
+      "explicit_delta_pp": 0.0,
+      "seed": 42,
+      "term_delta_pp": 12.694327652506987,
+      "term_sentiment_delta_pp": 14.943459236233792
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "coursera",
+      "explicit_delta_pp": 0.0,
+      "seed": 123,
+      "term_delta_pp": 13.11311475409836,
+      "term_sentiment_delta_pp": 13.8186482850578
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "coursera",
+      "explicit_delta_pp": 0.0,
+      "seed": 2024,
+      "term_delta_pp": 10.370173633013508,
+      "term_sentiment_delta_pp": 14.31451865027435
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "coursera",
+      "explicit_delta_pp": 0.0,
+      "seed": 777,
+      "term_delta_pp": 13.569685217071504,
+      "term_sentiment_delta_pp": 16.27477003722809
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "hotel",
+      "explicit_delta_pp": 1.2650918307467562,
+      "seed": 13,
+      "term_delta_pp": 3.9332401083740196,
+      "term_sentiment_delta_pp": 3.340335609853545
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "hotel",
+      "explicit_delta_pp": -0.3133469379872411,
+      "seed": 42,
+      "term_delta_pp": 6.405751840735608,
+      "term_sentiment_delta_pp": 5.838653071972905
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "hotel",
+      "explicit_delta_pp": -0.524963943924589,
+      "seed": 123,
+      "term_delta_pp": 2.3861144221173136,
+      "term_sentiment_delta_pp": 1.554243667114047
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "hotel",
+      "explicit_delta_pp": 3.8840026429777548,
+      "seed": 2024,
+      "term_delta_pp": 2.061212110504529,
+      "term_sentiment_delta_pp": 1.8957262239183093
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "hotel",
+      "explicit_delta_pp": 3.1011342403747477,
+      "seed": 777,
+      "term_delta_pp": 3.8523994347366086,
+      "term_sentiment_delta_pp": 3.481745760226773
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "hotel",
+      "explicit_delta_pp": 4.01480321379917,
+      "seed": 13,
+      "term_delta_pp": 11.414139151471714,
+      "term_sentiment_delta_pp": 11.961480372287554
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "hotel",
+      "explicit_delta_pp": 5.270366671422455,
+      "seed": 42,
+      "term_delta_pp": 11.408194535364496,
+      "term_sentiment_delta_pp": 12.125505393474128
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "hotel",
+      "explicit_delta_pp": 5.702561430362639,
+      "seed": 123,
+      "term_delta_pp": 10.065753717983961,
+      "term_sentiment_delta_pp": 9.49841946909396
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "hotel",
+      "explicit_delta_pp": 5.909712274383006,
+      "seed": 2024,
+      "term_delta_pp": 11.767667792192405,
+      "term_sentiment_delta_pp": 12.348942598187312
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "hotel",
+      "explicit_delta_pp": 4.990900750500082,
+      "seed": 777,
+      "term_delta_pp": 12.889796742600168,
+      "term_sentiment_delta_pp": 12.966940154440154
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "laptop",
+      "explicit_delta_pp": 0.0,
+      "seed": 13,
+      "term_delta_pp": 12.180522191155042,
+      "term_sentiment_delta_pp": 9.894404475108848
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "laptop",
+      "explicit_delta_pp": 0.0,
+      "seed": 42,
+      "term_delta_pp": 18.25018169381386,
+      "term_sentiment_delta_pp": 14.872814330297974
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "laptop",
+      "explicit_delta_pp": 0.0,
+      "seed": 123,
+      "term_delta_pp": 14.41769681197137,
+      "term_sentiment_delta_pp": 12.383097275745293
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "laptop",
+      "explicit_delta_pp": 0.0,
+      "seed": 2024,
+      "term_delta_pp": 18.597556888203666,
+      "term_sentiment_delta_pp": 15.504529914970632
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "laptop",
+      "explicit_delta_pp": 0.0,
+      "seed": 777,
+      "term_delta_pp": 23.303394560630192,
+      "term_sentiment_delta_pp": 21.019872197819574
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "laptop",
+      "explicit_delta_pp": 0.0,
+      "seed": 13,
+      "term_delta_pp": 6.9843790132393115,
+      "term_sentiment_delta_pp": 9.65488790037155
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "laptop",
+      "explicit_delta_pp": 0.0,
+      "seed": 42,
+      "term_delta_pp": 5.18364415908083,
+      "term_sentiment_delta_pp": 7.345185450673863
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "laptop",
+      "explicit_delta_pp": 0.0,
+      "seed": 123,
+      "term_delta_pp": 9.570561941251594,
+      "term_sentiment_delta_pp": 11.068297792833903
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "laptop",
+      "explicit_delta_pp": 0.0,
+      "seed": 2024,
+      "term_delta_pp": 8.228764000396477,
+      "term_sentiment_delta_pp": 10.375712203421072
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "laptop",
+      "explicit_delta_pp": 0.0,
+      "seed": 777,
+      "term_delta_pp": 2.8203206262968905,
+      "term_sentiment_delta_pp": 6.541234020788239
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "restaurant",
+      "explicit_delta_pp": 3.8130449177794956,
+      "seed": 13,
+      "term_delta_pp": 24.208144796380093,
+      "term_sentiment_delta_pp": 23.154177243129897
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "restaurant",
+      "explicit_delta_pp": 4.583333333333334,
+      "seed": 42,
+      "term_delta_pp": 29.878875968992247,
+      "term_sentiment_delta_pp": 27.989341085271313
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "restaurant",
+      "explicit_delta_pp": 7.206653660019763,
+      "seed": 123,
+      "term_delta_pp": 31.47560733959498,
+      "term_sentiment_delta_pp": 29.640867118455986
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "restaurant",
+      "explicit_delta_pp": 1.162882061758466,
+      "seed": 2024,
+      "term_delta_pp": 24.711534823894375,
+      "term_sentiment_delta_pp": 23.759636119186684
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "restaurant",
+      "explicit_delta_pp": 6.720911598602551,
+      "seed": 777,
+      "term_delta_pp": 32.269539636613885,
+      "term_sentiment_delta_pp": 29.929862727187633
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "restaurant",
+      "explicit_delta_pp": -4.315376077862204,
+      "seed": 13,
+      "term_delta_pp": -11.762821940049523,
+      "term_sentiment_delta_pp": -8.417042030487403
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "restaurant",
+      "explicit_delta_pp": 0.3832342743932654,
+      "seed": 42,
+      "term_delta_pp": -0.9821428571428648,
+      "term_sentiment_delta_pp": 0.3647769516728627
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "restaurant",
+      "explicit_delta_pp": -2.8107847092333853,
+      "seed": 123,
+      "term_delta_pp": -4.093379257558361,
+      "term_sentiment_delta_pp": -2.6886938564790963
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "restaurant",
+      "explicit_delta_pp": -3.0693607911740415,
+      "seed": 2024,
+      "term_delta_pp": -6.041977308928104,
+      "term_sentiment_delta_pp": -4.917051178190269
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "restaurant",
+      "explicit_delta_pp": -2.668081233490022,
+      "seed": 777,
+      "term_delta_pp": -3.1050808739545355,
+      "term_sentiment_delta_pp": -2.171057975078888
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "phone",
+      "explicit_delta_pp": 0.0,
+      "seed": 13,
+      "term_delta_pp": 9.313676375444702,
+      "term_sentiment_delta_pp": 8.551121831722897
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "phone",
+      "explicit_delta_pp": 0.0,
+      "seed": 42,
+      "term_delta_pp": 16.028170542890923,
+      "term_sentiment_delta_pp": 15.13359110763842
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "phone",
+      "explicit_delta_pp": 0.0,
+      "seed": 123,
+      "term_delta_pp": 12.278894986869318,
+      "term_sentiment_delta_pp": 10.480044068485098
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "phone",
+      "explicit_delta_pp": 0.0,
+      "seed": 2024,
+      "term_delta_pp": 11.872454395900444,
+      "term_sentiment_delta_pp": 10.052081118524272
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "phone",
+      "explicit_delta_pp": 0.0,
+      "seed": 777,
+      "term_delta_pp": 13.04970775500334,
+      "term_sentiment_delta_pp": 11.709232569240383
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "phone",
+      "explicit_delta_pp": 0.0,
+      "seed": 13,
+      "term_delta_pp": -1.5206884667092913,
+      "term_sentiment_delta_pp": -0.34587775842366275
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "phone",
+      "explicit_delta_pp": 0.0,
+      "seed": 42,
+      "term_delta_pp": 3.2471964823984845,
+      "term_sentiment_delta_pp": 4.4348187506969445
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "phone",
+      "explicit_delta_pp": 0.0,
+      "seed": 123,
+      "term_delta_pp": 1.769596767878323,
+      "term_sentiment_delta_pp": 2.544562898867669
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "phone",
+      "explicit_delta_pp": 0.0,
+      "seed": 2024,
+      "term_delta_pp": 0.271503176668203,
+      "term_sentiment_delta_pp": 0.7345034333509082
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "phone",
+      "explicit_delta_pp": 0.0,
+      "seed": 777,
+      "term_delta_pp": 2.2675848499754068,
+      "term_sentiment_delta_pp": 3.822047876212137
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "sight",
+      "explicit_delta_pp": 0.0,
+      "seed": 13,
+      "term_delta_pp": 8.449650623097977,
+      "term_sentiment_delta_pp": 6.160849385402678
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "sight",
+      "explicit_delta_pp": 0.0,
+      "seed": 42,
+      "term_delta_pp": 10.315001683507369,
+      "term_sentiment_delta_pp": 6.756776539452064
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "sight",
+      "explicit_delta_pp": 0.0,
+      "seed": 123,
+      "term_delta_pp": 20.044070761774112,
+      "term_sentiment_delta_pp": 16.130042206597228
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "sight",
+      "explicit_delta_pp": 0.0,
+      "seed": 2024,
+      "term_delta_pp": 18.56525016863072,
+      "term_sentiment_delta_pp": 14.775274768876724
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "sight",
+      "explicit_delta_pp": 0.0,
+      "seed": 777,
+      "term_delta_pp": 19.802269153497644,
+      "term_sentiment_delta_pp": 15.966263070611037
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "sight",
+      "explicit_delta_pp": 0.0,
+      "seed": 13,
+      "term_delta_pp": 0.649563132164116,
+      "term_sentiment_delta_pp": 3.074585501045368
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "sight",
+      "explicit_delta_pp": 0.0,
+      "seed": 42,
+      "term_delta_pp": 0.09329446064139657,
+      "term_sentiment_delta_pp": 3.0458476338094007
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "sight",
+      "explicit_delta_pp": 0.0,
+      "seed": 123,
+      "term_delta_pp": -1.342097487390298,
+      "term_sentiment_delta_pp": 2.2396306700817936
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "sight",
+      "explicit_delta_pp": 0.0,
+      "seed": 2024,
+      "term_delta_pp": -1.5737885969352494,
+      "term_sentiment_delta_pp": 1.5703452782172111
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "sight",
+      "explicit_delta_pp": 0.0,
+      "seed": 777,
+      "term_delta_pp": -0.21799228593534226,
+      "term_sentiment_delta_pp": 3.0072388045522755
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "food",
+      "explicit_delta_pp": -1.1040781525477619,
+      "seed": 13,
+      "term_delta_pp": 3.756980120616488,
+      "term_sentiment_delta_pp": 2.845830405639016
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "food",
+      "explicit_delta_pp": -0.9161738277187914,
+      "seed": 42,
+      "term_delta_pp": 4.344854103473322,
+      "term_sentiment_delta_pp": 1.1246635621822543
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "food",
+      "explicit_delta_pp": -0.9221076746849944,
+      "seed": 123,
+      "term_delta_pp": 0.48259798582368507,
+      "term_sentiment_delta_pp": -0.9452094090648289
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "food",
+      "explicit_delta_pp": -0.13377238114838444,
+      "seed": 2024,
+      "term_delta_pp": 8.689727823388637,
+      "term_sentiment_delta_pp": 4.170954242985525
+    },
+    {
+      "baseline": "phase1_standard",
+      "domain": "food",
+      "explicit_delta_pp": -0.17877225369745536,
+      "seed": 777,
+      "term_delta_pp": 5.195535467990747,
+      "term_sentiment_delta_pp": 2.5850361788359146
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "food",
+      "explicit_delta_pp": 2.1929824561403506,
+      "seed": 13,
+      "term_delta_pp": 15.653434477828307,
+      "term_sentiment_delta_pp": 13.985743756205151
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "food",
+      "explicit_delta_pp": 1.3263782000175723,
+      "seed": 42,
+      "term_delta_pp": 13.313381637439187,
+      "term_sentiment_delta_pp": 12.427594389001328
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "food",
+      "explicit_delta_pp": 1.31447215518012,
+      "seed": 123,
+      "term_delta_pp": 15.619173342942233,
+      "term_sentiment_delta_pp": 14.327956989247312
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "food",
+      "explicit_delta_pp": 1.7162778224725128,
+      "seed": 2024,
+      "term_delta_pp": 14.96823449606165,
+      "term_sentiment_delta_pp": 13.612176534030443
+    },
+    {
+      "baseline": "phase1_weighted",
+      "domain": "food",
+      "explicit_delta_pp": 1.3769703761265844,
+      "seed": 777,
+      "term_delta_pp": 15.664613905871045,
+      "term_sentiment_delta_pp": 13.549948459537667
+    }
+  ],
+  "runs": [
+    {
+      "coverage": 0.0,
+      "domain": "coursera",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 646,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase2_mixed_025",
+      "seed": 13,
+      "taxonomy": {
+        "category": 255,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 96
+      },
+      "term": {
+        "f1": 0.5115346038114343,
+        "fn": 96,
+        "fp": 391,
+        "gold": 351,
+        "precision": 0.39473684210526316,
+        "recall": 0.7264957264957265,
+        "tp": 255
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 646,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.46138415245737213,
+        "fn": 121,
+        "fp": 416,
+        "gold": 351,
+        "precision": 0.3560371517027864,
+        "recall": 0.6552706552706553,
+        "tp": 230
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "coursera",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 324,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.0,
+      "original_gold": 409,
+      "seed": 13,
+      "taxonomy": {
+        "category": 157,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 194
+      },
+      "term": {
+        "f1": 0.4658753709198813,
+        "fn": 194,
+        "fp": 166,
+        "gold": 351,
+        "precision": 0.48606811145510836,
+        "recall": 0.4472934472934473,
+        "tp": 157
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 323,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.4444444444444444,
+        "fn": 201,
+        "fp": 174,
+        "gold": 351,
+        "precision": 0.46296296296296297,
+        "recall": 0.42735042735042733,
+        "tp": 150
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "coursera",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 1019,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.0,
+      "original_gold": 409,
+      "seed": 13,
+      "taxonomy": {
+        "category": 287,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 64
+      },
+      "term": {
+        "f1": 0.4198975859546452,
+        "fn": 64,
+        "fp": 729,
+        "gold": 351,
+        "precision": 0.2824803149606299,
+        "recall": 0.8176638176638177,
+        "tp": 287
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 1016,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.35036496350364965,
+        "fn": 111,
+        "fp": 779,
+        "gold": 351,
+        "precision": 0.23552502453385674,
+        "recall": 0.6837606837606838,
+        "tp": 240
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "coursera",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 619,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase2_mixed_025",
+      "seed": 42,
+      "taxonomy": {
+        "category": 265,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 86
+      },
+      "term": {
+        "f1": 0.5463917525773195,
+        "fn": 86,
+        "fp": 354,
+        "gold": 351,
+        "precision": 0.4281098546042003,
+        "recall": 0.7549857549857549,
+        "tp": 265
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 619,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.49072164948453606,
+        "fn": 113,
+        "fp": 381,
+        "gold": 351,
+        "precision": 0.38449111470113084,
+        "recall": 0.6780626780626781,
+        "tp": 238
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "coursera",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 410,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.0,
+      "original_gold": 409,
+      "seed": 42,
+      "taxonomy": {
+        "category": 190,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 161
+      },
+      "term": {
+        "f1": 0.49934296977660975,
+        "fn": 161,
+        "fp": 220,
+        "gold": 351,
+        "precision": 0.4634146341463415,
+        "recall": 0.5413105413105413,
+        "tp": 190
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 410,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.4730617608409987,
+        "fn": 171,
+        "fp": 230,
+        "gold": 351,
+        "precision": 0.43902439024390244,
+        "recall": 0.5128205128205128,
+        "tp": 180
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "coursera",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 1033,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.0,
+      "original_gold": 409,
+      "seed": 42,
+      "taxonomy": {
+        "category": 289,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 62
+      },
+      "term": {
+        "f1": 0.41944847605224966,
+        "fn": 62,
+        "fp": 738,
+        "gold": 351,
+        "precision": 0.28140214216163584,
+        "recall": 0.8233618233618234,
+        "tp": 289
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 1028,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.34128705712219815,
+        "fn": 115,
+        "fp": 796,
+        "gold": 351,
+        "precision": 0.22868217054263565,
+        "recall": 0.6723646723646723,
+        "tp": 236
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "coursera",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 625,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase2_mixed_025",
+      "seed": 123,
+      "taxonomy": {
+        "category": 267,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 84
+      },
+      "term": {
+        "f1": 0.5471311475409836,
+        "fn": 84,
+        "fp": 358,
+        "gold": 351,
+        "precision": 0.4272,
+        "recall": 0.7606837606837606,
+        "tp": 267
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 625,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.47950819672131145,
+        "fn": 117,
+        "fp": 391,
+        "gold": 351,
+        "precision": 0.3744,
+        "recall": 0.6666666666666666,
+        "tp": 234
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "coursera",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 407,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.0,
+      "original_gold": 409,
+      "seed": 123,
+      "taxonomy": {
+        "category": 203,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 148
+      },
+      "term": {
+        "f1": 0.5356200527704486,
+        "fn": 148,
+        "fp": 204,
+        "gold": 351,
+        "precision": 0.4987714987714988,
+        "recall": 0.5783475783475783,
+        "tp": 203
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 407,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.5065963060686016,
+        "fn": 159,
+        "fp": 215,
+        "gold": 351,
+        "precision": 0.47174447174447176,
+        "recall": 0.5470085470085471,
+        "tp": 192
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "coursera",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 1026,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.0,
+      "original_gold": 409,
+      "seed": 123,
+      "taxonomy": {
+        "category": 286,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 65
+      },
+      "term": {
+        "f1": 0.416,
+        "fn": 65,
+        "fp": 738,
+        "gold": 351,
+        "precision": 0.279296875,
+        "recall": 0.8148148148148148,
+        "tp": 286
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 1024,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.34132171387073346,
+        "fn": 116,
+        "fp": 791,
+        "gold": 351,
+        "precision": 0.2290448343079922,
+        "recall": 0.6695156695156695,
+        "tp": 235
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "coursera",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 642,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase2_mixed_025",
+      "seed": 2024,
+      "taxonomy": {
+        "category": 261,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 90
+      },
+      "term": {
+        "f1": 0.525679758308157,
+        "fn": 90,
+        "fp": 381,
+        "gold": 351,
+        "precision": 0.40654205607476634,
+        "recall": 0.7435897435897436,
+        "tp": 261
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 642,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.473313192346425,
+        "fn": 116,
+        "fp": 407,
+        "gold": 351,
+        "precision": 0.3660436137071651,
+        "recall": 0.6695156695156695,
+        "tp": 235
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "coursera",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 364,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.0,
+      "original_gold": 409,
+      "seed": 2024,
+      "taxonomy": {
+        "category": 165,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 186
+      },
+      "term": {
+        "f1": 0.46153846153846156,
+        "fn": 186,
+        "fp": 199,
+        "gold": 351,
+        "precision": 0.4532967032967033,
+        "recall": 0.4700854700854701,
+        "tp": 165
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 364,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.43356643356643354,
+        "fn": 196,
+        "fp": 209,
+        "gold": 351,
+        "precision": 0.4258241758241758,
+        "recall": 0.4415954415954416,
+        "tp": 155
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "coursera",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 1018,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.0,
+      "original_gold": 409,
+      "seed": 2024,
+      "taxonomy": {
+        "category": 288,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 63
+      },
+      "term": {
+        "f1": 0.421978021978022,
+        "fn": 63,
+        "fp": 726,
+        "gold": 351,
+        "precision": 0.28402366863905326,
+        "recall": 0.8205128205128205,
+        "tp": 288
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 1014,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.3301680058436815,
+        "fn": 125,
+        "fp": 792,
+        "gold": 351,
+        "precision": 0.2220039292730845,
+        "recall": 0.6438746438746439,
+        "tp": 226
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "coursera",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 633,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase2_mixed_025",
+      "seed": 777,
+      "taxonomy": {
+        "category": 261,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 90
+      },
+      "term": {
+        "f1": 0.5304878048780488,
+        "fn": 90,
+        "fp": 372,
+        "gold": 351,
+        "precision": 0.41232227488151657,
+        "recall": 0.7435897435897436,
+        "tp": 261
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 633,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.4817073170731707,
+        "fn": 114,
+        "fp": 396,
+        "gold": 351,
+        "precision": 0.3744075829383886,
+        "recall": 0.6752136752136753,
+        "tp": 237
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "coursera",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 390,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.0,
+      "original_gold": 409,
+      "seed": 777,
+      "taxonomy": {
+        "category": 203,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 148
+      },
+      "term": {
+        "f1": 0.5479082321187584,
+        "fn": 148,
+        "fp": 187,
+        "gold": 351,
+        "precision": 0.5205128205128206,
+        "recall": 0.5783475783475783,
+        "tp": 203
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 390,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.5290148448043185,
+        "fn": 155,
+        "fp": 194,
+        "gold": 351,
+        "precision": 0.5025641025641026,
+        "recall": 0.5584045584045584,
+        "tp": 196
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "coursera",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 1110,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.0,
+      "original_gold": 409,
+      "seed": 777,
+      "taxonomy": {
+        "category": 288,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 63
+      },
+      "term": {
+        "f1": 0.3947909527073338,
+        "fn": 63,
+        "fp": 820,
+        "gold": 351,
+        "precision": 0.259927797833935,
+        "recall": 0.8205128205128205,
+        "tp": 288
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 351,
+        "fp": 1109,
+        "gold": 351,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.3189596167008898,
+        "fn": 118,
+        "fp": 877,
+        "gold": 351,
+        "precision": 0.2099099099099099,
+        "recall": 0.6638176638176638,
+        "tp": 233
+      }
+    },
+    {
+      "coverage": 0.44495412844036697,
+      "domain": "hotel",
+      "explicit": {
+        "f1": 0.18888042650418888,
+        "fn": 312,
+        "fp": 753,
+        "gold": 436,
+        "precision": 0.14139110604332952,
+        "recall": 0.28440366972477066,
+        "tp": 124
+      },
+      "model": "phase2_mixed_025",
+      "seed": 13,
+      "taxonomy": {
+        "category": 218,
+        "correct": 124,
+        "sentiment": 4,
+        "term": 90
+      },
+      "term": {
+        "f1": 0.5270373191165271,
+        "fn": 90,
+        "fp": 531,
+        "gold": 436,
+        "precision": 0.3945267958950969,
+        "recall": 0.7935779816513762,
+        "tp": 346
+      },
+      "term_category": {
+        "f1": 0.19497334348819498,
+        "fn": 308,
+        "fp": 749,
+        "gold": 436,
+        "precision": 0.1459521094640821,
+        "recall": 0.29357798165137616,
+        "tp": 128
+      },
+      "term_sentiment": {
+        "f1": 0.5026656511805027,
+        "fn": 106,
+        "fp": 547,
+        "gold": 436,
+        "precision": 0.37628278221208666,
+        "recall": 0.7568807339449541,
+        "tp": 330
+      }
+    },
+    {
+      "coverage": 0.44495412844036697,
+      "domain": "hotel",
+      "explicit": {
+        "f1": 0.1762295081967213,
+        "fn": 350,
+        "fp": 454,
+        "gold": 436,
+        "precision": 0.15925925925925927,
+        "recall": 0.19724770642201836,
+        "tp": 86
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.16435826408125578,
+      "original_gold": 543,
+      "seed": 13,
+      "taxonomy": {
+        "category": 148,
+        "correct": 86,
+        "sentiment": 4,
+        "term": 198
+      },
+      "term": {
+        "f1": 0.48770491803278687,
+        "fn": 198,
+        "fp": 302,
+        "gold": 436,
+        "precision": 0.44074074074074077,
+        "recall": 0.5458715596330275,
+        "tp": 238
+      },
+      "term_category": {
+        "f1": 0.18442622950819673,
+        "fn": 346,
+        "fp": 450,
+        "gold": 436,
+        "precision": 0.16666666666666666,
+        "recall": 0.20642201834862386,
+        "tp": 90
+      },
+      "term_sentiment": {
+        "f1": 0.4692622950819672,
+        "fn": 207,
+        "fp": 311,
+        "gold": 436,
+        "precision": 0.42407407407407405,
+        "recall": 0.5252293577981652,
+        "tp": 229
+      }
+    },
+    {
+      "coverage": 0.44495412844036697,
+      "domain": "hotel",
+      "explicit": {
+        "f1": 0.14873239436619717,
+        "fn": 304,
+        "fp": 1207,
+        "gold": 436,
+        "precision": 0.09858103061986558,
+        "recall": 0.30275229357798167,
+        "tp": 132
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.14771519659936239,
+      "original_gold": 543,
+      "seed": 13,
+      "taxonomy": {
+        "category": 227,
+        "correct": 132,
+        "sentiment": 6,
+        "term": 71
+      },
+      "term": {
+        "f1": 0.41289592760180993,
+        "fn": 71,
+        "fp": 967,
+        "gold": 436,
+        "precision": 0.27402402402402404,
+        "recall": 0.8371559633027523,
+        "tp": 365
+      },
+      "term_category": {
+        "f1": 0.1555806087936866,
+        "fn": 298,
+        "fp": 1200,
+        "gold": 436,
+        "precision": 0.1031390134529148,
+        "recall": 0.3165137614678899,
+        "tp": 138
+      },
+      "term_sentiment": {
+        "f1": 0.38305084745762713,
+        "fn": 97,
+        "fp": 995,
+        "gold": 436,
+        "precision": 0.25412293853073464,
+        "recall": 0.7775229357798165,
+        "tp": 339
+      }
+    },
+    {
+      "coverage": 0.44495412844036697,
+      "domain": "hotel",
+      "explicit": {
+        "f1": 0.1794478527607362,
+        "fn": 319,
+        "fp": 751,
+        "gold": 436,
+        "precision": 0.1347926267281106,
+        "recall": 0.268348623853211,
+        "tp": 117
+      },
+      "model": "phase2_mixed_025",
+      "seed": 42,
+      "taxonomy": {
+        "category": 227,
+        "correct": 117,
+        "sentiment": 4,
+        "term": 88
+      },
+      "term": {
+        "f1": 0.5341519570222564,
+        "fn": 88,
+        "fp": 519,
+        "gold": 436,
+        "precision": 0.4013840830449827,
+        "recall": 0.7981651376146789,
+        "tp": 348
+      },
+      "term_category": {
+        "f1": 0.18558282208588958,
+        "fn": 315,
+        "fp": 747,
+        "gold": 436,
+        "precision": 0.13940092165898618,
+        "recall": 0.2775229357798165,
+        "tp": 121
+      },
+      "term_sentiment": {
+        "f1": 0.5095932463545664,
+        "fn": 104,
+        "fp": 535,
+        "gold": 436,
+        "precision": 0.3829296424452134,
+        "recall": 0.7614678899082569,
+        "tp": 332
+      }
+    },
+    {
+      "coverage": 0.44495412844036697,
+      "domain": "hotel",
+      "explicit": {
+        "f1": 0.1825813221406086,
+        "fn": 349,
+        "fp": 430,
+        "gold": 436,
+        "precision": 0.16827852998065765,
+        "recall": 0.19954128440366972,
+        "tp": 87
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.17169811320754716,
+      "original_gold": 543,
+      "seed": 42,
+      "taxonomy": {
+        "category": 134,
+        "correct": 87,
+        "sentiment": 3,
+        "term": 212
+      },
+      "term": {
+        "f1": 0.4700944386149003,
+        "fn": 212,
+        "fp": 293,
+        "gold": 436,
+        "precision": 0.4332688588007737,
+        "recall": 0.5137614678899083,
+        "tp": 224
+      },
+      "term_category": {
+        "f1": 0.1888772298006296,
+        "fn": 346,
+        "fp": 427,
+        "gold": 436,
+        "precision": 0.17408123791102514,
+        "recall": 0.20642201834862386,
+        "tp": 90
+      },
+      "term_sentiment": {
+        "f1": 0.45120671563483733,
+        "fn": 221,
+        "fp": 302,
+        "gold": 436,
+        "precision": 0.4158607350096712,
+        "recall": 0.49311926605504586,
+        "tp": 215
+      }
+    },
+    {
+      "coverage": 0.44495412844036697,
+      "domain": "hotel",
+      "explicit": {
+        "f1": 0.12674418604651164,
+        "fn": 327,
+        "fp": 1175,
+        "gold": 436,
+        "precision": 0.08489096573208722,
+        "recall": 0.25,
+        "tp": 109
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.12588943623426382,
+      "original_gold": 543,
+      "seed": 42,
+      "taxonomy": {
+        "category": 245,
+        "correct": 109,
+        "sentiment": 6,
+        "term": 76
+      },
+      "term": {
+        "f1": 0.4200700116686114,
+        "fn": 76,
+        "fp": 918,
+        "gold": 436,
+        "precision": 0.28169014084507044,
+        "recall": 0.8256880733944955,
+        "tp": 360
+      },
+      "term_category": {
+        "f1": 0.13379872018615474,
+        "fn": 321,
+        "fp": 1168,
+        "gold": 436,
+        "precision": 0.08963367108339829,
+        "recall": 0.26376146788990823,
+        "tp": 115
+      },
+      "term_sentiment": {
+        "f1": 0.3883381924198251,
+        "fn": 103,
+        "fp": 946,
+        "gold": 436,
+        "precision": 0.26035965598123534,
+        "recall": 0.7637614678899083,
+        "tp": 333
+      }
+    },
+    {
+      "coverage": 0.44495412844036697,
+      "domain": "hotel",
+      "explicit": {
+        "f1": 0.15360983102918588,
+        "fn": 336,
+        "fp": 766,
+        "gold": 436,
+        "precision": 0.11547344110854503,
+        "recall": 0.22935779816513763,
+        "tp": 100
+      },
+      "model": "phase2_mixed_025",
+      "seed": 123,
+      "taxonomy": {
+        "category": 241,
+        "correct": 100,
+        "sentiment": 6,
+        "term": 89
+      },
+      "term": {
+        "f1": 0.533026113671275,
+        "fn": 89,
+        "fp": 519,
+        "gold": 436,
+        "precision": 0.4006928406466513,
+        "recall": 0.7958715596330275,
+        "tp": 347
+      },
+      "term_category": {
+        "f1": 0.16282642089093702,
+        "fn": 330,
+        "fp": 760,
+        "gold": 436,
+        "precision": 0.12240184757505773,
+        "recall": 0.24311926605504589,
+        "tp": 106
+      },
+      "term_sentiment": {
+        "f1": 0.5023041474654378,
+        "fn": 109,
+        "fp": 539,
+        "gold": 436,
+        "precision": 0.37759815242494227,
+        "recall": 0.75,
+        "tp": 327
+      }
+    },
+    {
+      "coverage": 0.44495412844036697,
+      "domain": "hotel",
+      "explicit": {
+        "f1": 0.15885947046843177,
+        "fn": 358,
+        "fp": 468,
+        "gold": 436,
+        "precision": 0.14285714285714285,
+        "recall": 0.17889908256880735,
+        "tp": 78
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.1487603305785124,
+      "original_gold": 543,
+      "seed": 123,
+      "taxonomy": {
+        "category": 167,
+        "correct": 78,
+        "sentiment": 5,
+        "term": 186
+      },
+      "term": {
+        "f1": 0.5091649694501018,
+        "fn": 186,
+        "fp": 296,
+        "gold": 436,
+        "precision": 0.45787545787545786,
+        "recall": 0.573394495412844,
+        "tp": 250
+      },
+      "term_category": {
+        "f1": 0.1690427698574338,
+        "fn": 353,
+        "fp": 463,
+        "gold": 436,
+        "precision": 0.152014652014652,
+        "recall": 0.19036697247706422,
+        "tp": 83
+      },
+      "term_sentiment": {
+        "f1": 0.48676171079429736,
+        "fn": 197,
+        "fp": 307,
+        "gold": 436,
+        "precision": 0.43772893772893773,
+        "recall": 0.5481651376146789,
+        "tp": 239
+      }
+    },
+    {
+      "coverage": 0.44495412844036697,
+      "domain": "hotel",
+      "explicit": {
+        "f1": 0.09658421672555949,
+        "fn": 354,
+        "fp": 1180,
+        "gold": 436,
+        "precision": 0.06497622820919176,
+        "recall": 0.18807339449541285,
+        "tp": 82
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.09529085872576178,
+      "original_gold": 543,
+      "seed": 123,
+      "taxonomy": {
+        "category": 278,
+        "correct": 82,
+        "sentiment": 6,
+        "term": 70
+      },
+      "term": {
+        "f1": 0.43236857649143534,
+        "fn": 70,
+        "fp": 891,
+        "gold": 436,
+        "precision": 0.2911694510739857,
+        "recall": 0.8394495412844036,
+        "tp": 366
+      },
+      "term_category": {
+        "f1": 0.10371243370654096,
+        "fn": 348,
+        "fp": 1173,
+        "gold": 436,
+        "precision": 0.06978588421887391,
+        "recall": 0.2018348623853211,
+        "tp": 88
+      },
+      "term_sentiment": {
+        "f1": 0.40731995277449823,
+        "fn": 91,
+        "fp": 913,
+        "gold": 436,
+        "precision": 0.2742448330683625,
+        "recall": 0.7912844036697247,
+        "tp": 345
+      }
+    },
+    {
+      "coverage": 0.44495412844036697,
+      "domain": "hotel",
+      "explicit": {
+        "f1": 0.20226415094339623,
+        "fn": 302,
+        "fp": 755,
+        "gold": 436,
+        "precision": 0.15073115860517436,
+        "recall": 0.3073394495412844,
+        "tp": 134
+      },
+      "model": "phase2_mixed_025",
+      "seed": 2024,
+      "taxonomy": {
+        "category": 207,
+        "correct": 134,
+        "sentiment": 3,
+        "term": 92
+      },
+      "term": {
+        "f1": 0.5196374622356495,
+        "fn": 92,
+        "fp": 544,
+        "gold": 436,
+        "precision": 0.38738738738738737,
+        "recall": 0.7889908256880734,
+        "tp": 344
+      },
+      "term_category": {
+        "f1": 0.20679245283018868,
+        "fn": 299,
+        "fp": 752,
+        "gold": 436,
+        "precision": 0.15410573678290213,
+        "recall": 0.31422018348623854,
+        "tp": 137
+      },
+      "term_sentiment": {
+        "f1": 0.4984894259818731,
+        "fn": 106,
+        "fp": 558,
+        "gold": 436,
+        "precision": 0.3716216216216216,
+        "recall": 0.7568807339449541,
+        "tp": 330
+      }
+    },
+    {
+      "coverage": 0.44495412844036697,
+      "domain": "hotel",
+      "explicit": {
+        "f1": 0.16342412451361868,
+        "fn": 352,
+        "fp": 508,
+        "gold": 436,
+        "precision": 0.14189189189189189,
+        "recall": 0.1926605504587156,
+        "tp": 84
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.15506607929515417,
+      "original_gold": 543,
+      "seed": 2024,
+      "taxonomy": {
+        "category": 167,
+        "correct": 84,
+        "sentiment": 5,
+        "term": 180
+      },
+      "term": {
+        "f1": 0.49902534113060426,
+        "fn": 180,
+        "fp": 334,
+        "gold": 436,
+        "precision": 0.43389830508474575,
+        "recall": 0.5871559633027523,
+        "tp": 256
+      },
+      "term_category": {
+        "f1": 0.17315175097276264,
+        "fn": 347,
+        "fp": 503,
+        "gold": 436,
+        "precision": 0.15033783783783783,
+        "recall": 0.20412844036697247,
+        "tp": 89
+      },
+      "term_sentiment": {
+        "f1": 0.47953216374269003,
+        "fn": 190,
+        "fp": 344,
+        "gold": 436,
+        "precision": 0.41694915254237286,
+        "recall": 0.5642201834862385,
+        "tp": 246
+      }
+    },
+    {
+      "coverage": 0.44495412844036697,
+      "domain": "hotel",
+      "explicit": {
+        "f1": 0.14316702819956617,
+        "fn": 304,
+        "fp": 1276,
+        "gold": 436,
+        "precision": 0.09375,
+        "recall": 0.30275229357798167,
+        "tp": 132
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.14454126089185032,
+      "original_gold": 543,
+      "seed": 2024,
+      "taxonomy": {
+        "category": 228,
+        "correct": 132,
+        "sentiment": 9,
+        "term": 67
+      },
+      "term": {
+        "f1": 0.4019607843137255,
+        "fn": 67,
+        "fp": 1031,
+        "gold": 436,
+        "precision": 0.26357142857142857,
+        "recall": 0.8463302752293578,
+        "tp": 369
+      },
+      "term_category": {
+        "f1": 0.1532608695652174,
+        "fn": 295,
+        "fp": 1263,
+        "gold": 436,
+        "precision": 0.10042735042735043,
+        "recall": 0.32339449541284404,
+        "tp": 141
+      },
+      "term_sentiment": {
+        "f1": 0.375,
+        "fn": 91,
+        "fp": 1059,
+        "gold": 436,
+        "precision": 0.24572649572649571,
+        "recall": 0.7912844036697247,
+        "tp": 345
+      }
+    },
+    {
+      "coverage": 0.44495412844036697,
+      "domain": "hotel",
+      "explicit": {
+        "f1": 0.1945945945945946,
+        "fn": 310,
+        "fp": 733,
+        "gold": 436,
+        "precision": 0.14668218859138532,
+        "recall": 0.2889908256880734,
+        "tp": 126
+      },
+      "model": "phase2_mixed_025",
+      "seed": 777,
+      "taxonomy": {
+        "category": 221,
+        "correct": 126,
+        "sentiment": 3,
+        "term": 86
+      },
+      "term": {
+        "f1": 0.5409582689335394,
+        "fn": 86,
+        "fp": 508,
+        "gold": 436,
+        "precision": 0.40792540792540793,
+        "recall": 0.8027522935779816,
+        "tp": 350
+      },
+      "term_category": {
+        "f1": 0.19938176197836166,
+        "fn": 307,
+        "fp": 729,
+        "gold": 436,
+        "precision": 0.15034965034965034,
+        "recall": 0.2958715596330275,
+        "tp": 129
+      },
+      "term_sentiment": {
+        "f1": 0.5158301158301158,
+        "fn": 102,
+        "fp": 525,
+        "gold": 436,
+        "precision": 0.38882421420256114,
+        "recall": 0.7660550458715596,
+        "tp": 334
+      }
+    },
+    {
+      "coverage": 0.44495412844036697,
+      "domain": "hotel",
+      "explicit": {
+        "f1": 0.16358325219084713,
+        "fn": 352,
+        "fp": 507,
+        "gold": 436,
+        "precision": 0.14213197969543148,
+        "recall": 0.1926605504587156,
+        "tp": 84
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.15520282186948853,
+      "original_gold": 543,
+      "seed": 777,
+      "taxonomy": {
+        "category": 169,
+        "correct": 84,
+        "sentiment": 5,
+        "term": 178
+      },
+      "term": {
+        "f1": 0.5024342745861733,
+        "fn": 178,
+        "fp": 333,
+        "gold": 436,
+        "precision": 0.4365482233502538,
+        "recall": 0.591743119266055,
+        "tp": 258
+      },
+      "term_category": {
+        "f1": 0.1733203505355404,
+        "fn": 347,
+        "fp": 502,
+        "gold": 436,
+        "precision": 0.1505922165820643,
+        "recall": 0.20412844036697247,
+        "tp": 89
+      },
+      "term_sentiment": {
+        "f1": 0.4810126582278481,
+        "fn": 189,
+        "fp": 344,
+        "gold": 436,
+        "precision": 0.4179357021996616,
+        "recall": 0.5665137614678899,
+        "tp": 247
+      }
+    },
+    {
+      "coverage": 0.44495412844036697,
+      "domain": "hotel",
+      "explicit": {
+        "f1": 0.14468558708959378,
+        "fn": 306,
+        "fp": 1231,
+        "gold": 436,
+        "precision": 0.09551800146950772,
+        "recall": 0.2981651376146789,
+        "tp": 130
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.14285714285714285,
+      "original_gold": 543,
+      "seed": 777,
+      "taxonomy": {
+        "category": 230,
+        "correct": 130,
+        "sentiment": 9,
+        "term": 67
+      },
+      "term": {
+        "f1": 0.4120603015075377,
+        "fn": 67,
+        "fp": 986,
+        "gold": 436,
+        "precision": 0.27232472324723245,
+        "recall": 0.8463302752293578,
+        "tp": 369
+      },
+      "term_category": {
+        "f1": 0.15478841870824053,
+        "fn": 297,
+        "fp": 1221,
+        "gold": 436,
+        "precision": 0.10220588235294117,
+        "recall": 0.31880733944954126,
+        "tp": 139
+      },
+      "term_sentiment": {
+        "f1": 0.3861607142857143,
+        "fn": 90,
+        "fp": 1010,
+        "gold": 436,
+        "precision": 0.2551622418879056,
+        "recall": 0.7935779816513762,
+        "tp": 346
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "laptop",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 643,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase2_mixed_025",
+      "seed": 13,
+      "taxonomy": {
+        "category": 304,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 190
+      },
+      "term": {
+        "f1": 0.534740545294635,
+        "fn": 190,
+        "fp": 339,
+        "gold": 494,
+        "precision": 0.4727838258164852,
+        "recall": 0.6153846153846154,
+        "tp": 304
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 643,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.4890061565523307,
+        "fn": 216,
+        "fp": 365,
+        "gold": 494,
+        "precision": 0.432348367029549,
+        "recall": 0.562753036437247,
+        "tp": 278
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "laptop",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 311,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.0,
+      "original_gold": 525,
+      "seed": 13,
+      "taxonomy": {
+        "category": 166,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 328
+      },
+      "term": {
+        "f1": 0.4129353233830846,
+        "fn": 328,
+        "fp": 144,
+        "gold": 494,
+        "precision": 0.535483870967742,
+        "recall": 0.3360323886639676,
+        "tp": 166
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 310,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.39006211180124223,
+        "fn": 337,
+        "fp": 154,
+        "gold": 494,
+        "precision": 0.5048231511254019,
+        "recall": 0.31781376518218624,
+        "tp": 157
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "laptop",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 1204,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.0,
+      "original_gold": 525,
+      "seed": 13,
+      "taxonomy": {
+        "category": 394,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 100
+      },
+      "term": {
+        "f1": 0.4648967551622419,
+        "fn": 100,
+        "fp": 807,
+        "gold": 494,
+        "precision": 0.32805995004163196,
+        "recall": 0.7975708502024291,
+        "tp": 394
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 1203,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.3924572775486152,
+        "fn": 161,
+        "fp": 870,
+        "gold": 494,
+        "precision": 0.27680798004987534,
+        "recall": 0.6740890688259109,
+        "tp": 333
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "laptop",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 637,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase2_mixed_025",
+      "seed": 42,
+      "taxonomy": {
+        "category": 301,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 193
+      },
+      "term": {
+        "f1": 0.5327433628318584,
+        "fn": 193,
+        "fp": 335,
+        "gold": 494,
+        "precision": 0.47327044025157233,
+        "recall": 0.6093117408906883,
+        "tp": 301
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 637,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.479646017699115,
+        "fn": 223,
+        "fp": 365,
+        "gold": 494,
+        "precision": 0.4261006289308176,
+        "recall": 0.548582995951417,
+        "tp": 271
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "laptop",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 334,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.0,
+      "original_gold": 525,
+      "seed": 42,
+      "taxonomy": {
+        "category": 145,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 349
+      },
+      "term": {
+        "f1": 0.3502415458937198,
+        "fn": 349,
+        "fp": 189,
+        "gold": 494,
+        "precision": 0.4341317365269461,
+        "recall": 0.2935222672064777,
+        "tp": 145
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 334,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.3309178743961353,
+        "fn": 357,
+        "fp": 197,
+        "gold": 494,
+        "precision": 0.4101796407185629,
+        "recall": 0.2773279352226721,
+        "tp": 137
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "laptop",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 1185,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.0,
+      "original_gold": 525,
+      "seed": 42,
+      "taxonomy": {
+        "category": 403,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 91
+      },
+      "term": {
+        "f1": 0.4809069212410501,
+        "fn": 91,
+        "fp": 779,
+        "gold": 494,
+        "precision": 0.3409475465313029,
+        "recall": 0.8157894736842105,
+        "tp": 403
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 1184,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.4061941631923764,
+        "fn": 153,
+        "fp": 844,
+        "gold": 494,
+        "precision": 0.2877637130801688,
+        "recall": 0.6902834008097166,
+        "tp": 341
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "laptop",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 637,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase2_mixed_025",
+      "seed": 123,
+      "taxonomy": {
+        "category": 312,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 182
+      },
+      "term": {
+        "f1": 0.5517241379310345,
+        "fn": 182,
+        "fp": 325,
+        "gold": 494,
+        "precision": 0.4897959183673469,
+        "recall": 0.631578947368421,
+        "tp": 312
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 637,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.4986737400530504,
+        "fn": 212,
+        "fp": 355,
+        "gold": 494,
+        "precision": 0.4427001569858713,
+        "recall": 0.5708502024291497,
+        "tp": 282
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "laptop",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 301,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.0,
+      "original_gold": 525,
+      "seed": 123,
+      "taxonomy": {
+        "category": 162,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 332
+      },
+      "term": {
+        "f1": 0.4075471698113208,
+        "fn": 332,
+        "fp": 139,
+        "gold": 494,
+        "precision": 0.5382059800664452,
+        "recall": 0.32793522267206476,
+        "tp": 162
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 301,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.37484276729559746,
+        "fn": 345,
+        "fp": 152,
+        "gold": 494,
+        "precision": 0.4950166112956811,
+        "recall": 0.3016194331983806,
+        "tp": 149
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "laptop",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 1241,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.0,
+      "original_gold": 525,
+      "seed": 123,
+      "taxonomy": {
+        "category": 394,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 100
+      },
+      "term": {
+        "f1": 0.45601851851851855,
+        "fn": 100,
+        "fp": 840,
+        "gold": 494,
+        "precision": 0.3192868719611021,
+        "recall": 0.7975708502024291,
+        "tp": 394
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 1239,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.38799076212471134,
+        "fn": 158,
+        "fp": 902,
+        "gold": 494,
+        "precision": 0.27140549273021003,
+        "recall": 0.680161943319838,
+        "tp": 336
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "laptop",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 627,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase2_mixed_025",
+      "seed": 2024,
+      "taxonomy": {
+        "category": 309,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 185
+      },
+      "term": {
+        "f1": 0.5512934879571811,
+        "fn": 185,
+        "fp": 318,
+        "gold": 494,
+        "precision": 0.49282296650717705,
+        "recall": 0.6255060728744939,
+        "tp": 309
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 627,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.49955396966993754,
+        "fn": 214,
+        "fp": 347,
+        "gold": 494,
+        "precision": 0.44657097288676234,
+        "recall": 0.5668016194331984,
+        "tp": 280
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "laptop",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 371,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.0,
+      "original_gold": 525,
+      "seed": 2024,
+      "taxonomy": {
+        "category": 158,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 336
+      },
+      "term": {
+        "f1": 0.3653179190751445,
+        "fn": 336,
+        "fp": 213,
+        "gold": 494,
+        "precision": 0.42587601078167114,
+        "recall": 0.31983805668016196,
+        "tp": 158
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 371,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.3445086705202312,
+        "fn": 345,
+        "fp": 222,
+        "gold": 494,
+        "precision": 0.40161725067385445,
+        "recall": 0.3016194331983806,
+        "tp": 149
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "laptop",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 1220,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.0,
+      "original_gold": 525,
+      "seed": 2024,
+      "taxonomy": {
+        "category": 401,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 93
+      },
+      "term": {
+        "f1": 0.46900584795321637,
+        "fn": 93,
+        "fp": 815,
+        "gold": 494,
+        "precision": 0.32976973684210525,
+        "recall": 0.8117408906882592,
+        "tp": 401
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 1217,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.3957968476357268,
+        "fn": 155,
+        "fp": 880,
+        "gold": 494,
+        "precision": 0.2780968006562756,
+        "recall": 0.6862348178137652,
+        "tp": 339
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "laptop",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 553,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase2_mixed_025",
+      "seed": 777,
+      "taxonomy": {
+        "category": 277,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 217
+      },
+      "term": {
+        "f1": 0.5291308500477555,
+        "fn": 217,
+        "fp": 276,
+        "gold": 494,
+        "precision": 0.5009041591320073,
+        "recall": 0.5607287449392713,
+        "tp": 277
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 553,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.49283667621776506,
+        "fn": 236,
+        "fp": 295,
+        "gold": 494,
+        "precision": 0.4665461121157324,
+        "recall": 0.5222672064777328,
+        "tp": 258
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "laptop",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 249,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.0,
+      "original_gold": 525,
+      "seed": 777,
+      "taxonomy": {
+        "category": 110,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 384
+      },
+      "term": {
+        "f1": 0.2960969044414536,
+        "fn": 384,
+        "fp": 139,
+        "gold": 494,
+        "precision": 0.44176706827309237,
+        "recall": 0.22267206477732793,
+        "tp": 110
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 249,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.28263795423956933,
+        "fn": 389,
+        "fp": 144,
+        "gold": 494,
+        "precision": 0.42168674698795183,
+        "recall": 0.2125506072874494,
+        "tp": 105
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "laptop",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 1126,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.0,
+      "original_gold": 525,
+      "seed": 777,
+      "taxonomy": {
+        "category": 405,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 89
+      },
+      "term": {
+        "f1": 0.5009276437847866,
+        "fn": 89,
+        "fp": 718,
+        "gold": 494,
+        "precision": 0.3606411398040962,
+        "recall": 0.819838056680162,
+        "tp": 405
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 494,
+        "fp": 1124,
+        "gold": 494,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.42742433600988267,
+        "fn": 148,
+        "fp": 779,
+        "gold": 494,
+        "precision": 0.3075555555555556,
+        "recall": 0.7004048582995951,
+        "tp": 346
+      }
+    },
+    {
+      "coverage": 0.7017208413001912,
+      "domain": "restaurant",
+      "explicit": {
+        "f1": 0.17873303167420815,
+        "fn": 444,
+        "fp": 282,
+        "gold": 523,
+        "precision": 0.2188365650969529,
+        "recall": 0.15105162523900573,
+        "tp": 79
+      },
+      "model": "phase2_mixed_025",
+      "seed": 13,
+      "taxonomy": {
+        "category": 127,
+        "correct": 79,
+        "sentiment": 5,
+        "term": 312
+      },
+      "term": {
+        "f1": 0.47737556561085975,
+        "fn": 312,
+        "fp": 150,
+        "gold": 523,
+        "precision": 0.5844875346260388,
+        "recall": 0.40344168260038243,
+        "tp": 211
+      },
+      "term_category": {
+        "f1": 0.19004524886877827,
+        "fn": 439,
+        "fp": 277,
+        "gold": 523,
+        "precision": 0.23268698060941828,
+        "recall": 0.16061185468451242,
+        "tp": 84
+      },
+      "term_sentiment": {
+        "f1": 0.45248868778280543,
+        "fn": 323,
+        "fp": 161,
+        "gold": 523,
+        "precision": 0.554016620498615,
+        "recall": 0.3824091778202677,
+        "tp": 200
+      }
+    },
+    {
+      "coverage": 0.7017208413001912,
+      "domain": "restaurant",
+      "explicit": {
+        "f1": 0.1406025824964132,
+        "fn": 474,
+        "fp": 125,
+        "gold": 523,
+        "precision": 0.28160919540229884,
+        "recall": 0.09369024856596558,
+        "tp": 49
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.13279132791327913,
+      "original_gold": 564,
+      "seed": 13,
+      "taxonomy": {
+        "category": 29,
+        "correct": 49,
+        "sentiment": 4,
+        "term": 441
+      },
+      "term": {
+        "f1": 0.23529411764705882,
+        "fn": 441,
+        "fp": 92,
+        "gold": 523,
+        "precision": 0.47126436781609193,
+        "recall": 0.15678776290630975,
+        "tp": 82
+      },
+      "term_category": {
+        "f1": 0.15208034433285508,
+        "fn": 470,
+        "fp": 121,
+        "gold": 523,
+        "precision": 0.3045977011494253,
+        "recall": 0.10133843212237094,
+        "tp": 53
+      },
+      "term_sentiment": {
+        "f1": 0.22094691535150646,
+        "fn": 446,
+        "fp": 97,
+        "gold": 523,
+        "precision": 0.4425287356321839,
+        "recall": 0.14722753346080306,
+        "tp": 77
+      }
+    },
+    {
+      "coverage": 0.7017208413001912,
+      "domain": "restaurant",
+      "explicit": {
+        "f1": 0.2218867924528302,
+        "fn": 376,
+        "fp": 655,
+        "gold": 523,
+        "precision": 0.18329177057356608,
+        "recall": 0.28107074569789675,
+        "tp": 147
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.22986822840409957,
+      "original_gold": 564,
+      "seed": 13,
+      "taxonomy": {
+        "category": 236,
+        "correct": 147,
+        "sentiment": 10,
+        "term": 130
+      },
+      "term": {
+        "f1": 0.595003785011355,
+        "fn": 130,
+        "fp": 405,
+        "gold": 523,
+        "precision": 0.4924812030075188,
+        "recall": 0.751434034416826,
+        "tp": 393
+      },
+      "term_category": {
+        "f1": 0.23733938019652306,
+        "fn": 366,
+        "fp": 643,
+        "gold": 523,
+        "precision": 0.19625,
+        "recall": 0.30019120458891013,
+        "tp": 157
+      },
+      "term_sentiment": {
+        "f1": 0.5366591080876795,
+        "fn": 168,
+        "fp": 445,
+        "gold": 523,
+        "precision": 0.44375,
+        "recall": 0.6787762906309751,
+        "tp": 355
+      }
+    },
+    {
+      "coverage": 0.7017208413001912,
+      "domain": "restaurant",
+      "explicit": {
+        "f1": 0.17916666666666667,
+        "fn": 437,
+        "fp": 351,
+        "gold": 523,
+        "precision": 0.19679633867276888,
+        "recall": 0.16443594646271512,
+        "tp": 86
+      },
+      "model": "phase2_mixed_025",
+      "seed": 42,
+      "taxonomy": {
+        "category": 168,
+        "correct": 86,
+        "sentiment": 7,
+        "term": 262
+      },
+      "term": {
+        "f1": 0.54375,
+        "fn": 262,
+        "fp": 176,
+        "gold": 523,
+        "precision": 0.597254004576659,
+        "recall": 0.49904397705544934,
+        "tp": 261
+      },
+      "term_category": {
+        "f1": 0.19375,
+        "fn": 430,
+        "fp": 344,
+        "gold": 523,
+        "precision": 0.2128146453089245,
+        "recall": 0.17782026768642448,
+        "tp": 93
+      },
+      "term_sentiment": {
+        "f1": 0.50625,
+        "fn": 280,
+        "fp": 194,
+        "gold": 523,
+        "precision": 0.5560640732265446,
+        "recall": 0.4646271510516252,
+        "tp": 243
+      }
+    },
+    {
+      "coverage": 0.7017208413001912,
+      "domain": "restaurant",
+      "explicit": {
+        "f1": 0.13333333333333333,
+        "fn": 480,
+        "fp": 79,
+        "gold": 523,
+        "precision": 0.3524590163934426,
+        "recall": 0.08221797323135756,
+        "tp": 43
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.12536443148688048,
+      "original_gold": 564,
+      "seed": 42,
+      "taxonomy": {
+        "category": 32,
+        "correct": 43,
+        "sentiment": 4,
+        "term": 444
+      },
+      "term": {
+        "f1": 0.24496124031007752,
+        "fn": 444,
+        "fp": 43,
+        "gold": 523,
+        "precision": 0.6475409836065574,
+        "recall": 0.15105162523900573,
+        "tp": 79
+      },
+      "term_category": {
+        "f1": 0.14573643410852713,
+        "fn": 476,
+        "fp": 75,
+        "gold": 523,
+        "precision": 0.38524590163934425,
+        "recall": 0.08986615678776291,
+        "tp": 47
+      },
+      "term_sentiment": {
+        "f1": 0.22635658914728682,
+        "fn": 450,
+        "fp": 49,
+        "gold": 523,
+        "precision": 0.5983606557377049,
+        "recall": 0.13957934990439771,
+        "tp": 73
+      }
+    },
+    {
+      "coverage": 0.7017208413001912,
+      "domain": "restaurant",
+      "explicit": {
+        "f1": 0.17533432392273401,
+        "fn": 405,
+        "fp": 705,
+        "gold": 523,
+        "precision": 0.1433778857837181,
+        "recall": 0.22562141491395793,
+        "tp": 118
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.17591925018024512,
+      "original_gold": 564,
+      "seed": 42,
+      "taxonomy": {
+        "category": 243,
+        "correct": 118,
+        "sentiment": 11,
+        "term": 151
+      },
+      "term": {
+        "f1": 0.5535714285714286,
+        "fn": 151,
+        "fp": 449,
+        "gold": 523,
+        "precision": 0.4531059683313033,
+        "recall": 0.7112810707456979,
+        "tp": 372
+      },
+      "term_category": {
+        "f1": 0.19182156133828995,
+        "fn": 394,
+        "fp": 693,
+        "gold": 523,
+        "precision": 0.15693430656934307,
+        "recall": 0.24665391969407266,
+        "tp": 129
+      },
+      "term_sentiment": {
+        "f1": 0.5026022304832714,
+        "fn": 185,
+        "fp": 484,
+        "gold": 523,
+        "precision": 0.41119221411192214,
+        "recall": 0.6462715105162524,
+        "tp": 338
+      }
+    },
+    {
+      "coverage": 0.7017208413001912,
+      "domain": "restaurant",
+      "explicit": {
+        "f1": 0.19262295081967212,
+        "fn": 429,
+        "fp": 359,
+        "gold": 523,
+        "precision": 0.20750551876379691,
+        "recall": 0.17973231357552583,
+        "tp": 94
+      },
+      "model": "phase2_mixed_025",
+      "seed": 123,
+      "taxonomy": {
+        "category": 172,
+        "correct": 94,
+        "sentiment": 8,
+        "term": 249
+      },
+      "term": {
+        "f1": 0.5620512820512821,
+        "fn": 249,
+        "fp": 178,
+        "gold": 523,
+        "precision": 0.6061946902654868,
+        "recall": 0.5239005736137667,
+        "tp": 274
+      },
+      "term_category": {
+        "f1": 0.20901639344262296,
+        "fn": 421,
+        "fp": 351,
+        "gold": 523,
+        "precision": 0.2251655629139073,
+        "recall": 0.1950286806883365,
+        "tp": 102
+      },
+      "term_sentiment": {
+        "f1": 0.518974358974359,
+        "fn": 270,
+        "fp": 199,
+        "gold": 523,
+        "precision": 0.5597345132743363,
+        "recall": 0.4837476099426386,
+        "tp": 253
+      }
+    },
+    {
+      "coverage": 0.7017208413001912,
+      "domain": "restaurant",
+      "explicit": {
+        "f1": 0.1205564142194745,
+        "fn": 484,
+        "fp": 85,
+        "gold": 523,
+        "precision": 0.31451612903225806,
+        "recall": 0.0745697896749522,
+        "tp": 39
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.11337209302325581,
+      "original_gold": 564,
+      "seed": 123,
+      "taxonomy": {
+        "category": 37,
+        "correct": 39,
+        "sentiment": 4,
+        "term": 443
+      },
+      "term": {
+        "f1": 0.2472952086553323,
+        "fn": 443,
+        "fp": 44,
+        "gold": 523,
+        "precision": 0.6451612903225806,
+        "recall": 0.15296367112810708,
+        "tp": 80
+      },
+      "term_category": {
+        "f1": 0.13292117465224113,
+        "fn": 480,
+        "fp": 81,
+        "gold": 523,
+        "precision": 0.3467741935483871,
+        "recall": 0.08221797323135756,
+        "tp": 43
+      },
+      "term_sentiment": {
+        "f1": 0.22256568778979907,
+        "fn": 451,
+        "fp": 52,
+        "gold": 523,
+        "precision": 0.5806451612903226,
+        "recall": 0.13766730401529637,
+        "tp": 72
+      }
+    },
+    {
+      "coverage": 0.7017208413001912,
+      "domain": "restaurant",
+      "explicit": {
+        "f1": 0.22073079791200598,
+        "fn": 375,
+        "fp": 670,
+        "gold": 523,
+        "precision": 0.18092909535452323,
+        "recall": 0.2829827915869981,
+        "tp": 148
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.2272069464544139,
+      "original_gold": 564,
+      "seed": 123,
+      "taxonomy": {
+        "category": 243,
+        "correct": 148,
+        "sentiment": 13,
+        "term": 119
+      },
+      "term": {
+        "f1": 0.6029850746268657,
+        "fn": 119,
+        "fp": 413,
+        "gold": 523,
+        "precision": 0.4944920440636475,
+        "recall": 0.7724665391969407,
+        "tp": 404
+      },
+      "term_category": {
+        "f1": 0.24029850746268658,
+        "fn": 362,
+        "fp": 656,
+        "gold": 523,
+        "precision": 0.19706242350061198,
+        "recall": 0.3078393881453155,
+        "tp": 161
+      },
+      "term_sentiment": {
+        "f1": 0.5458612975391499,
+        "fn": 157,
+        "fp": 452,
+        "gold": 523,
+        "precision": 0.4474327628361858,
+        "recall": 0.6998087954110899,
+        "tp": 366
+      }
+    },
+    {
+      "coverage": 0.7017208413001912,
+      "domain": "restaurant",
+      "explicit": {
+        "f1": 0.16547497446373852,
+        "fn": 442,
+        "fp": 375,
+        "gold": 523,
+        "precision": 0.17763157894736842,
+        "recall": 0.15487571701720843,
+        "tp": 81
+      },
+      "model": "phase2_mixed_025",
+      "seed": 2024,
+      "taxonomy": {
+        "category": 177,
+        "correct": 81,
+        "sentiment": 8,
+        "term": 257
+      },
+      "term": {
+        "f1": 0.54341164453524,
+        "fn": 257,
+        "fp": 190,
+        "gold": 523,
+        "precision": 0.5833333333333334,
+        "recall": 0.5086042065009561,
+        "tp": 266
+      },
+      "term_category": {
+        "f1": 0.18181818181818182,
+        "fn": 434,
+        "fp": 367,
+        "gold": 523,
+        "precision": 0.19517543859649122,
+        "recall": 0.1701720841300191,
+        "tp": 89
+      },
+      "term_sentiment": {
+        "f1": 0.5025536261491318,
+        "fn": 277,
+        "fp": 210,
+        "gold": 523,
+        "precision": 0.5394736842105263,
+        "recall": 0.47036328871892924,
+        "tp": 246
+      }
+    },
+    {
+      "coverage": 0.7017208413001912,
+      "domain": "restaurant",
+      "explicit": {
+        "f1": 0.15384615384615385,
+        "fn": 469,
+        "fp": 125,
+        "gold": 523,
+        "precision": 0.3016759776536313,
+        "recall": 0.10325047801147227,
+        "tp": 54
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.14535666218034993,
+      "original_gold": 564,
+      "seed": 2024,
+      "taxonomy": {
+        "category": 44,
+        "correct": 54,
+        "sentiment": 6,
+        "term": 419
+      },
+      "term": {
+        "f1": 0.2962962962962963,
+        "fn": 419,
+        "fp": 75,
+        "gold": 523,
+        "precision": 0.5810055865921788,
+        "recall": 0.1988527724665392,
+        "tp": 104
+      },
+      "term_category": {
+        "f1": 0.17094017094017094,
+        "fn": 463,
+        "fp": 119,
+        "gold": 523,
+        "precision": 0.33519553072625696,
+        "recall": 0.1147227533460803,
+        "tp": 60
+      },
+      "term_sentiment": {
+        "f1": 0.26495726495726496,
+        "fn": 430,
+        "fp": 86,
+        "gold": 523,
+        "precision": 0.5195530726256983,
+        "recall": 0.17782026768642448,
+        "tp": 93
+      }
+    },
+    {
+      "coverage": 0.7017208413001912,
+      "domain": "restaurant",
+      "explicit": {
+        "f1": 0.19616858237547893,
+        "fn": 395,
+        "fp": 654,
+        "gold": 523,
+        "precision": 0.1636828644501279,
+        "recall": 0.2447418738049713,
+        "tp": 128
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.19465081723625557,
+      "original_gold": 564,
+      "seed": 2024,
+      "taxonomy": {
+        "category": 256,
+        "correct": 128,
+        "sentiment": 10,
+        "term": 129
+      },
+      "term": {
+        "f1": 0.6038314176245211,
+        "fn": 129,
+        "fp": 388,
+        "gold": 523,
+        "precision": 0.5038363171355499,
+        "recall": 0.7533460803059273,
+        "tp": 394
+      },
+      "term_category": {
+        "f1": 0.21149425287356322,
+        "fn": 385,
+        "fp": 644,
+        "gold": 523,
+        "precision": 0.17647058823529413,
+        "recall": 0.2638623326959847,
+        "tp": 138
+      },
+      "term_sentiment": {
+        "f1": 0.5517241379310345,
+        "fn": 163,
+        "fp": 422,
+        "gold": 523,
+        "precision": 0.46035805626598464,
+        "recall": 0.6883365200764818,
+        "tp": 360
+      }
+    },
+    {
+      "coverage": 0.7017208413001912,
+      "domain": "restaurant",
+      "explicit": {
+        "f1": 0.17497456765005087,
+        "fn": 437,
+        "fp": 374,
+        "gold": 523,
+        "precision": 0.18695652173913044,
+        "recall": 0.16443594646271512,
+        "tp": 86
+      },
+      "model": "phase2_mixed_025",
+      "seed": 777,
+      "taxonomy": {
+        "category": 170,
+        "correct": 86,
+        "sentiment": 8,
+        "term": 259
+      },
+      "term": {
+        "f1": 0.5382262996941896,
+        "fn": 259,
+        "fp": 194,
+        "gold": 523,
+        "precision": 0.5764192139737991,
+        "recall": 0.5047801147227533,
+        "tp": 264
+      },
+      "term_category": {
+        "f1": 0.19144602851323828,
+        "fn": 429,
+        "fp": 365,
+        "gold": 523,
+        "precision": 0.2047930283224401,
+        "recall": 0.17973231357552583,
+        "tp": 94
+      },
+      "term_sentiment": {
+        "f1": 0.4989816700610998,
+        "fn": 278,
+        "fp": 214,
+        "gold": 523,
+        "precision": 0.5337690631808278,
+        "recall": 0.4684512428298279,
+        "tp": 245
+      }
+    },
+    {
+      "coverage": 0.7017208413001912,
+      "domain": "restaurant",
+      "explicit": {
+        "f1": 0.10776545166402536,
+        "fn": 489,
+        "fp": 74,
+        "gold": 523,
+        "precision": 0.3148148148148148,
+        "recall": 0.06500956022944551,
+        "tp": 34
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.10119047619047619,
+      "original_gold": 564,
+      "seed": 777,
+      "taxonomy": {
+        "category": 30,
+        "correct": 34,
+        "sentiment": 4,
+        "term": 455
+      },
+      "term": {
+        "f1": 0.21553090332805072,
+        "fn": 455,
+        "fp": 40,
+        "gold": 523,
+        "precision": 0.6296296296296297,
+        "recall": 0.13001912045889102,
+        "tp": 68
+      },
+      "term_category": {
+        "f1": 0.12044374009508717,
+        "fn": 485,
+        "fp": 70,
+        "gold": 523,
+        "precision": 0.35185185185185186,
+        "recall": 0.07265774378585087,
+        "tp": 38
+      },
+      "term_sentiment": {
+        "f1": 0.19968304278922344,
+        "fn": 460,
+        "fp": 45,
+        "gold": 523,
+        "precision": 0.5833333333333334,
+        "recall": 0.12045889101338432,
+        "tp": 63
+      }
+    },
+    {
+      "coverage": 0.7017208413001912,
+      "domain": "restaurant",
+      "explicit": {
+        "f1": 0.2016553799849511,
+        "fn": 389,
+        "fp": 672,
+        "gold": 523,
+        "precision": 0.1662531017369727,
+        "recall": 0.25621414913957935,
+        "tp": 134
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.2072992700729927,
+      "original_gold": 564,
+      "seed": 777,
+      "taxonomy": {
+        "category": 232,
+        "correct": 134,
+        "sentiment": 12,
+        "term": 145
+      },
+      "term": {
+        "f1": 0.5692771084337349,
+        "fn": 145,
+        "fp": 427,
+        "gold": 523,
+        "precision": 0.46956521739130436,
+        "recall": 0.722753346080306,
+        "tp": 378
+      },
+      "term_category": {
+        "f1": 0.21987951807228914,
+        "fn": 377,
+        "fp": 659,
+        "gold": 523,
+        "precision": 0.1813664596273292,
+        "recall": 0.27915869980879543,
+        "tp": 146
+      },
+      "term_sentiment": {
+        "f1": 0.5206922498118887,
+        "fn": 177,
+        "fp": 460,
+        "gold": 523,
+        "precision": 0.4292803970223325,
+        "recall": 0.6615678776290631,
+        "tp": 346
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "phone",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 1006,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase2_mixed_025",
+      "seed": 13,
+      "taxonomy": {
+        "category": 302,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 787
+      },
+      "term": {
+        "f1": 0.29080404429465573,
+        "fn": 787,
+        "fp": 686,
+        "gold": 1089,
+        "precision": 0.305668016194332,
+        "recall": 0.2773186409550046,
+        "tp": 302
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 1000,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.272552783109405,
+        "fn": 805,
+        "fp": 711,
+        "gold": 1089,
+        "precision": 0.28542713567839195,
+        "recall": 0.26078971533516987,
+        "tp": 284
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "phone",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 550,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.0,
+      "original_gold": 1179,
+      "seed": 13,
+      "taxonomy": {
+        "category": 161,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 928
+      },
+      "term": {
+        "f1": 0.1976672805402087,
+        "fn": 928,
+        "fp": 379,
+        "gold": 1089,
+        "precision": 0.29814814814814816,
+        "recall": 0.14784205693296604,
+        "tp": 161
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 545,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.18704156479217604,
+        "fn": 936,
+        "fp": 394,
+        "gold": 1089,
+        "precision": 0.2797074954296161,
+        "recall": 0.14049586776859505,
+        "tp": 153
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "phone",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 1700,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.0,
+      "original_gold": 1179,
+      "seed": 13,
+      "taxonomy": {
+        "category": 420,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 669
+      },
+      "term": {
+        "f1": 0.30601092896174864,
+        "fn": 669,
+        "fp": 1236,
+        "gold": 1089,
+        "precision": 0.2536231884057971,
+        "recall": 0.3856749311294766,
+        "tp": 420
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 1686,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.27601156069364163,
+        "fn": 707,
+        "fp": 1297,
+        "gold": 1089,
+        "precision": 0.22751637879690292,
+        "recall": 0.3507805325987144,
+        "tp": 382
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "phone",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 965,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase2_mixed_025",
+      "seed": 42,
+      "taxonomy": {
+        "category": 335,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 754
+      },
+      "term": {
+        "f1": 0.32746823069403713,
+        "fn": 754,
+        "fp": 622,
+        "gold": 1089,
+        "precision": 0.3500522466039707,
+        "recall": 0.3076216712580349,
+        "tp": 335
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 962,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.3084431429965837,
+        "fn": 773,
+        "fp": 644,
+        "gold": 1089,
+        "precision": 0.32916666666666666,
+        "recall": 0.29017447199265384,
+        "tp": 316
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "phone",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 515,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.0,
+      "original_gold": 1179,
+      "seed": 42,
+      "taxonomy": {
+        "category": 134,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 955
+      },
+      "term": {
+        "f1": 0.1671865252651279,
+        "fn": 955,
+        "fp": 380,
+        "gold": 1089,
+        "precision": 0.2607003891050584,
+        "recall": 0.12304866850321396,
+        "tp": 134
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 514,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.1571072319201995,
+        "fn": 963,
+        "fp": 389,
+        "gold": 1089,
+        "precision": 0.2446601941747573,
+        "recall": 0.11570247933884298,
+        "tp": 126
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "phone",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 1630,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.0,
+      "original_gold": 1179,
+      "seed": 42,
+      "taxonomy": {
+        "category": 395,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 694
+      },
+      "term": {
+        "f1": 0.2949962658700523,
+        "fn": 694,
+        "fp": 1194,
+        "gold": 1089,
+        "precision": 0.2485840151038389,
+        "recall": 0.3627180899908173,
+        "tp": 395
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 1618,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.26409495548961426,
+        "fn": 733,
+        "fp": 1251,
+        "gold": 1089,
+        "precision": 0.22153080273802117,
+        "recall": 0.3269054178145087,
+        "tp": 356
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "phone",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 916,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase2_mixed_025",
+      "seed": 123,
+      "taxonomy": {
+        "category": 315,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 774
+      },
+      "term": {
+        "f1": 0.3161063723030607,
+        "fn": 774,
+        "fp": 589,
+        "gold": 1089,
+        "precision": 0.34845132743362833,
+        "recall": 0.2892561983471074,
+        "tp": 315
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 914,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.28943415122684024,
+        "fn": 800,
+        "fp": 619,
+        "gold": 1089,
+        "precision": 0.31828193832599116,
+        "recall": 0.26538108356290174,
+        "tp": 289
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "phone",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 596,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.0,
+      "original_gold": 1179,
+      "seed": 123,
+      "taxonomy": {
+        "category": 162,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 927
+      },
+      "term": {
+        "f1": 0.19331742243436753,
+        "fn": 927,
+        "fp": 425,
+        "gold": 1089,
+        "precision": 0.27597955706984667,
+        "recall": 0.1487603305785124,
+        "tp": 162
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 594,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.18463371054198927,
+        "fn": 934,
+        "fp": 435,
+        "gold": 1089,
+        "precision": 0.2627118644067797,
+        "recall": 0.1423324150596878,
+        "tp": 155
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "phone",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 1720,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.0,
+      "original_gold": 1179,
+      "seed": 123,
+      "taxonomy": {
+        "category": 413,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 676
+      },
+      "term": {
+        "f1": 0.2984104046242775,
+        "fn": 676,
+        "fp": 1266,
+        "gold": 1089,
+        "precision": 0.24597974985110185,
+        "recall": 0.379247015610652,
+        "tp": 413
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 1709,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.26398852223816355,
+        "fn": 721,
+        "fp": 1331,
+        "gold": 1089,
+        "precision": 0.21659799882283695,
+        "recall": 0.3379247015610652,
+        "tp": 368
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "phone",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 974,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase2_mixed_025",
+      "seed": 2024,
+      "taxonomy": {
+        "category": 328,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 761
+      },
+      "term": {
+        "f1": 0.3195323916220166,
+        "fn": 761,
+        "fp": 636,
+        "gold": 1089,
+        "precision": 0.34024896265560167,
+        "recall": 0.3011937557392103,
+        "tp": 328
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 969,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.28946090335114133,
+        "fn": 791,
+        "fp": 672,
+        "gold": 1089,
+        "precision": 0.30721649484536084,
+        "recall": 0.2736455463728191,
+        "tp": 298
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "phone",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 649,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.0,
+      "original_gold": 1179,
+      "seed": 2024,
+      "taxonomy": {
+        "category": 174,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 915
+      },
+      "term": {
+        "f1": 0.20080784766301213,
+        "fn": 915,
+        "fp": 470,
+        "gold": 1089,
+        "precision": 0.2701863354037267,
+        "recall": 0.15977961432506887,
+        "tp": 174
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 647,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.1889400921658986,
+        "fn": 925,
+        "fp": 483,
+        "gold": 1089,
+        "precision": 0.2534775888717156,
+        "recall": 0.15059687786960516,
+        "tp": 164
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "phone",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 1718,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.0,
+      "original_gold": 1179,
+      "seed": 2024,
+      "taxonomy": {
+        "category": 438,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 651
+      },
+      "term": {
+        "f1": 0.31681735985533455,
+        "fn": 651,
+        "fp": 1238,
+        "gold": 1089,
+        "precision": 0.2613365155131265,
+        "recall": 0.4022038567493113,
+        "tp": 438
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 1710,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.28211586901763225,
+        "fn": 697,
+        "fp": 1298,
+        "gold": 1089,
+        "precision": 0.2319526627218935,
+        "recall": 0.35996326905417814,
+        "tp": 392
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "phone",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 955,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase2_mixed_025",
+      "seed": 777,
+      "taxonomy": {
+        "category": 328,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 761
+      },
+      "term": {
+        "f1": 0.32267584849975406,
+        "fn": 761,
+        "fp": 616,
+        "gold": 1089,
+        "precision": 0.3474576271186441,
+        "recall": 0.3011937557392103,
+        "tp": 328
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 951,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.3040706228543404,
+        "fn": 779,
+        "fp": 640,
+        "gold": 1089,
+        "precision": 0.3263157894736842,
+        "recall": 0.2846648301193756,
+        "tp": 310
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "phone",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 711,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.0,
+      "original_gold": 1179,
+      "seed": 777,
+      "taxonomy": {
+        "category": 172,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 917
+      },
+      "term": {
+        "f1": 0.19217877094972066,
+        "fn": 917,
+        "fp": 529,
+        "gold": 1089,
+        "precision": 0.24536376604850213,
+        "recall": 0.15794306703397612,
+        "tp": 172
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 705,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.18697829716193656,
+        "fn": 921,
+        "fp": 540,
+        "gold": 1089,
+        "precision": 0.23728813559322035,
+        "recall": 0.15426997245179064,
+        "tp": 168
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "phone",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 1709,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.0,
+      "original_gold": 1179,
+      "seed": 777,
+      "taxonomy": {
+        "category": 414,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 675
+      },
+      "term": {
+        "f1": 0.3,
+        "fn": 675,
+        "fp": 1257,
+        "gold": 1089,
+        "precision": 0.24775583482944344,
+        "recall": 0.38016528925619836,
+        "tp": 414
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 1089,
+        "fp": 1701,
+        "gold": 1089,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.265850144092219,
+        "fn": 720,
+        "fp": 1318,
+        "gold": 1089,
+        "precision": 0.21873147599288678,
+        "recall": 0.33884297520661155,
+        "tp": 369
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "sight",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 412,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase2_mixed_025",
+      "seed": 13,
+      "taxonomy": {
+        "category": 224,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 412
+      },
+      "term": {
+        "f1": 0.42748091603053434,
+        "fn": 412,
+        "fp": 188,
+        "gold": 636,
+        "precision": 0.5436893203883495,
+        "recall": 0.3522012578616352,
+        "tp": 224
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 412,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.36450381679389315,
+        "fn": 445,
+        "fp": 221,
+        "gold": 636,
+        "precision": 0.46359223300970875,
+        "recall": 0.300314465408805,
+        "tp": 191
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "sight",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 262,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.0,
+      "original_gold": 696,
+      "seed": 13,
+      "taxonomy": {
+        "category": 154,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 482
+      },
+      "term": {
+        "f1": 0.3429844097995546,
+        "fn": 482,
+        "fp": 108,
+        "gold": 636,
+        "precision": 0.5877862595419847,
+        "recall": 0.24213836477987422,
+        "tp": 154
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 262,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.3028953229398664,
+        "fn": 500,
+        "fp": 126,
+        "gold": 636,
+        "precision": 0.5190839694656488,
+        "recall": 0.2138364779874214,
+        "tp": 136
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "sight",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 939,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.0,
+      "original_gold": 696,
+      "seed": 13,
+      "taxonomy": {
+        "category": 329,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 307
+      },
+      "term": {
+        "f1": 0.4209852847088932,
+        "fn": 307,
+        "fp": 598,
+        "gold": 636,
+        "precision": 0.35490830636461707,
+        "recall": 0.5172955974842768,
+        "tp": 329
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 935,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.33375796178343947,
+        "fn": 374,
+        "fp": 672,
+        "gold": 636,
+        "precision": 0.28051391862955033,
+        "recall": 0.4119496855345912,
+        "tp": 262
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "sight",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 393,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase2_mixed_025",
+      "seed": 42,
+      "taxonomy": {
+        "category": 220,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 416
+      },
+      "term": {
+        "f1": 0.42759961127308066,
+        "fn": 416,
+        "fp": 173,
+        "gold": 636,
+        "precision": 0.5597964376590331,
+        "recall": 0.34591194968553457,
+        "tp": 220
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 393,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.3595724003887269,
+        "fn": 451,
+        "fp": 208,
+        "gold": 636,
+        "precision": 0.4707379134860051,
+        "recall": 0.2908805031446541,
+        "tp": 185
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "sight",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 227,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.0,
+      "original_gold": 696,
+      "seed": 42,
+      "taxonomy": {
+        "category": 140,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 496
+      },
+      "term": {
+        "f1": 0.32444959443800697,
+        "fn": 496,
+        "fp": 87,
+        "gold": 636,
+        "precision": 0.6167400881057269,
+        "recall": 0.22012578616352202,
+        "tp": 140
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 227,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.29200463499420626,
+        "fn": 510,
+        "fp": 101,
+        "gold": 636,
+        "precision": 0.5550660792951542,
+        "recall": 0.19811320754716982,
+        "tp": 126
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "sight",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 954,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.0,
+      "original_gold": 696,
+      "seed": 42,
+      "taxonomy": {
+        "category": 336,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 300
+      },
+      "term": {
+        "f1": 0.4266666666666667,
+        "fn": 300,
+        "fp": 603,
+        "gold": 636,
+        "precision": 0.35782747603833864,
+        "recall": 0.5283018867924528,
+        "tp": 336
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 951,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.3291139240506329,
+        "fn": 376,
+        "fp": 684,
+        "gold": 636,
+        "precision": 0.2754237288135593,
+        "recall": 0.4088050314465409,
+        "tp": 260
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "sight",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 352,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase2_mixed_025",
+      "seed": 123,
+      "taxonomy": {
+        "category": 204,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 432
+      },
+      "term": {
+        "f1": 0.41295546558704455,
+        "fn": 432,
+        "fp": 148,
+        "gold": 636,
+        "precision": 0.5795454545454546,
+        "recall": 0.32075471698113206,
+        "tp": 204
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 352,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.35020242914979755,
+        "fn": 463,
+        "fp": 179,
+        "gold": 636,
+        "precision": 0.4914772727272727,
+        "recall": 0.2720125786163522,
+        "tp": 173
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "sight",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 211,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.0,
+      "original_gold": 696,
+      "seed": 123,
+      "taxonomy": {
+        "category": 90,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 546
+      },
+      "term": {
+        "f1": 0.21251475796930341,
+        "fn": 546,
+        "fp": 121,
+        "gold": 636,
+        "precision": 0.4265402843601896,
+        "recall": 0.14150943396226415,
+        "tp": 90
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 211,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.18890200708382526,
+        "fn": 556,
+        "fp": 131,
+        "gold": 636,
+        "precision": 0.3791469194312796,
+        "recall": 0.12578616352201258,
+        "tp": 80
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "sight",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 937,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.0,
+      "original_gold": 696,
+      "seed": 123,
+      "taxonomy": {
+        "category": 333,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 303
+      },
+      "term": {
+        "f1": 0.4263764404609475,
+        "fn": 303,
+        "fp": 593,
+        "gold": 636,
+        "precision": 0.3596112311015119,
+        "recall": 0.5235849056603774,
+        "tp": 333
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 933,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.3278061224489796,
+        "fn": 379,
+        "fp": 675,
+        "gold": 636,
+        "precision": 0.2757510729613734,
+        "recall": 0.40408805031446543,
+        "tp": 257
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "sight",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 356,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase2_mixed_025",
+      "seed": 2024,
+      "taxonomy": {
+        "category": 208,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 428
+      },
+      "term": {
+        "f1": 0.41935483870967744,
+        "fn": 428,
+        "fp": 148,
+        "gold": 636,
+        "precision": 0.5842696629213483,
+        "recall": 0.3270440251572327,
+        "tp": 208
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 356,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.35685483870967744,
+        "fn": 459,
+        "fp": 179,
+        "gold": 636,
+        "precision": 0.49719101123595505,
+        "recall": 0.2783018867924528,
+        "tp": 177
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "sight",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 177,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.0,
+      "original_gold": 696,
+      "seed": 2024,
+      "taxonomy": {
+        "category": 95,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 541
+      },
+      "term": {
+        "f1": 0.23370233702337023,
+        "fn": 541,
+        "fp": 82,
+        "gold": 636,
+        "precision": 0.536723163841808,
+        "recall": 0.14937106918238993,
+        "tp": 95
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 177,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.2091020910209102,
+        "fn": 551,
+        "fp": 92,
+        "gold": 636,
+        "precision": 0.480225988700565,
+        "recall": 0.13364779874213836,
+        "tp": 85
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "sight",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 783,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.0,
+      "original_gold": 696,
+      "seed": 2024,
+      "taxonomy": {
+        "category": 305,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 331
+      },
+      "term": {
+        "f1": 0.43509272467902993,
+        "fn": 331,
+        "fp": 461,
+        "gold": 636,
+        "precision": 0.3981723237597911,
+        "recall": 0.47955974842767296,
+        "tp": 305
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 778,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.3411513859275053,
+        "fn": 396,
+        "fp": 531,
+        "gold": 636,
+        "precision": 0.311284046692607,
+        "recall": 0.37735849056603776,
+        "tp": 240
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "sight",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 386,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase2_mixed_025",
+      "seed": 777,
+      "taxonomy": {
+        "category": 224,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 412
+      },
+      "term": {
+        "f1": 0.4387855044074437,
+        "fn": 412,
+        "fp": 161,
+        "gold": 636,
+        "precision": 0.5818181818181818,
+        "recall": 0.3522012578616352,
+        "tp": 224
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 385,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.37181996086105673,
+        "fn": 446,
+        "fp": 196,
+        "gold": 636,
+        "precision": 0.49222797927461137,
+        "recall": 0.29874213836477986,
+        "tp": 190
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "sight",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 203,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.0,
+      "original_gold": 696,
+      "seed": 777,
+      "taxonomy": {
+        "category": 101,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 535
+      },
+      "term": {
+        "f1": 0.24076281287246723,
+        "fn": 535,
+        "fp": 102,
+        "gold": 636,
+        "precision": 0.4975369458128079,
+        "recall": 0.15880503144654087,
+        "tp": 101
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 203,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.21215733015494637,
+        "fn": 547,
+        "fp": 114,
+        "gold": 636,
+        "precision": 0.43842364532019706,
+        "recall": 0.139937106918239,
+        "tp": 89
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "sight",
+      "explicit": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 921,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.0,
+      "original_gold": 696,
+      "seed": 777,
+      "taxonomy": {
+        "category": 338,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 298
+      },
+      "term": {
+        "f1": 0.4409654272667971,
+        "fn": 298,
+        "fp": 559,
+        "gold": 636,
+        "precision": 0.37681159420289856,
+        "recall": 0.5314465408805031,
+        "tp": 338
+      },
+      "term_category": {
+        "f1": 0.0,
+        "fn": 636,
+        "fp": 915,
+        "gold": 636,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "term_sentiment": {
+        "f1": 0.341747572815534,
+        "fn": 372,
+        "fp": 645,
+        "gold": 636,
+        "precision": 0.29042904290429045,
+        "recall": 0.41509433962264153,
+        "tp": 264
+      }
+    },
+    {
+      "coverage": 0.22110552763819097,
+      "domain": "food",
+      "explicit": {
+        "f1": 0.03508771929824561,
+        "fn": 186,
+        "fp": 529,
+        "gold": 199,
+        "precision": 0.023985239852398525,
+        "recall": 0.06532663316582915,
+        "tp": 13
+      },
+      "model": "phase2_mixed_025",
+      "seed": 13,
+      "taxonomy": {
+        "category": 128,
+        "correct": 13,
+        "sentiment": 5,
+        "term": 53
+      },
+      "term": {
+        "f1": 0.3945945945945946,
+        "fn": 53,
+        "fp": 395,
+        "gold": 199,
+        "precision": 0.2698706099815157,
+        "recall": 0.7336683417085427,
+        "tp": 146
+      },
+      "term_category": {
+        "f1": 0.04864864864864865,
+        "fn": 181,
+        "fp": 523,
+        "gold": 199,
+        "precision": 0.033271719038817,
+        "recall": 0.09045226130653267,
+        "tp": 18
+      },
+      "term_sentiment": {
+        "f1": 0.3292847503373819,
+        "fn": 77,
+        "fp": 420,
+        "gold": 199,
+        "precision": 0.22509225092250923,
+        "recall": 0.6130653266331658,
+        "tp": 122
+      }
+    },
+    {
+      "coverage": 0.22110552763819097,
+      "domain": "food",
+      "explicit": {
+        "f1": 0.04612850082372323,
+        "fn": 185,
+        "fp": 394,
+        "gold": 199,
+        "precision": 0.03431372549019608,
+        "recall": 0.07035175879396985,
+        "tp": 14
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.076103500761035,
+      "original_gold": 249,
+      "seed": 13,
+      "taxonomy": {
+        "category": 90,
+        "correct": 14,
+        "sentiment": 4,
+        "term": 91
+      },
+      "term": {
+        "f1": 0.35702479338842974,
+        "fn": 91,
+        "fp": 298,
+        "gold": 199,
+        "precision": 0.2660098522167488,
+        "recall": 0.542713567839196,
+        "tp": 108
+      },
+      "term_category": {
+        "f1": 0.05930807248764415,
+        "fn": 181,
+        "fp": 390,
+        "gold": 199,
+        "precision": 0.04411764705882353,
+        "recall": 0.09045226130653267,
+        "tp": 18
+      },
+      "term_sentiment": {
+        "f1": 0.30082644628099175,
+        "fn": 108,
+        "fp": 315,
+        "gold": 199,
+        "precision": 0.22413793103448276,
+        "recall": 0.457286432160804,
+        "tp": 91
+      }
+    },
+    {
+      "coverage": 0.22110552763819097,
+      "domain": "food",
+      "explicit": {
+        "f1": 0.013157894736842105,
+        "fn": 190,
+        "fp": 1160,
+        "gold": 199,
+        "precision": 0.007698887938408896,
+        "recall": 0.04522613065326633,
+        "tp": 9
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.021156558533145273,
+      "original_gold": 249,
+      "seed": 13,
+      "taxonomy": {
+        "category": 151,
+        "correct": 9,
+        "sentiment": 2,
+        "term": 37
+      },
+      "term": {
+        "f1": 0.23806024981631155,
+        "fn": 37,
+        "fp": 1000,
+        "gold": 199,
+        "precision": 0.13941480206540446,
+        "recall": 0.8140703517587939,
+        "tp": 162
+      },
+      "term_category": {
+        "f1": 0.016093635698610095,
+        "fn": 188,
+        "fp": 1157,
+        "gold": 199,
+        "precision": 0.009417808219178082,
+        "recall": 0.05527638190954774,
+        "tp": 11
+      },
+      "term_sentiment": {
+        "f1": 0.1894273127753304,
+        "fn": 70,
+        "fp": 1034,
+        "gold": 199,
+        "precision": 0.11092003439380911,
+        "recall": 0.6482412060301508,
+        "tp": 129
+      }
+    },
+    {
+      "coverage": 0.22110552763819097,
+      "domain": "food",
+      "explicit": {
+        "f1": 0.0364656381486676,
+        "fn": 186,
+        "fp": 501,
+        "gold": 199,
+        "precision": 0.02529182879377432,
+        "recall": 0.06532663316582915,
+        "tp": 13
+      },
+      "model": "phase2_mixed_025",
+      "seed": 42,
+      "taxonomy": {
+        "category": 123,
+        "correct": 13,
+        "sentiment": 4,
+        "term": 59
+      },
+      "term": {
+        "f1": 0.39325842696629215,
+        "fn": 59,
+        "fp": 373,
+        "gold": 199,
+        "precision": 0.2729044834307992,
+        "recall": 0.7035175879396985,
+        "tp": 140
+      },
+      "term_category": {
+        "f1": 0.047685834502103785,
+        "fn": 182,
+        "fp": 497,
+        "gold": 199,
+        "precision": 0.033073929961089495,
+        "recall": 0.08542713567839195,
+        "tp": 17
+      },
+      "term_sentiment": {
+        "f1": 0.32303370786516855,
+        "fn": 84,
+        "fp": 398,
+        "gold": 199,
+        "precision": 0.22417153996101363,
+        "recall": 0.5778894472361809,
+        "tp": 115
+      }
+    },
+    {
+      "coverage": 0.22110552763819097,
+      "domain": "food",
+      "explicit": {
+        "f1": 0.045627376425855515,
+        "fn": 187,
+        "fp": 315,
+        "gold": 199,
+        "precision": 0.03669724770642202,
+        "recall": 0.06030150753768844,
+        "tp": 12
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.07291666666666667,
+      "original_gold": 249,
+      "seed": 42,
+      "taxonomy": {
+        "category": 77,
+        "correct": 12,
+        "sentiment": 3,
+        "term": 107
+      },
+      "term": {
+        "f1": 0.34980988593155893,
+        "fn": 107,
+        "fp": 235,
+        "gold": 199,
+        "precision": 0.28134556574923547,
+        "recall": 0.4623115577889447,
+        "tp": 92
+      },
+      "term_category": {
+        "f1": 0.057034220532319393,
+        "fn": 184,
+        "fp": 312,
+        "gold": 199,
+        "precision": 0.045871559633027525,
+        "recall": 0.07537688442211055,
+        "tp": 15
+      },
+      "term_sentiment": {
+        "f1": 0.311787072243346,
+        "fn": 117,
+        "fp": 245,
+        "gold": 199,
+        "precision": 0.25076452599388377,
+        "recall": 0.4120603015075377,
+        "tp": 82
+      }
+    },
+    {
+      "coverage": 0.22110552763819097,
+      "domain": "food",
+      "explicit": {
+        "f1": 0.02320185614849188,
+        "fn": 184,
+        "fp": 1079,
+        "gold": 199,
+        "precision": 0.013711151736745886,
+        "recall": 0.07537688442211055,
+        "tp": 15
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.035740878629932984,
+      "original_gold": 249,
+      "seed": 42,
+      "taxonomy": {
+        "category": 147,
+        "correct": 15,
+        "sentiment": 5,
+        "term": 32
+      },
+      "term": {
+        "f1": 0.2601246105919003,
+        "fn": 32,
+        "fp": 918,
+        "gold": 199,
+        "precision": 0.15391705069124423,
+        "recall": 0.8391959798994975,
+        "tp": 167
+      },
+      "term_category": {
+        "f1": 0.031007751937984496,
+        "fn": 179,
+        "fp": 1071,
+        "gold": 199,
+        "precision": 0.01833180568285976,
+        "recall": 0.10050251256281408,
+        "tp": 20
+      },
+      "term_sentiment": {
+        "f1": 0.19875776397515527,
+        "fn": 71,
+        "fp": 961,
+        "gold": 199,
+        "precision": 0.11753902662993572,
+        "recall": 0.6432160804020101,
+        "tp": 128
+      }
+    },
+    {
+      "coverage": 0.22110552763819097,
+      "domain": "food",
+      "explicit": {
+        "f1": 0.03888888888888889,
+        "fn": 185,
+        "fp": 507,
+        "gold": 199,
+        "precision": 0.026871401151631478,
+        "recall": 0.07035175879396985,
+        "tp": 14
+      },
+      "model": "phase2_mixed_025",
+      "seed": 123,
+      "taxonomy": {
+        "category": 131,
+        "correct": 14,
+        "sentiment": 4,
+        "term": 50
+      },
+      "term": {
+        "f1": 0.4144645340751043,
+        "fn": 50,
+        "fp": 371,
+        "gold": 199,
+        "precision": 0.2865384615384615,
+        "recall": 0.7487437185929648,
+        "tp": 149
+      },
+      "term_category": {
+        "f1": 0.05006954102920723,
+        "fn": 181,
+        "fp": 502,
+        "gold": 199,
+        "precision": 0.03461538461538462,
+        "recall": 0.09045226130653267,
+        "tp": 18
+      },
+      "term_sentiment": {
+        "f1": 0.3416666666666667,
+        "fn": 76,
+        "fp": 398,
+        "gold": 199,
+        "precision": 0.236084452975048,
+        "recall": 0.6180904522613065,
+        "tp": 123
+      }
+    },
+    {
+      "coverage": 0.22110552763819097,
+      "domain": "food",
+      "explicit": {
+        "f1": 0.048109965635738834,
+        "fn": 185,
+        "fp": 369,
+        "gold": 199,
+        "precision": 0.03655352480417755,
+        "recall": 0.07035175879396985,
+        "tp": 14
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.07911392405063292,
+      "original_gold": 249,
+      "seed": 123,
+      "taxonomy": {
+        "category": 102,
+        "correct": 14,
+        "sentiment": 3,
+        "term": 80
+      },
+      "term": {
+        "f1": 0.40963855421686746,
+        "fn": 80,
+        "fp": 263,
+        "gold": 199,
+        "precision": 0.31151832460732987,
+        "recall": 0.5979899497487438,
+        "tp": 119
+      },
+      "term_category": {
+        "f1": 0.058419243986254296,
+        "fn": 182,
+        "fp": 366,
+        "gold": 199,
+        "precision": 0.044386422976501305,
+        "recall": 0.08542713567839195,
+        "tp": 17
+      },
+      "term_sentiment": {
+        "f1": 0.35111876075731496,
+        "fn": 97,
+        "fp": 280,
+        "gold": 199,
+        "precision": 0.2670157068062827,
+        "recall": 0.5125628140703518,
+        "tp": 102
+      }
+    },
+    {
+      "coverage": 0.22110552763819097,
+      "domain": "food",
+      "explicit": {
+        "f1": 0.02574416733708769,
+        "fn": 183,
+        "fp": 1028,
+        "gold": 199,
+        "precision": 0.01532567049808429,
+        "recall": 0.08040201005025126,
+        "tp": 16
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.0448569218870843,
+      "original_gold": 249,
+      "seed": 123,
+      "taxonomy": {
+        "category": 139,
+        "correct": 16,
+        "sentiment": 5,
+        "term": 39
+      },
+      "term": {
+        "f1": 0.258272800645682,
+        "fn": 39,
+        "fp": 880,
+        "gold": 199,
+        "precision": 0.15384615384615385,
+        "recall": 0.8040201005025126,
+        "tp": 160
+      },
+      "term_category": {
+        "f1": 0.033816425120772944,
+        "fn": 178,
+        "fp": 1022,
+        "gold": 199,
+        "precision": 0.020134228187919462,
+        "recall": 0.10552763819095477,
+        "tp": 21
+      },
+      "term_sentiment": {
+        "f1": 0.19838709677419356,
+        "fn": 76,
+        "fp": 918,
+        "gold": 199,
+        "precision": 0.11815561959654179,
+        "recall": 0.6180904522613065,
+        "tp": 123
+      }
+    },
+    {
+      "coverage": 0.22110552763819097,
+      "domain": "food",
+      "explicit": {
+        "f1": 0.04129793510324484,
+        "fn": 185,
+        "fp": 465,
+        "gold": 199,
+        "precision": 0.029227557411273485,
+        "recall": 0.07035175879396985,
+        "tp": 14
+      },
+      "model": "phase2_mixed_025",
+      "seed": 2024,
+      "taxonomy": {
+        "category": 118,
+        "correct": 14,
+        "sentiment": 5,
+        "term": 62
+      },
+      "term": {
+        "f1": 0.40472673559822747,
+        "fn": 62,
+        "fp": 341,
+        "gold": 199,
+        "precision": 0.28661087866108786,
+        "recall": 0.6884422110552764,
+        "tp": 137
+      },
+      "term_category": {
+        "f1": 0.056129985228951254,
+        "fn": 180,
+        "fp": 459,
+        "gold": 199,
+        "precision": 0.0397489539748954,
+        "recall": 0.09547738693467336,
+        "tp": 19
+      },
+      "term_sentiment": {
+        "f1": 0.336283185840708,
+        "fn": 85,
+        "fp": 365,
+        "gold": 199,
+        "precision": 0.23799582463465555,
+        "recall": 0.5728643216080402,
+        "tp": 114
+      }
+    },
+    {
+      "coverage": 0.22110552763819097,
+      "domain": "food",
+      "explicit": {
+        "f1": 0.04263565891472868,
+        "fn": 188,
+        "fp": 306,
+        "gold": 199,
+        "precision": 0.03470031545741325,
+        "recall": 0.05527638190954774,
+        "tp": 11
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.0706713780918728,
+      "original_gold": 249,
+      "seed": 2024,
+      "taxonomy": {
+        "category": 71,
+        "correct": 11,
+        "sentiment": 0,
+        "term": 117
+      },
+      "term": {
+        "f1": 0.3178294573643411,
+        "fn": 117,
+        "fp": 235,
+        "gold": 199,
+        "precision": 0.2586750788643533,
+        "recall": 0.4120603015075377,
+        "tp": 82
+      },
+      "term_category": {
+        "f1": 0.04263565891472868,
+        "fn": 188,
+        "fp": 306,
+        "gold": 199,
+        "precision": 0.03470031545741325,
+        "recall": 0.05527638190954774,
+        "tp": 11
+      },
+      "term_sentiment": {
+        "f1": 0.29457364341085274,
+        "fn": 123,
+        "fp": 241,
+        "gold": 199,
+        "precision": 0.23974763406940064,
+        "recall": 0.38190954773869346,
+        "tp": 76
+      }
+    },
+    {
+      "coverage": 0.22110552763819097,
+      "domain": "food",
+      "explicit": {
+        "f1": 0.02413515687851971,
+        "fn": 184,
+        "fp": 1029,
+        "gold": 199,
+        "precision": 0.014367816091954023,
+        "recall": 0.07537688442211055,
+        "tp": 15
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.04021655065738593,
+      "original_gold": 249,
+      "seed": 2024,
+      "taxonomy": {
+        "category": 139,
+        "correct": 15,
+        "sentiment": 4,
+        "term": 41
+      },
+      "term": {
+        "f1": 0.255044390637611,
+        "fn": 41,
+        "fp": 882,
+        "gold": 199,
+        "precision": 0.1519230769230769,
+        "recall": 0.7939698492462312,
+        "tp": 158
+      },
+      "term_category": {
+        "f1": 0.030571198712791632,
+        "fn": 180,
+        "fp": 1025,
+        "gold": 199,
+        "precision": 0.018199233716475097,
+        "recall": 0.09547738693467336,
+        "tp": 19
+      },
+      "term_sentiment": {
+        "f1": 0.20016142050040356,
+        "fn": 75,
+        "fp": 916,
+        "gold": 199,
+        "precision": 0.11923076923076924,
+        "recall": 0.6231155778894473,
+        "tp": 124
+      }
+    },
+    {
+      "coverage": 0.22110552763819097,
+      "domain": "food",
+      "explicit": {
+        "f1": 0.03806734992679356,
+        "fn": 186,
+        "fp": 471,
+        "gold": 199,
+        "precision": 0.026859504132231406,
+        "recall": 0.06532663316582915,
+        "tp": 13
+      },
+      "model": "phase2_mixed_025",
+      "seed": 777,
+      "taxonomy": {
+        "category": 121,
+        "correct": 13,
+        "sentiment": 5,
+        "term": 60
+      },
+      "term": {
+        "f1": 0.40702781844802344,
+        "fn": 60,
+        "fp": 345,
+        "gold": 199,
+        "precision": 0.2871900826446281,
+        "recall": 0.6984924623115578,
+        "tp": 139
+      },
+      "term_category": {
+        "f1": 0.0527086383601757,
+        "fn": 181,
+        "fp": 466,
+        "gold": 199,
+        "precision": 0.0371900826446281,
+        "recall": 0.09045226130653267,
+        "tp": 18
+      },
+      "term_sentiment": {
+        "f1": 0.33382137628111275,
+        "fn": 85,
+        "fp": 370,
+        "gold": 199,
+        "precision": 0.23553719008264462,
+        "recall": 0.5728643216080402,
+        "tp": 114
+      }
+    },
+    {
+      "coverage": 0.22110552763819097,
+      "domain": "food",
+      "explicit": {
+        "f1": 0.03985507246376811,
+        "fn": 188,
+        "fp": 342,
+        "gold": 199,
+        "precision": 0.031161473087818695,
+        "recall": 0.05527638190954774,
+        "tp": 11
+      },
+      "model": "phase1_standard",
+      "original_f1": 0.06976744186046512,
+      "original_gold": 249,
+      "seed": 777,
+      "taxonomy": {
+        "category": 85,
+        "correct": 11,
+        "sentiment": 2,
+        "term": 101
+      },
+      "term": {
+        "f1": 0.35507246376811596,
+        "fn": 101,
+        "fp": 255,
+        "gold": 199,
+        "precision": 0.2776203966005666,
+        "recall": 0.49246231155778897,
+        "tp": 98
+      },
+      "term_category": {
+        "f1": 0.04710144927536232,
+        "fn": 186,
+        "fp": 340,
+        "gold": 199,
+        "precision": 0.036827195467422094,
+        "recall": 0.06532663316582915,
+        "tp": 13
+      },
+      "term_sentiment": {
+        "f1": 0.3079710144927536,
+        "fn": 114,
+        "fp": 268,
+        "gold": 199,
+        "precision": 0.24079320113314448,
+        "recall": 0.4271356783919598,
+        "tp": 85
+      }
+    },
+    {
+      "coverage": 0.22110552763819097,
+      "domain": "food",
+      "explicit": {
+        "f1": 0.024297646165527716,
+        "fn": 183,
+        "fp": 1102,
+        "gold": 199,
+        "precision": 0.014311270125223614,
+        "recall": 0.08040201005025126,
+        "tp": 16
+      },
+      "model": "phase1_weighted",
+      "original_f1": 0.038039502560351136,
+      "original_gold": 249,
+      "seed": 777,
+      "taxonomy": {
+        "category": 144,
+        "correct": 16,
+        "sentiment": 4,
+        "term": 35
+      },
+      "term": {
+        "f1": 0.250381679389313,
+        "fn": 35,
+        "fp": 947,
+        "gold": 199,
+        "precision": 0.1476147614761476,
+        "recall": 0.8241206030150754,
+        "tp": 164
+      },
+      "term_category": {
+        "f1": 0.030395136778115502,
+        "fn": 179,
+        "fp": 1097,
+        "gold": 199,
+        "precision": 0.017905102954341987,
+        "recall": 0.10050251256281408,
+        "tp": 20
+      },
+      "term_sentiment": {
+        "f1": 0.19832189168573608,
+        "fn": 69,
+        "fp": 982,
+        "gold": 199,
+        "precision": 0.11690647482014388,
+        "recall": 0.6532663316582915,
+        "tp": 130
+      }
+    }
+  ],
+  "seeds": [
+    13,
+    42,
+    123,
+    2024,
+    777
+  ],
+  "summaries": [
+    {
+      "coverage": 0.0,
+      "domain": "coursera",
+      "gold": 351,
+      "model": "phase1_standard",
+      "scores": {
+        "explicit": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term": {
+          "mean": 0.5020570174248319,
+          "sd": 0.039328876795818216
+        },
+        "term_category": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term_sentiment": {
+          "mean": 0.47733675794495933,
+          "sd": 0.04044368616267441
+        }
+      },
+      "seeds": [
+        13,
+        42,
+        123,
+        2024,
+        777
+      ],
+      "taxonomy": {
+        "category": 183.6,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 167.4
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "coursera",
+      "gold": 351,
+      "model": "phase1_weighted",
+      "scores": {
+        "explicit": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term": {
+          "mean": 0.4144230073384501,
+          "sd": 0.011182677093569127
+        },
+        "term_category": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term_sentiment": {
+          "mean": 0.3364202714082305,
+          "sd": 0.012105055416370225
+        }
+      },
+      "seeds": [
+        13,
+        42,
+        123,
+        2024,
+        777
+      ],
+      "taxonomy": {
+        "category": 287.6,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 63.4
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "coursera",
+      "gold": 351,
+      "model": "phase2_mixed_025",
+      "scores": {
+        "explicit": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term": {
+          "mean": 0.5322450134231886,
+          "sd": 0.014973632162498219
+        },
+        "term_category": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term_sentiment": {
+          "mean": 0.47732690161656305,
+          "sd": 0.010881710242548378
+        }
+      },
+      "seeds": [
+        13,
+        42,
+        123,
+        2024,
+        777
+      ],
+      "taxonomy": {
+        "category": 261.8,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 89.2
+      }
+    },
+    {
+      "coverage": 0.44495412844036697,
+      "domain": "hotel",
+      "gold": 436,
+      "model": "phase1_standard",
+      "scores": {
+        "explicit": {
+          "mean": 0.1689355355020455,
+          "sd": 0.009999490048799506
+        },
+        "term": {
+          "mean": 0.4936847883629133,
+          "sd": 0.015305019355805796
+        },
+        "term_category": {
+          "mean": 0.17776366613491262,
+          "sd": 0.008440496059415123
+        },
+        "term_sentiment": {
+          "mean": 0.473555108696328,
+          "sd": 0.013996727226167302
+        }
+      },
+      "seeds": [
+        13,
+        42,
+        123,
+        2024,
+        777
+      ],
+      "taxonomy": {
+        "category": 157,
+        "correct": 83.8,
+        "sentiment": 4.4,
+        "term": 190.8
+      }
+    },
+    {
+      "coverage": 0.44495412844036697,
+      "domain": "hotel",
+      "gold": 436,
+      "model": "phase1_weighted",
+      "scores": {
+        "explicit": {
+          "mean": 0.13198268248548564,
+          "sd": 0.021491274075876702
+        },
+        "term": {
+          "mean": 0.415871120316624,
+          "sd": 0.011254646909444985
+        },
+        "term_category": {
+          "mean": 0.14022821019196804,
+          "sd": 0.022317517218941776
+        },
+        "term_sentiment": {
+          "mean": 0.38797394138753294,
+          "sd": 0.011939939665799213
+        }
+      },
+      "seeds": [
+        13,
+        42,
+        123,
+        2024,
+        777
+      ],
+      "taxonomy": {
+        "category": 241.6,
+        "correct": 117,
+        "sentiment": 7.2,
+        "term": 70.2
+      }
+    },
+    {
+      "coverage": 0.44495412844036697,
+      "domain": "hotel",
+      "gold": 436,
+      "model": "phase2_mixed_025",
+      "scores": {
+        "explicit": {
+          "mean": 0.18375937116642035,
+          "sd": 0.01879918954738864
+        },
+        "term": {
+          "mean": 0.5309622241958495,
+          "sd": 0.008031345762159194
+        },
+        "term_category": {
+          "mean": 0.1899113602547144,
+          "sd": 0.016975082125158508
+        },
+        "term_sentiment": {
+          "mean": 0.5057765173624992,
+          "sd": 0.00690070293957167
+        }
+      },
+      "seeds": [
+        13,
+        42,
+        123,
+        2024,
+        777
+      ],
+      "taxonomy": {
+        "category": 222.8,
+        "correct": 120.2,
+        "sentiment": 4,
+        "term": 89
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "laptop",
+      "gold": 494,
+      "model": "phase1_standard",
+      "scores": {
+        "explicit": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term": {
+          "mean": 0.36642777252094466,
+          "sd": 0.04760098169321757
+        },
+        "term_category": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term_sentiment": {
+          "mean": 0.3445938756505551,
+          "sd": 0.041856697231499096
+        }
+      },
+      "seeds": [
+        13,
+        42,
+        123,
+        2024,
+        777
+      ],
+      "taxonomy": {
+        "category": 148.2,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 345.8
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "laptop",
+      "gold": 494,
+      "model": "phase1_weighted",
+      "scores": {
+        "explicit": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term": {
+          "mean": 0.4743511373319627,
+          "sd": 0.01734453351356242
+        },
+        "term_category": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term_sentiment": {
+          "mean": 0.4019726773022625,
+          "sd": 0.015730428559511792
+        }
+      },
+      "seeds": [
+        13,
+        42,
+        123,
+        2024,
+        777
+      ],
+      "taxonomy": {
+        "category": 399.4,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 94.6
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "laptop",
+      "gold": 494,
+      "model": "phase2_mixed_025",
+      "scores": {
+        "explicit": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term": {
+          "mean": 0.539926476812493,
+          "sd": 0.010763715896957092
+        },
+        "term_category": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term_sentiment": {
+          "mean": 0.4919433120384397,
+          "sd": 0.008122025622007742
+        }
+      },
+      "seeds": [
+        13,
+        42,
+        123,
+        2024,
+        777
+      ],
+      "taxonomy": {
+        "category": 300.6,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 193.4
+      }
+    },
+    {
+      "coverage": 0.7017208413001912,
+      "domain": "restaurant",
+      "gold": 523,
+      "model": "phase1_standard",
+      "scores": {
+        "explicit": {
+          "mean": 0.13122078711188004,
+          "sd": 0.017806387661419922
+        },
+        "term": {
+          "mean": 0.24787555324736313,
+          "sd": 0.02982393031325775
+        },
+        "term_category": {
+          "mean": 0.1444243728257763,
+          "sd": 0.019175617777232448
+        },
+        "term_sentiment": {
+          "mean": 0.22690190000701616,
+          "sd": 0.023683532951784502
+        }
+      },
+      "seeds": [
+        13,
+        42,
+        123,
+        2024,
+        777
+      ],
+      "taxonomy": {
+        "category": 34.4,
+        "correct": 43.8,
+        "sentiment": 4.4,
+        "term": 440.4
+      }
+    },
+    {
+      "coverage": 0.7017208413001912,
+      "domain": "restaurant",
+      "gold": 523,
+      "model": "phase1_weighted",
+      "scores": {
+        "explicit": {
+          "mean": 0.20315517532960004,
+          "sd": 0.019266795461335747
+        },
+        "term": {
+          "mean": 0.584933762853581,
+          "sd": 0.022433810410204376
+        },
+        "term_category": {
+          "mean": 0.2201666439886704,
+          "sd": 0.01986788435643732
+        },
+        "term_sentiment": {
+          "mean": 0.5315078047706048,
+          "sd": 0.01996100737012183
+        }
+      },
+      "seeds": [
+        13,
+        42,
+        123,
+        2024,
+        777
+      ],
+      "taxonomy": {
+        "category": 242,
+        "correct": 135,
+        "sentiment": 11.2,
+        "term": 134.8
+      }
+    },
+    {
+      "coverage": 0.7017208413001912,
+      "domain": "restaurant",
+      "gold": 523,
+      "model": "phase2_mixed_025",
+      "scores": {
+        "explicit": {
+          "mean": 0.17819443825486728,
+          "sd": 0.009766903445237837
+        },
+        "term": {
+          "mean": 0.5329629583783143,
+          "sd": 0.03236250484722986
+        },
+        "term_category": {
+          "mean": 0.19321517052856427,
+          "sd": 0.009912546426214693
+        },
+        "term_sentiment": {
+          "mean": 0.4958496685934792,
+          "sd": 0.025386243004537925
+        }
+      },
+      "seeds": [
+        13,
+        42,
+        123,
+        2024,
+        777
+      ],
+      "taxonomy": {
+        "category": 162.8,
+        "correct": 85.2,
+        "sentiment": 7.2,
+        "term": 267.8
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "phone",
+      "gold": 1089,
+      "model": "phase1_standard",
+      "scores": {
+        "explicit": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term": {
+          "mean": 0.19023156937048738,
+          "sd": 0.013337312361008494
+        },
+        "term_category": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term_sentiment": {
+          "mean": 0.18094017931644,
+          "sd": 0.013410219348920371
+        }
+      },
+      "seeds": [
+        13,
+        42,
+        123,
+        2024,
+        777
+      ],
+      "taxonomy": {
+        "category": 160.6,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 928.4
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "phone",
+      "gold": 1089,
+      "model": "phase1_weighted",
+      "scores": {
+        "explicit": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term": {
+          "mean": 0.3032469918622826,
+          "sd": 0.008570359493919754
+        },
+        "term_category": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term_sentiment": {
+          "mean": 0.2704122103062541,
+          "sd": 0.008220588132075513
+        }
+      },
+      "seeds": [
+        13,
+        42,
+        123,
+        2024,
+        777
+      ],
+      "taxonomy": {
+        "category": 416,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 673
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "phone",
+      "gold": 1089,
+      "model": "phase2_mixed_025",
+      "scores": {
+        "explicit": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term": {
+          "mean": 0.31531737748270483,
+          "sd": 0.014327270243154782
+        },
+        "term_category": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term_sentiment": {
+          "mean": 0.29279232070766215,
+          "sd": 0.014178882745897922
+        }
+      },
+      "seeds": [
+        13,
+        42,
+        123,
+        2024,
+        777
+      ],
+      "taxonomy": {
+        "category": 321.6,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 767.4
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "sight",
+      "gold": 636,
+      "model": "phase1_standard",
+      "scores": {
+        "explicit": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term": {
+          "mean": 0.2708827824205405,
+          "sd": 0.05866104410992404
+        },
+        "term_category": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term_sentiment": {
+          "mean": 0.2410122772387509,
+          "sd": 0.05243109789521973
+        }
+      },
+      "seeds": [
+        13,
+        42,
+        123,
+        2024,
+        777
+      ],
+      "taxonomy": {
+        "category": 116,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 520
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "sight",
+      "gold": 636,
+      "model": "phase1_weighted",
+      "scores": {
+        "explicit": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term": {
+          "mean": 0.4300173087564669,
+          "sd": 0.007932233740543233
+        },
+        "term_category": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term_sentiment": {
+          "mean": 0.3347153934052183,
+          "sd": 0.006536526340367398
+        }
+      },
+      "seeds": [
+        13,
+        42,
+        123,
+        2024,
+        777
+      ],
+      "taxonomy": {
+        "category": 328.2,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 307.8
+      }
+    },
+    {
+      "coverage": 0.0,
+      "domain": "sight",
+      "gold": 636,
+      "model": "phase2_mixed_025",
+      "scores": {
+        "explicit": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term": {
+          "mean": 0.42523526720155613,
+          "sd": 0.009741855018774963
+        },
+        "term_category": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "term_sentiment": {
+          "mean": 0.36059068918063036,
+          "sd": 0.008128938237305957
+        }
+      },
+      "seeds": [
+        13,
+        42,
+        123,
+        2024,
+        777
+      ],
+      "taxonomy": {
+        "category": 216,
+        "correct": 0,
+        "sentiment": 0,
+        "term": 420
+      }
+    },
+    {
+      "coverage": 0.22110552763819097,
+      "domain": "food",
+      "gold": 199,
+      "model": "phase1_standard",
+      "scores": {
+        "explicit": {
+          "mean": 0.04447131485276287,
+          "sd": 0.0032404417037023314
+        },
+        "term": {
+          "mean": 0.35787503093386264,
+          "sd": 0.033002780775612355
+        },
+        "term_category": {
+          "mean": 0.05289972903926177,
+          "sd": 0.0075431610524110465
+        },
+        "term_sentiment": {
+          "mean": 0.31325538743705184,
+          "sd": 0.022176573925165616
+        }
+      },
+      "seeds": [
+        13,
+        42,
+        123,
+        2024,
+        777
+      ],
+      "taxonomy": {
+        "category": 85,
+        "correct": 12.4,
+        "sentiment": 2.4,
+        "term": 99.2
+      }
+    },
+    {
+      "coverage": 0.22110552763819097,
+      "domain": "food",
+      "gold": 199,
+      "model": "phase1_weighted",
+      "scores": {
+        "explicit": {
+          "mean": 0.02210734425329382,
+          "sd": 0.005084941779136336
+        },
+        "term": {
+          "mean": 0.25237674621616357,
+          "sd": 0.008815491304948759
+        },
+        "term_category": {
+          "mean": 0.028376829649654933,
+          "sd": 0.007004937970204795
+        },
+        "term_sentiment": {
+          "mean": 0.19701109714216378,
+          "sd": 0.004304088896978519
+        }
+      },
+      "seeds": [
+        13,
+        42,
+        123,
+        2024,
+        777
+      ],
+      "taxonomy": {
+        "category": 144,
+        "correct": 14.2,
+        "sentiment": 4,
+        "term": 36.8
+      }
+    },
+    {
+      "coverage": 0.22110552763819097,
+      "domain": "food",
+      "gold": 199,
+      "model": "phase2_mixed_025",
+      "scores": {
+        "explicit": {
+          "mean": 0.0379615062731681,
+          "sd": 0.002371669863000115
+        },
+        "term": {
+          "mean": 0.4028144219364484,
+          "sd": 0.008888438669805512
+        },
+        "term_category": {
+          "mean": 0.05104852955381732,
+          "sd": 0.003413309168842958
+        },
+        "term_sentiment": {
+          "mean": 0.3328179373982076,
+          "sd": 0.0070627438787705075
+        }
+      },
+      "seeds": [
+        13,
+        42,
+        123,
+        2024,
+        777
+      ],
+      "taxonomy": {
+        "category": 124.2,
+        "correct": 13.4,
+        "sentiment": 4.6,
+        "term": 56.8
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# Keep the analysis handoff small; archives and ready-made charts are included.
+__pycache__/
+*.pyc
+.venv/
+evidence/extracted/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.h5
+*.onnx
+*.tmp

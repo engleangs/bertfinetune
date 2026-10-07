@@ -1,0 +1,10 @@
+﻿{
+    "launcher_pid":  29184,
+    "launched_at":  "2026-10-07T21:26:54.3297262+13:00",
+    "purpose":  "Resume remaining frozen test evaluations after a locked summary CSV; reuse all trained models",
+    "command":  ".venv/Scripts/python.exe -u continue_lodo_finetuning.py --wait-for-first --first-seeds 5 --execute",
+    "stdout":  "D:\\UoA\\bertfinetune\\artifacts\\lodo_continuation\\20261007_212654.stdout.log",
+    "stderr":  "D:\\UoA\\bertfinetune\\artifacts\\lodo_continuation\\20261007_212654.stderr.log",
+    "status":  "D:\\UoA\\bertfinetune\\artifacts\\lodo_continuation\\status.json",
+    "report":  "D:\\UoA\\bertfinetune\\lodo_finetuning_results\\report.md"
+}

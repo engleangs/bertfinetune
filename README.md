@@ -1,8 +1,56 @@
 # ABSA Triplet Extraction — Group07 Scaffold
 
-For the corrected training pipeline, NULL extension and small seed pilot,
-start with [the 5 October experiment guide](experiment-guide-2026-10-05.md)
-and `run_experiments.py`. The commands below describe the historical runner.
+The completed Phase 2 team handoff is in [phase2/README.md](phase2/README.md).
+It includes explicit/NULL finalists, all 35 LODO results, Phase 1 comparisons,
+charts, parameters and compressed prediction evidence, without model weights.
+Teammates can regenerate the comparison with `python phase2/compare_results.py`.
+The sections below document the earlier experiment workflow.
+
+The five-seed fine-tuning study is complete: three configurations and **15 test-evaluated runs**.
+Read [the final results](final-finetuning-results-2026-10-06.md) or
+[the shareable report folder](final_results/README.md). The folder includes
+figures and frozen metadata, with model weights excluded.
+
+To verify saved results and regenerate the documentation without training:
+
+```powershell
+.venv/Scripts/python.exe document_quick_tuning_results.py
+```
+
+The development search is documented in [the quick tuning guide](quick-tuning-guide-2026-10-06.md).
+The lower-level flags are explained in [the 5 October experiment guide](experiment-guide-2026-10-05.md).
+The commands below describe the historical runner.
+
+Techniques 1–5 from the literature review are implemented in a separate
+[NULL fast-track study](null-fast-track-guide-2026-10-06.md). Start the staged
+development search and two-seed confirmation with:
+
+```powershell
+.venv/Scripts/python.exe run_null_fast_track.py --first-seeds 2 --execute
+```
+
+It compares NULL losses, implicit representations and negative sampling;
+records all parameters and appends results; then freezes a NULL-on candidate
+and NULL-off control. Test evaluation is a separate `--step final --execute`.
+The small shareable report lives in `null_fast_track_reports/null_fast_track/`.
+
+To finish the finalist cohort, test every registered trained screen as a separate
+ablation, and combine both studies into one presentation report, use the
+[final report flow](final-report-flow-2026-10-06.md):
+
+```powershell
+.venv/Scripts/python.exe finalize_finetuning_report.py --finish-null --first-seeds 5 --ablation-tests --wait-for-null --execute
+```
+
+It waits for the current NULL queue. The combined report is written to
+`final_presentation_results/report.md`; completed quick-tuning runs are reused.
+
+For the team's Phase 1 findings, start with the
+[shared analysis folder](phase1_analysis/README.md) and its
+[team findings plan](phase1_analysis/TEAM_FINDINGS.md). It contains all 70 LODO
+runs, 10 in-domain controls, current taxonomy tables and portable reproduction
+code, with model weights and archives excluded. Run
+`python phase1_analysis/verify_bundle.py` to check the snapshot after cloning.
 
 ## What changed from the LoRA version
 - **Core comparison unchanged**: BERT with standard loss vs. class-weighted
