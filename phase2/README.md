@@ -1,5 +1,9 @@
 # Phase 2 report handoff
 
+**Run [compare_results.py](compare_results.py) to regenerate the Phase 2 comparisons.**
+Read [RUN_INSTRUCTIONS.md](RUN_INSTRUCTIONS.md) for the commands, dependencies
+and report files.
+
 Start with [the comparison report](comparison/report.md), then divide the work using
 [REPORT_TASKS.md](REPORT_TASKS.md). All completed results are packaged here; your
 teammates can copy this folder alone or clone it through Git.

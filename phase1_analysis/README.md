@@ -1,5 +1,9 @@
 # Phase 1: shared LODO results and error analysis
 
+**Run [analyze_phase1.py](analyze_phase1.py) to regenerate the Phase 1 analysis.**
+Read [RUN_INSTRUCTIONS.md](RUN_INSTRUCTIONS.md) for the commands, dependencies,
+verification step and report files. For charts, use phase1_analysis.ipynb.
+
 This folder contains **70 completed LODO runs and 10 in-domain controls**:
 seven domains, standard/weighted cross-entropy, and matched seeds
 13, 42, 123, 2024 and 777. Restaurant's original cross-domain runs are included
@@ -84,9 +88,11 @@ NULL prevalence is a separate annotation audit. Keep the four sentiment classes
 in this historical comparison; removing Conflict belongs to a separate study.
 
 These tests have already been inspected. Findings are descriptive/exploratory.
-The ongoing version-2 loss/NULL pilot is a separate development study in the
-main repository and is not mixed into the Phase 1 tables. Its dated experiment
-guide is included for context; commands in that guide refer to the main repo.
+The completed Phase 2 fine-tuning, NULL and LODO studies are packaged separately
+in phase2/ and are not mixed into these historical Phase 1 tables. Run
+`python phase2/compare_results.py` from the repository root for the same-gold
+Phase 1 versus Phase 2 comparisons. The dated experiment guide here remains
+historical context; its training commands refer to the main repository.
 
 The corpus came from [the M-ABSA repository](https://github.com/swaggy66/M-ABSA),
 using the paths in the main repository's `download_data.py`. Current corpus
