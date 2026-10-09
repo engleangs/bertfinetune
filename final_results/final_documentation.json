@@ -1,0 +1,2641 @@
+{
+  "generated_at_utc": "2026-10-06T06:41:27.886524+00:00",
+  "verification": {
+    "verified_runs": 15,
+    "runs": [
+      {
+        "trial_id": "mixed_025_da1a88a51a5f",
+        "seed": 123,
+        "status": "complete",
+        "best_epoch": 5,
+        "threshold": 0.5,
+        "checkpoint_verified": true,
+        "source_and_corpus_verified": true,
+        "predictions_and_metrics_verified": true
+      },
+      {
+        "trial_id": "mixed_025_da1a88a51a5f",
+        "seed": 13,
+        "status": "complete",
+        "best_epoch": 5,
+        "threshold": 0.5,
+        "checkpoint_verified": true,
+        "source_and_corpus_verified": true,
+        "predictions_and_metrics_verified": true
+      },
+      {
+        "trial_id": "mixed_025_da1a88a51a5f",
+        "seed": 2024,
+        "status": "complete",
+        "best_epoch": 4,
+        "threshold": 0.5,
+        "checkpoint_verified": true,
+        "source_and_corpus_verified": true,
+        "predictions_and_metrics_verified": true
+      },
+      {
+        "trial_id": "mixed_025_da1a88a51a5f",
+        "seed": 42,
+        "status": "complete",
+        "best_epoch": 5,
+        "threshold": 0.5,
+        "checkpoint_verified": true,
+        "source_and_corpus_verified": true,
+        "predictions_and_metrics_verified": true
+      },
+      {
+        "trial_id": "mixed_025_da1a88a51a5f",
+        "seed": 777,
+        "status": "complete",
+        "best_epoch": 4,
+        "threshold": 0.5,
+        "checkpoint_verified": true,
+        "source_and_corpus_verified": true,
+        "predictions_and_metrics_verified": true
+      },
+      {
+        "trial_id": "mixed_025_d578b358d050",
+        "seed": 123,
+        "status": "complete",
+        "best_epoch": 5,
+        "threshold": 0.2,
+        "checkpoint_verified": true,
+        "source_and_corpus_verified": true,
+        "predictions_and_metrics_verified": true
+      },
+      {
+        "trial_id": "mixed_025_d578b358d050",
+        "seed": 13,
+        "status": "complete",
+        "best_epoch": 5,
+        "threshold": 0.2,
+        "checkpoint_verified": true,
+        "source_and_corpus_verified": true,
+        "predictions_and_metrics_verified": true
+      },
+      {
+        "trial_id": "mixed_025_d578b358d050",
+        "seed": 2024,
+        "status": "complete",
+        "best_epoch": 4,
+        "threshold": 0.2,
+        "checkpoint_verified": true,
+        "source_and_corpus_verified": true,
+        "predictions_and_metrics_verified": true
+      },
+      {
+        "trial_id": "mixed_025_d578b358d050",
+        "seed": 42,
+        "status": "complete",
+        "best_epoch": 5,
+        "threshold": 0.2,
+        "checkpoint_verified": true,
+        "source_and_corpus_verified": true,
+        "predictions_and_metrics_verified": true
+      },
+      {
+        "trial_id": "mixed_025_d578b358d050",
+        "seed": 777,
+        "status": "complete",
+        "best_epoch": 4,
+        "threshold": 0.2,
+        "checkpoint_verified": true,
+        "source_and_corpus_verified": true,
+        "predictions_and_metrics_verified": true
+      },
+      {
+        "trial_id": "mixed_025_393b9e11646e",
+        "seed": 123,
+        "status": "complete",
+        "best_epoch": 5,
+        "threshold": 0.5,
+        "checkpoint_verified": true,
+        "source_and_corpus_verified": true,
+        "predictions_and_metrics_verified": true
+      },
+      {
+        "trial_id": "mixed_025_393b9e11646e",
+        "seed": 13,
+        "status": "complete",
+        "best_epoch": 5,
+        "threshold": 0.5,
+        "checkpoint_verified": true,
+        "source_and_corpus_verified": true,
+        "predictions_and_metrics_verified": true
+      },
+      {
+        "trial_id": "mixed_025_393b9e11646e",
+        "seed": 2024,
+        "status": "complete",
+        "best_epoch": 5,
+        "threshold": 0.5,
+        "checkpoint_verified": true,
+        "source_and_corpus_verified": true,
+        "predictions_and_metrics_verified": true
+      },
+      {
+        "trial_id": "mixed_025_393b9e11646e",
+        "seed": 42,
+        "status": "complete",
+        "best_epoch": 5,
+        "threshold": 0.5,
+        "checkpoint_verified": true,
+        "source_and_corpus_verified": true,
+        "predictions_and_metrics_verified": true
+      },
+      {
+        "trial_id": "mixed_025_393b9e11646e",
+        "seed": 777,
+        "status": "complete",
+        "best_epoch": 4,
+        "threshold": 0.5,
+        "checkpoint_verified": true,
+        "source_and_corpus_verified": true,
+        "predictions_and_metrics_verified": true
+      }
+    ]
+  },
+  "phase1": {
+    "seeds": [
+      13,
+      42,
+      123,
+      2024,
+      777
+    ],
+    "original_phase1": [
+      {
+        "seed": 13,
+        "tp": 1321,
+        "fp": 2144,
+        "fn": 2844,
+        "gold": 4165,
+        "precision": 0.3812409812409812,
+        "recall": 0.3171668667466987,
+        "f1": 0.34626474442988203
+      },
+      {
+        "seed": 42,
+        "tp": 1334,
+        "fp": 2069,
+        "fn": 2831,
+        "gold": 4165,
+        "precision": 0.3920070526006465,
+        "recall": 0.32028811524609846,
+        "f1": 0.3525369978858351
+      },
+      {
+        "seed": 123,
+        "tp": 1384,
+        "fp": 2076,
+        "fn": 2781,
+        "gold": 4165,
+        "precision": 0.4,
+        "recall": 0.33229291716686676,
+        "f1": 0.36301639344262293
+      },
+      {
+        "seed": 2024,
+        "tp": 1266,
+        "fp": 1971,
+        "fn": 2899,
+        "gold": 4165,
+        "precision": 0.3911028730305839,
+        "recall": 0.30396158463385353,
+        "f1": 0.34206971088894894
+      },
+      {
+        "seed": 777,
+        "tp": 1379,
+        "fp": 2200,
+        "fn": 2786,
+        "gold": 4165,
+        "precision": 0.3853031573065102,
+        "recall": 0.3310924369747899,
+        "f1": 0.35614669421487605
+      }
+    ],
+    "runs": [
+      {
+        "model": "phase1",
+        "roles": [
+          "Phase 1 standard, re-scored"
+        ],
+        "seed": 13,
+        "explicit": {
+          "tp": 1175,
+          "fp": 2290,
+          "fn": 2553,
+          "gold": 3728,
+          "precision": 0.33910533910533913,
+          "recall": 0.3151824034334764,
+          "f1": 0.32670652022799945
+        },
+        "null": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1300,
+          "gold": 1300,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "combined": {
+          "tp": 1175,
+          "fp": 2290,
+          "fn": 3853,
+          "gold": 5028,
+          "precision": 0.33910533910533913,
+          "recall": 0.23369132856006364,
+          "f1": 0.27669845755327915
+        },
+        "taxonomy": {
+          "correct": 1175,
+          "term": 2082,
+          "category": 401,
+          "sentiment": 70
+        },
+        "domains": {
+          "coursera": {
+            "tp": 148,
+            "fp": 251,
+            "fn": 203,
+            "gold": 351,
+            "precision": 0.37092731829573933,
+            "recall": 0.42165242165242167,
+            "f1": 0.39466666666666667
+          },
+          "food": {
+            "tp": 20,
+            "fp": 93,
+            "fn": 179,
+            "gold": 199,
+            "precision": 0.17699115044247787,
+            "recall": 0.10050251256281408,
+            "f1": 0.1282051282051282
+          },
+          "hotel": {
+            "tp": 228,
+            "fp": 401,
+            "fn": 208,
+            "gold": 436,
+            "precision": 0.3624801271860095,
+            "recall": 0.5229357798165137,
+            "f1": 0.428169014084507
+          },
+          "laptop": {
+            "tp": 96,
+            "fp": 518,
+            "fn": 398,
+            "gold": 494,
+            "precision": 0.1563517915309446,
+            "recall": 0.19433198380566802,
+            "f1": 0.17328519855595667
+          },
+          "phone": {
+            "tp": 277,
+            "fp": 557,
+            "fn": 812,
+            "gold": 1089,
+            "precision": 0.33213429256594723,
+            "recall": 0.25436179981634527,
+            "f1": 0.2880915236609464
+          },
+          "restaurant": {
+            "tp": 235,
+            "fp": 311,
+            "fn": 288,
+            "gold": 523,
+            "precision": 0.43040293040293043,
+            "recall": 0.44933078393881454,
+            "f1": 0.43966323666978485
+          },
+          "sight": {
+            "tp": 171,
+            "fp": 159,
+            "fn": 465,
+            "gold": 636,
+            "precision": 0.5181818181818182,
+            "recall": 0.2688679245283019,
+            "f1": 0.35403726708074534
+          }
+        }
+      },
+      {
+        "model": "mixed_025_da1a88a51a5f",
+        "roles": [
+          "Best NULL off"
+        ],
+        "seed": 13,
+        "explicit": {
+          "tp": 1854,
+          "fp": 3542,
+          "fn": 1874,
+          "gold": 3728,
+          "precision": 0.343587842846553,
+          "recall": 0.4973175965665236,
+          "f1": 0.4064007014467339
+        },
+        "null": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1300,
+          "gold": 1300,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "combined": {
+          "tp": 1854,
+          "fp": 3542,
+          "fn": 3174,
+          "gold": 5028,
+          "precision": 0.343587842846553,
+          "recall": 0.36873508353221957,
+          "f1": 0.3557175748273216
+        },
+        "taxonomy": {
+          "correct": 1854,
+          "term": 1088,
+          "category": 632,
+          "sentiment": 154
+        },
+        "domains": {
+          "coursera": {
+            "tp": 195,
+            "fp": 361,
+            "fn": 156,
+            "gold": 351,
+            "precision": 0.35071942446043164,
+            "recall": 0.5555555555555556,
+            "f1": 0.42998897464167585
+          },
+          "food": {
+            "tp": 60,
+            "fp": 242,
+            "fn": 139,
+            "gold": 199,
+            "precision": 0.1986754966887417,
+            "recall": 0.3015075376884422,
+            "f1": 0.23952095808383234
+          },
+          "hotel": {
+            "tp": 267,
+            "fp": 466,
+            "fn": 169,
+            "gold": 436,
+            "precision": 0.36425648021828105,
+            "recall": 0.6123853211009175,
+            "f1": 0.4568006843455945
+          },
+          "laptop": {
+            "tp": 156,
+            "fp": 505,
+            "fn": 338,
+            "gold": 494,
+            "precision": 0.23600605143721634,
+            "recall": 0.3157894736842105,
+            "f1": 0.2701298701298701
+          },
+          "phone": {
+            "tp": 547,
+            "fp": 1095,
+            "fn": 542,
+            "gold": 1089,
+            "precision": 0.3331303288672351,
+            "recall": 0.5022956841138659,
+            "f1": 0.4005858659831564
+          },
+          "restaurant": {
+            "tp": 353,
+            "fp": 346,
+            "fn": 170,
+            "gold": 523,
+            "precision": 0.5050071530758226,
+            "recall": 0.6749521988527725,
+            "f1": 0.5777414075286416
+          },
+          "sight": {
+            "tp": 276,
+            "fp": 527,
+            "fn": 360,
+            "gold": 636,
+            "precision": 0.3437110834371108,
+            "recall": 0.4339622641509434,
+            "f1": 0.38359972202918696
+          }
+        }
+      },
+      {
+        "model": "mixed_025_d578b358d050",
+        "roles": [
+          "Best NULL on"
+        ],
+        "seed": 13,
+        "explicit": {
+          "tp": 1860,
+          "fp": 3578,
+          "fn": 1868,
+          "gold": 3728,
+          "precision": 0.3420375137918352,
+          "recall": 0.4989270386266094,
+          "f1": 0.40584769801440107
+        },
+        "null": {
+          "tp": 129,
+          "fp": 1637,
+          "fn": 1171,
+          "gold": 1300,
+          "precision": 0.07304643261608154,
+          "recall": 0.09923076923076923,
+          "f1": 0.08414872798434442
+        },
+        "combined": {
+          "tp": 1989,
+          "fp": 5215,
+          "fn": 3039,
+          "gold": 5028,
+          "precision": 0.27609661299278176,
+          "recall": 0.39558472553699287,
+          "f1": 0.3252125572269457
+        },
+        "taxonomy": {
+          "correct": 1860,
+          "term": 1059,
+          "category": 656,
+          "sentiment": 153
+        },
+        "domains": {
+          "coursera": {
+            "tp": 188,
+            "fp": 367,
+            "fn": 163,
+            "gold": 351,
+            "precision": 0.3387387387387387,
+            "recall": 0.5356125356125356,
+            "f1": 0.41501103752759383
+          },
+          "food": {
+            "tp": 58,
+            "fp": 232,
+            "fn": 141,
+            "gold": 199,
+            "precision": 0.2,
+            "recall": 0.2914572864321608,
+            "f1": 0.23721881390593047
+          },
+          "hotel": {
+            "tp": 272,
+            "fp": 470,
+            "fn": 164,
+            "gold": 436,
+            "precision": 0.3665768194070081,
+            "recall": 0.6238532110091743,
+            "f1": 0.4617996604414261
+          },
+          "laptop": {
+            "tp": 158,
+            "fp": 531,
+            "fn": 336,
+            "gold": 494,
+            "precision": 0.22931785195936139,
+            "recall": 0.31983805668016196,
+            "f1": 0.26711749788672867
+          },
+          "phone": {
+            "tp": 545,
+            "fp": 1097,
+            "fn": 544,
+            "gold": 1089,
+            "precision": 0.33191230207064554,
+            "recall": 0.5004591368227732,
+            "f1": 0.3991212010252655
+          },
+          "restaurant": {
+            "tp": 365,
+            "fp": 336,
+            "fn": 158,
+            "gold": 523,
+            "precision": 0.5206847360912982,
+            "recall": 0.6978967495219885,
+            "f1": 0.5964052287581699
+          },
+          "sight": {
+            "tp": 274,
+            "fp": 545,
+            "fn": 362,
+            "gold": 636,
+            "precision": 0.33455433455433453,
+            "recall": 0.4308176100628931,
+            "f1": 0.3766323024054983
+          }
+        }
+      },
+      {
+        "model": "mixed_025_393b9e11646e",
+        "roles": [
+          "Vocabulary control"
+        ],
+        "seed": 13,
+        "explicit": {
+          "tp": 1853,
+          "fp": 3585,
+          "fn": 1875,
+          "gold": 3728,
+          "precision": 0.3407502758367047,
+          "recall": 0.497049356223176,
+          "f1": 0.4043203142046694
+        },
+        "null": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1300,
+          "gold": 1300,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "combined": {
+          "tp": 1853,
+          "fp": 3585,
+          "fn": 3175,
+          "gold": 5028,
+          "precision": 0.3407502758367047,
+          "recall": 0.3685361972951472,
+          "f1": 0.35409898719663674
+        },
+        "taxonomy": {
+          "correct": 1853,
+          "term": 1080,
+          "category": 642,
+          "sentiment": 153
+        },
+        "domains": {
+          "coursera": {
+            "tp": 191,
+            "fp": 367,
+            "fn": 160,
+            "gold": 351,
+            "precision": 0.34229390681003585,
+            "recall": 0.5441595441595442,
+            "f1": 0.42024202420242024
+          },
+          "food": {
+            "tp": 57,
+            "fp": 232,
+            "fn": 142,
+            "gold": 199,
+            "precision": 0.1972318339100346,
+            "recall": 0.2864321608040201,
+            "f1": 0.2336065573770492
+          },
+          "hotel": {
+            "tp": 269,
+            "fp": 467,
+            "fn": 167,
+            "gold": 436,
+            "precision": 0.3654891304347826,
+            "recall": 0.6169724770642202,
+            "f1": 0.4590443686006826
+          },
+          "laptop": {
+            "tp": 151,
+            "fp": 540,
+            "fn": 343,
+            "gold": 494,
+            "precision": 0.21852387843704776,
+            "recall": 0.305668016194332,
+            "f1": 0.2548523206751055
+          },
+          "phone": {
+            "tp": 545,
+            "fp": 1107,
+            "fn": 544,
+            "gold": 1089,
+            "precision": 0.32990314769975787,
+            "recall": 0.5004591368227732,
+            "f1": 0.39766508573513315
+          },
+          "restaurant": {
+            "tp": 365,
+            "fp": 339,
+            "fn": 158,
+            "gold": 523,
+            "precision": 0.5184659090909091,
+            "recall": 0.6978967495219885,
+            "f1": 0.5949470252648736
+          },
+          "sight": {
+            "tp": 275,
+            "fp": 533,
+            "fn": 361,
+            "gold": 636,
+            "precision": 0.34034653465346537,
+            "recall": 0.43238993710691825,
+            "f1": 0.3808864265927978
+          }
+        }
+      },
+      {
+        "model": "phase1",
+        "roles": [
+          "Phase 1 standard, re-scored"
+        ],
+        "seed": 42,
+        "explicit": {
+          "tp": 1187,
+          "fp": 2216,
+          "fn": 2541,
+          "gold": 3728,
+          "precision": 0.3488098736409051,
+          "recall": 0.31840128755364805,
+          "f1": 0.33291263497405693
+        },
+        "null": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1300,
+          "gold": 1300,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "combined": {
+          "tp": 1187,
+          "fp": 2216,
+          "fn": 3841,
+          "gold": 5028,
+          "precision": 0.3488098736409051,
+          "recall": 0.23607796340493237,
+          "f1": 0.28157988376230575
+        },
+        "taxonomy": {
+          "correct": 1187,
+          "term": 2076,
+          "category": 391,
+          "sentiment": 74
+        },
+        "domains": {
+          "coursera": {
+            "tp": 158,
+            "fp": 235,
+            "fn": 193,
+            "gold": 351,
+            "precision": 0.4020356234096692,
+            "recall": 0.45014245014245013,
+            "f1": 0.42473118279569894
+          },
+          "food": {
+            "tp": 9,
+            "fp": 100,
+            "fn": 190,
+            "gold": 199,
+            "precision": 0.08256880733944955,
+            "recall": 0.04522613065326633,
+            "f1": 0.05844155844155844
+          },
+          "hotel": {
+            "tp": 241,
+            "fp": 381,
+            "fn": 195,
+            "gold": 436,
+            "precision": 0.387459807073955,
+            "recall": 0.5527522935779816,
+            "f1": 0.4555765595463138
+          },
+          "laptop": {
+            "tp": 85,
+            "fp": 504,
+            "fn": 409,
+            "gold": 494,
+            "precision": 0.14431239388794567,
+            "recall": 0.1720647773279352,
+            "f1": 0.1569713758079409
+          },
+          "phone": {
+            "tp": 275,
+            "fp": 525,
+            "fn": 814,
+            "gold": 1089,
+            "precision": 0.34375,
+            "recall": 0.25252525252525254,
+            "f1": 0.2911593435680254
+          },
+          "restaurant": {
+            "tp": 245,
+            "fp": 310,
+            "fn": 278,
+            "gold": 523,
+            "precision": 0.44144144144144143,
+            "recall": 0.4684512428298279,
+            "f1": 0.45454545454545453
+          },
+          "sight": {
+            "tp": 174,
+            "fp": 161,
+            "fn": 462,
+            "gold": 636,
+            "precision": 0.5194029850746269,
+            "recall": 0.27358490566037735,
+            "f1": 0.3583934088568486
+          }
+        }
+      },
+      {
+        "model": "mixed_025_da1a88a51a5f",
+        "roles": [
+          "Best NULL off"
+        ],
+        "seed": 42,
+        "explicit": {
+          "tp": 1797,
+          "fp": 3448,
+          "fn": 1931,
+          "gold": 3728,
+          "precision": 0.3426120114394662,
+          "recall": 0.48202789699570814,
+          "f1": 0.4005349381477767
+        },
+        "null": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1300,
+          "gold": 1300,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "combined": {
+          "tp": 1797,
+          "fp": 3448,
+          "fn": 3231,
+          "gold": 5028,
+          "precision": 0.3426120114394662,
+          "recall": 0.3573985680190931,
+          "f1": 0.3498491190499367
+        },
+        "taxonomy": {
+          "correct": 1797,
+          "term": 1154,
+          "category": 623,
+          "sentiment": 154
+        },
+        "domains": {
+          "coursera": {
+            "tp": 186,
+            "fp": 344,
+            "fn": 165,
+            "gold": 351,
+            "precision": 0.35094339622641507,
+            "recall": 0.5299145299145299,
+            "f1": 0.42224744608399545
+          },
+          "food": {
+            "tp": 53,
+            "fp": 225,
+            "fn": 146,
+            "gold": 199,
+            "precision": 0.1906474820143885,
+            "recall": 0.2663316582914573,
+            "f1": 0.2222222222222222
+          },
+          "hotel": {
+            "tp": 271,
+            "fp": 420,
+            "fn": 165,
+            "gold": 436,
+            "precision": 0.3921852387843705,
+            "recall": 0.6215596330275229,
+            "f1": 0.48092280390417036
+          },
+          "laptop": {
+            "tp": 156,
+            "fp": 507,
+            "fn": 338,
+            "gold": 494,
+            "precision": 0.23529411764705882,
+            "recall": 0.3157894736842105,
+            "f1": 0.2696629213483146
+          },
+          "phone": {
+            "tp": 529,
+            "fp": 1076,
+            "fn": 560,
+            "gold": 1089,
+            "precision": 0.329595015576324,
+            "recall": 0.4857667584940312,
+            "f1": 0.392724573125464
+          },
+          "restaurant": {
+            "tp": 343,
+            "fp": 325,
+            "fn": 180,
+            "gold": 523,
+            "precision": 0.5134730538922155,
+            "recall": 0.655831739961759,
+            "f1": 0.5759865659109992
+          },
+          "sight": {
+            "tp": 259,
+            "fp": 551,
+            "fn": 377,
+            "gold": 636,
+            "precision": 0.3197530864197531,
+            "recall": 0.40723270440251574,
+            "f1": 0.3582295988934993
+          }
+        }
+      },
+      {
+        "model": "mixed_025_d578b358d050",
+        "roles": [
+          "Best NULL on"
+        ],
+        "seed": 42,
+        "explicit": {
+          "tp": 1804,
+          "fp": 3408,
+          "fn": 1924,
+          "gold": 3728,
+          "precision": 0.3461243284727552,
+          "recall": 0.48390557939914164,
+          "f1": 0.403579418344519
+        },
+        "null": {
+          "tp": 110,
+          "fp": 907,
+          "fn": 1190,
+          "gold": 1300,
+          "precision": 0.10816125860373647,
+          "recall": 0.08461538461538462,
+          "f1": 0.09495036685369011
+        },
+        "combined": {
+          "tp": 1914,
+          "fp": 4315,
+          "fn": 3114,
+          "gold": 5028,
+          "precision": 0.3072724353828865,
+          "recall": 0.38066825775656327,
+          "f1": 0.34005507684107666
+        },
+        "taxonomy": {
+          "correct": 1804,
+          "term": 1140,
+          "category": 636,
+          "sentiment": 148
+        },
+        "domains": {
+          "coursera": {
+            "tp": 191,
+            "fp": 344,
+            "fn": 160,
+            "gold": 351,
+            "precision": 0.35700934579439253,
+            "recall": 0.5441595441595442,
+            "f1": 0.43115124153498874
+          },
+          "food": {
+            "tp": 54,
+            "fp": 227,
+            "fn": 145,
+            "gold": 199,
+            "precision": 0.19217081850533807,
+            "recall": 0.271356783919598,
+            "f1": 0.225
+          },
+          "hotel": {
+            "tp": 265,
+            "fp": 428,
+            "fn": 171,
+            "gold": 436,
+            "precision": 0.3823953823953824,
+            "recall": 0.6077981651376146,
+            "f1": 0.46944198405668736
+          },
+          "laptop": {
+            "tp": 153,
+            "fp": 513,
+            "fn": 341,
+            "gold": 494,
+            "precision": 0.22972972972972974,
+            "recall": 0.3097165991902834,
+            "f1": 0.2637931034482759
+          },
+          "phone": {
+            "tp": 534,
+            "fp": 1027,
+            "fn": 555,
+            "gold": 1089,
+            "precision": 0.3420884048686739,
+            "recall": 0.4903581267217631,
+            "f1": 0.4030188679245283
+          },
+          "restaurant": {
+            "tp": 341,
+            "fp": 328,
+            "fn": 182,
+            "gold": 523,
+            "precision": 0.5097159940209267,
+            "recall": 0.6520076481835564,
+            "f1": 0.5721476510067114
+          },
+          "sight": {
+            "tp": 266,
+            "fp": 541,
+            "fn": 370,
+            "gold": 636,
+            "precision": 0.32961586121437425,
+            "recall": 0.41823899371069184,
+            "f1": 0.36867636867636866
+          }
+        }
+      },
+      {
+        "model": "mixed_025_393b9e11646e",
+        "roles": [
+          "Vocabulary control"
+        ],
+        "seed": 42,
+        "explicit": {
+          "tp": 1804,
+          "fp": 3408,
+          "fn": 1924,
+          "gold": 3728,
+          "precision": 0.3461243284727552,
+          "recall": 0.48390557939914164,
+          "f1": 0.403579418344519
+        },
+        "null": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1300,
+          "gold": 1300,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "combined": {
+          "tp": 1804,
+          "fp": 3408,
+          "fn": 3224,
+          "gold": 5028,
+          "precision": 0.3461243284727552,
+          "recall": 0.35879077167859985,
+          "f1": 0.35234375
+        },
+        "taxonomy": {
+          "correct": 1804,
+          "term": 1147,
+          "category": 632,
+          "sentiment": 145
+        },
+        "domains": {
+          "coursera": {
+            "tp": 193,
+            "fp": 331,
+            "fn": 158,
+            "gold": 351,
+            "precision": 0.3683206106870229,
+            "recall": 0.5498575498575499,
+            "f1": 0.44114285714285717
+          },
+          "food": {
+            "tp": 52,
+            "fp": 226,
+            "fn": 147,
+            "gold": 199,
+            "precision": 0.18705035971223022,
+            "recall": 0.2613065326633166,
+            "f1": 0.2180293501048218
+          },
+          "hotel": {
+            "tp": 269,
+            "fp": 432,
+            "fn": 167,
+            "gold": 436,
+            "precision": 0.38373751783166904,
+            "recall": 0.6169724770642202,
+            "f1": 0.4731750219876869
+          },
+          "laptop": {
+            "tp": 152,
+            "fp": 515,
+            "fn": 342,
+            "gold": 494,
+            "precision": 0.22788605697151423,
+            "recall": 0.3076923076923077,
+            "f1": 0.26184323858742464
+          },
+          "phone": {
+            "tp": 530,
+            "fp": 1048,
+            "fn": 559,
+            "gold": 1089,
+            "precision": 0.3358681875792142,
+            "recall": 0.4866850321395776,
+            "f1": 0.39745031871016123
+          },
+          "restaurant": {
+            "tp": 345,
+            "fp": 326,
+            "fn": 178,
+            "gold": 523,
+            "precision": 0.5141579731743666,
+            "recall": 0.6596558317399618,
+            "f1": 0.5778894472361809
+          },
+          "sight": {
+            "tp": 263,
+            "fp": 530,
+            "fn": 373,
+            "gold": 636,
+            "precision": 0.3316519546027743,
+            "recall": 0.41352201257861637,
+            "f1": 0.36808957312806156
+          }
+        }
+      },
+      {
+        "model": "phase1",
+        "roles": [
+          "Phase 1 standard, re-scored"
+        ],
+        "seed": 123,
+        "explicit": {
+          "tp": 1242,
+          "fp": 2218,
+          "fn": 2486,
+          "gold": 3728,
+          "precision": 0.35895953757225435,
+          "recall": 0.3331545064377682,
+          "f1": 0.34557595993322204
+        },
+        "null": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1300,
+          "gold": 1300,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "combined": {
+          "tp": 1242,
+          "fp": 2218,
+          "fn": 3786,
+          "gold": 5028,
+          "precision": 0.35895953757225435,
+          "recall": 0.24701670644391407,
+          "f1": 0.29264844486333647
+        },
+        "taxonomy": {
+          "correct": 1242,
+          "term": 1997,
+          "category": 410,
+          "sentiment": 79
+        },
+        "domains": {
+          "coursera": {
+            "tp": 159,
+            "fp": 267,
+            "fn": 192,
+            "gold": 351,
+            "precision": 0.3732394366197183,
+            "recall": 0.452991452991453,
+            "f1": 0.4092664092664093
+          },
+          "food": {
+            "tp": 19,
+            "fp": 89,
+            "fn": 180,
+            "gold": 199,
+            "precision": 0.17592592592592593,
+            "recall": 0.09547738693467336,
+            "f1": 0.1237785016286645
+          },
+          "hotel": {
+            "tp": 235,
+            "fp": 347,
+            "fn": 201,
+            "gold": 436,
+            "precision": 0.40378006872852235,
+            "recall": 0.5389908256880734,
+            "f1": 0.46168958742632615
+          },
+          "laptop": {
+            "tp": 89,
+            "fp": 521,
+            "fn": 405,
+            "gold": 494,
+            "precision": 0.14590163934426228,
+            "recall": 0.18016194331983806,
+            "f1": 0.161231884057971
+          },
+          "phone": {
+            "tp": 306,
+            "fp": 512,
+            "fn": 783,
+            "gold": 1089,
+            "precision": 0.3740831295843521,
+            "recall": 0.2809917355371901,
+            "f1": 0.32092291557420033
+          },
+          "restaurant": {
+            "tp": 262,
+            "fp": 319,
+            "fn": 261,
+            "gold": 523,
+            "precision": 0.4509466437177281,
+            "recall": 0.5009560229445507,
+            "f1": 0.4746376811594203
+          },
+          "sight": {
+            "tp": 172,
+            "fp": 163,
+            "fn": 464,
+            "gold": 636,
+            "precision": 0.5134328358208955,
+            "recall": 0.27044025157232704,
+            "f1": 0.35427394438722964
+          }
+        }
+      },
+      {
+        "model": "mixed_025_da1a88a51a5f",
+        "roles": [
+          "Best NULL off"
+        ],
+        "seed": 123,
+        "explicit": {
+          "tp": 1853,
+          "fp": 3438,
+          "fn": 1875,
+          "gold": 3728,
+          "precision": 0.35021735021735023,
+          "recall": 0.497049356223176,
+          "f1": 0.41091030047677124
+        },
+        "null": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1300,
+          "gold": 1300,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "combined": {
+          "tp": 1853,
+          "fp": 3438,
+          "fn": 3175,
+          "gold": 5028,
+          "precision": 0.35021735021735023,
+          "recall": 0.3685361972951472,
+          "f1": 0.35914332784184516
+        },
+        "taxonomy": {
+          "correct": 1853,
+          "term": 1087,
+          "category": 649,
+          "sentiment": 139
+        },
+        "domains": {
+          "coursera": {
+            "tp": 194,
+            "fp": 358,
+            "fn": 157,
+            "gold": 351,
+            "precision": 0.35144927536231885,
+            "recall": 0.5527065527065527,
+            "f1": 0.42967884828349945
+          },
+          "food": {
+            "tp": 59,
+            "fp": 211,
+            "fn": 140,
+            "gold": 199,
+            "precision": 0.21851851851851853,
+            "recall": 0.2964824120603015,
+            "f1": 0.2515991471215352
+          },
+          "hotel": {
+            "tp": 273,
+            "fp": 457,
+            "fn": 163,
+            "gold": 436,
+            "precision": 0.37397260273972605,
+            "recall": 0.6261467889908257,
+            "f1": 0.46826758147512865
+          },
+          "laptop": {
+            "tp": 166,
+            "fp": 515,
+            "fn": 328,
+            "gold": 494,
+            "precision": 0.24375917767988253,
+            "recall": 0.3360323886639676,
+            "f1": 0.2825531914893617
+          },
+          "phone": {
+            "tp": 543,
+            "fp": 1061,
+            "fn": 546,
+            "gold": 1089,
+            "precision": 0.3385286783042394,
+            "recall": 0.4986225895316804,
+            "f1": 0.4032677311548459
+          },
+          "restaurant": {
+            "tp": 355,
+            "fp": 327,
+            "fn": 168,
+            "gold": 523,
+            "precision": 0.5205278592375366,
+            "recall": 0.6787762906309751,
+            "f1": 0.5892116182572614
+          },
+          "sight": {
+            "tp": 263,
+            "fp": 509,
+            "fn": 373,
+            "gold": 636,
+            "precision": 0.34067357512953367,
+            "recall": 0.41352201257861637,
+            "f1": 0.37357954545454547
+          }
+        }
+      },
+      {
+        "model": "mixed_025_d578b358d050",
+        "roles": [
+          "Best NULL on"
+        ],
+        "seed": 123,
+        "explicit": {
+          "tp": 1864,
+          "fp": 3468,
+          "fn": 1864,
+          "gold": 3728,
+          "precision": 0.3495873968492123,
+          "recall": 0.5,
+          "f1": 0.41147902869757175
+        },
+        "null": {
+          "tp": 133,
+          "fp": 1679,
+          "fn": 1167,
+          "gold": 1300,
+          "precision": 0.07339955849889625,
+          "recall": 0.10230769230769231,
+          "f1": 0.08547557840616966
+        },
+        "combined": {
+          "tp": 1997,
+          "fp": 5147,
+          "fn": 3031,
+          "gold": 5028,
+          "precision": 0.27953527435610304,
+          "recall": 0.397175815433572,
+          "f1": 0.32813013473545843
+        },
+        "taxonomy": {
+          "correct": 1864,
+          "term": 1084,
+          "category": 639,
+          "sentiment": 141
+        },
+        "domains": {
+          "coursera": {
+            "tp": 190,
+            "fp": 391,
+            "fn": 161,
+            "gold": 351,
+            "precision": 0.3270223752151463,
+            "recall": 0.5413105413105413,
+            "f1": 0.40772532188841204
+          },
+          "food": {
+            "tp": 60,
+            "fp": 208,
+            "fn": 139,
+            "gold": 199,
+            "precision": 0.22388059701492538,
+            "recall": 0.3015075376884422,
+            "f1": 0.2569593147751606
+          },
+          "hotel": {
+            "tp": 278,
+            "fp": 450,
+            "fn": 158,
+            "gold": 436,
+            "precision": 0.38186813186813184,
+            "recall": 0.6376146788990825,
+            "f1": 0.47766323024054985
+          },
+          "laptop": {
+            "tp": 169,
+            "fp": 522,
+            "fn": 325,
+            "gold": 494,
+            "precision": 0.24457308248914617,
+            "recall": 0.34210526315789475,
+            "f1": 0.2852320675105485
+          },
+          "phone": {
+            "tp": 547,
+            "fp": 1087,
+            "fn": 542,
+            "gold": 1089,
+            "precision": 0.3347613219094247,
+            "recall": 0.5022956841138659,
+            "f1": 0.4017627616599339
+          },
+          "restaurant": {
+            "tp": 351,
+            "fp": 314,
+            "fn": 172,
+            "gold": 523,
+            "precision": 0.5278195488721804,
+            "recall": 0.6711281070745698,
+            "f1": 0.5909090909090909
+          },
+          "sight": {
+            "tp": 269,
+            "fp": 496,
+            "fn": 367,
+            "gold": 636,
+            "precision": 0.3516339869281046,
+            "recall": 0.4229559748427673,
+            "f1": 0.38401142041399
+          }
+        }
+      },
+      {
+        "model": "mixed_025_393b9e11646e",
+        "roles": [
+          "Vocabulary control"
+        ],
+        "seed": 123,
+        "explicit": {
+          "tp": 1858,
+          "fp": 3428,
+          "fn": 1870,
+          "gold": 3728,
+          "precision": 0.3514945138100643,
+          "recall": 0.49839055793991416,
+          "f1": 0.41224761482138894
+        },
+        "null": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1300,
+          "gold": 1300,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "combined": {
+          "tp": 1858,
+          "fp": 3428,
+          "fn": 3170,
+          "gold": 5028,
+          "precision": 0.3514945138100643,
+          "recall": 0.36953062848050916,
+          "f1": 0.36028698855923985
+        },
+        "taxonomy": {
+          "correct": 1858,
+          "term": 1093,
+          "category": 639,
+          "sentiment": 138
+        },
+        "domains": {
+          "coursera": {
+            "tp": 189,
+            "fp": 381,
+            "fn": 162,
+            "gold": 351,
+            "precision": 0.33157894736842103,
+            "recall": 0.5384615384615384,
+            "f1": 0.41042345276872966
+          },
+          "food": {
+            "tp": 61,
+            "fp": 216,
+            "fn": 138,
+            "gold": 199,
+            "precision": 0.22021660649819494,
+            "recall": 0.3065326633165829,
+            "f1": 0.25630252100840334
+          },
+          "hotel": {
+            "tp": 279,
+            "fp": 445,
+            "fn": 157,
+            "gold": 436,
+            "precision": 0.38535911602209943,
+            "recall": 0.6399082568807339,
+            "f1": 0.4810344827586207
+          },
+          "laptop": {
+            "tp": 165,
+            "fp": 523,
+            "fn": 329,
+            "gold": 494,
+            "precision": 0.23982558139534885,
+            "recall": 0.3340080971659919,
+            "f1": 0.27918781725888325
+          },
+          "phone": {
+            "tp": 541,
+            "fp": 1060,
+            "fn": 548,
+            "gold": 1089,
+            "precision": 0.33791380387257963,
+            "recall": 0.4967860422405877,
+            "f1": 0.40223048327137545
+          },
+          "restaurant": {
+            "tp": 353,
+            "fp": 311,
+            "fn": 170,
+            "gold": 523,
+            "precision": 0.5316265060240963,
+            "recall": 0.6749521988527725,
+            "f1": 0.594776748104465
+          },
+          "sight": {
+            "tp": 270,
+            "fp": 492,
+            "fn": 366,
+            "gold": 636,
+            "precision": 0.3543307086614173,
+            "recall": 0.42452830188679247,
+            "f1": 0.38626609442060084
+          }
+        }
+      },
+      {
+        "model": "phase1",
+        "roles": [
+          "Phase 1 standard, re-scored"
+        ],
+        "seed": 2024,
+        "explicit": {
+          "tp": 1144,
+          "fp": 2093,
+          "fn": 2584,
+          "gold": 3728,
+          "precision": 0.3534136546184739,
+          "recall": 0.30686695278969955,
+          "f1": 0.3284996410624551
+        },
+        "null": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1300,
+          "gold": 1300,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "combined": {
+          "tp": 1144,
+          "fp": 2093,
+          "fn": 3884,
+          "gold": 5028,
+          "precision": 0.3534136546184739,
+          "recall": 0.22752585521081942,
+          "f1": 0.2768300060496068
+        },
+        "taxonomy": {
+          "correct": 1144,
+          "term": 2148,
+          "category": 375,
+          "sentiment": 61
+        },
+        "domains": {
+          "coursera": {
+            "tp": 158,
+            "fp": 232,
+            "fn": 193,
+            "gold": 351,
+            "precision": 0.40512820512820513,
+            "recall": 0.45014245014245013,
+            "f1": 0.42645074224021595
+          },
+          "food": {
+            "tp": 11,
+            "fp": 84,
+            "fn": 188,
+            "gold": 199,
+            "precision": 0.11578947368421053,
+            "recall": 0.05527638190954774,
+            "f1": 0.07482993197278912
+          },
+          "hotel": {
+            "tp": 210,
+            "fp": 329,
+            "fn": 226,
+            "gold": 436,
+            "precision": 0.38961038961038963,
+            "recall": 0.481651376146789,
+            "f1": 0.4307692307692308
+          },
+          "laptop": {
+            "tp": 89,
+            "fp": 490,
+            "fn": 405,
+            "gold": 494,
+            "precision": 0.153713298791019,
+            "recall": 0.18016194331983806,
+            "f1": 0.16589002795899346
+          },
+          "phone": {
+            "tp": 275,
+            "fp": 495,
+            "fn": 814,
+            "gold": 1089,
+            "precision": 0.35714285714285715,
+            "recall": 0.25252525252525254,
+            "f1": 0.2958579881656805
+          },
+          "restaurant": {
+            "tp": 236,
+            "fp": 292,
+            "fn": 287,
+            "gold": 523,
+            "precision": 0.44696969696969696,
+            "recall": 0.45124282982791586,
+            "f1": 0.4490960989533777
+          },
+          "sight": {
+            "tp": 165,
+            "fp": 171,
+            "fn": 471,
+            "gold": 636,
+            "precision": 0.49107142857142855,
+            "recall": 0.25943396226415094,
+            "f1": 0.3395061728395062
+          }
+        }
+      },
+      {
+        "model": "mixed_025_da1a88a51a5f",
+        "roles": [
+          "Best NULL off"
+        ],
+        "seed": 2024,
+        "explicit": {
+          "tp": 1762,
+          "fp": 3471,
+          "fn": 1966,
+          "gold": 3728,
+          "precision": 0.3367093445442385,
+          "recall": 0.47263948497854075,
+          "f1": 0.39325968083919205
+        },
+        "null": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1300,
+          "gold": 1300,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "combined": {
+          "tp": 1762,
+          "fp": 3471,
+          "fn": 3266,
+          "gold": 5028,
+          "precision": 0.3367093445442385,
+          "recall": 0.35043754972155927,
+          "f1": 0.343436312250268
+        },
+        "taxonomy": {
+          "correct": 1762,
+          "term": 1184,
+          "category": 636,
+          "sentiment": 146
+        },
+        "domains": {
+          "coursera": {
+            "tp": 187,
+            "fp": 347,
+            "fn": 164,
+            "gold": 351,
+            "precision": 0.350187265917603,
+            "recall": 0.5327635327635327,
+            "f1": 0.42259887005649716
+          },
+          "food": {
+            "tp": 60,
+            "fp": 215,
+            "fn": 139,
+            "gold": 199,
+            "precision": 0.21818181818181817,
+            "recall": 0.3015075376884422,
+            "f1": 0.25316455696202533
+          },
+          "hotel": {
+            "tp": 260,
+            "fp": 469,
+            "fn": 176,
+            "gold": 436,
+            "precision": 0.35665294924554186,
+            "recall": 0.5963302752293578,
+            "f1": 0.44635193133047213
+          },
+          "laptop": {
+            "tp": 143,
+            "fp": 552,
+            "fn": 351,
+            "gold": 494,
+            "precision": 0.20575539568345325,
+            "recall": 0.2894736842105263,
+            "f1": 0.24053826745164003
+          },
+          "phone": {
+            "tp": 512,
+            "fp": 1028,
+            "fn": 577,
+            "gold": 1089,
+            "precision": 0.33246753246753247,
+            "recall": 0.4701561065197429,
+            "f1": 0.3895017116774439
+          },
+          "restaurant": {
+            "tp": 336,
+            "fp": 333,
+            "fn": 187,
+            "gold": 523,
+            "precision": 0.5022421524663677,
+            "recall": 0.6424474187380497,
+            "f1": 0.5637583892617449
+          },
+          "sight": {
+            "tp": 264,
+            "fp": 527,
+            "fn": 372,
+            "gold": 636,
+            "precision": 0.33375474083438683,
+            "recall": 0.41509433962264153,
+            "f1": 0.37000700770847933
+          }
+        }
+      },
+      {
+        "model": "mixed_025_d578b358d050",
+        "roles": [
+          "Best NULL on"
+        ],
+        "seed": 2024,
+        "explicit": {
+          "tp": 1774,
+          "fp": 3364,
+          "fn": 1954,
+          "gold": 3728,
+          "precision": 0.3452705332814325,
+          "recall": 0.47585836909871243,
+          "f1": 0.40018046469659374
+        },
+        "null": {
+          "tp": 123,
+          "fp": 1278,
+          "fn": 1177,
+          "gold": 1300,
+          "precision": 0.08779443254817987,
+          "recall": 0.09461538461538462,
+          "f1": 0.09107737874861163
+        },
+        "combined": {
+          "tp": 1897,
+          "fp": 4642,
+          "fn": 3131,
+          "gold": 5028,
+          "precision": 0.2901055207218229,
+          "recall": 0.3772871917263325,
+          "f1": 0.3280020748681594
+        },
+        "taxonomy": {
+          "correct": 1774,
+          "term": 1179,
+          "category": 624,
+          "sentiment": 151
+        },
+        "domains": {
+          "coursera": {
+            "tp": 191,
+            "fp": 363,
+            "fn": 160,
+            "gold": 351,
+            "precision": 0.3447653429602888,
+            "recall": 0.5441595441595442,
+            "f1": 0.4220994475138122
+          },
+          "food": {
+            "tp": 57,
+            "fp": 214,
+            "fn": 142,
+            "gold": 199,
+            "precision": 0.21033210332103322,
+            "recall": 0.2864321608040201,
+            "f1": 0.2425531914893617
+          },
+          "hotel": {
+            "tp": 263,
+            "fp": 443,
+            "fn": 173,
+            "gold": 436,
+            "precision": 0.37252124645892354,
+            "recall": 0.6032110091743119,
+            "f1": 0.46059544658493873
+          },
+          "laptop": {
+            "tp": 145,
+            "fp": 555,
+            "fn": 349,
+            "gold": 494,
+            "precision": 0.20714285714285716,
+            "recall": 0.2935222672064777,
+            "f1": 0.24288107202680068
+          },
+          "phone": {
+            "tp": 538,
+            "fp": 948,
+            "fn": 551,
+            "gold": 1089,
+            "precision": 0.3620457604306864,
+            "recall": 0.49403122130394855,
+            "f1": 0.4178640776699029
+          },
+          "restaurant": {
+            "tp": 325,
+            "fp": 335,
+            "fn": 198,
+            "gold": 523,
+            "precision": 0.49242424242424243,
+            "recall": 0.621414913957935,
+            "f1": 0.5494505494505495
+          },
+          "sight": {
+            "tp": 255,
+            "fp": 506,
+            "fn": 381,
+            "gold": 636,
+            "precision": 0.33508541392904073,
+            "recall": 0.4009433962264151,
+            "f1": 0.36506800286327845
+          }
+        }
+      },
+      {
+        "model": "mixed_025_393b9e11646e",
+        "roles": [
+          "Vocabulary control"
+        ],
+        "seed": 2024,
+        "explicit": {
+          "tp": 1829,
+          "fp": 3450,
+          "fn": 1899,
+          "gold": 3728,
+          "precision": 0.3464671339268801,
+          "recall": 0.4906115879828326,
+          "f1": 0.4061285666703675
+        },
+        "null": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1300,
+          "gold": 1300,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "combined": {
+          "tp": 1829,
+          "fp": 3450,
+          "fn": 3199,
+          "gold": 5028,
+          "precision": 0.3464671339268801,
+          "recall": 0.3637629276054097,
+          "f1": 0.35490443387988746
+        },
+        "taxonomy": {
+          "correct": 1829,
+          "term": 1125,
+          "category": 622,
+          "sentiment": 152
+        },
+        "domains": {
+          "coursera": {
+            "tp": 191,
+            "fp": 341,
+            "fn": 160,
+            "gold": 351,
+            "precision": 0.35902255639097747,
+            "recall": 0.5441595441595442,
+            "f1": 0.43261608154020387
+          },
+          "food": {
+            "tp": 60,
+            "fp": 204,
+            "fn": 139,
+            "gold": 199,
+            "precision": 0.22727272727272727,
+            "recall": 0.3015075376884422,
+            "f1": 0.2591792656587473
+          },
+          "hotel": {
+            "tp": 270,
+            "fp": 451,
+            "fn": 166,
+            "gold": 436,
+            "precision": 0.37447988904299584,
+            "recall": 0.6192660550458715,
+            "f1": 0.46672428694900603
+          },
+          "laptop": {
+            "tp": 154,
+            "fp": 534,
+            "fn": 340,
+            "gold": 494,
+            "precision": 0.2238372093023256,
+            "recall": 0.3117408906882591,
+            "f1": 0.26057529610829105
+          },
+          "phone": {
+            "tp": 561,
+            "fp": 1059,
+            "fn": 528,
+            "gold": 1089,
+            "precision": 0.34629629629629627,
+            "recall": 0.5151515151515151,
+            "f1": 0.4141749723145072
+          },
+          "restaurant": {
+            "tp": 332,
+            "fp": 334,
+            "fn": 191,
+            "gold": 523,
+            "precision": 0.4984984984984985,
+            "recall": 0.6347992351816444,
+            "f1": 0.5584524810765349
+          },
+          "sight": {
+            "tp": 261,
+            "fp": 527,
+            "fn": 375,
+            "gold": 636,
+            "precision": 0.33121827411167515,
+            "recall": 0.41037735849056606,
+            "f1": 0.36657303370786515
+          }
+        }
+      },
+      {
+        "model": "phase1",
+        "roles": [
+          "Phase 1 standard, re-scored"
+        ],
+        "seed": 777,
+        "explicit": {
+          "tp": 1230,
+          "fp": 2349,
+          "fn": 2498,
+          "gold": 3728,
+          "precision": 0.34367141659681477,
+          "recall": 0.32993562231759654,
+          "f1": 0.3366634733816888
+        },
+        "null": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1300,
+          "gold": 1300,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "combined": {
+          "tp": 1230,
+          "fp": 2349,
+          "fn": 3798,
+          "gold": 5028,
+          "precision": 0.34367141659681477,
+          "recall": 0.24463007159904535,
+          "f1": 0.2858138724294179
+        },
+        "taxonomy": {
+          "correct": 1230,
+          "term": 2031,
+          "category": 389,
+          "sentiment": 78
+        },
+        "domains": {
+          "coursera": {
+            "tp": 164,
+            "fp": 283,
+            "fn": 187,
+            "gold": 351,
+            "precision": 0.3668903803131991,
+            "recall": 0.4672364672364672,
+            "f1": 0.41102756892230574
+          },
+          "food": {
+            "tp": 13,
+            "fp": 86,
+            "fn": 186,
+            "gold": 199,
+            "precision": 0.13131313131313133,
+            "recall": 0.06532663316582915,
+            "f1": 0.087248322147651
+          },
+          "hotel": {
+            "tp": 237,
+            "fp": 398,
+            "fn": 199,
+            "gold": 436,
+            "precision": 0.3732283464566929,
+            "recall": 0.5435779816513762,
+            "f1": 0.4425770308123249
+          },
+          "laptop": {
+            "tp": 91,
+            "fp": 500,
+            "fn": 403,
+            "gold": 494,
+            "precision": 0.15397631133671744,
+            "recall": 0.18421052631578946,
+            "f1": 0.16774193548387098
+          },
+          "phone": {
+            "tp": 297,
+            "fp": 572,
+            "fn": 792,
+            "gold": 1089,
+            "precision": 0.34177215189873417,
+            "recall": 0.2727272727272727,
+            "f1": 0.30337078651685395
+          },
+          "restaurant": {
+            "tp": 253,
+            "fp": 331,
+            "fn": 270,
+            "gold": 523,
+            "precision": 0.4332191780821918,
+            "recall": 0.4837476099426386,
+            "f1": 0.45709123757904246
+          },
+          "sight": {
+            "tp": 175,
+            "fp": 179,
+            "fn": 461,
+            "gold": 636,
+            "precision": 0.4943502824858757,
+            "recall": 0.2751572327044025,
+            "f1": 0.35353535353535354
+          }
+        }
+      },
+      {
+        "model": "mixed_025_da1a88a51a5f",
+        "roles": [
+          "Best NULL off"
+        ],
+        "seed": 777,
+        "explicit": {
+          "tp": 1798,
+          "fp": 3394,
+          "fn": 1930,
+          "gold": 3728,
+          "precision": 0.3463020030816641,
+          "recall": 0.4822961373390558,
+          "f1": 0.4031390134529148
+        },
+        "null": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1300,
+          "gold": 1300,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "combined": {
+          "tp": 1798,
+          "fp": 3394,
+          "fn": 3230,
+          "gold": 5028,
+          "precision": 0.3463020030816641,
+          "recall": 0.35759745425616546,
+          "f1": 0.3518590998043053
+        },
+        "taxonomy": {
+          "correct": 1798,
+          "term": 1181,
+          "category": 601,
+          "sentiment": 148
+        },
+        "domains": {
+          "coursera": {
+            "tp": 183,
+            "fp": 317,
+            "fn": 168,
+            "gold": 351,
+            "precision": 0.366,
+            "recall": 0.5213675213675214,
+            "f1": 0.4300822561692127
+          },
+          "food": {
+            "tp": 48,
+            "fp": 178,
+            "fn": 151,
+            "gold": 199,
+            "precision": 0.21238938053097345,
+            "recall": 0.24120603015075376,
+            "f1": 0.22588235294117648
+          },
+          "hotel": {
+            "tp": 276,
+            "fp": 434,
+            "fn": 160,
+            "gold": 436,
+            "precision": 0.38873239436619716,
+            "recall": 0.6330275229357798,
+            "f1": 0.4816753926701571
+          },
+          "laptop": {
+            "tp": 159,
+            "fp": 487,
+            "fn": 335,
+            "gold": 494,
+            "precision": 0.24613003095975233,
+            "recall": 0.32186234817813764,
+            "f1": 0.2789473684210526
+          },
+          "phone": {
+            "tp": 541,
+            "fp": 1113,
+            "fn": 548,
+            "gold": 1089,
+            "precision": 0.3270858524788392,
+            "recall": 0.4967860422405877,
+            "f1": 0.3944586219467736
+          },
+          "restaurant": {
+            "tp": 331,
+            "fp": 311,
+            "fn": 192,
+            "gold": 523,
+            "precision": 0.5155763239875389,
+            "recall": 0.6328871892925431,
+            "f1": 0.5682403433476395
+          },
+          "sight": {
+            "tp": 260,
+            "fp": 554,
+            "fn": 376,
+            "gold": 636,
+            "precision": 0.3194103194103194,
+            "recall": 0.4088050314465409,
+            "f1": 0.3586206896551724
+          }
+        }
+      },
+      {
+        "model": "mixed_025_d578b358d050",
+        "roles": [
+          "Best NULL on"
+        ],
+        "seed": 777,
+        "explicit": {
+          "tp": 1817,
+          "fp": 3354,
+          "fn": 1911,
+          "gold": 3728,
+          "precision": 0.351382711274415,
+          "recall": 0.4873927038626609,
+          "f1": 0.4083604899426902
+        },
+        "null": {
+          "tp": 87,
+          "fp": 568,
+          "fn": 1213,
+          "gold": 1300,
+          "precision": 0.13282442748091602,
+          "recall": 0.06692307692307692,
+          "f1": 0.08900255754475703
+        },
+        "combined": {
+          "tp": 1904,
+          "fp": 3922,
+          "fn": 3124,
+          "gold": 5028,
+          "precision": 0.32681084792310333,
+          "recall": 0.3786793953858393,
+          "f1": 0.3508384005896444
+        },
+        "taxonomy": {
+          "correct": 1817,
+          "term": 1134,
+          "category": 641,
+          "sentiment": 136
+        },
+        "domains": {
+          "coursera": {
+            "tp": 187,
+            "fp": 333,
+            "fn": 164,
+            "gold": 351,
+            "precision": 0.3596153846153846,
+            "recall": 0.5327635327635327,
+            "f1": 0.4293915040183697
+          },
+          "food": {
+            "tp": 54,
+            "fp": 211,
+            "fn": 145,
+            "gold": 199,
+            "precision": 0.2037735849056604,
+            "recall": 0.271356783919598,
+            "f1": 0.23275862068965517
+          },
+          "hotel": {
+            "tp": 273,
+            "fp": 425,
+            "fn": 163,
+            "gold": 436,
+            "precision": 0.39111747851002865,
+            "recall": 0.6261467889908257,
+            "f1": 0.48148148148148145
+          },
+          "laptop": {
+            "tp": 153,
+            "fp": 495,
+            "fn": 341,
+            "gold": 494,
+            "precision": 0.2361111111111111,
+            "recall": 0.3097165991902834,
+            "f1": 0.2679509632224168
+          },
+          "phone": {
+            "tp": 539,
+            "fp": 1056,
+            "fn": 550,
+            "gold": 1089,
+            "precision": 0.33793103448275863,
+            "recall": 0.494949494949495,
+            "f1": 0.4016393442622951
+          },
+          "restaurant": {
+            "tp": 340,
+            "fp": 304,
+            "fn": 183,
+            "gold": 523,
+            "precision": 0.5279503105590062,
+            "recall": 0.6500956022944551,
+            "f1": 0.5826906598114824
+          },
+          "sight": {
+            "tp": 271,
+            "fp": 530,
+            "fn": 365,
+            "gold": 636,
+            "precision": 0.3383270911360799,
+            "recall": 0.4261006289308176,
+            "f1": 0.3771746694502436
+          }
+        }
+      },
+      {
+        "model": "mixed_025_393b9e11646e",
+        "roles": [
+          "Vocabulary control"
+        ],
+        "seed": 777,
+        "explicit": {
+          "tp": 1823,
+          "fp": 3328,
+          "fn": 1905,
+          "gold": 3728,
+          "precision": 0.35391186177441275,
+          "recall": 0.48900214592274677,
+          "f1": 0.41063182790854824
+        },
+        "null": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1300,
+          "gold": 1300,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "combined": {
+          "tp": 1823,
+          "fp": 3328,
+          "fn": 3205,
+          "gold": 5028,
+          "precision": 0.35391186177441275,
+          "recall": 0.36256961018297534,
+          "f1": 0.3581884271539444
+        },
+        "taxonomy": {
+          "correct": 1823,
+          "term": 1138,
+          "category": 625,
+          "sentiment": 142
+        },
+        "domains": {
+          "coursera": {
+            "tp": 188,
+            "fp": 335,
+            "fn": 163,
+            "gold": 351,
+            "precision": 0.35946462715105165,
+            "recall": 0.5356125356125356,
+            "f1": 0.4302059496567506
+          },
+          "food": {
+            "tp": 55,
+            "fp": 212,
+            "fn": 144,
+            "gold": 199,
+            "precision": 0.20599250936329588,
+            "recall": 0.27638190954773867,
+            "f1": 0.23605150214592274
+          },
+          "hotel": {
+            "tp": 272,
+            "fp": 428,
+            "fn": 164,
+            "gold": 436,
+            "precision": 0.38857142857142857,
+            "recall": 0.6238532110091743,
+            "f1": 0.4788732394366197
+          },
+          "laptop": {
+            "tp": 157,
+            "fp": 492,
+            "fn": 337,
+            "gold": 494,
+            "precision": 0.24191063174114022,
+            "recall": 0.31781376518218624,
+            "f1": 0.2747156605424322
+          },
+          "phone": {
+            "tp": 541,
+            "fp": 1046,
+            "fn": 548,
+            "gold": 1089,
+            "precision": 0.3408947700063012,
+            "recall": 0.4967860422405877,
+            "f1": 0.40433482810164423
+          },
+          "restaurant": {
+            "tp": 344,
+            "fp": 305,
+            "fn": 179,
+            "gold": 523,
+            "precision": 0.5300462249614792,
+            "recall": 0.6577437858508605,
+            "f1": 0.5870307167235495
+          },
+          "sight": {
+            "tp": 266,
+            "fp": 510,
+            "fn": 370,
+            "gold": 636,
+            "precision": 0.3427835051546392,
+            "recall": 0.41823899371069184,
+            "f1": 0.37677053824362605
+          }
+        }
+      }
+    ],
+    "summaries": [
+      {
+        "model": "phase1",
+        "roles": [
+          "Phase 1 standard, re-scored"
+        ],
+        "seeds": [
+          13,
+          42,
+          123,
+          2024,
+          777
+        ],
+        "explicit": {
+          "precision": 0.34879196430675746,
+          "recall": 0.32070815450643775,
+          "f1": 0.33407164591588445,
+          "gold": 3728,
+          "tp": 1195.6,
+          "fp": 2233.2,
+          "fn": 2532.4,
+          "sd": 0.007511698068184508
+        },
+        "null": {
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "gold": 1300,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1300,
+          "sd": 0.0
+        },
+        "combined": {
+          "precision": 0.34879196430675746,
+          "recall": 0.23778838504375496,
+          "f1": 0.2827141329315892,
+          "gold": 5028,
+          "tp": 1195.6,
+          "fp": 2233.2,
+          "fn": 3832.4,
+          "sd": 0.006715593032453455
+        },
+        "taxonomy": {
+          "correct": 1195.6,
+          "term": 2066.8,
+          "category": 393.2,
+          "sentiment": 72.4
+        },
+        "domains": {
+          "coursera": {
+            "f1": 0.4132285139782593,
+            "gold": 351
+          },
+          "food": {
+            "f1": 0.09450068847915825,
+            "gold": 199
+          },
+          "hotel": {
+            "f1": 0.4437562845277405,
+            "gold": 436
+          },
+          "laptop": {
+            "f1": 0.1650240843729466,
+            "gold": 494
+          },
+          "phone": {
+            "f1": 0.29988051149714134,
+            "gold": 1089
+          },
+          "restaurant": {
+            "f1": 0.455006741781416,
+            "gold": 523
+          },
+          "sight": {
+            "f1": 0.35194922933993666,
+            "gold": 636
+          }
+        }
+      },
+      {
+        "model": "mixed_025_da1a88a51a5f",
+        "roles": [
+          "Best NULL off"
+        ],
+        "seeds": [
+          13,
+          42,
+          123,
+          2024,
+          777
+        ],
+        "explicit": {
+          "precision": 0.3438857104258544,
+          "recall": 0.48626609442060087,
+          "f1": 0.40284892687267776,
+          "gold": 3728,
+          "tp": 1812.8,
+          "fp": 3458.6,
+          "fn": 1915.2,
+          "sd": 0.006614249400790144
+        },
+        "null": {
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "gold": 1300,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1300,
+          "sd": 0.0
+        },
+        "combined": {
+          "precision": 0.3438857104258544,
+          "recall": 0.3605409705648369,
+          "f1": 0.35200108675473535,
+          "gold": 5028,
+          "tp": 1812.8,
+          "fp": 3458.6,
+          "fn": 3215.2,
+          "sd": 0.005975583213148279
+        },
+        "taxonomy": {
+          "correct": 1812.8,
+          "term": 1138.8,
+          "category": 628.2,
+          "sentiment": 148.2
+        },
+        "domains": {
+          "coursera": {
+            "f1": 0.42691927904697613,
+            "gold": 351
+          },
+          "food": {
+            "f1": 0.2384778474661583,
+            "gold": 199
+          },
+          "hotel": {
+            "f1": 0.46680367874510453,
+            "gold": 436
+          },
+          "laptop": {
+            "f1": 0.2683663237680478,
+            "gold": 494
+          },
+          "phone": {
+            "f1": 0.39610770077753676,
+            "gold": 1089
+          },
+          "restaurant": {
+            "f1": 0.5749876648612573,
+            "gold": 523
+          },
+          "sight": {
+            "f1": 0.3688073127481767,
+            "gold": 636
+          }
+        }
+      },
+      {
+        "model": "mixed_025_d578b358d050",
+        "roles": [
+          "Best NULL on"
+        ],
+        "seeds": [
+          13,
+          42,
+          123,
+          2024,
+          777
+        ],
+        "explicit": {
+          "precision": 0.34688049673393007,
+          "recall": 0.4892167381974249,
+          "f1": 0.40588941993915517,
+          "gold": 3728,
+          "tp": 1823.8,
+          "fp": 3434.4,
+          "fn": 1904.2,
+          "sd": 0.004338200406918012
+        },
+        "null": {
+          "precision": 0.09504522194956203,
+          "recall": 0.08953846153846154,
+          "f1": 0.08893092190751457,
+          "gold": 1300,
+          "tp": 116.4,
+          "fp": 1213.8,
+          "fn": 1183.6,
+          "sd": 0.004348991363705664
+        },
+        "combined": {
+          "precision": 0.2959641382753395,
+          "recall": 0.38587907716785996,
+          "f1": 0.3344476488522569,
+          "gold": 5028,
+          "tp": 1940.2,
+          "fp": 4648.2,
+          "fn": 3087.8,
+          "sd": 0.010803278635381778
+        },
+        "taxonomy": {
+          "correct": 1823.8,
+          "term": 1119.2,
+          "category": 639.2,
+          "sentiment": 145.8
+        },
+        "domains": {
+          "coursera": {
+            "f1": 0.4210757104966353,
+            "gold": 351
+          },
+          "food": {
+            "f1": 0.2388979881720216,
+            "gold": 199
+          },
+          "hotel": {
+            "f1": 0.4701963605610167,
+            "gold": 436
+          },
+          "laptop": {
+            "f1": 0.2653949408189541,
+            "gold": 494
+          },
+          "phone": {
+            "f1": 0.40468125050838516,
+            "gold": 1089
+          },
+          "restaurant": {
+            "f1": 0.5783206359872008,
+            "gold": 523
+          },
+          "sight": {
+            "f1": 0.3743125527618758,
+            "gold": 636
+          }
+        }
+      },
+      {
+        "model": "mixed_025_393b9e11646e",
+        "roles": [
+          "Vocabulary control"
+        ],
+        "seeds": [
+          13,
+          42,
+          123,
+          2024,
+          777
+        ],
+        "explicit": {
+          "precision": 0.34774962276416344,
+          "recall": 0.49179184549356225,
+          "f1": 0.4073815483898986,
+          "gold": 3728,
+          "tp": 1833.4,
+          "fp": 3439.8,
+          "fn": 1894.6,
+          "sd": 0.003861354369690244
+        },
+        "null": {
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "gold": 1300,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1300,
+          "sd": 0.0
+        },
+        "combined": {
+          "precision": 0.34774962276416344,
+          "recall": 0.36463802704852827,
+          "f1": 0.3559645173579417,
+          "gold": 5028,
+          "tp": 1833.4,
+          "fp": 3439.8,
+          "fn": 3194.6,
+          "sd": 0.003214944326513553
+        },
+        "taxonomy": {
+          "correct": 1833.4,
+          "term": 1116.6,
+          "category": 632,
+          "sentiment": 146
+        },
+        "domains": {
+          "coursera": {
+            "f1": 0.4269260730621923,
+            "gold": 351
+          },
+          "food": {
+            "f1": 0.24063383925898887,
+            "gold": 199
+          },
+          "hotel": {
+            "f1": 0.4717702799465232,
+            "gold": 436
+          },
+          "laptop": {
+            "f1": 0.2662348666344273,
+            "gold": 494
+          },
+          "phone": {
+            "f1": 0.40317113762656426,
+            "gold": 1089
+          },
+          "restaurant": {
+            "f1": 0.5826192836811208,
+            "gold": 523
+          },
+          "sight": {
+            "f1": 0.3757171332185903,
+            "gold": 636
+          }
+        }
+      }
+    ],
+    "method": "Saved predictions re-scored against identical current explicit+NULL gold; retain all predictions.",
+    "scope": "In-domain; eligible explicit and deduplicated NULL; not all raw annotations."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "verified_input_files": 142,
+  "template_sha256": "6bfb2d21ec8aba40abb19adfce6175fa03d9e603ab17473105f5e3689127846f",
+  "columns_match_supplied_file": true,
+  "phase1_rows": {
+    "dev": 80,
+    "test": 80
+  },
+  "phase2_unique_rows": {
+    "dev": 84,
+    "test": 78
+  },
+  "excluded_incomplete_models": 2,
+  "paired_rows": {
+    "dev": 80,
+    "test": 80
+  },
+  "smoke_rows_separate": 3,
+  "native_prediction_counts_verified": true,
+  "same_gold_sentence_id_checks": true
+}

@@ -8,6 +8,7 @@ LODO results with both Phase 1 baselines re-scored on matching gold.
 | File | Purpose | Run directly? |
 |---|---|---|
 | [compare_results.py](compare_results.py) | Verify bundle hashes and regenerate tables, charts and the comparison report | Yes: this is the team entry point |
+| [export_csv_reports.py](export_csv_reports.py) | Export Phase 1/Phase 2 development and test scores with the supplied CSV columns, plus matched-gold versus tables | Yes, for the CSV reports |
 | [analysis.py](analysis.py) | Align historical gold and calculate exact/component scores and paired comparisons | Imported automatically by compare_results.py |
 | build_phase2_bundle.py, at the repository root | Export a fresh snapshot from the original training-machine artifacts | For the snapshot owner when exporting updated results |
 
@@ -61,6 +62,18 @@ python phase2/compare_results.py --no-plots
 - [comparison/lodo_same_gold.csv](comparison/lodo_same_gold.csv): fair Phase 1 versus Phase 2 LODO comparison.
 - [PARAMETERS.md](PARAMETERS.md) and [parameters.csv](parameters.csv): actual settings and selected checkpoints/thresholds.
 - [REPORT_TASKS.md](REPORT_TASKS.md): suggested division of report work.
+
+To generate the CSV reports:
+
+    python phase2/export_csv_reports.py
+
+Read [comparison/csv_reports/README.md](comparison/csv_reports/README.md). Each
+phase has separate development_results.csv and test_results.csv files, plus
+summary.csv and run_parameters.csv. The versus folder contains paired
+five-seed differences on matching gold. Interrupted runs and the supplied
+small smoke example stay separate from the completed full-data tables.
+Use --no-plots for standard-library-only export. Inside phase2, run
+python export_csv_reports.py.
 
 The Phase 1 tables in reference/phase1/ are historical snapshots. The
 comparison script reads their saved predictions from evidence/phase1_outputs.zip;

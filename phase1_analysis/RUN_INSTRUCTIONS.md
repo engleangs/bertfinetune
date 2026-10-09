@@ -63,3 +63,9 @@ tables and prose; the notebook regenerates the Phase 1 charts.
 Phase 1 preserves the historical evaluation scope. For the comparison
 against Phase 2 on corrected gold, use **phase2/compare_results.py** from
 the repository root and read phase2/comparison/report.md.
+
+For Phase 1, Phase 2 and versus CSVs matching the supplied
+development_results.csv columns, run **python phase2/export_csv_reports.py**
+from the repository root. The historical Phase 1 CSVs are written under
+phase2/comparison/csv_reports/phase1/; development and test rows stay separate.
+The exporter reads the Phase 1 evidence already included in the phase2 folder.

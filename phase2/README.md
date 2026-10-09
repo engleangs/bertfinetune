@@ -4,6 +4,12 @@
 Read [RUN_INSTRUCTIONS.md](RUN_INSTRUCTIONS.md) for the commands, dependencies
 and report files.
 
+For CSVs with the same 25 columns as the supplied development_results.csv, run
+[export_csv_reports.py](export_csv_reports.py). It creates separate
+[Phase 1, Phase 2 and versus reports](comparison/csv_reports/README.md):
+
+    python phase2/export_csv_reports.py
+
 Start with [the comparison report](comparison/report.md), then divide the work using
 [REPORT_TASKS.md](REPORT_TASKS.md). All completed results are packaged here; your
 teammates can copy this folder alone or clone it through Git.

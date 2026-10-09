@@ -1,0 +1,2070 @@
+{
+  "scope": "Completed study train/dev only; diagnostic, no model or threshold changes",
+  "trial_id": "mixed_025_d578b358d050",
+  "categories": 260,
+  "sentiments": [
+    "conflict",
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "null_output_labels": 1040,
+  "positive_train_pairs": 201,
+  "train_pairs_support_1_to_5": 134,
+  "labels_with_no_null_training_positive": 839,
+  "train_null_targets": 2395,
+  "positive_target_density": 0.00026181043831112043,
+  "sentence_scopes": {
+    "train": {
+      "neither_eligible": 1989,
+      "null_only": 1891,
+      "explicit_only": 4620,
+      "mixed": 296
+    },
+    "dev": {
+      "null_only": 447,
+      "neither_eligible": 512,
+      "explicit_only": 1168,
+      "mixed": 59
+    }
+  },
+  "dev_null_pair_coverage": {
+    "frequent_null_training_pair": 508,
+    "rare_null_training_pair": 50,
+    "no_null_training_positive": 17
+  },
+  "pair_support": [
+    {
+      "category": "BATTERY#OPERATION_PERFORMANCE",
+      "sentiment": "negative",
+      "count": 2
+    },
+    {
+      "category": "BATTERY#OPERATION_PERFORMANCE",
+      "sentiment": "positive",
+      "count": 1
+    },
+    {
+      "category": "CPU#OPERATION_PERFORMANCE",
+      "sentiment": "positive",
+      "count": 3
+    },
+    {
+      "category": "Course_General_Feedback",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "Course_General_Feedback",
+      "sentiment": "neutral",
+      "count": 4
+    },
+    {
+      "category": "Course_General_Feedback",
+      "sentiment": "positive",
+      "count": 12
+    },
+    {
+      "category": "DISPLAY#DESIGN_FEATURES",
+      "sentiment": "positive",
+      "count": 1
+    },
+    {
+      "category": "DISPLAY#OPERATION_PERFORMANCE",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "DISPLAY#OPERATION_PERFORMANCE",
+      "sentiment": "positive",
+      "count": 2
+    },
+    {
+      "category": "FANS&COOLING#GENERAL",
+      "sentiment": "positive",
+      "count": 1
+    },
+    {
+      "category": "HARDWARE#GENERAL",
+      "sentiment": "positive",
+      "count": 1
+    },
+    {
+      "category": "HARD_DISC#GENERAL",
+      "sentiment": "positive",
+      "count": 1
+    },
+    {
+      "category": "Instructor",
+      "sentiment": "negative",
+      "count": 21
+    },
+    {
+      "category": "Instructor",
+      "sentiment": "neutral",
+      "count": 23
+    },
+    {
+      "category": "Instructor",
+      "sentiment": "positive",
+      "count": 78
+    },
+    {
+      "category": "KEYBOARD#DESIGN_FEATURES",
+      "sentiment": "positive",
+      "count": 1
+    },
+    {
+      "category": "KEYBOARD#GENERAL",
+      "sentiment": "negative",
+      "count": 2
+    },
+    {
+      "category": "KEYBOARD#OPERATION_PERFORMANCE",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "LAPTOP#DESIGN_FEATURES",
+      "sentiment": "negative",
+      "count": 8
+    },
+    {
+      "category": "LAPTOP#DESIGN_FEATURES",
+      "sentiment": "neutral",
+      "count": 1
+    },
+    {
+      "category": "LAPTOP#DESIGN_FEATURES",
+      "sentiment": "positive",
+      "count": 23
+    },
+    {
+      "category": "LAPTOP#GENERAL",
+      "sentiment": "negative",
+      "count": 34
+    },
+    {
+      "category": "LAPTOP#GENERAL",
+      "sentiment": "neutral",
+      "count": 2
+    },
+    {
+      "category": "LAPTOP#GENERAL",
+      "sentiment": "positive",
+      "count": 64
+    },
+    {
+      "category": "LAPTOP#MISCELLANEOUS",
+      "sentiment": "positive",
+      "count": 2
+    },
+    {
+      "category": "LAPTOP#OPERATION_PERFORMANCE",
+      "sentiment": "negative",
+      "count": 29
+    },
+    {
+      "category": "LAPTOP#OPERATION_PERFORMANCE",
+      "sentiment": "neutral",
+      "count": 6
+    },
+    {
+      "category": "LAPTOP#OPERATION_PERFORMANCE",
+      "sentiment": "positive",
+      "count": 57
+    },
+    {
+      "category": "LAPTOP#PORTABILITY",
+      "sentiment": "positive",
+      "count": 14
+    },
+    {
+      "category": "LAPTOP#PRICE",
+      "sentiment": "negative",
+      "count": 3
+    },
+    {
+      "category": "LAPTOP#PRICE",
+      "sentiment": "neutral",
+      "count": 3
+    },
+    {
+      "category": "LAPTOP#PRICE",
+      "sentiment": "positive",
+      "count": 21
+    },
+    {
+      "category": "LAPTOP#QUALITY",
+      "sentiment": "negative",
+      "count": 5
+    },
+    {
+      "category": "LAPTOP#QUALITY",
+      "sentiment": "positive",
+      "count": 10
+    },
+    {
+      "category": "LAPTOP#USABILITY",
+      "sentiment": "negative",
+      "count": 4
+    },
+    {
+      "category": "LAPTOP#USABILITY",
+      "sentiment": "positive",
+      "count": 22
+    },
+    {
+      "category": "MEMORY#GENERAL",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "MULTIMEDIA_DEVICES#OPERATION_PERFORMANCE",
+      "sentiment": "neutral",
+      "count": 1
+    },
+    {
+      "category": "MULTIMEDIA_DEVICES#QUALITY",
+      "sentiment": "positive",
+      "count": 1
+    },
+    {
+      "category": "Mathematical_Related_Concept",
+      "sentiment": "negative",
+      "count": 2
+    },
+    {
+      "category": "Mathematical_Related_Concept",
+      "sentiment": "neutral",
+      "count": 9
+    },
+    {
+      "category": "Mathematical_Related_Concept",
+      "sentiment": "positive",
+      "count": 4
+    },
+    {
+      "category": "OS#DESIGN_FEATURES",
+      "sentiment": "neutral",
+      "count": 1
+    },
+    {
+      "category": "OS#OPERATION_PERFORMANCE",
+      "sentiment": "negative",
+      "count": 3
+    },
+    {
+      "category": "OS#OPERATION_PERFORMANCE",
+      "sentiment": "positive",
+      "count": 2
+    },
+    {
+      "category": "Other",
+      "sentiment": "negative",
+      "count": 12
+    },
+    {
+      "category": "Other",
+      "sentiment": "neutral",
+      "count": 12
+    },
+    {
+      "category": "Other",
+      "sentiment": "positive",
+      "count": 16
+    },
+    {
+      "category": "POWER_SUPPLY#GENERAL",
+      "sentiment": "positive",
+      "count": 1
+    },
+    {
+      "category": "POWER_SUPPLY#OPERATION_PERFORMANCE",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "POWER_SUPPLY#OPERATION_PERFORMANCE",
+      "sentiment": "positive",
+      "count": 3
+    },
+    {
+      "category": "SHIPPING#GENERAL",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "SHIPPING#GENERAL",
+      "sentiment": "positive",
+      "count": 1
+    },
+    {
+      "category": "SHIPPING#OPERATION_PERFORMANCE",
+      "sentiment": "positive",
+      "count": 1
+    },
+    {
+      "category": "SHIPPING#QUALITY",
+      "sentiment": "positive",
+      "count": 1
+    },
+    {
+      "category": "SOFTWARE#DESIGN_FEATURES",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "SOFTWARE#GENERAL",
+      "sentiment": "neutral",
+      "count": 1
+    },
+    {
+      "category": "SOFTWARE#OPERATION_PERFORMANCE",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "SOFTWARE#OPERATION_PERFORMANCE",
+      "sentiment": "positive",
+      "count": 1
+    },
+    {
+      "category": "SUPPORT#GENERAL",
+      "sentiment": "negative",
+      "count": 4
+    },
+    {
+      "category": "SUPPORT#OPERATION_PERFORMANCE",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "Teaching_Setup",
+      "sentiment": "negative",
+      "count": 2
+    },
+    {
+      "category": "Teaching_Setup",
+      "sentiment": "positive",
+      "count": 1
+    },
+    {
+      "category": "amazon availability",
+      "sentiment": "conflict",
+      "count": 1
+    },
+    {
+      "category": "amazon availability",
+      "sentiment": "negative",
+      "count": 2
+    },
+    {
+      "category": "amazon availability",
+      "sentiment": "positive",
+      "count": 13
+    },
+    {
+      "category": "amazon prices",
+      "sentiment": "negative",
+      "count": 2
+    },
+    {
+      "category": "amazon prices",
+      "sentiment": "positive",
+      "count": 6
+    },
+    {
+      "category": "ambience general",
+      "sentiment": "negative",
+      "count": 3
+    },
+    {
+      "category": "ambience general",
+      "sentiment": "neutral",
+      "count": 3
+    },
+    {
+      "category": "ambience general",
+      "sentiment": "positive",
+      "count": 14
+    },
+    {
+      "category": "assignments comprehensiveness",
+      "sentiment": "negative",
+      "count": 3
+    },
+    {
+      "category": "assignments quality",
+      "sentiment": "negative",
+      "count": 4
+    },
+    {
+      "category": "assignments quality",
+      "sentiment": "positive",
+      "count": 2
+    },
+    {
+      "category": "assignments quantity",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "assignments relatability",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "assignments relatability",
+      "sentiment": "positive",
+      "count": 1
+    },
+    {
+      "category": "course comprehensiveness",
+      "sentiment": "negative",
+      "count": 6
+    },
+    {
+      "category": "course comprehensiveness",
+      "sentiment": "neutral",
+      "count": 4
+    },
+    {
+      "category": "course comprehensiveness",
+      "sentiment": "positive",
+      "count": 19
+    },
+    {
+      "category": "course general",
+      "sentiment": "conflict",
+      "count": 1
+    },
+    {
+      "category": "course general",
+      "sentiment": "negative",
+      "count": 26
+    },
+    {
+      "category": "course general",
+      "sentiment": "neutral",
+      "count": 10
+    },
+    {
+      "category": "course general",
+      "sentiment": "positive",
+      "count": 178
+    },
+    {
+      "category": "course quality",
+      "sentiment": "negative",
+      "count": 5
+    },
+    {
+      "category": "course quality",
+      "sentiment": "neutral",
+      "count": 2
+    },
+    {
+      "category": "course quality",
+      "sentiment": "positive",
+      "count": 32
+    },
+    {
+      "category": "course relatability",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "course relatability",
+      "sentiment": "neutral",
+      "count": 1
+    },
+    {
+      "category": "course relatability",
+      "sentiment": "positive",
+      "count": 9
+    },
+    {
+      "category": "course value",
+      "sentiment": "negative",
+      "count": 6
+    },
+    {
+      "category": "course value",
+      "sentiment": "positive",
+      "count": 2
+    },
+    {
+      "category": "course workload",
+      "sentiment": "negative",
+      "count": 2
+    },
+    {
+      "category": "course workload",
+      "sentiment": "neutral",
+      "count": 1
+    },
+    {
+      "category": "course workload",
+      "sentiment": "positive",
+      "count": 3
+    },
+    {
+      "category": "drinks quality",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "drinks quality",
+      "sentiment": "positive",
+      "count": 1
+    },
+    {
+      "category": "facilities design_features",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "facilities design_features",
+      "sentiment": "positive",
+      "count": 7
+    },
+    {
+      "category": "facilities general",
+      "sentiment": "negative",
+      "count": 2
+    },
+    {
+      "category": "facilities general",
+      "sentiment": "neutral",
+      "count": 1
+    },
+    {
+      "category": "facilities general",
+      "sentiment": "positive",
+      "count": 7
+    },
+    {
+      "category": "facilities prices",
+      "sentiment": "negative",
+      "count": 2
+    },
+    {
+      "category": "faculty comprehensiveness",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "faculty comprehensiveness",
+      "sentiment": "positive",
+      "count": 5
+    },
+    {
+      "category": "faculty general",
+      "sentiment": "negative",
+      "count": 4
+    },
+    {
+      "category": "faculty general",
+      "sentiment": "positive",
+      "count": 14
+    },
+    {
+      "category": "faculty relatability",
+      "sentiment": "positive",
+      "count": 2
+    },
+    {
+      "category": "faculty response",
+      "sentiment": "negative",
+      "count": 9
+    },
+    {
+      "category": "faculty response",
+      "sentiment": "neutral",
+      "count": 2
+    },
+    {
+      "category": "faculty response",
+      "sentiment": "positive",
+      "count": 4
+    },
+    {
+      "category": "food general",
+      "sentiment": "negative",
+      "count": 41
+    },
+    {
+      "category": "food general",
+      "sentiment": "neutral",
+      "count": 11
+    },
+    {
+      "category": "food general",
+      "sentiment": "positive",
+      "count": 212
+    },
+    {
+      "category": "food prices",
+      "sentiment": "negative",
+      "count": 10
+    },
+    {
+      "category": "food prices",
+      "sentiment": "neutral",
+      "count": 3
+    },
+    {
+      "category": "food prices",
+      "sentiment": "positive",
+      "count": 22
+    },
+    {
+      "category": "food quality",
+      "sentiment": "conflict",
+      "count": 1
+    },
+    {
+      "category": "food quality",
+      "sentiment": "negative",
+      "count": 78
+    },
+    {
+      "category": "food quality",
+      "sentiment": "neutral",
+      "count": 10
+    },
+    {
+      "category": "food quality",
+      "sentiment": "positive",
+      "count": 211
+    },
+    {
+      "category": "food recommendation",
+      "sentiment": "negative",
+      "count": 3
+    },
+    {
+      "category": "food recommendation",
+      "sentiment": "neutral",
+      "count": 3
+    },
+    {
+      "category": "food recommendation",
+      "sentiment": "positive",
+      "count": 21
+    },
+    {
+      "category": "food style_options",
+      "sentiment": "negative",
+      "count": 16
+    },
+    {
+      "category": "food style_options",
+      "sentiment": "neutral",
+      "count": 4
+    },
+    {
+      "category": "food style_options",
+      "sentiment": "positive",
+      "count": 39
+    },
+    {
+      "category": "food_drinks prices",
+      "sentiment": "negative",
+      "count": 2
+    },
+    {
+      "category": "food_drinks prices",
+      "sentiment": "positive",
+      "count": 1
+    },
+    {
+      "category": "food_drinks quality",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "food_drinks quality",
+      "sentiment": "positive",
+      "count": 2
+    },
+    {
+      "category": "food_drinks style_options",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "food_drinks style_options",
+      "sentiment": "positive",
+      "count": 3
+    },
+    {
+      "category": "grades general",
+      "sentiment": "negative",
+      "count": 2
+    },
+    {
+      "category": "grades general",
+      "sentiment": "positive",
+      "count": 1
+    },
+    {
+      "category": "hotel cleanliness",
+      "sentiment": "positive",
+      "count": 3
+    },
+    {
+      "category": "hotel comfort",
+      "sentiment": "negative",
+      "count": 4
+    },
+    {
+      "category": "hotel comfort",
+      "sentiment": "neutral",
+      "count": 1
+    },
+    {
+      "category": "hotel comfort",
+      "sentiment": "positive",
+      "count": 17
+    },
+    {
+      "category": "hotel design_features",
+      "sentiment": "negative",
+      "count": 4
+    },
+    {
+      "category": "hotel design_features",
+      "sentiment": "neutral",
+      "count": 1
+    },
+    {
+      "category": "hotel design_features",
+      "sentiment": "positive",
+      "count": 5
+    },
+    {
+      "category": "hotel general",
+      "sentiment": "negative",
+      "count": 19
+    },
+    {
+      "category": "hotel general",
+      "sentiment": "neutral",
+      "count": 3
+    },
+    {
+      "category": "hotel general",
+      "sentiment": "positive",
+      "count": 110
+    },
+    {
+      "category": "hotel miscellaneous",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "hotel miscellaneous",
+      "sentiment": "positive",
+      "count": 5
+    },
+    {
+      "category": "hotel prices",
+      "sentiment": "negative",
+      "count": 8
+    },
+    {
+      "category": "hotel prices",
+      "sentiment": "neutral",
+      "count": 1
+    },
+    {
+      "category": "hotel prices",
+      "sentiment": "positive",
+      "count": 29
+    },
+    {
+      "category": "hotel quality",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "hotel quality",
+      "sentiment": "positive",
+      "count": 4
+    },
+    {
+      "category": "location general",
+      "sentiment": "negative",
+      "count": 5
+    },
+    {
+      "category": "location general",
+      "sentiment": "positive",
+      "count": 40
+    },
+    {
+      "category": "material comprehensiveness",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "material quality",
+      "sentiment": "negative",
+      "count": 2
+    },
+    {
+      "category": "material quality",
+      "sentiment": "positive",
+      "count": 3
+    },
+    {
+      "category": "material quantity",
+      "sentiment": "positive",
+      "count": 5
+    },
+    {
+      "category": "material relatability",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "polarity negative",
+      "sentiment": "positive",
+      "count": 1
+    },
+    {
+      "category": "polarity neutral",
+      "sentiment": "positive",
+      "count": 1
+    },
+    {
+      "category": "polarity positive",
+      "sentiment": "positive",
+      "count": 6
+    },
+    {
+      "category": "presentation comprehensiveness",
+      "sentiment": "negative",
+      "count": 6
+    },
+    {
+      "category": "presentation comprehensiveness",
+      "sentiment": "positive",
+      "count": 7
+    },
+    {
+      "category": "presentation quality",
+      "sentiment": "negative",
+      "count": 5
+    },
+    {
+      "category": "presentation quality",
+      "sentiment": "neutral",
+      "count": 2
+    },
+    {
+      "category": "presentation quality",
+      "sentiment": "positive",
+      "count": 9
+    },
+    {
+      "category": "presentation relatability",
+      "sentiment": "negative",
+      "count": 3
+    },
+    {
+      "category": "presentation relatability",
+      "sentiment": "positive",
+      "count": 2
+    },
+    {
+      "category": "presentation workload",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "restaurant general",
+      "sentiment": "negative",
+      "count": 37
+    },
+    {
+      "category": "restaurant general",
+      "sentiment": "neutral",
+      "count": 2
+    },
+    {
+      "category": "restaurant general",
+      "sentiment": "positive",
+      "count": 116
+    },
+    {
+      "category": "restaurant miscellaneous",
+      "sentiment": "negative",
+      "count": 13
+    },
+    {
+      "category": "restaurant miscellaneous",
+      "sentiment": "neutral",
+      "count": 2
+    },
+    {
+      "category": "restaurant miscellaneous",
+      "sentiment": "positive",
+      "count": 21
+    },
+    {
+      "category": "restaurant prices",
+      "sentiment": "negative",
+      "count": 20
+    },
+    {
+      "category": "restaurant prices",
+      "sentiment": "neutral",
+      "count": 3
+    },
+    {
+      "category": "restaurant prices",
+      "sentiment": "positive",
+      "count": 18
+    },
+    {
+      "category": "room_amenities comfort",
+      "sentiment": "positive",
+      "count": 2
+    },
+    {
+      "category": "room_amenities design_features",
+      "sentiment": "negative",
+      "count": 2
+    },
+    {
+      "category": "room_amenities design_features",
+      "sentiment": "positive",
+      "count": 7
+    },
+    {
+      "category": "room_amenities general",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "room_amenities general",
+      "sentiment": "positive",
+      "count": 4
+    },
+    {
+      "category": "rooms cleanliness",
+      "sentiment": "negative",
+      "count": 2
+    },
+    {
+      "category": "rooms cleanliness",
+      "sentiment": "positive",
+      "count": 3
+    },
+    {
+      "category": "rooms comfort",
+      "sentiment": "negative",
+      "count": 3
+    },
+    {
+      "category": "rooms comfort",
+      "sentiment": "positive",
+      "count": 4
+    },
+    {
+      "category": "rooms design_features",
+      "sentiment": "neutral",
+      "count": 1
+    },
+    {
+      "category": "rooms design_features",
+      "sentiment": "positive",
+      "count": 1
+    },
+    {
+      "category": "rooms general",
+      "sentiment": "positive",
+      "count": 5
+    },
+    {
+      "category": "rooms quality",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "rooms quality",
+      "sentiment": "positive",
+      "count": 2
+    },
+    {
+      "category": "service general",
+      "sentiment": "negative",
+      "count": 64
+    },
+    {
+      "category": "service general",
+      "sentiment": "neutral",
+      "count": 1
+    },
+    {
+      "category": "service general",
+      "sentiment": "positive",
+      "count": 41
+    },
+    {
+      "category": "shipment delivery",
+      "sentiment": "negative",
+      "count": 1
+    },
+    {
+      "category": "shipment delivery",
+      "sentiment": "positive",
+      "count": 13
+    },
+    {
+      "category": "shipment prices",
+      "sentiment": "positive",
+      "count": 1
+    },
+    {
+      "category": "shipment quality",
+      "sentiment": "negative",
+      "count": 6
+    },
+    {
+      "category": "shipment quality",
+      "sentiment": "positive",
+      "count": 8
+    }
+  ],
+  "runs": [
+    {
+      "seed": 13,
+      "best_epoch": 5,
+      "metrics_sha256": "b8fd549a17bebe99a711fa055eececa24a9beb22f8911e23326da9aa73f75d69",
+      "saved_threshold": 0.2,
+      "saved_point": {
+        "threshold": 0.2,
+        "null_f1": 0.08194622279129321,
+        "null_tp": 64,
+        "null_fp": 923,
+        "null_fn": 511,
+        "combined": {
+          "precision": 0.2341047503045067,
+          "recall": 0.3954732510288066,
+          "f1": 0.29410864575363427,
+          "tp": 961,
+          "fp": 3144,
+          "fn": 1469
+        }
+      },
+      "best_combined_point_in_saved_grid": {
+        "threshold": 0.3,
+        "null_f1": 0.0,
+        "null_tp": 0,
+        "null_fp": 0,
+        "null_fn": 575,
+        "combined": {
+          "precision": 0.2876844130853111,
+          "recall": 0.3691358024691358,
+          "f1": 0.3233597692862293,
+          "tp": 897,
+          "fp": 2221,
+          "fn": 1533
+        }
+      },
+      "prediction_diagnostics": {
+        "sentences_with_predicted_null": 692,
+        "sentences_with_gold_null": 506,
+        "sentence_null_presence_tp": 185,
+        "sentence_null_presence_fp": 507,
+        "sentence_null_presence_fn": 321,
+        "false_positive_pairs": 923,
+        "fp_on_sentence_without_gold_null": 727
+      },
+      "sentence_null_presence": {
+        "precision": 0.26734104046242774,
+        "recall": 0.36561264822134387,
+        "f1": 0.3088480801335559,
+        "tp": 185,
+        "fp": 507,
+        "fn": 321
+      },
+      "threshold_curve": [
+        {
+          "threshold": 0.02,
+          "null_f1": 0.014631381301590675,
+          "null_tp": 413,
+          "null_fp": 55466,
+          "null_fn": 162,
+          "combined": {
+            "precision": 0.022204518873841044,
+            "recall": 0.5390946502057613,
+            "f1": 0.04265225389486708,
+            "tp": 1310,
+            "fp": 57687,
+            "fn": 1120
+          }
+        },
+        {
+          "threshold": 0.05,
+          "null_f1": 0.027287088898463308,
+          "null_tp": 285,
+          "null_fp": 20029,
+          "null_fn": 290,
+          "combined": {
+            "precision": 0.050443837487196996,
+            "recall": 0.48641975308641977,
+            "f1": 0.09140824375531668,
+            "tp": 1182,
+            "fp": 22250,
+            "fn": 1248
+          }
+        },
+        {
+          "threshold": 0.1,
+          "null_f1": 0.04353312302839117,
+          "null_tp": 207,
+          "null_fp": 8728,
+          "null_fn": 368,
+          "combined": {
+            "precision": 0.09159545341408779,
+            "recall": 0.454320987654321,
+            "f1": 0.1524546019471104,
+            "tp": 1104,
+            "fp": 10949,
+            "fn": 1326
+          }
+        },
+        {
+          "threshold": 0.2,
+          "null_f1": 0.08194622279129321,
+          "null_tp": 64,
+          "null_fp": 923,
+          "null_fn": 511,
+          "combined": {
+            "precision": 0.2341047503045067,
+            "recall": 0.3954732510288066,
+            "f1": 0.29410864575363427,
+            "tp": 961,
+            "fp": 3144,
+            "fn": 1469
+          }
+        },
+        {
+          "threshold": 0.3,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.2876844130853111,
+            "recall": 0.3691358024691358,
+            "f1": 0.3233597692862293,
+            "tp": 897,
+            "fp": 2221,
+            "fn": 1533
+          }
+        },
+        {
+          "threshold": 0.4,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.2876844130853111,
+            "recall": 0.3691358024691358,
+            "f1": 0.3233597692862293,
+            "tp": 897,
+            "fp": 2221,
+            "fn": 1533
+          }
+        },
+        {
+          "threshold": 0.5,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.2876844130853111,
+            "recall": 0.3691358024691358,
+            "f1": 0.3233597692862293,
+            "tp": 897,
+            "fp": 2221,
+            "fn": 1533
+          }
+        },
+        {
+          "threshold": 0.6,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.2876844130853111,
+            "recall": 0.3691358024691358,
+            "f1": 0.3233597692862293,
+            "tp": 897,
+            "fp": 2221,
+            "fn": 1533
+          }
+        },
+        {
+          "threshold": 0.7,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.2876844130853111,
+            "recall": 0.3691358024691358,
+            "f1": 0.3233597692862293,
+            "tp": 897,
+            "fp": 2221,
+            "fn": 1533
+          }
+        },
+        {
+          "threshold": 0.8,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.2876844130853111,
+            "recall": 0.3691358024691358,
+            "f1": 0.3233597692862293,
+            "tp": 897,
+            "fp": 2221,
+            "fn": 1533
+          }
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "best_epoch": 5,
+      "metrics_sha256": "e5626b9613b78c6027e90187c0761333c8b0892dbd91a79a3724afa3262db6a9",
+      "saved_threshold": 0.2,
+      "saved_point": {
+        "threshold": 0.2,
+        "null_f1": 0.09660107334525939,
+        "null_tp": 54,
+        "null_fp": 489,
+        "null_fn": 521,
+        "combined": {
+          "precision": 0.2732846715328467,
+          "recall": 0.3851851851851852,
+          "f1": 0.3197267292912041,
+          "tp": 936,
+          "fp": 2489,
+          "fn": 1494
+        }
+      },
+      "best_combined_point_in_saved_grid": {
+        "threshold": 0.4,
+        "null_f1": 0.0,
+        "null_tp": 0,
+        "null_fp": 0,
+        "null_fn": 575,
+        "combined": {
+          "precision": 0.3060374739764053,
+          "recall": 0.362962962962963,
+          "f1": 0.33207831325301207,
+          "tp": 882,
+          "fp": 2000,
+          "fn": 1548
+        }
+      },
+      "prediction_diagnostics": {
+        "sentences_with_predicted_null": 418,
+        "sentences_with_gold_null": 506,
+        "sentence_null_presence_tp": 135,
+        "sentence_null_presence_fp": 283,
+        "sentence_null_presence_fn": 371,
+        "false_positive_pairs": 489,
+        "fp_on_sentence_without_gold_null": 365
+      },
+      "sentence_null_presence": {
+        "precision": 0.3229665071770335,
+        "recall": 0.26679841897233203,
+        "f1": 0.2922077922077922,
+        "tp": 135,
+        "fp": 283,
+        "fn": 371
+      },
+      "threshold_curve": [
+        {
+          "threshold": 0.02,
+          "null_f1": 0.01574653405092901,
+          "null_tp": 414,
+          "null_fp": 51594,
+          "null_fn": 161,
+          "combined": {
+            "precision": 0.023610858079795956,
+            "recall": 0.5333333333333333,
+            "f1": 0.04521981856245638,
+            "tp": 1296,
+            "fp": 53594,
+            "fn": 1134
+          }
+        },
+        {
+          "threshold": 0.05,
+          "null_f1": 0.02914466737064414,
+          "null_tp": 276,
+          "null_fp": 18089,
+          "null_fn": 299,
+          "combined": {
+            "precision": 0.05450181202052055,
+            "recall": 0.4765432098765432,
+            "f1": 0.09781644634033028,
+            "tp": 1158,
+            "fp": 20089,
+            "fn": 1272
+          }
+        },
+        {
+          "threshold": 0.1,
+          "null_f1": 0.04368345955438481,
+          "null_tp": 199,
+          "null_fp": 8337,
+          "null_fn": 376,
+          "combined": {
+            "precision": 0.09467507444386057,
+            "recall": 0.4448559670781893,
+            "f1": 0.15612362796071635,
+            "tp": 1081,
+            "fp": 10337,
+            "fn": 1349
+          }
+        },
+        {
+          "threshold": 0.2,
+          "null_f1": 0.09660107334525939,
+          "null_tp": 54,
+          "null_fp": 489,
+          "null_fn": 521,
+          "combined": {
+            "precision": 0.2732846715328467,
+            "recall": 0.3851851851851852,
+            "f1": 0.3197267292912041,
+            "tp": 936,
+            "fp": 2489,
+            "fn": 1494
+          }
+        },
+        {
+          "threshold": 0.3,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 1,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.3059313215400624,
+            "recall": 0.362962962962963,
+            "f1": 0.33201581027667987,
+            "tp": 882,
+            "fp": 2001,
+            "fn": 1548
+          }
+        },
+        {
+          "threshold": 0.4,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.3060374739764053,
+            "recall": 0.362962962962963,
+            "f1": 0.33207831325301207,
+            "tp": 882,
+            "fp": 2000,
+            "fn": 1548
+          }
+        },
+        {
+          "threshold": 0.5,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.3060374739764053,
+            "recall": 0.362962962962963,
+            "f1": 0.33207831325301207,
+            "tp": 882,
+            "fp": 2000,
+            "fn": 1548
+          }
+        },
+        {
+          "threshold": 0.6,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.3060374739764053,
+            "recall": 0.362962962962963,
+            "f1": 0.33207831325301207,
+            "tp": 882,
+            "fp": 2000,
+            "fn": 1548
+          }
+        },
+        {
+          "threshold": 0.7,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.3060374739764053,
+            "recall": 0.362962962962963,
+            "f1": 0.33207831325301207,
+            "tp": 882,
+            "fp": 2000,
+            "fn": 1548
+          }
+        },
+        {
+          "threshold": 0.8,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.3060374739764053,
+            "recall": 0.362962962962963,
+            "f1": 0.33207831325301207,
+            "tp": 882,
+            "fp": 2000,
+            "fn": 1548
+          }
+        }
+      ]
+    },
+    {
+      "seed": 123,
+      "best_epoch": 5,
+      "metrics_sha256": "af93dd785aa62f0aaebfac7cb49a61f0d7a6f17c1aeaae9577012ec4589578db",
+      "saved_threshold": 0.2,
+      "saved_point": {
+        "threshold": 0.2,
+        "null_f1": 0.083645443196005,
+        "null_tp": 67,
+        "null_fp": 960,
+        "null_fn": 508,
+        "combined": {
+          "precision": 0.24147442326980942,
+          "recall": 0.3962962962962963,
+          "f1": 0.3000934870676223,
+          "tp": 963,
+          "fp": 3025,
+          "fn": 1467
+        }
+      },
+      "best_combined_point_in_saved_grid": {
+        "threshold": 0.3,
+        "null_f1": 0.0,
+        "null_tp": 0,
+        "null_fp": 0,
+        "null_fn": 575,
+        "combined": {
+          "precision": 0.30260047281323876,
+          "recall": 0.36872427983539097,
+          "f1": 0.33240586162122054,
+          "tp": 896,
+          "fp": 2065,
+          "fn": 1534
+        }
+      },
+      "prediction_diagnostics": {
+        "false_positive_pairs": 960,
+        "sentences_with_predicted_null": 742,
+        "sentences_with_gold_null": 506,
+        "sentence_null_presence_tp": 206,
+        "sentence_null_presence_fp": 536,
+        "sentence_null_presence_fn": 300,
+        "fp_on_sentence_without_gold_null": 727
+      },
+      "sentence_null_presence": {
+        "precision": 0.2776280323450135,
+        "recall": 0.40711462450592883,
+        "f1": 0.3301282051282051,
+        "tp": 206,
+        "fp": 536,
+        "fn": 300
+      },
+      "threshold_curve": [
+        {
+          "threshold": 0.02,
+          "null_f1": 0.015014154154871538,
+          "null_tp": 419,
+          "null_fp": 54820,
+          "null_fn": 156,
+          "combined": {
+            "precision": 0.022594501718213058,
+            "recall": 0.5411522633744856,
+            "f1": 0.043377865743031506,
+            "tp": 1315,
+            "fp": 56885,
+            "fn": 1115
+          }
+        },
+        {
+          "threshold": 0.05,
+          "null_f1": 0.027149321266968326,
+          "null_tp": 288,
+          "null_fp": 20353,
+          "null_fn": 287,
+          "combined": {
+            "precision": 0.050165240233878486,
+            "recall": 0.4872427983539095,
+            "f1": 0.09096496619545175,
+            "tp": 1184,
+            "fp": 22418,
+            "fn": 1246
+          }
+        },
+        {
+          "threshold": 0.1,
+          "null_f1": 0.041818181818181824,
+          "null_tp": 207,
+          "null_fp": 9118,
+          "null_fn": 368,
+          "combined": {
+            "precision": 0.08977698193065277,
+            "recall": 0.4539094650205761,
+            "f1": 0.14990486545256862,
+            "tp": 1103,
+            "fp": 11183,
+            "fn": 1327
+          }
+        },
+        {
+          "threshold": 0.2,
+          "null_f1": 0.083645443196005,
+          "null_tp": 67,
+          "null_fp": 960,
+          "null_fn": 508,
+          "combined": {
+            "precision": 0.24147442326980942,
+            "recall": 0.3962962962962963,
+            "f1": 0.3000934870676223,
+            "tp": 963,
+            "fp": 3025,
+            "fn": 1467
+          }
+        },
+        {
+          "threshold": 0.3,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.30260047281323876,
+            "recall": 0.36872427983539097,
+            "f1": 0.33240586162122054,
+            "tp": 896,
+            "fp": 2065,
+            "fn": 1534
+          }
+        },
+        {
+          "threshold": 0.4,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.30260047281323876,
+            "recall": 0.36872427983539097,
+            "f1": 0.33240586162122054,
+            "tp": 896,
+            "fp": 2065,
+            "fn": 1534
+          }
+        },
+        {
+          "threshold": 0.5,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.30260047281323876,
+            "recall": 0.36872427983539097,
+            "f1": 0.33240586162122054,
+            "tp": 896,
+            "fp": 2065,
+            "fn": 1534
+          }
+        },
+        {
+          "threshold": 0.6,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.30260047281323876,
+            "recall": 0.36872427983539097,
+            "f1": 0.33240586162122054,
+            "tp": 896,
+            "fp": 2065,
+            "fn": 1534
+          }
+        },
+        {
+          "threshold": 0.7,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.30260047281323876,
+            "recall": 0.36872427983539097,
+            "f1": 0.33240586162122054,
+            "tp": 896,
+            "fp": 2065,
+            "fn": 1534
+          }
+        },
+        {
+          "threshold": 0.8,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.30260047281323876,
+            "recall": 0.36872427983539097,
+            "f1": 0.33240586162122054,
+            "tp": 896,
+            "fp": 2065,
+            "fn": 1534
+          }
+        }
+      ]
+    },
+    {
+      "seed": 777,
+      "best_epoch": 4,
+      "metrics_sha256": "d45bd2ab07366c2028806079817a08ac38b364201998a0c129c6347df24e124b",
+      "saved_threshold": 0.2,
+      "saved_point": {
+        "threshold": 0.2,
+        "null_f1": 0.10633946830265849,
+        "null_tp": 52,
+        "null_fp": 351,
+        "null_fn": 523,
+        "combined": {
+          "precision": 0.2818485861964123,
+          "recall": 0.3814814814814815,
+          "f1": 0.3241825493967477,
+          "tp": 927,
+          "fp": 2362,
+          "fn": 1503
+        }
+      },
+      "best_combined_point_in_saved_grid": {
+        "threshold": 0.4,
+        "null_f1": 0.0,
+        "null_tp": 0,
+        "null_fp": 0,
+        "null_fn": 575,
+        "combined": {
+          "precision": 0.3031878031878032,
+          "recall": 0.360082304526749,
+          "f1": 0.3291948833709556,
+          "tp": 875,
+          "fp": 2011,
+          "fn": 1555
+        }
+      },
+      "prediction_diagnostics": {
+        "sentences_with_predicted_null": 299,
+        "sentences_with_gold_null": 506,
+        "sentence_null_presence_tp": 97,
+        "sentence_null_presence_fp": 202,
+        "sentence_null_presence_fn": 409,
+        "false_positive_pairs": 351,
+        "fp_on_sentence_without_gold_null": 270
+      },
+      "sentence_null_presence": {
+        "precision": 0.32441471571906355,
+        "recall": 0.191699604743083,
+        "f1": 0.24099378881987576,
+        "tp": 97,
+        "fp": 202,
+        "fn": 409
+      },
+      "threshold_curve": [
+        {
+          "threshold": 0.02,
+          "null_f1": 0.014926689838911728,
+          "null_tp": 423,
+          "null_fp": 55679,
+          "null_fn": 152,
+          "combined": {
+            "precision": 0.022004475486539634,
+            "recall": 0.5341563786008231,
+            "f1": 0.042267739099286855,
+            "tp": 1298,
+            "fp": 57690,
+            "fn": 1132
+          }
+        },
+        {
+          "threshold": 0.05,
+          "null_f1": 0.028360976098612017,
+          "null_tp": 283,
+          "null_fp": 19099,
+          "null_fn": 292,
+          "combined": {
+            "precision": 0.052002874079396445,
+            "recall": 0.4765432098765432,
+            "f1": 0.09377277512349178,
+            "tp": 1158,
+            "fp": 21110,
+            "fn": 1272
+          }
+        },
+        {
+          "threshold": 0.1,
+          "null_f1": 0.04305200341005967,
+          "null_tp": 202,
+          "null_fp": 8607,
+          "null_fn": 373,
+          "combined": {
+            "precision": 0.09209063702436938,
+            "recall": 0.44320987654320987,
+            "f1": 0.15249557522123894,
+            "tp": 1077,
+            "fp": 10618,
+            "fn": 1353
+          }
+        },
+        {
+          "threshold": 0.2,
+          "null_f1": 0.10633946830265849,
+          "null_tp": 52,
+          "null_fp": 351,
+          "null_fn": 523,
+          "combined": {
+            "precision": 0.2818485861964123,
+            "recall": 0.3814814814814815,
+            "f1": 0.3241825493967477,
+            "tp": 927,
+            "fp": 2362,
+            "fn": 1503
+          }
+        },
+        {
+          "threshold": 0.3,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 1,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.3030827848978178,
+            "recall": 0.360082304526749,
+            "f1": 0.3291329697197668,
+            "tp": 875,
+            "fp": 2012,
+            "fn": 1555
+          }
+        },
+        {
+          "threshold": 0.4,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.3031878031878032,
+            "recall": 0.360082304526749,
+            "f1": 0.3291948833709556,
+            "tp": 875,
+            "fp": 2011,
+            "fn": 1555
+          }
+        },
+        {
+          "threshold": 0.5,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.3031878031878032,
+            "recall": 0.360082304526749,
+            "f1": 0.3291948833709556,
+            "tp": 875,
+            "fp": 2011,
+            "fn": 1555
+          }
+        },
+        {
+          "threshold": 0.6,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.3031878031878032,
+            "recall": 0.360082304526749,
+            "f1": 0.3291948833709556,
+            "tp": 875,
+            "fp": 2011,
+            "fn": 1555
+          }
+        },
+        {
+          "threshold": 0.7,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.3031878031878032,
+            "recall": 0.360082304526749,
+            "f1": 0.3291948833709556,
+            "tp": 875,
+            "fp": 2011,
+            "fn": 1555
+          }
+        },
+        {
+          "threshold": 0.8,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.3031878031878032,
+            "recall": 0.360082304526749,
+            "f1": 0.3291948833709556,
+            "tp": 875,
+            "fp": 2011,
+            "fn": 1555
+          }
+        }
+      ]
+    },
+    {
+      "seed": 2024,
+      "best_epoch": 4,
+      "metrics_sha256": "16d1a1496cb79cd0eb11853e579c2afdd9b63a251f0bff4054aaaacbfb1ec891",
+      "saved_threshold": 0.2,
+      "saved_point": {
+        "threshold": 0.2,
+        "null_f1": 0.09615384615384615,
+        "null_tp": 65,
+        "null_fp": 712,
+        "null_fn": 510,
+        "combined": {
+          "precision": 0.2531576057111477,
+          "recall": 0.3794238683127572,
+          "f1": 0.30368906455862976,
+          "tp": 922,
+          "fp": 2720,
+          "fn": 1508
+        }
+      },
+      "best_combined_point_in_saved_grid": {
+        "threshold": 0.3,
+        "null_f1": 0.0,
+        "null_tp": 0,
+        "null_fp": 0,
+        "null_fn": 575,
+        "combined": {
+          "precision": 0.29912739965095986,
+          "recall": 0.3526748971193416,
+          "f1": 0.32370160528800757,
+          "tp": 857,
+          "fp": 2008,
+          "fn": 1573
+        }
+      },
+      "prediction_diagnostics": {
+        "sentences_with_predicted_null": 621,
+        "sentences_with_gold_null": 506,
+        "sentence_null_presence_tp": 155,
+        "sentence_null_presence_fp": 466,
+        "sentence_null_presence_fn": 351,
+        "false_positive_pairs": 712,
+        "fp_on_sentence_without_gold_null": 575
+      },
+      "sentence_null_presence": {
+        "precision": 0.249597423510467,
+        "recall": 0.30632411067193677,
+        "f1": 0.27506654835847383,
+        "tp": 155,
+        "fp": 466,
+        "fn": 351
+      },
+      "threshold_curve": [
+        {
+          "threshold": 0.02,
+          "null_f1": 0.014201464208242951,
+          "null_tp": 419,
+          "null_fp": 58014,
+          "null_fn": 156,
+          "combined": {
+            "precision": 0.02081633984795589,
+            "recall": 0.5251028806584362,
+            "f1": 0.040045192066281696,
+            "tp": 1276,
+            "fp": 60022,
+            "fn": 1154
+          }
+        },
+        {
+          "threshold": 0.05,
+          "null_f1": 0.02697850453685283,
+          "null_tp": 278,
+          "null_fp": 19756,
+          "null_fn": 297,
+          "combined": {
+            "precision": 0.04956548320887375,
+            "recall": 0.4670781893004115,
+            "f1": 0.0896205929961704,
+            "tp": 1135,
+            "fp": 21764,
+            "fn": 1295
+          }
+        },
+        {
+          "threshold": 0.1,
+          "null_f1": 0.04375943091183445,
+          "null_tp": 203,
+          "null_fp": 8500,
+          "null_fn": 372,
+          "combined": {
+            "precision": 0.09163208852005532,
+            "recall": 0.43621399176954734,
+            "f1": 0.1514502071724532,
+            "tp": 1060,
+            "fp": 10508,
+            "fn": 1370
+          }
+        },
+        {
+          "threshold": 0.2,
+          "null_f1": 0.09615384615384615,
+          "null_tp": 65,
+          "null_fp": 712,
+          "null_fn": 510,
+          "combined": {
+            "precision": 0.2531576057111477,
+            "recall": 0.3794238683127572,
+            "f1": 0.30368906455862976,
+            "tp": 922,
+            "fp": 2720,
+            "fn": 1508
+          }
+        },
+        {
+          "threshold": 0.3,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.29912739965095986,
+            "recall": 0.3526748971193416,
+            "f1": 0.32370160528800757,
+            "tp": 857,
+            "fp": 2008,
+            "fn": 1573
+          }
+        },
+        {
+          "threshold": 0.4,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.29912739965095986,
+            "recall": 0.3526748971193416,
+            "f1": 0.32370160528800757,
+            "tp": 857,
+            "fp": 2008,
+            "fn": 1573
+          }
+        },
+        {
+          "threshold": 0.5,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.29912739965095986,
+            "recall": 0.3526748971193416,
+            "f1": 0.32370160528800757,
+            "tp": 857,
+            "fp": 2008,
+            "fn": 1573
+          }
+        },
+        {
+          "threshold": 0.6,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.29912739965095986,
+            "recall": 0.3526748971193416,
+            "f1": 0.32370160528800757,
+            "tp": 857,
+            "fp": 2008,
+            "fn": 1573
+          }
+        },
+        {
+          "threshold": 0.7,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.29912739965095986,
+            "recall": 0.3526748971193416,
+            "f1": 0.32370160528800757,
+            "tp": 857,
+            "fp": 2008,
+            "fn": 1573
+          }
+        },
+        {
+          "threshold": 0.8,
+          "null_f1": 0.0,
+          "null_tp": 0,
+          "null_fp": 0,
+          "null_fn": 575,
+          "combined": {
+            "precision": 0.29912739965095986,
+            "recall": 0.3526748971193416,
+            "f1": 0.32370160528800757,
+            "tp": 857,
+            "fp": 2008,
+            "fn": 1573
+          }
+        }
+      ]
+    }
+  ]
+}
