@@ -1,393 +1,98 @@
-# ABSA Triplet Extraction — Group 07 Research Project
+# BERT aspect–category–sentiment extraction — Group 07
 
-The current final talk is [07_FinalResults.pdf](phase2/presentation/07_FinalResults.pdf),
-with an [editable deck](phase2/presentation/07_FinalResults_Rubric.pptx) and
-[timed speaker notes](phase2/presentation/07_FinalResults_SpeakerNotes.md).
-The latest rubric core is ten minutes, with two minutes per member and
-3–5 minutes of Q&A. Optional extensions retain equal time for a confirmed
-12-minute slot. See the [rubric and Q&A guide](phase2/presentation/07_FinalResults_RubricGuide.md).
+**The main research study is complete.** Phase 1 has **80 completed runs**;
+the completed Phase 2 studies contain **78 distinct test-evaluated models**.
+The additional class-balanced study is ongoing separately.
 
-Read [reproduction and contributions](phase2/REPRODUCIBILITY_AND_CONTRIBUTIONS.md)
-for the team's work, external methods, experiment scripts and evaluation.
-The analysis and plotting commands for the final results are:
+## Review the project
 
-```powershell
-python -m pip install -r phase2/requirements-analysis.txt
-python phase2/compare_results.py
-python phase2/export_csv_reports.py
-```
+| Start here | Purpose |
+|---|---|
+| [Phase 2 guide](phase2/README.md) | Short professor-facing guide, code links and expandable details |
+| [Final evaluation notebook](phase2/presentation/Final_Evaluation_and_Error_Analysis.ipynb) | Executed results, prediction transitions, LODO coverage, rarity and NULL |
+| [Current status](STATUS.md) | Verified completed cohorts and the one ongoing extension |
+| [Task register](tasks.md) | Completed work and retired historical plans |
+| [Final presentation](phase2/presentation/07_FinalResults.pptx) | Team's selected final deck |
 
-These commands use saved evidence without training or model files. The
-completed main study is ready to report. The optional class-balanced extension
-was discontinued with no final test cohort.
+## Completed findings
 
-## Earlier workflow and historical planning
+- **Explicit test F1:** **33.41% → 40.28%**, a **6.88 percentage-point**
+  improvement on identical eligible reference answers across five seeds.
+- **Selected fine-tuning:** BERT-base-uncased, **0.75 standard CE + 0.25
+  inverse-frequency CE**, learning rate **3e-5**, NULL off.
+- **Professor feedback:** standard CE, inverse-frequency CE, mixture-weight
+  sweeps and focal loss were implemented and screened.
+- **Error analysis:** term recovery is the largest missed-triple group;
+  component metrics, rare/unseen labels and domains explain exact-match losses.
+- **NULL study:** all selected evaluations completed. The newer adaptation
+  abstained and tied its matched control; the earlier head recovered some
+  pairs but reduced combined F1. This is an unresolved finding, not a pending run.
+- **LODO:** all **35 selected Phase 2 tests** completed. Four zero-F1 domains
+  reflect missing source-category support, not unfinished training.
 
-The material below records earlier study stages. Historical gates and future
-training instructions do not supersede the current final report or require
-additional training for submission.
+The evaluated task has documented annotation-eligibility limits. Historical
+test exposure makes the follow-up exploratory; the phase improvement compares
+pipelines rather than isolating the loss alone. Research limitations are
+described in [PARAMETERS.md](phase2/PARAMETERS.md), not labelled unfinished code.
 
-The completed Phase 2 team handoff is in [phase2/README.md](phase2/README.md).
-It includes explicit/NULL finalists, all 35 LODO results, Phase 1 comparisons,
-charts, parameters and compressed prediction evidence, without model weights.
-Teammates can regenerate the comparison with `python phase2/compare_results.py`.
-The sections below document the earlier experiment workflow.
+## Reproduce the completed results
 
-| Team analysis | Python file to run from this folder | Instructions |
-|---|---|---|
-| Phase 1: historical standard/weighted comparison | `python phase1_analysis/analyze_phase1.py` | [Phase 1 run guide](phase1_analysis/RUN_INSTRUCTIONS.md) |
-| Phase 2: fine-tuning, NULL and same-gold LODO comparison | `python phase2/compare_results.py` | [Phase 2 run guide](phase2/RUN_INSTRUCTIONS.md) |
-
-The five-seed fine-tuning study is complete: three configurations and **15 test-evaluated runs**.
-Read [the final results](final-finetuning-results-2026-10-06.md) or
-[the shareable report folder](final_results/README.md). The folder includes
-figures and frozen metadata, with model weights excluded.
-
-To verify saved results and regenerate the documentation without training:
+These commands read saved evidence and require no GPU or retraining:
 
 ```powershell
-.venv/Scripts/python.exe document_quick_tuning_results.py
+python phase2/compare_results.py --no-plots
+python phase2/export_csv_reports.py --no-plots
 ```
 
-The development search is documented in [the quick tuning guide](quick-tuning-guide-2026-10-06.md).
-The lower-level flags are explained in [the 5 October experiment guide](experiment-guide-2026-10-05.md).
-The commands below describe the historical runner.
+For the reviewed notebook and figures, follow the separate analysis-environment
+instructions in [phase2/README.md](phase2/README.md). Its reusable code is
+[notebook_analysis.py](phase2/notebook_analysis.py).
 
-Techniques 1–5 from the literature review are implemented in a separate
-[NULL fast-track study](null-fast-track-guide-2026-10-06.md). Start the staged
-development search and two-seed confirmation with:
+| Code to inspect | Location |
+|---|---|
+| BERT encoder and prediction heads | [src/model.py](src/model.py), [experiment model](src/experiment_model.py) |
+| Mixed CE, inverse-frequency weighting and focal | [experiment losses](src/experiment_losses.py), [frequency weights](src/losses.py) |
+| Training, decoding and checkpoint selection | [experiment_train.py](src/experiment_train.py) |
+| NULL adaptation and evaluation | [NULL model](null_experiments/model.py), [NULL evaluation](null_experiments/evaluation.py) |
+| Source attribution and experiment entry points | [Reproducibility and contributions](phase2/REPRODUCIBILITY_AND_CONTRIBUTIONS.md) |
+
+<details>
+<summary><strong>The one ongoing study</strong></summary>
+
+The user resumed the additional controlled class-balanced extension:
+standard CE / inverse-frequency CE / effective-number CE, five seeds,
+in-domain plus seven LODO settings (**120 models**). It completes and freezes
+all development checkpoints before test evaluation. It is separate from
+the completed presentation cohorts.
+
+See [the full-study report](phase2/full_study/report.md). On the training machine:
 
 ```powershell
-.venv/Scripts/python.exe run_null_fast_track.py --first-seeds 2 --execute
+.venv/Scripts/python.exe run_class_balance_full_study.py --status
 ```
 
-It compares NULL losses, implicit representations and negative sampling;
-records all parameters and appends results; then freezes a NULL-on candidate
-and NULL-off control. Test evaluation is a separate `--step final --execute`.
-The small shareable report lives in `null_fast_track_reports/null_fast_track/`.
-
-To finish the finalist cohort, test every registered trained screen as a separate
-ablation, and combine both studies into one presentation report, use the
-[final report flow](final-report-flow-2026-10-06.md):
-
-```powershell
-.venv/Scripts/python.exe finalize_finetuning_report.py --finish-null --first-seeds 5 --ablation-tests --wait-for-null --execute
-```
-
-It waits for the current NULL queue. The combined report is written to
-`final_presentation_results/report.md`; completed quick-tuning runs are reused.
-
-For the team's Phase 1 findings, start with the
-[shared analysis folder](phase1_analysis/README.md) and its
-[team findings plan](phase1_analysis/TEAM_FINDINGS.md). It contains all 70 LODO
-runs, 10 in-domain controls, current taxonomy tables and portable reproduction
-code, with model weights and archives excluded. Run
-`python phase1_analysis/verify_bundle.py` to check the snapshot after cloning.
-
-## What changed from the LoRA version
-- **Core comparison unchanged**: BERT with standard loss vs. class-weighted
-  loss. Still the one variable that differs between configs.
-- **New research question, layered on top**: does the comparison hold when
-  generalizing to an unseen domain? Same two configs, run under two DATA
-  conditions instead of two MODEL variants:
-  - `indomain` — original split, all 7 domains mixed (protected core)
-  - `crossdomain` — train on 6 domains, test on 1 fully held-out domain
-- **Mandatory rigor, both conditions**: 5 seeds per config, mean +/- std
-  (not a single number), a paired significance test, a pre-registered
-  minimum effect size, precision/recall by label (not just F1), and a
-  direct check of whether class-weighting improves *rare-label recall*
-  specifically — not just the headline score.
-
-## Before running anything: pre-register two decisions
-
-In `config.py`:
-```python
-HOLD_OUT_DOMAIN = "coursera"   # which domain gets held out for crossdomain
-MIN_EFFECT_SIZE = 0.02          # F1 points that count as "improvement"
-```
-Write these down somewhere dated (commit message, shared doc) BEFORE you run
-a single experiment. Changing them after seeing results defeats the point —
-that's what "pre-registered" means.
-
-## Layout
-
-```
-absa-triplet/
-├── config.py              # experiment configs, seeds, domain split, pre-registration
-├── src/
-│   ├── data.py             # M-ABSA parsing, BIO tagging, in-domain + cross-domain splits
-│   ├── model.py             # BERT + 3 heads
-│   ├── losses.py             # standard vs class-weighted loss
-│   ├── train.py              # training, dev selection, and predicted-span evaluation
-│   ├── artifacts.py          # atomic checkpoints, JSON/JSONL, and CSV upserts
-│   ├── evaluate.py           # complete-triplet F1, precision/recall by label, rare-label recall
-│   ├── stats.py               # paired significance test + bootstrap CI + effect-size check
-│   └── utils.py                # seeding
-├── run_study.py            # one train/dev/test (mode, config, seed) run
-├── run_all_study.py        # filtered matrix; defaults to the 10 in-domain runs
-└── analyze_results.py      # mean/std, significance, effect-size verdict — the final table
-```
-
-## Data format & paths
-
-Same M-ABSA `sentence####[(term, category, sentiment), ...]` format as
-before. Files are stored locally under
-`data/m-absa/<domain>/en/{train,dev,test}.txt`; for example,
-`data/m-absa/coursera/en/train.txt`. `config.DATA_DIR` points to
-`data/m-absa`, and `config.DOMAIN_FILES` maps all seven English domains and
-three splits to that layout. `python download_data.py` downloads only missing
-files from https://github.com/swaggy66/M-ABSA; the generated `data/` directory
-is intentionally ignored by Git.
-
-The current local dataset passes the acquisition/loading smoke check: all 21
-expected files match upstream, all 14,776 non-empty rows parse, and both the
-in-domain and cross-domain split builders load successfully.
-
-## Running it
-
-```powershell
-pip install -r requirements.txt
-python download_data.py
-python -m unittest discover -s tests -v
-
-# Persistent dataset audit (run before training)
-python data_audit.py --mode indomain
-# Use source-domain-only vocabularies to expose held-out label ceilings
-python data_audit.py --mode crossdomain --output artifacts/crossdomain_audit.json
-
-# Generate four 16:9 pre-model analysis figures for a presentation
-python visualize_data.py
-
-# After the full run matrix, generate protocol-aware result figures
-python visualize_results.py
-
-# Preview the remaining six-domain leave-one-domain-out matrix (no training)
-python run_lodo_study.py --dry-run
-
-# Integration smoke: remaining 6 domains x 2 losses x seed 13 = 12 runs
-python run_lodo_study.py --seeds 13 --device cuda --continue-on-error
-
-# Full remainder: remaining 6 domains x 2 losses x 5 seeds = 60 runs
-# Completed smoke keys are detected and skipped automatically.
-python run_lodo_study.py --device cuda --continue-on-error
-
-# One complete train -> validation -> test run
-python run_study.py --mode indomain --config standard --seed 42 --device cuda
-
-# First experiment matrix: 2 losses x 5 seeds = 10 in-domain runs
-python run_all_study.py --mode indomain --device cuda
-
-# Summarize runs and compare standard vs. weighted on exactly matched seeds
-python analyze_results.py --metric test_micro_f1
-```
-
-Training selects CUDA, Apple MPS, or CPU automatically. To force CPU, add
-`--device cpu` to either training command. An explicitly requested CUDA device
-requires a CUDA-enabled PyTorch installation. Completed run keys are skipped by
-default; use `--overwrite` only when you intentionally want to retrain and
-replace that run.
-
-The default `run_all_study.py` scope is in-domain only. Cross-domain execution
-remains available with `--mode crossdomain` or `--mode all`, but should wait
-until the held-out evaluation and category-ontology policy is frozen.
-
-### Running the remaining LODO domains
-
-`run_lodo_study.py` is the multi-domain runner. Its default domain list is:
-
-```text
-coursera, hotel, laptop, phone, sight, food
-```
-
-Restaurant is omitted because its post-pilot matrix already exists. A custom
-subset can be selected explicitly, for example:
-
-```powershell
-python run_lodo_study.py --domains coursera food --seeds 13 --device cuda
-```
-
-Each logical key is `(crossdomain, held_out_domain, config, seed)`. Artifacts
-are stored at
-`artifacts/lodo_runs/<held_out_domain>/<config>/seed_<seed>/`, and summaries
-are written to `results_lodo.csv`. Do not use `--overwrite` when resuming a
-matrix: completed keys are validated and skipped automatically.
-
-The runner prevents domain artifacts from overwriting one another, but it does
-not by itself resolve the protocol deviations documented in
-`current-progress.md`. Fix and freeze warmup, gradient clipping, ambiguous
-alignment, fixed-universe macro-F1, audits, environment versions, and the Git
-commit before treating these runs as final version-2 evidence.
-
-### Saved run artifacts
-
-Each run is stored under
-`artifacts/runs/<mode>/<config>/seed_<seed>/`:
-
-```text
-manifest.json           # status, configuration, versions, vocabularies, data audit
-history.json            # train loss and dev metrics for every epoch
-best_model.pt           # best dev-selected model plus label vocabularies
-metrics.json            # selected-dev and one-time test metrics
-dev_predictions.jsonl   # per-example gold and predicted triplets
-test_predictions.jsonl  # per-example gold and predicted triplets
-tokenizer/               # tokenizer needed to reload the checkpoint
-```
-
-`results.csv` is an atomic flat index with one row per
-`(mode, config, seed)`. Detailed per-label and per-domain results remain in the
-run's `metrics.json`.
-
-### Presentation-ready text analysis
-
-`python visualize_data.py` reads all 21 configured English source files and
-creates a reproducible evidence pack under `artifacts/text_analysis/`:
-
-- an executive data-readiness dashboard;
-- domain/split coverage, text-length, and label-distribution slides;
-- `text_analysis_summary.json` and `domain_split_summary.csv` with the chart
-  source values; and
-- `PRESENTATION_NOTES.md` with concise, defensible talking points.
-
-The analysis is deliberately pre-model: it uses raw text and annotations only.
-The model-ready percentage reuses the training pipeline's exact aligned,
-explicit, single-label-pair scope, while category and sentiment charts retain
-all raw annotations. This keeps the data-engineering evidence separate from
-model performance and makes the current task limitation visible.
-
-After `run_all_study.py` completes, `python visualize_results.py` validates the
-20-run matrix and creates paired-seed outcome figures, precision/recall and
-learning-curve views, post-hoc cross-domain protocol metrics, and an explicit
-protocol-compliance review under `artifacts/result_analysis/`.
-
-## Current baseline assessment
-
-The repository now provides an executable **single-pair, aligned
-explicit-aspect** English BERT baseline. For each non-overlapping aligned
-aspect span, the first annotated category/sentiment pair is retained; all
-implicit, unaligned, duplicate, additional-pair, and overlapping exclusions
-are counted in the manifest. The pipeline trains for the fixed epoch budget,
-evaluates the development split after every epoch, restores the checkpoint
-with the best end-to-end development micro-F1, evaluates the test split once,
-and saves the model, predictions, metrics, and run metadata. It is not a full
-TASD baseline:
-implicit `NULL` aspects and multiple label pairs for one aspect remain outside
-the architecture's representational scope.
-
-| Component | Status | Assessment |
-|---|---|---|
-| Research grid | Partial | Two losses, two data conditions, and five seeds are defined, but several protocol choices are not frozen. |
-| Data acquisition & split loading | Implemented | The downloader and configured 21-file mapping are aligned; all files are present locally, match upstream, and load through both split builders. |
-| Data audit & validation | Partial | Triplets and sentiment aliases are normalized and retained/excluded counts are saved, but overlap policy, full truncation reporting, and a persistent standalone audit remain unfinished. |
-| Target construction | Implemented for restricted scope | One non-overlapping label pair per aligned explicit span becomes a BIO target; every excluded annotation type is counted. Repeated surface terms still use the first text match. |
-| Model | Partial | BERT and three heads are implemented, but one category and sentiment prediction per extracted span cannot represent all M-ABSA cases, including multiple triplets for one aspect and implicit aspects. |
-| Weighted loss | Implemented | Weight vectors use the full classifier vocabulary, safely handle unobserved/unknown labels, and move to the selected device. |
-| Training & validation | Implemented | Both losses use the same end-to-end dev micro-F1 selection rule; the best checkpoint and per-epoch history are saved. |
-| Inference & test evaluation | Implemented | BIO is decoded only over real tokens, predicted spans feed the category/sentiment heads, and exact-triplet plus label/domain-stratified metrics and JSONL predictions are saved. |
-| Statistical analysis | Implemented | Results are uniquely upserted, duplicate keys fail analysis, and standard/weighted scores are joined on exact matched seeds. |
-| Reproducibility | Partial | Manifests record configuration and package versions and tests cover the pipeline, but dependency versions are still broad lower bounds rather than a locked environment. |
-
-The scope must also be stated precisely: this code is an English-only BERT
-multi-head baseline. The official M-ABSA baseline is multilingual mT5 with an
-extraction paradigm, so results from this repository should not be described
-as a reproduction of the official baseline.
-
-## Next steps, in order
-
-### 1. Freeze the research protocol before looking at test results
-
-- Decide whether the task is full TASD or explicitly **explicit-aspect-only
-  TASD**. Full TASD requires support for `NULL` aspects and multiple triplets
-  associated with the same aspect; filtering them changes the task and must be
-  reported with retained/dropped counts.
-- Pre-register `HOLD_OUT_DOMAIN`, `MIN_EFFECT_SIZE`, the primary metric, the
-  rare-label definition, and whether cross-domain evaluation uses only the
-  held-out official test set or all three held-out splits.
-- Define one hyperparameter-selection rule using source-domain development
-  data only. Apply it identically to standard and weighted loss, and do not
-  tune on either test set.
-- Treat macro-F1, rare-category recall, and the two modes as planned secondary
-  analyses, or pre-register a multiple-comparison policy.
-
-**Gate:** a dated protocol record exists and `config.py` matches it.
-
-### 2. Audit and harden data processing
-
-Already implemented: repeatable missing-file download, the correct 21-file
-path mapping, both split builders, the held-out-domain membership guard,
-triplet schema validation, tuple conversion, and sentiment alias normalization.
-
-- The standalone `data_audit.py` command reports, by domain and split,
-  examples, triplets, empty annotations, `NULL` aspects, duplicate triplets,
-  repeated aspect annotations, ambiguous repeated aspect-term occurrences
-  within sentences, unseen labels, and targets lost to token truncation or
-  alignment. It also reports repeated sentences and identical labelled
-  examples across the train, development, and test splits. Because M-ABSA
-  provides aspect surface text rather than character offsets, resolving
-  ambiguous occurrences remains a separate policy decision.
-- Add assertions for file existence, disjoint configured domains, and zero
-  train/test sentence overlap where the protocol requires it. The current
-  cross-domain smoke check finds eight repeated generic sentence strings, so
-  their handling must be documented even though domain membership is disjoint.
-
-**Acquisition/loading gate: passed.** All 21 English files are present, match
-upstream, and load successfully. Per-run manifests now save the main retained,
-excluded, duplicate, and unseen-label counts. **Remaining validation gate:** a
-standalone audit report covers alignment/truncation and the final overlap
-policy.
-
-### 3. Harden the training baseline
-
-- Pin and record a tested Python/Torch/Transformers/NumPy environment.
-- Keep automated CPU/GPU smoke tests for device selection and checkpoint
-  serialization. The current unit/integration suite uses fast CPU substitutes,
-  and standard plus weighted real-BERT GPU smoke runs have completed.
-- Decide how to model one-to-many triplets. If retaining the current
-  architecture, use a representation and loss that can emit multiple category
-  and sentiment combinations for a span; otherwise adopt a sequence-to-
-  sequence baseline aligned with the upstream TASD formulation.
-
-**Baseline gate: passed.** Standard and weighted smoke runs train, validate,
-restore the best epoch, and perform predicted-span evaluation. A tiny overfit
-test reaching near-perfect predictions remains a useful stronger diagnostic.
-
-### 4. Extend end-to-end inference and metrics
-
-- Add support for implicit `NULL` aspects and multiple category/sentiment pairs
-  for one aspect, or explicitly retain the current restricted task scope.
-- Add prediction-only checkpoint evaluation so a saved run can be rescored on
-  an approved dataset without retraining.
-- Add truncation/alignment ceiling metrics and more one-to-many error-analysis
-  tests.
-
-**Explicit-baseline gate: passed.** `run_study.py` saves dev/test predictions
-and structured metrics. Checkpoint-only rescoring remains to be implemented.
-
-### 5. Make the comparison statistically safe
-
-- Report mean, standard deviation, every paired seed difference, paired
-  confidence intervals, p-values, and the pre-registered practical-effect
-  verdict. With only five seeds, interpret both the t-test and bootstrap
-  interval cautiously.
-
-**Storage/pairing gate: passed.** Run rows are atomically upserted by
-`(mode, config, seed)`, and analysis fails on duplicates and reports unmatched
-seeds. A synthetic known-answer test for the complete statistics table remains
-open.
-
-### 6. Run experiments without contaminating the test sets
-
-1. Run data and metric unit tests.
-2. Run one in-domain seed for both losses as an integration smoke test.
-3. Freeze code, configuration, task scope, and the in-domain primary metric.
-4. Run the ten-run in-domain matrix.
-5. Run the in-domain analysis once, then perform qualitative error analysis
-   from saved predictions.
-6. Freeze the held-out ontology/evaluation policy before enabling the
-   cross-domain matrix.
-7. Run the cross-domain matrix and final combined analysis without tuning on
-   saved predictions.
-
-After the core study, useful extensions are leave-one-domain-out evaluation
-across all seven domains, ablations that weight BIO/category/sentiment losses
-separately, and comparison with the official mT5 extraction baseline. These
-should not replace the pre-registered core comparison.
+Its groups are correctly marked incomplete until all five seeds finish.
+See [STATUS.md](STATUS.md) for the dated count. The existing queue is already
+running; do not launch another queue to clear a documentation label.
+
+</details>
+
+<details>
+<summary><strong>Phase 1 and archived planning</strong></summary>
+
+[Phase 1](phase1_analysis/README.md) contains 70 completed LODO runs and
+10 in-domain controls. Its native historical scores use an earlier eligibility
+policy; use Phase 2's same-gold comparisons for the final improvement.
+
+The former root README mixed early protocol gates and a “Partial” assessment
+with completed findings. That text is preserved as a
+[historical snapshot](phase2/reference/project_history/README_before_status_cleanup_2026_10_14.md).
+It is not an active task list. [next-plan.md](next-plan.md) now points to current
+status rather than asking the team to repeat completed work.
+
+Unselected development-only variants and interrupted pilot attempts remain
+archived and excluded. Their old statuses do not make the selected cohorts
+unfinished. Future span/category/NULL improvements are optional research
+directions, not outstanding tasks for the completed presentation.
+
+</details>
