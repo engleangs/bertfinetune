@@ -12,7 +12,7 @@ The additional class-balanced study is ongoing separately.
 | [Final evaluation notebook](phase2/presentation/Final_Evaluation_and_Error_Analysis.ipynb) | Executed results, prediction transitions, LODO coverage, rarity and NULL |
 | [Current status](STATUS.md) | Verified completed cohorts and the one ongoing extension |
 | [Task register](tasks.md) | Completed work and retired historical plans |
-| [Final presentation](phase2/presentation/07_FinalResults.pptx) | Team's selected final deck |
+
 
 ## Completed findings
 
