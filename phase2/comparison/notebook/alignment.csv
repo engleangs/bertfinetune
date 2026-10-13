@@ -1,0 +1,11 @@
+,seed,baseline,aligned_examples,original_gold,same_gold
+0,13,standard,3794,4165,3728
+1,13,weighted,3794,4165,3728
+2,42,standard,3794,4165,3728
+3,42,weighted,3794,4165,3728
+4,123,standard,3794,4165,3728
+5,123,weighted,3794,4165,3728
+6,777,standard,3794,4165,3728
+7,777,weighted,3794,4165,3728
+8,2024,standard,3794,4165,3728
+9,2024,weighted,3794,4165,3728

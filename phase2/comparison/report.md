@@ -1,6 +1,6 @@
 # Phase 2 team comparison
 
-Verified 142 bundled input files. This analysis reads saved metrics and predictions; it does not train models or select parameters from test scores.
+Verified 186 bundled input files. This analysis reads saved metrics and predictions; it does not train models or select parameters from test scores.
 
 ## In-domain: completed five-seed finalists
 

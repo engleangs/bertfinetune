@@ -1,0 +1,11 @@
+,outcome,domain,example_id,sentence,gold,predicted
+0,correct,coursera,5,The assignments are challenging and interesting .,"('assignments', 'assignments quality', 'positive')","[('assignments', 'assignments quality', 'positive')]"
+1,correct,coursera,6,Wonderful course for true beginners .,"('course', 'course general', 'positive')","[('course', 'course general', 'positive')]"
+2,term,coursera,0,"Yes , a huge part of coding is picking up new tools on the spot , but it would be great to understand the fundamental theories behind how some of these libraries and concepts work at least once before being plunged into that reality !","('fundamental theories', 'material comprehensiveness', 'negative')",[]
+3,term,coursera,1,"Thank you very much , Dr . Chuck and the team !","('Dr . Chuck and the team', 'faculty general', 'positive')","[('Dr . Chuck', 'faculty general', 'positive')]"
+4,category,coursera,12,Very clear lectures .,"('lectures', 'presentation comprehensiveness', 'positive')","[('lectures', 'presentation quality', 'positive')]"
+5,category,coursera,16,The course is hard and needs previous knowledge of R .,"('course', 'course general', 'negative')","[('course', 'course quality', 'negative')]"
+6,sentiment,coursera,9,I might enjoy the whole course experience more if the design were not so technical .,"('course', 'course general', 'neutral')","[('course', 'course general', 'positive')]"
+7,sentiment,coursera,39,I think that it would be better if these videos were scattered throughout the rest of the specialisation .,"('videos', 'presentation quality', 'neutral')","[('videos', 'presentation quality', 'negative')]"
+8,false_positive,coursera,1,"Thank you very much , Dr . Chuck and the team !","[('Dr . Chuck and the team', 'faculty general', 'positive')]","('Dr . Chuck', 'faculty general', 'positive')"
+9,false_positive,coursera,3,My only negative thing to say is that I hope they are able to update the time it takes to grade assignments on the server .,"[('grade assignments', 'grades general', 'negative')]","('server', 'service general', 'negative')"

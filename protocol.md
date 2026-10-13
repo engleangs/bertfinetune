@@ -5,6 +5,18 @@ Frozen date: 2026-09-17
 Project: Class-weighted BERT for explicit-aspect TASD
 Dataset: English M-ABSA
 
+Current reporting amendment: [version 1.1, 2026-10-04](protocol-amendment-2026-10-04.md).
+Corrected training and NULL extension: [experiment guide, 2026-10-05](experiment-guide-2026-10-05.md).
+Current exploratory search budget: [quick tuning guide, 2026-10-06](quick-tuning-guide-2026-10-06.md).
+The user selected a small development search, two-seed shortlist confirmation,
+and frozen NULL-off/on test evaluation for the final presentation. This is
+separate from the historical five-seed study and carries exploratory claims.
+Read that amendment for the taxonomy, component metrics, inspected-test status,
+seven-domain analysis and staged continuation. This version-1.0 document is
+preserved as the historical freeze. Known implementation deviations and
+corrected-training requirements are recorded in the amendment and implemented
+separately in `run_experiments.py`.
+
 ## Protocol status
 
 This is a post-pilot protocol freeze, not a strict pre-registration.

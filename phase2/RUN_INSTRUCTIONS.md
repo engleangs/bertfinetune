@@ -1,5 +1,19 @@
 # Phase 2: which file to run
 
+For the final talk, open [07_FinalResults.pdf](presentation/07_FinalResults.pdf)
+or the [editable PowerPoint](presentation/07_FinalResults_Rubric.pptx).
+Read the [timed speaker notes](presentation/07_FinalResults_SpeakerNotes.md).
+Slides 1–12 form the ten-minute rubric core; slides 13–20 are backup
+and references. Each member speaks for two minutes. If twelve minutes is
+confirmed, use the optional extensions for 2:24 each. Q&A lasts 3–5 minutes.
+Read the [rubric and Q&A guide](presentation/07_FinalResults_RubricGuide.md).
+
+The [reproduction and contribution guide](REPRODUCIBILITY_AND_CONTRIBUTIONS.md)
+documents code ownership, external sources, all experiment entry points,
+metrics, plotting, settings and scientific limitations. The optional
+class-balanced full study was discontinued; more training is not required
+for the current presentation.
+
 **Main Python file: [compare_results.py](compare_results.py).**
 It rebuilds the report comparisons from the bundled results and predictions:
 explicit fine-tuning, NULL on/off, screening ablations, and all 35 Phase 2

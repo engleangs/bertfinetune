@@ -1,0 +1,4 @@
+model,correct,term,category,sentiment
+standard,1195.6,2066.8,393.2,72.4
+weighted,1572.6,941.4,1048.4,165.6
+mixed,1812.8,1138.8,628.2,148.2

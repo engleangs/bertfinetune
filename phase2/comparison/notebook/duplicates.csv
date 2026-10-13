@@ -1,0 +1,16 @@
+,seed,model,extra_prediction_duplicates
+0,13,standard,64
+1,13,weighted,169
+2,13,mixed,62
+3,42,standard,34
+4,42,weighted,142
+5,42,mixed,32
+6,123,standard,36
+7,123,weighted,132
+8,123,mixed,47
+9,777,standard,49
+10,777,weighted,141
+11,777,mixed,52
+12,2024,standard,39
+13,2024,weighted,138
+14,2024,mixed,39

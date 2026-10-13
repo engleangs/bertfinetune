@@ -1,112 +1,130 @@
-# Phase 2 report handoff
+# Phase 2 — final evaluation and code guide
 
-**Run [compare_results.py](compare_results.py) to regenerate the Phase 2 comparisons.**
-Read [RUN_INSTRUCTIONS.md](RUN_INSTRUCTIONS.md) for the commands, dependencies
-and report files.
+This folder presents our completed BERT fine-tuning study and its evidence.
+**Start with the notebook:** saved outputs can be read without a GPU, model
+downloads or retraining.
 
-For CSVs with the same 25 columns as the supplied development_results.csv, run
-[export_csv_reports.py](export_csv_reports.py). It creates separate
-[Phase 1, Phase 2 and versus reports](comparison/csv_reports/README.md):
+## Start here
 
-    python phase2/export_csv_reports.py
-
-Start with [the comparison report](comparison/report.md), then divide the work using
-[REPORT_TASKS.md](REPORT_TASKS.md). All completed results are packaged here; your
-teammates can copy this folder alone or clone it through Git.
-
-The selected explicit model achieved **40.28% test F1**, compared with **33.41%**
-for Phase 1 on the same corrected gold: **+6.88 percentage points**. NULL
-extraction remains unresolved. LODO is complete for seven domains and five
-seeds; the consolidated report also re-scores both historical Phase 1
-baselines against the same Phase 2 gold.
-
-## Run the comparison
-
-Python 3.10 or newer is required. From the repository root:
-
-    python phase2/compare_results.py
-
-On the original machine, the existing environment also works:
-
-    .venv/Scripts/python.exe phase2/compare_results.py
-
-If you copied only the phase2 folder:
-
-    cd phase2
-    python compare_results.py
-
-The command verifies the snapshot hashes and regenerates the tables, paired
-seed differences, report and comparison charts in comparison/. It reads
-saved results and predictions. It needs **no GPU, PyTorch, BERT downloads,
-training data or checkpoints**. It does not choose parameters from test scores.
-Running it again replaces only generated comparison files.
-
-To regenerate charts, install the one optional plotting dependency:
-
-    python -m pip install -r phase2/requirements-analysis.txt
-
-Use requirements-analysis.txt without the phase2/ prefix when inside that
-folder. Tables and the report need only Python's standard library:
-
-    python phase2/compare_results.py --no-plots
-
-The ready-made charts remain available with --no-plots. Analysis typically
-finishes in seconds rather than training hours.
-
-## Where to find the evidence
-
-| Folder or file | Use |
+| What to review | File |
 |---|---|
-| [comparison/report.md](comparison/report.md) | Main comparison; fair Phase 1 reference and interpretation |
-| [comparison/in_domain_comparison.csv](comparison/in_domain_comparison.csv) | Five-seed finalist means, SD and selected settings |
-| [comparison/development_screens.csv](comparison/development_screens.csv) | Development screening scores and parameters |
-| [comparison/screen_ablations.csv](comparison/screen_ablations.csv) | Separate exploratory test ablations; do not select a winner here |
-| [comparison/lodo_same_gold.csv](comparison/lodo_same_gold.csv) | Exact and component F1, category coverage and taxonomy for three LODO arms |
-| comparison/*_by_seed.csv | Report-friendly taxonomy, domain, source-category rarity and triplet-by-sentiment rows |
-| [results/in_domain/report.md](results/in_domain/report.md) | 25 completed finalist test rows and 21 screen test rows |
-| [results/in_domain/null_findings.md](results/in_domain/null_findings.md) | NULL failure analysis and linked threshold evidence |
-| [results/lodo/report.md](results/lodo/report.md) | All 35 completed Phase 2 LODO results and per-domain diagnostics |
-| results/quick_tuning/ | Earlier quick-tuning report, taxonomy, domain and literature figures |
-| results/null_fast_track/ | Completed NULL search, histories and frozen selection |
-| reference/phase1/ | Original Phase 1 tables, figures, protocol notes and findings |
-| [PARAMETERS.md](PARAMETERS.md), [parameters.csv](parameters.csv) | Settings and selected checkpoint/threshold per evaluated row |
-| evidence/phase2_outputs.zip | Complete small metrics, audits, histories, manifests and saved predictions for research runs |
-| evidence/phase1_outputs.zip | Small outputs and saved predictions for the 80 historical Phase 1 runs |
-| [evidence/archive_inventory.json](evidence/archive_inventory.json) | Archive contents with original size and SHA-256 |
-| docs/ | Historical protocol amendments, literature review and experiment guides |
+| Final evaluation, figures and errors | [Readable notebook](presentation/Final_Evaluation_and_Error_Analysis.ipynb) |
+| Computation behind the notebook | [notebook_analysis.py](notebook_analysis.py): scoring, transitions, LODO, rarity and NULL |
+| Parameters and metric definitions | [PARAMETERS.md](PARAMETERS.md) |
+| Our work and external sources | [Reproduction and contributions](REPRODUCIBILITY_AND_CONTRIBUTIONS.md) |
 
-Some screens also occur among the finalists. The 25 + 21 in-domain/NULL
-test rows are **not 46 independent models**. The archive also retains older
-development runs outside the frozen report; their presence does not make
-them finalists or establish that every one has test results.
+Project code: [engleangs/bertfinetune](https://github.com/engleangs/bertfinetune).
 
-Raw evidence is compressed to keep the Git handoff small. For manual inspection,
-open the ZIPs or optionally extract them:
+## Findings
 
-    python phase2/compare_results.py --no-plots --extract-evidence
+- **Explicit test F1:** 33.41% → **40.28%**, **+6.88 percentage points**,
+  on the same reference answers across five seeds.
+- **Selected recipe:** full BERT-base-uncased fine-tuning, **0.75 CE + 0.25
+  inverse-frequency CE**, LR **3e-5**, NULL off.
+- **Errors/transfer:** term recovery is the largest missed-triple group;
+  source-category coverage constrains exact matching in held-out domains.
+- **NULL:** the newer head abstained and tied its matched control. The earlier
+  BCE head recovered some pairs but reduced combined F1. Recovery is unresolved.
 
-This adds roughly 600 MB under evidence/extracted/, which is Gitignored.
-It is unnecessary for the comparison command. Checkpoints, optimizer states,
-probability tensors, tokenizers, model caches and virtual environments are
-excluded. The original output folders remain on the training machine.
+These are exploratory **pipeline comparisons**, not loss-only causal effects.
+Seed SD describes initialization variation on the same test examples.
+The ongoing optional 120-model class-balanced extension is separate; its
+partial development results are excluded from final test conclusions here.
 
-## Reporting conventions
+## Reproduce the completed comparison
 
-Use exact-triplet F1 as the main task metric and component F1 as diagnosis.
-Report means and **sample SD across seeds 13, 42, 123, 2024 and 777**.
-CSV F1 values are fractions from 0 to 1; Markdown and charts use percentages;
-delta_pp columns use percentage points. Screening ablations have one seed
-and varying budgets and remain separate from finalist means.
+From the repository root, using only Python's standard library:
 
-The LODO same-gold comparison retains every historical prediction, matches
-example IDs and sentence text, and replaces only the historical gold. Original
-Phase 1 scores remain in the evidence. The Phase 2 parameters came from
-all-domain development tuning, so this LODO study is **exploratory transfer**.
-Historical test results had already been inspected; describe the whole
-follow-up as exploratory and do not claim an untouched confirmatory test.
+```powershell
+python phase2/compare_results.py --no-plots
+```
 
-Absolute paths inside copied JSON are provenance from the original machine.
-The comparison never follows them. Snapshot inputs are hash-checked; edit
-your report in a separate file. Generated comparison/ files are replaceable.
-On the training machine, build_phase2_bundle.py refreshes the snapshot and
-manifest, followed by the comparison command. Teammates only need phase2/.
+This verifies the snapshot and rebuilds tables/report without training.
+[The comparison report](comparison/report.md) is already available.
+
+<details>
+<summary><strong>Rerun the notebook or its full analysis</strong></summary>
+
+Use a **separate analysis environment**; do not change the active trainer.
+
+```powershell
+python -m venv .venv-analysis
+.venv-analysis/Scripts/python.exe -m pip install -r phase2/requirements-notebook.txt
+.venv-analysis/Scripts/python.exe phase2/notebook_analysis.py
+```
+
+On macOS/Linux use `.venv-analysis/bin/python`. The command writes tables,
+four figures and verification to `comparison/notebook/`, using no GPU.
+Use `--no-plots` to skip figures.
+
+For interactive use, select that environment in VS Code/Jupyter and choose
+**Run All**. Short notebook cells call the helper; long code stays separate.
+With only a copied `phase2/` folder, run `python notebook_analysis.py` inside it.
+Use `--bundle path/to/phase2.zip` to read a ZIP without extracting it.
+
+[The notebook review](NOTEBOOK_REVIEW.md) records checks/corrections and links
+the untouched original. Historical predictions are retained, and each model's
+own source vocabulary is used for coverage.
+
+</details>
+
+<details>
+<summary><strong>Inspect BERT, loss, NULL and metric implementations</strong></summary>
+
+| Implementation | Code in the full repository |
+|---|---|
+| BERT/BIO/span-category/sentiment heads | [src/model.py](../src/model.py), [experiment model](../src/experiment_model.py) |
+| CE mixture, inverse-frequency and explicit focal | [experiment_losses.py](../src/experiment_losses.py), [frequency weights](../src/losses.py) |
+| Training, checkpoint selection and decoding | [experiment_train.py](../src/experiment_train.py) |
+| Eligibility and explicit/NULL targets | [experiment_data.py](../src/experiment_data.py) |
+| NULL representations and losses | [null model](../null_experiments/model.py), [NULL losses](../null_experiments/losses.py) |
+| Development thresholds and NULL evaluation | [null evaluation](../null_experiments/evaluation.py) |
+| Shared exact/component scoring | [analysis.py](analysis.py) |
+
+The notebook needs only this folder. Inspecting training implementations needs
+the full repository. [Contribution documentation](REPRODUCIBILITY_AND_CONTRIBUTIONS.md)
+credits the external data, BERT and loss concepts and lists experiment scripts.
+
+</details>
+
+<details>
+<summary><strong>Evidence, CSV exports and detailed reporting</strong></summary>
+
+- [In-domain means/controls](comparison/in_domain_comparison.csv).
+- [Development selections](comparison/development_screens.csv) and separate
+  [exploratory test screens](comparison/screen_ablations.csv).
+- [LODO exact/component comparison](comparison/lodo_same_gold.csv).
+- [NULL findings](results/in_domain/null_findings.md).
+- [Notebook-generated report](comparison/notebook/report.md).
+- [Professor feedback implementation](PROFESSOR_RECOMMENDATIONS_IMPLEMENTED.md).
+- [Run instructions](RUN_INSTRUCTIONS.md), [report task guide](REPORT_TASKS.md)
+  and [parameter ledger](parameters.csv).
+
+Separate Phase 1, Phase 2 and versus development/test CSV exports:
+
+```powershell
+python phase2/export_csv_reports.py --no-plots
+```
+
+Small metrics/predictions are in `evidence/phase1_outputs.zip` and
+`evidence/phase2_outputs.zip`. Huge checkpoints and model caches are excluded.
+CSV scores are fractions unless named `pct` or `pp`; figures/Markdown use
+percentages. Rare means source count 1–5; unseen means zero. Partial groups
+are not five-seed conclusions.
+
+The notebook and comparison reports are generated views. The manifest protects
+frozen inputs and helper code. Earlier presentations/protocol progress notes
+are historical; do not alter evidence to hide a hash mismatch.
+
+</details>
+
+<details>
+<summary><strong>TODO : Ongoing additional full study</strong></summary>
+
+The standard / inverse-frequency / effective-number class-balanced extension
+uses 3 losses × 5 seeds × 8 settings. All 120 development checkpoints must
+finish and freeze before test evaluation. It is separate from the completed
+presentation cohorts.
+
+
+</details>

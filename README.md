@@ -1,10 +1,42 @@
-# ABSA Triplet Extraction — Group07 Scaffold
+# ABSA Triplet Extraction — Group 07 Research Project
+
+The current final talk is [07_FinalResults.pdf](phase2/presentation/07_FinalResults.pdf),
+with an [editable deck](phase2/presentation/07_FinalResults_Rubric.pptx) and
+[timed speaker notes](phase2/presentation/07_FinalResults_SpeakerNotes.md).
+The latest rubric core is ten minutes, with two minutes per member and
+3–5 minutes of Q&A. Optional extensions retain equal time for a confirmed
+12-minute slot. See the [rubric and Q&A guide](phase2/presentation/07_FinalResults_RubricGuide.md).
+
+Read [reproduction and contributions](phase2/REPRODUCIBILITY_AND_CONTRIBUTIONS.md)
+for the team's work, external methods, experiment scripts and evaluation.
+The analysis and plotting commands for the final results are:
+
+```powershell
+python -m pip install -r phase2/requirements-analysis.txt
+python phase2/compare_results.py
+python phase2/export_csv_reports.py
+```
+
+These commands use saved evidence without training or model files. The
+completed main study is ready to report. The optional class-balanced extension
+was discontinued with no final test cohort.
+
+## Earlier workflow and historical planning
+
+The material below records earlier study stages. Historical gates and future
+training instructions do not supersede the current final report or require
+additional training for submission.
 
 The completed Phase 2 team handoff is in [phase2/README.md](phase2/README.md).
 It includes explicit/NULL finalists, all 35 LODO results, Phase 1 comparisons,
 charts, parameters and compressed prediction evidence, without model weights.
 Teammates can regenerate the comparison with `python phase2/compare_results.py`.
 The sections below document the earlier experiment workflow.
+
+| Team analysis | Python file to run from this folder | Instructions |
+|---|---|---|
+| Phase 1: historical standard/weighted comparison | `python phase1_analysis/analyze_phase1.py` | [Phase 1 run guide](phase1_analysis/RUN_INSTRUCTIONS.md) |
+| Phase 2: fine-tuning, NULL and same-gold LODO comparison | `python phase2/compare_results.py` | [Phase 2 run guide](phase2/RUN_INSTRUCTIONS.md) |
 
 The five-seed fine-tuning study is complete: three configurations and **15 test-evaluated runs**.
 Read [the final results](final-finetuning-results-2026-10-06.md) or

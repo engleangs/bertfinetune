@@ -1,0 +1,9 @@
+baseline,before,category,correct,sentiment,term
+standard,category,315.8,46.4,5.0,26.0
+standard,correct,18.8,1116.4,11.6,48.8
+standard,sentiment,1.8,8.4,58.2,4.0
+standard,term,291.8,641.6,73.4,1060.0
+weighted,category,518.2,259.4,30.6,240.2
+weighted,correct,52.8,1322.8,16.8,180.2
+weighted,sentiment,6.6,33.2,84.4,41.4
+weighted,term,50.6,197.4,16.4,677.0

@@ -1,0 +1,19 @@
+{
+  "snapshot_files_verified": 186,
+  "in_domain_runs": 15,
+  "lodo_runs": 35,
+  "lodo_baseline_runs_rescored": 70,
+  "new_null_runs": 20,
+  "seeds": [
+    13,
+    42,
+    123,
+    777,
+    2024
+  ],
+  "eligible_explicit_gold": 3728,
+  "phase2_covered_lodo_gold": 605,
+  "phase2_uncovered_lodo_gold": 3123,
+  "lodo_vocabulary_source": "Each evaluated Phase 2 audit.json",
+  "training_or_test_tuning_performed": false
+}
